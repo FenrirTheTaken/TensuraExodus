@@ -1,0 +1,11 @@
+type = customizablemenus
+
+com.github.manasmods.tensura.util.TensuraTitleScreen {
+}
+
+com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
+}
+

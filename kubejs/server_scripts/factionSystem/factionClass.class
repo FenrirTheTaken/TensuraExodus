@@ -1,0 +1,46 @@
+export class faction{
+    UUID;
+    title;
+    description;
+    constructor(title,description,UUID){
+        this.UUID = UUID;
+        this.title = title;
+        this.description = description;
+    }
+    getTitle(){
+        return this.title;
+    }
+    getDescription(){
+        return this.description;
+    }
+    getUUID(){
+        return this.UUID;
+    }
+    setTitle(title){
+        this.title = title;
+    }
+    setDescription(description){
+        this.description = description;
+    }
+    getLeader(){
+        return("FenrirTheTaken")
+    }
+    getOfficers(){
+        return ("None")
+    }
+    getMembers(){
+        return ("None")
+    }
+    getAllies(){
+        return ("None")
+    }
+    getEnemies(){
+        return ("None")
+    }
+    toString(){
+        return `&6=== [Faction: ${this.title}] ===\nDescription: ${this.description}\nLeader: ${getLeader()}\n 
+        Officers: ${this.getOfficers()}\nMembers: ${getMembers()}\nAllies: ${getAllies()}\nEnemies: ${getEnemies()} `
+    }
+
+
+}

@@ -1,0 +1,44 @@
+type = user_variables
+
+variable {
+  name = factionlist
+  value = Valydur --- OOf
+  reset_on_launch = false
+}
+
+variable {
+  name = factiondescription
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = infaction
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = factiontitle
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = faction1
+  value = Land of Myriad Halls
+  reset_on_launch = false
+}
+
+variable {
+  name = faction2
+  value = Draconis Empire
+  reset_on_launch = false
+}
+
+variable {
+  name = faction3
+  value = Prinum Malus
+  reset_on_launch = false
+}
+

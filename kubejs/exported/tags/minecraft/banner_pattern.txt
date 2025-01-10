@@ -1,0 +1,112 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jan 7, 2025, 10:26:56 PM
+
+#iceandfire:pattern_item/gorgon
+- iceandfire:gorgon (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/fae
+- iceandfire:fae (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/ice
+- iceandfire:ice (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#minecraft:pattern_item/creeper
+- minecraft:creeper (from Default)
+
+#iceandfire:pattern_item/ice_head
+- iceandfire:ice_head (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/sea_serpent
+- iceandfire:sea_serpent (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/bird
+- iceandfire:bird (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/feather
+- iceandfire:feather (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/fire
+- iceandfire:fire (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/troll
+- iceandfire:troll (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/lightning_head
+- iceandfire:lightning_head (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#minecraft:pattern_item/piglin
+- minecraft:piglin (from Default)
+
+#minecraft:pattern_item/globe
+- minecraft:globe (from Default)
+
+#minecraft:pattern_item/mojang
+- minecraft:mojang (from Default)
+
+#iceandfire:pattern_item/eye
+- iceandfire:eye (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/lightning
+- iceandfire:lightning (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/fire_head
+- iceandfire:fire_head (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/amphithere
+- iceandfire:amphithere (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/hippogryph_head
+- iceandfire:hippogryph_head (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#minecraft:no_item_required
+- minecraft:square_bottom_left (from Default)
+- minecraft:square_bottom_right (from Default)
+- minecraft:square_top_left (from Default)
+- minecraft:square_top_right (from Default)
+- minecraft:stripe_bottom (from Default)
+- minecraft:stripe_top (from Default)
+- minecraft:stripe_left (from Default)
+- minecraft:stripe_right (from Default)
+- minecraft:stripe_center (from Default)
+- minecraft:stripe_middle (from Default)
+- minecraft:stripe_downright (from Default)
+- minecraft:stripe_downleft (from Default)
+- minecraft:small_stripes (from Default)
+- minecraft:cross (from Default)
+- minecraft:straight_cross (from Default)
+- minecraft:triangle_bottom (from Default)
+- minecraft:triangle_top (from Default)
+- minecraft:triangles_bottom (from Default)
+- minecraft:triangles_top (from Default)
+- minecraft:diagonal_left (from Default)
+- minecraft:diagonal_up_right (from Default)
+- minecraft:diagonal_up_left (from Default)
+- minecraft:diagonal_right (from Default)
+- minecraft:circle (from Default)
+- minecraft:rhombus (from Default)
+- minecraft:half_vertical (from Default)
+- minecraft:half_horizontal (from Default)
+- minecraft:half_vertical_right (from Default)
+- minecraft:half_horizontal_bottom (from Default)
+- minecraft:border (from Default)
+- minecraft:curly_border (from Default)
+- minecraft:gradient (from Default)
+- minecraft:gradient_up (from Default)
+- minecraft:bricks (from Default)
+
+#iceandfire:pattern_item/mermaid
+- iceandfire:mermaid (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#minecraft:pattern_item/skull
+- minecraft:skull (from Default)
+
+#minecraft:pattern_item/flower
+- minecraft:flower (from Default)
+
+#iceandfire:pattern_item/hippocampus
+- iceandfire:hippocampus (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/dread
+- iceandfire:dread (from iceandfire-1.19.2-2.1.13-beta-3.jar)
+
+#iceandfire:pattern_item/weezer
+- iceandfire:weezer (from iceandfire-1.19.2-2.1.13-beta-3.jar)

@@ -1,0 +1,192 @@
+[
+  // Swamp
+  // Mob List: Aqua Frog, Evil Centipede, Hover Lizard, Slime
+  // Biome List: Warped Mesa, Red Oasis, Orchid Swamp, Ice Marsh, Haze Mountains, Fractured Savannah,
+  {
+    "mob" : ["tensura:aqua_frog", "tensura:evil_centipede", "tensura:hover_lizard", "tensura:slime"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:warped_mesa", "terralith:red_oasis", "terralith:orchid_swamp",
+      "terralith:ice_marsh","terralith:haze_mountain", "terralith:fractured_savanna"],
+    "result": "default"
+  },
+  // Badlands
+  //Mob List: Armoursaurus, Beast Gnome, Direwolf, Giant Bat, Knight Spider, Orc, Otherworlder, Slime
+  //Biome List: Snowy Badlands, Stony Spires, White Mesa, Warped Mesa, Red Oasis, Painted Mountains,
+  //            Granite Cliffs,  Yellow Stone, Savanna Badland,
+
+  {
+    "mob" : ["tensura:armoursaurus", "tensura:beast_gnome", "tensura:direwolf", "tensura:giant_bat",
+      "tensura:knight_spider","tensura:otherworlder","tensura:orc", "tensura:slime"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:snowy_badlands", "terralith:stony_spires", "terralith:white_mesa", "terralith:warped_mesa",
+      "terralith:red_oasis","terralith:painted_mountains", "terralith:granite_cliffs","terralith:yellowstone",
+      "terralith:savanna_badlands"],
+    "result": "default"
+  },
+  // Flower Forest/Sakura Forest
+  // Mob List: Army Wasp
+  // Biome List: Skyland Spring, Blooming Plateau, Sakura Grove, Sakura Valley,
+  {
+    "mob" : ["tensura:army_wasp"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:skylands_spring", "terralith:blooming_plateau", "terralith:sakura_grove",
+      "terralith:sakura_valley"],
+    "result": "default"
+  },
+  // Taiga
+  // Mob List: Barghest, Bulldear, Direwolf, Evil Centipede, Giant Bear, Horned Bear, Horned Rabbit,
+  //           Leech Lizard, Slime
+  // Biome List: Frozen Cliffs, Skyland Winter, Skyland Summer, Skyland Spring, Snowy Badlands,
+  //             Siberian Grove, Scarlet Mountains, Wintry Forest, Rocky Shrubland, Rocky Mountains,
+  //             Ice Marsh, Emerald Peaks, Alpine Grove, Cold Shrubland, Siberian Taiga, Skyland Autumn,
+  //             Yosemite Lowlands, Moonlight Valley Moonlight Grove, Lush Valley, Cloud Forest, Birch Taiga,
+  //             Alpine Highlands, Forested Highland, Shield, Bryce Canyon, Yellowstone, Glacial Chasm, Skylands,
+  //             Snowy Shield, Wintry lowlands
+
+  {
+    "mob" : ["tensura:barghest", "tensura:bulldear", "tensura:direwolf", "tensura:evil_centipede",
+      "tensura:giant_bear","tensura:horned_bear","tensura:horned_rabbit","tensura:leech_lizard","tensura:slime"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:frozen_cliffs", "terralith:skylands_winter", "terralith:skylands_summer",
+          "terralith:skylands_spring","terralith:terralith:skylands_autumn","terralith:skylands", "terralith:snowy_badlands",
+          "terralith:siberian_grove","terralith:scarlet_mountains","terralith:wintry_forest",
+          "terralith:rocky_shrubland","terralith:rocky_mountains","terralith:ice_marsh",
+          "terralith:emerald_peaks","terralith:alpine_grove","terralith:cold_shrubland",
+          "terralith:siberian_taiga","terralith:yosemite_lowlands","terralith:moonlight_valley",
+          "terralith:moonlight_grove","terralith:lush_valley","terralith:cloud_forest","terralith:birch_taiga",
+          "terralith:alpine_highlands","terralith:forested_highlands","terralith:shield","terralith:bryce_canyon",
+          "terralith:yellowstone", "terralith:glacial_chasm","terralith:snowy_shield", "terralith:wintry_lowlands"],
+    "result": "default"
+  },
+  // Forest
+  // Mob List: Barghest, Blade Tiger, Bulldear, Direwolf, Dragon Peacock, Giant Ant, Giant Bear, Hound Dog,
+  //           Leech Lizard, Slime
+  // Biome List: White Cliffs, Sakura Valley, Sakura Grove, Mirage Isles, Lavendar Valley, Lavendar Forest,
+  //             Temperate Highlands, Blooming Valley, Alpha Islands Winter, Skyland Spring, Snowy Cherry Grove,
+  //             Snowy Maple Forest
+
+  {
+    "mob" : ["tensura:barghest", "tensura:blade_tiger", "tensura:bulldear", "tensura:direwolf",
+          "tensura:dragon_peacock","tensura:giant_ant","tensura:giant_bear","tensura:hound_dog",
+          "tensura:leech_lizard","tensura:slime"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:white_cliffs", "terralith:sakura_valley", "terralith:sakura_grove",
+            "terralith:mirage_isles", "terralith:lavender_valley","terralith:lavender_forest",
+        "terralith:temperate_highlands", "terralith:snowy_cherry_grove", "terralith:snowy_maple_forest",
+      "terralith:blooming_valley", "terralith:alpha_islands_winter","terralith:skylands_spring"],
+    "result": "default"
+  },
+  // Plains
+  // Mob List: Bulldear, Direwolf, Hound Dog, One Eyed Owl, Otherworlder, Slime
+  // Biome List: Blooming Plateau, Lush Desert,
+  {
+    "mob" : ["tensura:bulldear", "tensura:direwolf", "tensura:hound_dog", "tensura:one_eyed_owl",
+            "tensura:otherworlder"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:blooming_plateau", "terralith:lush_desert"],
+    "result": "default"
+  },
+  // Savannah
+  // Mob List: Bulldear, Direwolf, Dragon Peacock, Giant Ant, Otherworlder, Slime,
+  // Biome List: Savanna Slopes, Fractured Savanna, Ashen Savanna, Shrubland, Hot Shrubland, Arid Highland, Brushland,
+  {
+    "mob" : ["tensura:bulldear", "tensura:direwolf", "tensura:dragon_peacock", "tensura:giant_ant",
+            "tensura:otherworlder","tensura:slime"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:savanna_slopes", "terralith:fractured_savanna", "terralith:ashen_savanna",
+              "terralith:shrubland","terralith:hot_shrubland", "terralith:arid_highlands","terralith:brushland"],
+    "result": "default"
+  },
+
+  // Hills
+  // Mob List: Direwolf, Giant Bat, Horned Bear, Otherworlder, Slime
+  // Biome List: White Cliffs, Yosemite Cliffs, Gravel Beach, Emerald Peaks, Basalt Cliffs, Brushland, Alpha Islands,
+  //             Shield Clearing
+
+  {
+    "mob" : ["tensura:direwolf", "tensura:giant_bat", "tensura:horned_bear", "tensura:otherworlder",
+            "tensura:slime"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:white_cliffs", "terralith:yosemite_cliffs", "terralith:gravel_beach", "terralith:emerald_peaks",
+              "terralith:basalt_cliffs", "terralith:fractured_savanna", "terralith:brushland", "terralith:alpha_islands",
+              "terralith:shield_clearing"],
+    "result": "default"
+  },
+  // Mountains
+  // Mob List: Direwolf, Feathered Serpent, Giant Bat, Otherworlder, Slime, Unicorn
+  // Biome List: Steppe, Scarlet Mountains, Windswept Spires, Volcanic Peaks, Volcanic Crater, Yosemite Cliffs,
+  //             Valley Clearing, Rocky Mountains, Painted Mountains, Highlands, Haze Mountain, Caldera, Alpine Grove,
+  //             Alpine Highlands, Shield, Mountain Steppe
+
+  {
+    "mob" : ["tensura:direwolf", "tensura:feathered_serpent", "tensura:giant_bat", "tensura:otherworlder",
+            "tensura:slime","tensura:unicorn"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:steppe", "terralith:volcanic_peaks", "terralith:volcanic_crater", "terralith:yosemite_cliffs",
+              "terralith:scarlet_mountains", "terralith:windswept_spires", "terralith:valley_clearing",
+              "terralith:rocky_mountains","terralith:painted_mountains","terralith:highlands","terralith:haze_mountain",
+              "terralith:caldera","terralith:alpine_grove", "terralith:alpine_highlands", "terralith:shield", "terralith:mountain_steppe"],
+    "result": "default"
+  },
+  // Jungle
+  // Mob List: Dragon Peacock, Evil Centipede, Winged Cat
+  // Biome List: Tropical Jungle, Rocky Jungle, Amethyst Rainforest, Amethyst Canyon, Jungle Mountain
+
+  {
+    "mob" : ["tensura:dragon_peacock", "tensura:evil_centipede", "tensura:winged_cat"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:tropical_jungle", "terralith:rocky_jungle", "terralith:amethyst_rainforest",
+              "terralith:amethyst_canyon","terralith:jungle_mountains", "terralith:cave/underground_jungle"],
+    "result": "default"
+  },
+  // River
+  // Mob List: Giant Cod, Giant Salmon, Hover Lizard, Landfish,
+  // Biome List: None
+
+  // Desert
+  // Mob List: Knight Spider, Orc, Otherworlder
+  // Biome List: Desert Spires, Sandstone Valley, Lush Desert, Desert Oasis, Desert Canyon, Ancient Sands, Gravel Desert
+
+  {
+    "mob" : ["tensura:knight_spider", "tensura:orc", "tensura:otherworlder"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:desert_spires", "terralith:sandstone_valley", "terralith:lush_desert", "terralith:desert_oasis",
+              "terralith:desert_canyon", "terralith:ancient_sands", "terralith:gravel_desert"],
+    "result": "default"
+  },
+  // Cave
+  // Mob List: Black Spider, Slime, Tempest Serpent
+  // Cave List: Andesite Cave, Diorite Cave, Frostfire Caves, Fungal Caves, Granite Caves, Mantle Cave, Thermal Cave, Tuff Cave, Underground Jungle, Infested Cave
+
+  {
+    "mob" : ["tensura:black_spider", "tensura:slime", "tensura:tempest_serpent"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:cave/andesite_caves", "terralith:cave/desert_caves", "terralith:cave/diorite_caves",
+              "terralith:cave/fungal_caves","terralith:cave/granite_caves", "terralith:cave/ice_caves",
+              "terralith:cave/infested_caves","terralith:cave/thermal_caves","terralith:cave/underground_jungle",
+              "terralith:cave/crystal_caves","terralith:cave/deep_caves","terralith:cave/frostfire_caves",
+              "terralith:cave/mantle_caves", "terralith:cave/tuff_caves"],
+    "result": "default"
+  },
+  // River
+  // Mob List: Giant Cod, Giant Salmon, Hover Lizard, Landfish,
+  // Biome List: Warm River,
+  {
+    "mob" : ["tensura:giant_cod", "tensura:giant_salmon", "tensura:hover_lizard","tensura:landfish"],
+    "dimension": "minecraft:overworld",
+    "biome": ["terralith:warm_river"],
+    "result": "default"
+  },
+  {
+    "mob" : ["tensura:aqua_frog", "tensura:armoursaurus", "tensura:army_wasp", "tensura:barghest", "tensura:beast_gnome",
+            "tensura:black_spider", "tensura:blade_tiger", "tensura:bulldear","tensura:direwolf","tensura:dragon_peacock",
+            "tensura:evil_centipede","tensura:feathered_serpent","tensura:giant_ant","tensura:giant_bat","tensura:giant_bear",
+            "tensura:giant_cod", "tensura:giant_salmon", "tensura:landfish",
+            "tensura:horned_bear","tensura:horned_rabbit","tensura:hound_dog","tensura:hover_lizard","tensura:knight_spider",
+            "tensura:leech_lizard","tensura:one_eyed_owl","tensura:orc","tensura:otherworlder","tensura:slime","tensura:tempest_serpent",
+            "tensura:unicorn","tensura:winged_cat"],
+    "dimension": "minecraft:overworld",
+    "incontrol" = true,
+    "result": "deny"
+  }
+]

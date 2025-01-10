@@ -1,0 +1,224 @@
+[
+  {
+    "mob": "tensura:aqua_frog",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:armoursaurus",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:army_wasp",
+    "persecond": 1.0,
+    "attempts": 5,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:barghest",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:beast_gnome",
+    "persecond": 1.0,
+    "attempts": 2,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:black_spider",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:blade_tiger",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:bulldear",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:direwolf",
+    "persecond": 1.0,
+    "attempts": 1,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:dragon_peacock",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:evil_centipede",
+    "persecond": 1.0,
+    "attempts": 4,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:feathered_serpent",
+    "persecond": 1.0,
+    "attempts": 2,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:giant_ant",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:giant_bat",
+    "persecond": 1.0,
+    "attempts": 4,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:giant_bear",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:giant_cod",
+    "persecond": 1.0,
+    "attempts": 5,
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inwater": true
+    }
+  },
+  {
+    "mob": "tensura:giant_salmon",
+    "persecond": 1.0,
+    "attempts": 5,
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inwater": true
+    }
+  },
+  {
+    "mob": "tensura:horned_bear",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:horned_rabbit",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:hound_dog",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:hover_lizard",
+    "persecond": 1.0,
+    "attempts": 8,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:knight_spider",
+    "persecond": 1.0,
+    "attempts": 4,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:landfish",
+    "persecond": 1.0,
+    "attempts": 5,
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inwater": true}
+  },
+  {
+    "mob": "tensura:leech_lizard",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:one_eyed_owl",
+    "persecond": 1.0,
+    "attempts": 2,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:orc",
+    "persecond": 1.0,
+    "attempts": 7,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:otherworlder",
+    "persecond": 1.0,
+    "attempts": 5,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:slime",
+    "persecond": 1.0,
+    "attempts": 10,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:tempest_serpent",
+    "persecond": 1.0,
+    "attempts": 5,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:unicorn",
+    "persecond": 1.0,
+    "attempts": 2,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  },
+  {
+    "mob": "tensura:winged_cat",
+    "persecond": 1.0,
+    "attempts": 3,
+    "conditions": {
+      "dimension": "minecraft:overworld"}
+  }
+]

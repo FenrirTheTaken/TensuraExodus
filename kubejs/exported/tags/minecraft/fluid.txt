@@ -1,0 +1,18 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jan 7, 2025, 10:26:56 PM
+
+#minecraft:lava
+- minecraft:lava (from Default)
+- minecraft:flowing_lava (from Default)
+
+#forge:experience
+- sophisticatedcore:xp_still (from sophisticatedcore-1.19.2-0.6.4.730.jar)
+
+#minecraft:water
+- minecraft:water (from Default)
+- minecraft:flowing_water (from Default)
+- tensura:source_hot_spring_water (from tensura-1.19.2-1.0.0.9.jar)
+- tensura:flowing_hot_spring_water (from tensura-1.19.2-1.0.0.9.jar)
+
+#forge:milk
+- minecraft:milk? (from forge-1.19.2-43.4.5-universal.jar)
+- minecraft:flowing_milk? (from forge-1.19.2-43.4.5-universal.jar)
