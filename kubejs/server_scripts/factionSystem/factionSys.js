@@ -2,6 +2,22 @@
 
 const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
 // const faction = Java.loadClass('./factionClass.class')
+function insertFactionData(title, description, owner){
+    Utils.server.persistentData.faction.push({title:title,description:description, owner:owner})
+}
+function findFaction(owner){
+    return Utils.server.persistentData.faction.find(faction => faction.owner === owner)
+}
+function findFactionIndex(owner){
+    return Utils.server.persistentData.faction.findIndex(faction => faction.owner === owner)
+}
+function removeFactionData(owner){
+    console.log(owner)
+    Utils.server.persistentData.faction = Utils.server.persistentData.faction.filter(faction =>!(faction.owner === owner))
+}
+function changeFactionLeader(index,owner){
+    Utils.server.persistentData.faction[index] = {title:Utils.server.persistentData.faction[index].title,title:Utils.server.persistentData.faction[index].description,owner:owner }
+}
 
 ServerEvents.commandRegistry(event => {
     const { commands: Commands,  arguments: Arguments } = event;
@@ -11,7 +27,6 @@ ServerEvents.commandRegistry(event => {
     }
     function findFaction(owner){
         return Utils.server.persistentData.faction.find(faction => faction.owner === owner)
-
     }
 
     event.register(
@@ -50,12 +65,14 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('testFaction')
             .executes(ctx => {
+                const faction = findFaction(ctx.source.player.username)
             
                 const PartInst = $PACAPI.get(ctx.source.server)
                 const PartMan = PartInst.getPartyManager()
                 const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1].description}\nLeader: ${Utils.server.persistentData.faction[1].owner}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[1].title}] ===`).color("gold"))
+
+                const temp = `Description: ${faction.description}\nLeader: ${faction.owner}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
+        ctx.source.player.tell(Text.of(`=== [Faction: ${faction.title}] ===`).color("gold"))
         ctx.source.player.tell(Text.of(`${temp}`))
 
 
@@ -98,17 +115,10 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('inviteMember')
-        .then(Commands.argument('confirm', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event)))
             .executes(ctx => {
-                const first = Arguments.STRING.getResult(ctx,'confirm');
-
-                
-                const PartInst = $PACAPI.get(ctx.source.server)
-                const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1]}\nLeader: ${Utils.server.persistentData.faction[2]}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[0]}] ===`).color("gold"))
-        ctx.source.player.tell(Text.of(`${temp}`))
+                const first = Arguments.STRING.getResult(ctx,'member')
+                ctx.source.player.runCommandSilent(`openpac-parties member invite ${first}`)
 
 
 
@@ -122,17 +132,11 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('promoteMember')
-        .then(Commands.argument('confirm', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event)))
             .executes(ctx => {
-                const first = Arguments.STRING.getResult(ctx,'confirm');
+                const first = Arguments.STRING.getResult(ctx,'member');
+                ctx.source.player.runCommandSilent(`openpac-parties member rank ADMIN ${first}`)
 
-                
-                const PartInst = $PACAPI.get(ctx.source.server)
-                const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1]}\nLeader: ${Utils.server.persistentData.faction[2]}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[0]}] ===`).color("gold"))
-        ctx.source.player.tell(Text.of(`${temp}`))
 
 
 
@@ -146,17 +150,11 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('demoteMember')
-        .then(Commands.argument('confirm', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event)))
             .executes(ctx => {
-                const first = Arguments.STRING.getResult(ctx,'confirm');
+                const first = Arguments.STRING.getResult(ctx,'member');
 
-                
-                const PartInst = $PACAPI.get(ctx.source.server)
-                const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1]}\nLeader: ${Utils.server.persistentData.faction[2]}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[0]}] ===`).color("gold"))
-        ctx.source.player.tell(Text.of(`${temp}`))
+                ctx.source.player.runCommandSilent(`openpac-parties member rank MEMBER ${first}`)
 
 
 
@@ -170,17 +168,10 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('kickMember')
-        .then(Commands.argument('confirm', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event)))
             .executes(ctx => {
-                const first = Arguments.STRING.getResult(ctx,'confirm');
-
-                
-                const PartInst = $PACAPI.get(ctx.source.server)
-                const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1]}\nLeader: ${Utils.server.persistentData.faction[2]}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[0]}] ===`).color("gold"))
-        ctx.source.player.tell(Text.of(`${temp}`))
+                const first = Arguments.STRING.getResult(ctx,'member');
+                ctx.source.player.runCommandSilent(`openpac-parties kick ${first}`)
 
 
 
@@ -188,6 +179,7 @@ ServerEvents.commandRegistry(event => {
             })
     );
 });
+
 ServerEvents.commandRegistry(event => {
     const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
@@ -198,13 +190,10 @@ ServerEvents.commandRegistry(event => {
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'confirm');
 
-                
-                const PartInst = $PACAPI.get(ctx.source.server)
-                const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1]}\nLeader: ${Utils.server.persistentData.faction[2]}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[0]}] ===`).color("gold"))
-        ctx.source.player.tell(Text.of(`${temp}`))
+                const factionIndex = findFactionIndex(ctx.source.player)
+                ctx.source.player.runCommandSilent(`openpac-parties transfer ${first}`)
+                changeFactionLeader(factionIndex,first)
+
 
 
 
@@ -212,6 +201,7 @@ ServerEvents.commandRegistry(event => {
             })
     );
 });
+
 ServerEvents.commandRegistry(event => {
     const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
@@ -222,15 +212,7 @@ ServerEvents.commandRegistry(event => {
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'confirm');
 
-                
-                const PartInst = $PACAPI.get(ctx.source.server)
-                const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
-                const temp = `Description: ${Utils.server.persistentData.faction[1]}\nLeader: ${Utils.server.persistentData.faction[2]}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
-        ctx.source.player.tell(Text.of(`=== [Faction: ${Utils.server.persistentData.faction[0]}] ===`).color("gold"))
-        ctx.source.player.tell(Text.of(`${temp}`))
-
-
+                ctx.source.player.runCommandSilent(`openpac-parties leave`)
 
                 return 1; // Returning a value is required; 1 indicates success.
             })

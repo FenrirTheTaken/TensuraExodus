@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736478631687
+  last_edited_time = 1736495856738
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:3697020d-41dc-4361-a2fc-7aeb4e8cd2dc-1736487159433] = [groups:][instances:]
+  [loading_requirement_container_meta:36603e43-cf05-49f7-bf25-bed596e9c9e8-1736497564954] = [groups:][instances:]
 }
 
 customization {
@@ -248,8 +248,9 @@ element {
   [executable_action_instance:46af3614-b5fb-46b7-83c7-a4da2a253b1b-1736467585299][action_type:enable_layout] = factionscreen_layout
   [executable_action_instance:1c4bc729-d380-4ecf-b773-e22e2fd4e145-1736467572019][action_type:disable_layout] = factionscreen_layout_create
   [executable_action_instance:19055de9-d884-4afb-a1b4-fad65e29199a-1736469635621][action_type:set_variable] = infaction:true
+  [executable_action_instance:615e541e-b030-4752-b58e-055a51318e2a-1736495835472][action_type:set_variable] = isowner:true
   [executable_action_instance:0479f8db-7c55-4187-bbaa-c8cecdf020d3-1736467612132][action_type:closegui] = 
-  [executable_block:a4235db2-daa1-4401-b96d-f0ee82bb79e3-1736451403548][type:generic] = [executables:97be1a71-7dc5-4c14-8861-a5221858f647-1736460131881;fee390ba-da08-4447-a43e-eefa009f4dc5-1736465805355;e8c7e23c-762d-4769-8a97-2946053a8da7-1736465835513;46af3614-b5fb-46b7-83c7-a4da2a253b1b-1736467585299;1c4bc729-d380-4ecf-b773-e22e2fd4e145-1736467572019;19055de9-d884-4afb-a1b4-fad65e29199a-1736469635621;0479f8db-7c55-4187-bbaa-c8cecdf020d3-1736467612132;]
+  [executable_block:a4235db2-daa1-4401-b96d-f0ee82bb79e3-1736451403548][type:generic] = [executables:97be1a71-7dc5-4c14-8861-a5221858f647-1736460131881;fee390ba-da08-4447-a43e-eefa009f4dc5-1736465805355;e8c7e23c-762d-4769-8a97-2946053a8da7-1736465835513;46af3614-b5fb-46b7-83c7-a4da2a253b1b-1736467585299;1c4bc729-d380-4ecf-b773-e22e2fd4e145-1736467572019;19055de9-d884-4afb-a1b4-fad65e29199a-1736469635621;615e541e-b030-4752-b58e-055a51318e2a-1736495835472;0479f8db-7c55-4187-bbaa-c8cecdf020d3-1736467612132;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false

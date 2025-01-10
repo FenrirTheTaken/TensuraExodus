@@ -1,7 +1,7 @@
 type = last_world
 
 last_world {
-  is_server = true
-  world = exodus.play-network.io:25565
+  is_server = false
+  world = C:/Users/matth/curseforge/minecraft/Instances/Tensura Exodus/saves/New World (17)
 }
 

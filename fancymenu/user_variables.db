@@ -1,8 +1,8 @@
 type = user_variables
 
 variable {
-  name = factionlist
-  value = Valydur --- OOf
+  name = isstaff
+  value = false
   reset_on_launch = false
 }
 
@@ -10,6 +10,36 @@ variable {
   name = factiondescription
   value = 
   reset_on_launch = true
+}
+
+variable {
+  name = playerinvite
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = playerpromote
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = enemyfaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = newowner
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = leavefaction
+  value = 
+  reset_on_launch = false
 }
 
 variable {
@@ -25,6 +55,12 @@ variable {
 }
 
 variable {
+  name = deletefaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
   name = faction1
   value = Land of Myriad Halls
   reset_on_launch = false
@@ -37,8 +73,44 @@ variable {
 }
 
 variable {
+  name = ismember
+  value = false
+  reset_on_launch = false
+}
+
+variable {
   name = faction3
   value = Prinum Malus
+  reset_on_launch = false
+}
+
+variable {
+  name = factionlist
+  value = Valydur --- OOf
+  reset_on_launch = false
+}
+
+variable {
+  name = playerkick
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = isowner
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = staffdemote
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = allyfaction
+  value = 
   reset_on_launch = false
 }
 
