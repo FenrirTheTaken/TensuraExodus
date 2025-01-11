@@ -44,7 +44,7 @@ variable {
 
 variable {
   name = infaction
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -98,7 +98,7 @@ variable {
 
 variable {
   name = isowner
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -110,6 +110,12 @@ variable {
 
 variable {
   name = allyfaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = ememyfaction
   value = 
   reset_on_launch = false
 }

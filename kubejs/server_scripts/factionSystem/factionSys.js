@@ -1,30 +1,33 @@
-
-
 const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
 // const faction = Java.loadClass('./factionClass.class')
 function insertFactionData(title, description, owner){
-    Utils.server.persistentData.faction.push({title:title,description:description, owner:owner})
+    Utils.server.persistentData.faction.push({title:title,description:description, owner:owner, enemy:[]})
 }
 function findFaction(owner){
     return Utils.server.persistentData.faction.find(faction => faction.owner === owner)
 }
 function findFactionIndex(owner){
-    return Utils.server.persistentData.faction.findIndex(faction => faction.owner === owner)
+    console.log(owner)
+    return Utils.server.persistentData.faction.findIndex((faction) => faction.owner === owner)
 }
 function removeFactionData(owner){
     console.log(owner)
     Utils.server.persistentData.faction = Utils.server.persistentData.faction.filter(faction =>!(faction.owner === owner))
 }
 function changeFactionLeader(index,owner){
-    Utils.server.persistentData.faction[index] = {title:Utils.server.persistentData.faction[index].title,title:Utils.server.persistentData.faction[index].description,owner:owner }
+    Utils.server.persistentData.faction[index] = {title:Utils.server.persistentData.faction[index].title,title:Utils.server.persistentData.faction[index].description,owner:owner,enemy:Utils.server.persistentData.faction[index].enemy }
+}
+function addEnemyFaction(index,enemy){
+    const e = findFaction(enemy).title
+    Utils.server.persistentData.faction[index].enemy.push(e) 
+}
+function removeEnemyFaction(index,enemy){
+    Utils.server.persistentData.faction[index].enemy = Utils.server.persistentData.faction[index].enemy.filter(e => !(e === findFaction(enemy).title))
 }
 
 ServerEvents.commandRegistry(event => {
     const { commands: Commands,  arguments: Arguments } = event;
 
-    function insertFactionData(title, description, owner){
-        Utils.server.persistentData.faction.push({title:title,description:description, owner:owner})
-    }
     function findFaction(owner){
         return Utils.server.persistentData.faction.find(faction => faction.owner === owner)
     }
@@ -59,7 +62,6 @@ ServerEvents.commandRegistry(event => {
 });
 
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands } = event;
 
     event.register(
@@ -70,8 +72,37 @@ ServerEvents.commandRegistry(event => {
                 const PartInst = $PACAPI.get(ctx.source.server)
                 const PartMan = PartInst.getPartyManager()
                 const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
+                const staffArray = party.getStaffInfoStream().toArray()
+                const memberArray = party.getNonStaffInfoStream().toArray()
+                const allyArray = party.getAllyPartiesStream().toArray()
+                let staffString = ""
+                let memberString = ""
+                let allyString = ""
+                let enemyString = ""
+                staffArray.forEach(e => {
+                    if (e.getUsername() !== ctx.source.player.username){
+                        staffString += e.getUsername() + ", "
+                    }
+                }
+                )
+                memberArray.forEach(e => {
+                    memberString += e.getUsername() + ", "
+                }
+                )
+                allyArray.forEach(e=>{
+                    allyString += findFaction(PartMan.getPartyById(e.getPartyId()).getOwner().getUsername()).title + ", "
+                })
+                faction.enemy.forEach(e=>{
+                    enemyString += e + ", "
+                })
 
-                const temp = `Description: ${faction.description}\nLeader: ${faction.owner}\nOfficers: None \nMembers: None \nAllies:None \nEnemies: None `
+                let finalStaff = staffString.slice(0, -2)
+                let finalMember = memberString.slice(0, -2)
+                let finalAlly = allyString.slice(0, -2)
+                let finalEnemy = enemyString.slice(0, -2)
+
+
+                const temp = `Description: ${faction.description}\nLeader: ${faction.owner}\nOfficers: ${finalStaff} \nMembers: ${finalMember} \nAllies:${finalAlly} \nEnemies: ${finalEnemy} `
         ctx.source.player.tell(Text.of(`=== [Faction: ${faction.title}] ===`).color("gold"))
         ctx.source.player.tell(Text.of(`${temp}`))
 
@@ -86,7 +117,6 @@ ServerEvents.commandRegistry(event => {
         console.log(owner)
         Utils.server.persistentData.faction = Utils.server.persistentData.faction.filter(faction =>!(faction.owner === owner))
     }
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
@@ -110,12 +140,11 @@ ServerEvents.commandRegistry(event => {
 });
 
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
         Commands.literal('inviteMember')
-        .then(Commands.argument('member', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'member')
                 ctx.source.player.runCommandSilent(`openpac-parties member invite ${first}`)
@@ -124,51 +153,58 @@ ServerEvents.commandRegistry(event => {
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
         Commands.literal('promoteMember')
-        .then(Commands.argument('member', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'member');
                 ctx.source.player.runCommandSilent(`openpac-parties member rank ADMIN ${first}`)
+                ctx.source.player.runCommandSilent(`execute as ${first} run fmvariable set isstaff false true`)
+                ctx.source.player.runCommandSilent(`execute as ${first} run fmvariable set ismember false false`)
+
+
 
 
 
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
         Commands.literal('demoteMember')
-        .then(Commands.argument('member', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'member');
 
                 ctx.source.player.runCommandSilent(`openpac-parties member rank MEMBER ${first}`)
+                ctx.source.player.runCommandSilent(`execute as ${first} run fmvariable set ismember false true`)
+                ctx.source.player.runCommandSilent(`execute as ${first} run fmvariable set isstaff false false`)
+
 
 
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
         Commands.literal('kickMember')
-        .then(Commands.argument('member', Arguments.STRING.create(event)))
+        .then(Commands.argument('member', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'member');
                 ctx.source.player.runCommandSilent(`openpac-parties kick ${first}`)
@@ -177,38 +213,41 @@ ServerEvents.commandRegistry(event => {
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
         Commands.literal('transferOwnershipFaction')
-        .then(Commands.argument('confirm', Arguments.STRING.create(event)))
+        .then(Commands.argument('player', Arguments.STRING.create(event))
             .executes(ctx => {
-                const first = Arguments.STRING.getResult(ctx,'confirm');
+                const first = Arguments.STRING.getResult(ctx,'player');
 
-                const factionIndex = findFactionIndex(ctx.source.player)
-                ctx.source.player.runCommandSilent(`openpac-parties transfer ${first}`)
+                const factionIndex = findFactionIndex(ctx.source.player.username)
+                ctx.source.player.runCommandSilent(`openpac-parties transfer ${first} confirm` )
                 changeFactionLeader(factionIndex,first)
+                ctx.source.player.runCommandSilent(`execute as ${first} run fmvariable set isowner false true`)
+                
+
 
 
 
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
 ServerEvents.commandRegistry(event => {
-    const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
         Commands.literal('leaveFaction')
-        .then(Commands.argument('confirm', Arguments.STRING.create(event)))
+        .then(Commands.argument('confirm', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'confirm');
 
@@ -216,6 +255,71 @@ ServerEvents.commandRegistry(event => {
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('inFaction')
+            .executes(ctx => {
+                const PartInst = $PACAPI.get(ctx.source.server)
+                const PartMan = PartInst.getPartyManager()
+                const playerUUID = ctx.source.player.getUuid()
+                const inFaction = PartMan.getPartyByMember(playerUUID)
+                if (inFaction !== null){
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set infaction false true`)
+                }
+                else{
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set infaction false false`)
+                }
+
+
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+    );
+});
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('enemyFaction')
+        .then(Commands.argument('factionleader', Arguments.STRING.create(event))
+            .executes(ctx => {
+                const first = Arguments.STRING.getResult(ctx,'factionleader');
+                const index = findFactionIndex(ctx.source.player.username)
+                addEnemyFaction(index,first)
+                ctx.source.player.runCommandSilent(`openpac-parties ally remove ${first}`)
+                
+
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+        )
+    );
+});
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('allyFaction')
+        .then(Commands.argument('factionleader', Arguments.STRING.create(event))
+            .executes(ctx => {
+                const first = Arguments.STRING.getResult(ctx,'factionleader');
+                const faction = findFaction(first).title
+                const index = findFactionIndex(ctx.source.player.username)
+                if (findFaction(ctx.source.player.username).enemy.find(item => item === faction) !== undefined) {
+                    
+                    removeEnemyFaction(index,first)
+                }
+
+                ctx.source.player.runCommandSilent(`openpac-parties ally add ${first}`)
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+        )
+    );
+});

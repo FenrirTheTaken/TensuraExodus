@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736495760042
+  last_edited_time = 1736572079156
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:baec0435-5195-464a-bd46-851800c47524-1736495744904] = [groups:][instances:]
+  [loading_requirement_container_meta:47f06307-bb92-4e3e-8a30-8b2a06dc163e-1736572006217] = [groups:][instances:]
 }
 
 customization {
@@ -89,7 +89,7 @@ element {
   [executable_action_instance:de8c4ede-e7a6-4fd6-aded-e8f2dc7ed4d6-1736494114793][action_type:set_variable] = ismember:false
   [executable_action_instance:0a151ef6-d0f6-41d5-a192-7ae65ff5a8ed-1736494143523][action_type:set_variable] = isstaff:false
   [executable_action_instance:bafa3948-0ccb-4dc5-8c70-a109c1094a55-1736494157738][action_type:set_variable] = infaction:false
-  [executable_action_instance:7b3ed86b-9411-4802-91ee-677e5097f108-1736494170172][action_type:disable_layout] = factionscreen_layout_factionleader
+  [executable_action_instance:7b3ed86b-9411-4802-91ee-677e5097f108-1736494170172][action_type:disable_layout] = factionscreen_layout_factionstaff
   [executable_action_instance:4ca12e59-ea4c-43f8-bad3-1396208a2626-1736494194474][action_type:enable_layout] = factionscreen_layout
   [executable_block:27549859-7649-4b95-9873-d1e803a8e502-1736486233542][type:generic] = [executables:2c6ba3ce-6cc2-429a-a826-3742e61e626f-1736494077047;18f143a7-2b94-48c0-b058-8965981cdec4-1736494067186;de8c4ede-e7a6-4fd6-aded-e8f2dc7ed4d6-1736494114793;0a151ef6-d0f6-41d5-a192-7ae65ff5a8ed-1736494143523;bafa3948-0ccb-4dc5-8c70-a109c1094a55-1736494157738;7b3ed86b-9411-4802-91ee-677e5097f108-1736494170172;4ca12e59-ea4c-43f8-bad3-1396208a2626-1736494194474;]
   restartbackgroundanimations = true
@@ -364,7 +364,7 @@ element {
 
 element {
   interactable = true
-  source = Player Join Requests
+  source = Active Player Invites
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -578,6 +578,7 @@ element {
 }
 
 element {
+  linked_variable = playerkick
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -607,6 +608,7 @@ element {
 }
 
 element {
+  linked_variable = allyfaction
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -636,6 +638,7 @@ element {
 }
 
 element {
+  linked_variable = enemyfaction
   input_field_type = text
   max_text_length = 10000
   navigatable = true

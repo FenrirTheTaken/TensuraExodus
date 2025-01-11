@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736476969059
+  last_edited_time = 1736547189619
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:3015df2a-70e2-4a5a-938c-fa91fb84480d-1736497564955] = [groups:][instances:]
+  [loading_requirement_container_meta:879f091a-16e5-4015-98b3-b1985530659b-1736575327452] = [groups:][instances:]
 }
 
 customization {
@@ -369,124 +369,6 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e5d60e66-dc49-44af-9db5-0fa4f65890d0-1736452468895
   [loading_requirement_container_meta:e5d60e66-dc49-44af-9db5-0fa4f65890d0-1736452468895] = [groups:][instances:]
-}
-
-element {
-  input_field_type = text
-  max_text_length = 10000
-  navigatable = true
-  element_type = fancymenu_customization_item_input_field
-  instance_identifier = 513ad372-f1ad-4f90-bc02-8d5fb16fe2e5-1736452579413
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
-  sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = 6e0be5ee-fffb-48af-b998-9c1de6b0ee39-1736451852203
-  x = 5
-  y = 138
-  width = 159
-  height = 20
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 03a9c987-b26b-44ee-8817-2242f17759af-1736452579413
-  [loading_requirement_container_meta:03a9c987-b26b-44ee-8817-2242f17759af-1736452579413] = [groups:][instances:]
-}
-
-element {
-  button_element_executable_block_identifier = 349762a4-4a06-45e7-aba6-cbb8b15c90d4-1736452592975
-  [executable_action_instance:9f274420-7ae0-4902-b971-5254c91f7d52-1736469691350][action_type:closegui] = 
-  [executable_block:349762a4-4a06-45e7-aba6-cbb8b15c90d4-1736452592975][type:generic] = [executables:9f274420-7ae0-4902-b971-5254c91f7d52-1736469691350;]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  label = Join Faction
-  navigatable = true
-  widget_active_state_requirement_container_identifier = 41526c25-4662-4580-960f-ac72ff6d1186-1736452592975
-  [loading_requirement_container_meta:41526c25-4662-4580-960f-ac72ff6d1186-1736452592975] = [groups:][instances:]
-  element_type = custom_button
-  instance_identifier = ceb55edb-426c-4ed4-bcc4-133b4702e3f9-1736452592975
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = -177
-  y = 68
-  width = 100
-  height = 20
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = f71edd7e-49f5-461d-b00e-cbe5ecd5c713-1736452592975
-  [loading_requirement_container_meta:f71edd7e-49f5-461d-b00e-cbe5ecd5c713-1736452592975] = [groups:][instances:]
-}
-
-element {
-  interactable = true
-  source = Type In Faction Name
-  source_mode = direct
-  shadow = true
-  scale = 1.0
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  element_type = text_v2
-  instance_identifier = c6e2cbf9-a505-42cb-981a-58fe87f3a2b4-1736452664358
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
-  sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = 6e0be5ee-fffb-48af-b998-9c1de6b0ee39-1736451852203
-  x = 2
-  y = 121
-  width = 116
-  height = 17
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 18fbe65d-081b-4a67-a6d3-95e36ebce0b8-1736452664358
-  [loading_requirement_container_meta:18fbe65d-081b-4a67-a6d3-95e36ebce0b8-1736452664358] = [groups:][instances:]
 }
 
 element {

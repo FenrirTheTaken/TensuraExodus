@@ -3,6 +3,12 @@ ServerEvents.loaded(e => {
         return;
     }
     else{
-        Utils.server.persistentData.faction = [{}]
+        Utils.server.persistentData.faction = []
+    }
+    if (e.server.persistentData.playerEP){
+        return;
+    }
+    else{
+        Utils.server.persistentData.playerEP = []
     }
 })

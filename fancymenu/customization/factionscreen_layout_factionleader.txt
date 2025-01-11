@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736495622635
-  is_enabled = true
+  last_edited_time = 1736553778579
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:997b3638-ab48-4445-b2bc-7ddc03aca948-1736497564957] = [groups:][instances:]
+  [loading_requirement_container_meta:a5b8a26b-442b-4753-af0a-3f0cd1cf4464-1736575327454] = [groups:][instances:]
 }
 
 customization {
@@ -365,7 +365,7 @@ element {
 
 element {
   interactable = true
-  source = Player Join Requests
+  source = Player's Invited
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -503,7 +503,7 @@ element {
 element {
   button_element_executable_block_identifier = 4b709ed5-bc09-45ae-99ae-e0ee5b0810ad-1736486561322
   [executable_action_instance:d324b35f-9974-448f-a693-7d2440893134-1736494382503][action_type:sendmessage] = /enemyFaction {"placeholder":"getvariable","values":{"name":"enemyfaction"}}
-  [executable_action_instance:99a94b79-50d9-470f-b188-bc4805f58596-1736494274896][action_type:set_variable] = ememyfaction:
+  [executable_action_instance:99a94b79-50d9-470f-b188-bc4805f58596-1736494274896][action_type:set_variable] = enemyfaction:
   [executable_block:4b709ed5-bc09-45ae-99ae-e0ee5b0810ad-1736486561322][type:generic] = [executables:d324b35f-9974-448f-a693-7d2440893134-1736494382503;99a94b79-50d9-470f-b188-bc4805f58596-1736494274896;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
@@ -579,6 +579,7 @@ element {
 }
 
 element {
+  linked_variable = playerkick
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -608,6 +609,7 @@ element {
 }
 
 element {
+  linked_variable = allyfaction
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -637,6 +639,7 @@ element {
 }
 
 element {
+  linked_variable = enemyfaction
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -705,6 +708,7 @@ element {
 }
 
 element {
+  linked_variable = playerpromote
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -812,6 +816,7 @@ element {
 }
 
 element {
+  linked_variable = staffdemote
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -884,6 +889,7 @@ element {
 }
 
 element {
+  linked_variable = newowner
   input_field_type = text
   max_text_length = 10000
   navigatable = true
