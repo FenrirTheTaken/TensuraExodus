@@ -1,15 +1,15 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = factionscreen
+  identifier = playerleaderboard
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736547189619
-  is_enabled = false
+  last_edited_time = 1736896378146
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:65c1f262-1d81-493c-9a26-dbce5ff0059b-1736914982332] = [groups:][instances:]
+  [loading_requirement_container_meta:f4600829-88f5-4803-ba47-c1fff90a018e-1736896375039] = [groups:][instances:]
 }
 
 customization {
@@ -177,7 +177,7 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"faction1"}}
+  source = {"placeholder":"getvariable","values":{"name":"player1"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -226,7 +226,7 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"faction2"}}
+  source = {"placeholder":"getvariable","values":{"name":"player2"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -275,7 +275,7 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"faction3"}}
+  source = {"placeholder":"getvariable","values":{"name":"player3"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -324,7 +324,7 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"factionlist"}}
+  source = {"placeholder":"getvariable","values":{"name":"playerall"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -369,45 +369,5 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e5d60e66-dc49-44af-9db5-0fa4f65890d0-1736452468895
   [loading_requirement_container_meta:e5d60e66-dc49-44af-9db5-0fa4f65890d0-1736452468895] = [groups:][instances:]
-}
-
-element {
-  button_element_executable_block_identifier = f6b2e0a3-880b-4ceb-9a7e-5760cbd42fea-1736457562521
-  [executable_action_instance:3626b925-189f-4f6c-987e-2a6d3f9ff8a1-1736457603460][action_type:disable_layout] = factionscreen_layout_factiondisplay
-  [executable_action_instance:f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002][action_type:enable_layout] = factionscreen_layout
-  [executable_block:f6b2e0a3-880b-4ceb-9a7e-5760cbd42fea-1736457562521][type:generic] = [executables:3626b925-189f-4f6c-987e-2a6d3f9ff8a1-1736457603460;f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002;]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  label = Back
-  navigatable = true
-  widget_active_state_requirement_container_identifier = 7ae11628-65d4-4ef2-888b-a33ac0a26026-1736457562521
-  [loading_requirement_container_meta:7ae11628-65d4-4ef2-888b-a33ac0a26026-1736457562521] = [groups:][instances:]
-  element_type = custom_button
-  instance_identifier = 1f120388-df9d-442a-af60-c9a6b97bbba6-1736457562521
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
-  sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = 6e0be5ee-fffb-48af-b998-9c1de6b0ee39-1736451852203
-  x = 275
-  y = 159
-  width = 100
-  height = 20
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = f5b1abc2-ac49-4f6b-9eb1-7d2d895f3956-1736457562521
-  [loading_requirement_container_meta:f5b1abc2-ac49-4f6b-9eb1-7d2d895f3956-1736457562521] = [groups:][instances:]
 }
 

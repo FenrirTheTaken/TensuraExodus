@@ -1,0 +1,15 @@
+{
+  "type": "tensuradim:theroundtable",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "features": true,
+      "layers": [
+        {"block": "minecraft:air",
+          "height": 0}
+      ],
+      "structure_overrides": []
+    }
+  }
+}

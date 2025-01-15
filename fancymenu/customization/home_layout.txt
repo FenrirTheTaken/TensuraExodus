@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = home
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736482243804
+  last_edited_time = 1736922021938
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:5f889a85-718f-438c-bd9a-5b17b842cae8-1736482228353] = [groups:][instances:]
+  [loading_requirement_container_meta:2d8a1c5c-42a7-43ba-bb58-833ac20a96a2-1736922001260] = [groups:][instances:]
 }
 
 customization {
@@ -43,8 +43,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -211
-  y = -79
+  x = -212
+  y = -105
   width = 424
   height = 210
   stretch_x = false
@@ -71,8 +71,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -197
-  y = -68
+  x = -199
+  y = -95
   width = 399
   height = 190
   stretch_x = false
@@ -85,7 +85,8 @@ element {
 element {
   button_element_executable_block_identifier = a7ffeb06-f490-45d2-9fdd-073e59877d77-1736477193496
   [executable_action_instance:6a8cb76e-f5d2-4de6-a050-81ffee482b47-1736477943963][action_type:opengui] = factionscreen
-  [executable_block:a7ffeb06-f490-45d2-9fdd-073e59877d77-1736477193496][type:generic] = [executables:6a8cb76e-f5d2-4de6-a050-81ffee482b47-1736477943963;]
+  [executable_action_instance:b39de1a6-9692-491e-91b2-3157b3a86c26-1736806628856][action_type:enable_layout] = factionscreen_layout
+  [executable_block:a7ffeb06-f490-45d2-9fdd-073e59877d77-1736477193496][type:generic] = [executables:6a8cb76e-f5d2-4de6-a050-81ffee482b47-1736477943963;b39de1a6-9692-491e-91b2-3157b3a86c26-1736806628856;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -109,8 +110,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -175
-  y = -49
+  x = -183
+  y = -79
   width = 100
   height = 20
   stretch_x = false
@@ -122,7 +123,15 @@ element {
 
 element {
   button_element_executable_block_identifier = a169969e-dec3-4158-9de1-f4b8cafdbb44-1736477199462
-  [executable_block:a169969e-dec3-4158-9de1-f4b8cafdbb44-1736477199462][type:generic] = [executables:]
+  [executable_action_instance:d2bf8050-40ae-4521-b108-d3ca554626c5-1736806430331][action_type:opengui] = divinity
+  [executable_action_instance:fc91cd3b-e58c-43b2-b23e-b3dee8f802d5-1736806498609][action_type:enable_layout] = divinity_layout
+  [executable_action_instance:871a7c29-506d-4595-aad8-44cc5cd96e96-1736892512208][action_type:disable_layout] = divinity_layout_choose
+  [executable_action_instance:3d06c142-6441-4162-85f3-a307284b33b5-1736892527856][action_type:disable_layout] = divinity_layout_chosen
+  [executable_action_instance:0acc155e-55b3-43c1-86aa-89e042bdbb3c-1736892540705][action_type:disable_layout] = divinity_layout_leaderboard
+  [executable_action_instance:5fcd5c78-5ed9-46f3-bc58-8226413a239b-1736892555905][action_type:disable_layout] = divinity_layout_good
+  [executable_action_instance:8d468d28-1a53-4701-bbb7-3a523a92c096-1736892570012][action_type:disable_layout] = divinity_layout_neutral
+  [executable_action_instance:ce1fc2b0-f1cc-41fa-af7d-e0b58f550605-1736892584644][action_type:disable_layout] = divinity_layout_evil
+  [executable_block:a169969e-dec3-4158-9de1-f4b8cafdbb44-1736477199462][type:generic] = [executables:d2bf8050-40ae-4521-b108-d3ca554626c5-1736806430331;fc91cd3b-e58c-43b2-b23e-b3dee8f802d5-1736806498609;871a7c29-506d-4595-aad8-44cc5cd96e96-1736892512208;3d06c142-6441-4162-85f3-a307284b33b5-1736892527856;0acc155e-55b3-43c1-86aa-89e042bdbb3c-1736892540705;5fcd5c78-5ed9-46f3-bc58-8226413a239b-1736892555905;8d468d28-1a53-4701-bbb7-3a523a92c096-1736892570012;ce1fc2b0-f1cc-41fa-af7d-e0b58f550605-1736892584644;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -146,8 +155,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 81
-  y = -49
+  x = 84
+  y = -79
   width = 100
   height = 20
   stretch_x = false
@@ -159,7 +168,9 @@ element {
 
 element {
   button_element_executable_block_identifier = 91aa121b-b102-45d8-b6df-2fe6ddc9beda-1736477218659
-  [executable_block:91aa121b-b102-45d8-b6df-2fe6ddc9beda-1736477218659][type:generic] = [executables:]
+  [executable_action_instance:8f56ec60-d112-4e21-a9d1-9eb12e315a82-1736806449960][action_type:opengui] = warps
+  [executable_action_instance:a6c38f28-b1da-4a94-a722-72a308f60d56-1736806528804][action_type:enable_layout] = warps_layout
+  [executable_block:91aa121b-b102-45d8-b6df-2fe6ddc9beda-1736477218659][type:generic] = [executables:8f56ec60-d112-4e21-a9d1-9eb12e315a82-1736806449960;a6c38f28-b1da-4a94-a722-72a308f60d56-1736806528804;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -183,8 +194,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -175
-  y = 75
+  x = -183
+  y = 55
   width = 100
   height = 20
   stretch_x = false
@@ -196,7 +207,9 @@ element {
 
 element {
   button_element_executable_block_identifier = 7a5c368e-5246-4573-a3d2-27d4796d24fc-1736478055433
-  [executable_block:7a5c368e-5246-4573-a3d2-27d4796d24fc-1736478055433][type:generic] = [executables:]
+  [executable_action_instance:52390519-ce78-440e-a9a1-0f68ebff6f36-1736806900159][action_type:opengui] = rulesguides
+  [executable_action_instance:df5584c6-9d22-4aa9-8d21-8212e8be1b68-1736806910538][action_type:enable_layout] = rulesguides_layout
+  [executable_block:7a5c368e-5246-4573-a3d2-27d4796d24fc-1736478055433][type:generic] = [executables:52390519-ce78-440e-a9a1-0f68ebff6f36-1736806900159;df5584c6-9d22-4aa9-8d21-8212e8be1b68-1736806910538;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -220,8 +233,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -46
-  y = 13
+  x = -51
+  y = -12
   width = 100
   height = 20
   stretch_x = false
@@ -233,7 +246,10 @@ element {
 
 element {
   button_element_executable_block_identifier = 69822721-8020-47ef-8a35-ac5526191354-1736478176288
-  [executable_block:69822721-8020-47ef-8a35-ac5526191354-1736478176288][type:generic] = [executables:]
+  [executable_action_instance:fa8bec87-7c41-476a-a6e3-fa9fc70979db-1736631570231][action_type:opengui] = playerleaderboard
+  [executable_action_instance:7ceb626c-08bc-4e5a-a186-3003af1b6d1e-1736631618377][action_type:sendmessage] = /populateLeaderboard
+  [executable_action_instance:d712658d-75a1-4d22-b570-ce9785b3cf22-1736806761699][action_type:enable_layout] = playerleaderboard_layout
+  [executable_block:69822721-8020-47ef-8a35-ac5526191354-1736478176288][type:generic] = [executables:fa8bec87-7c41-476a-a6e3-fa9fc70979db-1736631570231;7ceb626c-08bc-4e5a-a186-3003af1b6d1e-1736631618377;d712658d-75a1-4d22-b570-ce9785b3cf22-1736806761699;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -257,8 +273,8 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 81
-  y = 75
+  x = 84
+  y = 55
   width = 100
   height = 20
   stretch_x = false
@@ -266,5 +282,87 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 66bf1930-dc1e-4b9e-874a-3670046780ee-1736478176288
   [loading_requirement_container_meta:66bf1930-dc1e-4b9e-874a-3670046780ee-1736478176288] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 402efd6a-dea6-4408-8b3c-7007d025c126-1736914699054
+  [executable_action_instance:96486736-41ff-4776-8626-db9c5e895573-1736918333388][action_type:opengui] = truesys
+  [executable_action_instance:cda302ae-0a28-4457-8d38-25a2789d0285-1736918342554][action_type:enable_layout] = truesys_layout_roundtable
+  [executable_action_instance:40ef6936-cd42-41cc-aab8-1585a32ccc59-1736918357245][action_type:disable_layout] = truesys_layout_walpurgis
+  [executable_block:402efd6a-dea6-4408-8b3c-7007d025c126-1736914699054][type:generic] = [executables:96486736-41ff-4776-8626-db9c5e895573-1736918333388;cda302ae-0a28-4457-8d38-25a2789d0285-1736918342554;40ef6936-cd42-41cc-aab8-1585a32ccc59-1736918357245;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = {"text":"Round Table","color":"#FFD700", "bold":"true"}
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 98fea6af-af7a-4bcb-8b13-7d1ddd7abd5c-1736914699054
+  [loading_requirement_container_meta:98fea6af-af7a-4bcb-8b13-7d1ddd7abd5c-1736914699054] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 6c990aa1-dcda-4347-8706-8541fe3de00f-1736914699054
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1440
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -51
+  y = -92
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 10c6aebb-b170-40ec-8b42-8e11e51c3bc5-1736914699054
+  [loading_requirement_container_meta:10c6aebb-b170-40ec-8b42-8e11e51c3bc5-1736914699054] = [groups:][instances:d4894beb-6645-42cc-af97-db49f2158379-1736917932392;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d4894beb-6645-42cc-af97-db49f2158379-1736917932392] = ishero:true
+}
+
+element {
+  button_element_executable_block_identifier = 32d6bbb0-f0c7-4ecc-b63d-d84525fe615a-1736914319885
+  [executable_action_instance:2b8f0c24-5584-4b3e-a69f-37beb876f0ec-1736918188639][action_type:opengui] = truesys
+  [executable_action_instance:0434c2ed-5ee9-46be-96a6-11ac3c3ba1e7-1736918284892][action_type:enable_layout] = truesys_layout_walpurgis
+  [executable_action_instance:a50abeb7-da04-4841-97ea-76c81314a1a3-1736918300674][action_type:disable_layout] = truesys_layout_roundtable
+  [executable_block:32d6bbb0-f0c7-4ecc-b63d-d84525fe615a-1736914319885][type:generic] = [executables:2b8f0c24-5584-4b3e-a69f-37beb876f0ec-1736918188639;0434c2ed-5ee9-46be-96a6-11ac3c3ba1e7-1736918284892;a50abeb7-da04-4841-97ea-76c81314a1a3-1736918300674;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = {"text":"Walpurgis","color":"#800000", "bold":"true"}
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 14958ca7-e292-4530-84d5-04fe4e07164d-1736914319885
+  [loading_requirement_container_meta:14958ca7-e292-4530-84d5-04fe4e07164d-1736914319885] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = bd7596cf-de3e-4ae6-89d6-0cbba1e4dd99-1736914319885
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1440
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -51
+  y = -92
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = d76312ea-f817-431d-b384-ebbc375ff7c1-1736914319885
+  [loading_requirement_container_meta:d76312ea-f817-431d-b384-ebbc375ff7c1-1736914319885] = [groups:][instances:5289d038-e2a6-481c-a6bf-63ff377f1866-1736917959131;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:5289d038-e2a6-481c-a6bf-63ff377f1866-1736917959131] = isdemon:true
 }
 

@@ -1,15 +1,15 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = factionscreen
+  identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736547189619
+  last_edited_time = 1736907219966
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:65c1f262-1d81-493c-9a26-dbce5ff0059b-1736914982332] = [groups:][instances:]
+  [loading_requirement_container_meta:db676c13-974a-4300-b502-b51aa1c6fb5e-1736914982328] = [groups:][instances:]
 }
 
 customization {
@@ -373,8 +373,8 @@ element {
 
 element {
   button_element_executable_block_identifier = f6b2e0a3-880b-4ceb-9a7e-5760cbd42fea-1736457562521
-  [executable_action_instance:3626b925-189f-4f6c-987e-2a6d3f9ff8a1-1736457603460][action_type:disable_layout] = factionscreen_layout_factiondisplay
-  [executable_action_instance:f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002][action_type:enable_layout] = factionscreen_layout
+  [executable_action_instance:3626b925-189f-4f6c-987e-2a6d3f9ff8a1-1736457603460][action_type:disable_layout] = divinity_layout_leaderboard
+  [executable_action_instance:f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002][action_type:enable_layout] = divinity_layout
   [executable_block:f6b2e0a3-880b-4ceb-9a7e-5760cbd42fea-1736457562521][type:generic] = [executables:3626b925-189f-4f6c-987e-2a6d3f9ff8a1-1736457603460;f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true

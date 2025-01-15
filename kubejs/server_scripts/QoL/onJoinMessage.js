@@ -12,6 +12,8 @@ PlayerEvents.loggedIn(e => {
     else{
       e.player.persistentData.newPlayer = true;
       e.player.persistentData.playerGold = 0;
+      ctx.source.player.persistentData.divinity = ""
+
 
       e.server.runCommandSilent('title ' + e.player.username + ' title  {"bold":"true","color":"#91101D","text":"Welcome"}')
       e.player.tell(Text.of('Please Look In FTB Quests in Your Inventory To Look at the Rules!!'))  

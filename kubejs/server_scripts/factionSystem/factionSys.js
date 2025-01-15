@@ -1,7 +1,7 @@
 const $PACAPI = Java.loadClass('xaero.pac.common.server.api.OpenPACServerAPI')
 // const faction = Java.loadClass('./factionClass.class')
 function insertFactionData(title, description, owner){
-    Utils.server.persistentData.faction.push({title:title,description:description, owner:owner, enemy:[]})
+    Utils.server.persistentData.faction.push({title:title,description:description, owner:owner.username, enemy:[], ep:$MAGAPI.getEP(owner)})
 }
 function findFaction(owner){
     return Utils.server.persistentData.faction.find(faction => faction.owner === owner)
@@ -15,7 +15,7 @@ function removeFactionData(owner){
     Utils.server.persistentData.faction = Utils.server.persistentData.faction.filter(faction =>!(faction.owner === owner))
 }
 function changeFactionLeader(index,owner){
-    Utils.server.persistentData.faction[index] = {title:Utils.server.persistentData.faction[index].title,title:Utils.server.persistentData.faction[index].description,owner:owner,enemy:Utils.server.persistentData.faction[index].enemy }
+    Utils.server.persistentData.faction[index] = {title:Utils.server.persistentData.faction[index].title,title:Utils.server.persistentData.faction[index].description,owner:owner,enemy:Utils.server.persistentData.faction[index].enemy, ep:Utils.server.persistentData.faction[index].ep }
 }
 function addEnemyFaction(index,enemy){
     const e = findFaction(enemy).title
@@ -27,10 +27,6 @@ function removeEnemyFaction(index,enemy){
 
 ServerEvents.commandRegistry(event => {
     const { commands: Commands,  arguments: Arguments } = event;
-
-    function findFaction(owner){
-        return Utils.server.persistentData.faction.find(faction => faction.owner === owner)
-    }
 
     event.register(
         Commands.literal('makeFaction')
@@ -44,7 +40,7 @@ ServerEvents.commandRegistry(event => {
                 // Utils.server.runCommandSilent(`openpac player-config for ${ctx.source.player.username} set parties.name "${first}"`)
                  ctx.source.player.runCommandSilent(`openpac player-config for ${ctx.source.player.username} set claims.name "${first}"`)
                 ctx.source.player.runCommandSilent(`openpac player-config for ${ctx.source.player.username} set parties.name "${first}"`)
-                insertFactionData(first,second,ctx.source.player.username)
+                insertFactionData(first,second,ctx.source.player)
                 const PartInst = $PACAPI.get(ctx.source.server)
                 const PartMan = PartInst.getPartyManager()
                 const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())

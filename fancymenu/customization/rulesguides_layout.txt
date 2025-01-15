@@ -1,0 +1,84 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = rulesguides
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1736896367582
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:f8a6dbb1-f72c-4a0e-b3f0-a1a1ef80fca5-1736896362788] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  shape = rectangle
+  color = #5d615e
+  element_type = shape
+  instance_identifier = 57b8f0ca-97ec-4f33-8ff3-182814f3e311-1736451695394
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -225
+  y = -103
+  width = 450
+  height = 209
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 619ff74f-fb3e-4353-9183-3f5f441a7b60-1736451695394
+  [loading_requirement_container_meta:619ff74f-fb3e-4353-9183-3f5f441a7b60-1736451695394] = [groups:][instances:]
+}
+
+element {
+  shape = rectangle
+  color = #8c918d
+  element_type = shape
+  instance_identifier = 6e0be5ee-fffb-48af-b998-9c1de6b0ee39-1736451852203
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 0.75
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -210
+  y = -91
+  width = 420
+  height = 184
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 05e13625-3fa3-44c3-9cac-a715e8316e0b-1736451852203
+  [loading_requirement_container_meta:05e13625-3fa3-44c3-9cac-a715e8316e0b-1736451852203] = [groups:][instances:]
+}
+

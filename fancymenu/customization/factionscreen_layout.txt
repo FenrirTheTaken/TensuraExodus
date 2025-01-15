@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736582778429
+  last_edited_time = 1736896315341
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:9cb81052-7bb9-4437-a405-17d46e54eb6c-1736575327450] = [groups:][instances:]
+  [loading_requirement_container_meta:7f2fd1e9-3a3c-4bb7-8752-9756099b5c02-1736914982330] = [groups:][instances:]
 }
 
 customization {
@@ -169,7 +169,8 @@ element {
   button_element_executable_block_identifier = 16d4c153-5a06-4d12-abcd-7a8663eae04c-1736450179829
   [executable_action_instance:424a58f7-57d5-41ed-981d-2fa1a02939bc-1736457472958][action_type:enable_layout] = factionscreen_layout_factiondisplay
   [executable_action_instance:e742aa3a-6335-4f19-8b0a-129ae85d9d56-1736457271333][action_type:disable_layout] = factionscreen_layout
-  [executable_block:16d4c153-5a06-4d12-abcd-7a8663eae04c-1736450179829][type:generic] = [executables:424a58f7-57d5-41ed-981d-2fa1a02939bc-1736457472958;e742aa3a-6335-4f19-8b0a-129ae85d9d56-1736457271333;]
+  [executable_action_instance:b9681f58-109d-40d9-b57e-44ba2cc3a396-1736633015610][action_type:sendmessage] = /populateLeaderboardFaction
+  [executable_block:16d4c153-5a06-4d12-abcd-7a8663eae04c-1736450179829][type:generic] = [executables:424a58f7-57d5-41ed-981d-2fa1a02939bc-1736457472958;e742aa3a-6335-4f19-8b0a-129ae85d9d56-1736457271333;b9681f58-109d-40d9-b57e-44ba2cc3a396-1736633015610;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -190,7 +191,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = -70

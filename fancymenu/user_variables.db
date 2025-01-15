@@ -7,6 +7,12 @@ variable {
 }
 
 variable {
+  name = divinity
+  value = 
+  reset_on_launch = false
+}
+
+variable {
   name = factiondescription
   value = 
   reset_on_launch = true
@@ -31,8 +37,8 @@ variable {
 }
 
 variable {
-  name = newowner
-  value = 
+  name = walpurgison
+  value = false
   reset_on_launch = false
 }
 
@@ -43,8 +49,116 @@ variable {
 }
 
 variable {
-  name = infaction
+  name = playerall
+  value = FenrirTheTaken
+  reset_on_launch = false
+}
+
+variable {
+  name = roundtablevotes
   value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = ismember
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = playerkick
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = startwalpurgis
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = hasfaction
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = ishero
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = subordinateinvited
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = divinity2
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = divinity3
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = divinity1
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = isdemon
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = walpurgisorganizer
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = player1
+  value = FenrirTheTaken
+  reset_on_launch = false
+}
+
+variable {
+  name = player2
+  value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = player3
+  value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = hasdivinity
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = newowner
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = infaction
+  value = true
   reset_on_launch = false
 }
 
@@ -62,49 +176,79 @@ variable {
 
 variable {
   name = faction1
-  value = Land of Myriad Halls
+  value = Example Faction
   reset_on_launch = false
 }
 
 variable {
   name = faction2
-  value = Draconis Empire
-  reset_on_launch = false
-}
-
-variable {
-  name = ismember
-  value = false
+  value = None
   reset_on_launch = false
 }
 
 variable {
   name = faction3
-  value = Prinum Malus
+  value = None
   reset_on_launch = false
 }
 
 variable {
   name = factionlist
-  value = Valydur --- OOf
+  value = Example Faction
   reset_on_launch = false
 }
 
 variable {
-  name = playerkick
+  name = chosendivinity
   value = 
   reset_on_launch = false
 }
 
 variable {
-  name = isowner
+  name = roundtableorganizer
   value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = isowner
+  value = true
   reset_on_launch = false
 }
 
 variable {
   name = staffdemote
   value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = divinityall
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = divinityrank
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = startroundtable
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = walpurgisvotes
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = roundtableon
+  value = false
   reset_on_launch = false
 }
 
