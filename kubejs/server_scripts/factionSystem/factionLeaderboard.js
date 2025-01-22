@@ -119,8 +119,10 @@ ServerEvents.commandRegistry(event => {
         Commands.literal('playerAll')
             .executes(ctx => {
                 let s = ""
+                let count = 0
                 Utils.server.persistentData.playerEP.forEach(p => {
-                    s += p.player +"\n" 
+                    count += 1
+                    s += count + '. ' + p.player +"\n" 
                 })
                 Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set playerall false ${s}`)
 
@@ -203,9 +205,11 @@ ServerEvents.commandRegistry(event => {
         Commands.literal('factionAll')
             .executes(ctx => {
                 let s = ""
+                let count = 0
                 if(Utils.server.persistentData.faction.length > 0){
                     Utils.server.persistentData.faction.forEach(f => {
-                        s += f.title +"\n" 
+                        count += 1
+                        s += count + '. ' + f.title +"\n" 
                     })
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set factionlist false ${s}`)
     
@@ -222,7 +226,7 @@ ServerEvents.commandRegistry(event => {
 
 // EP handling
 PlayerEvents.loggedIn(event => {
-    const playerEP = $MAGAPI.getEP(event.player)
+    const playerEP = Math.round($MAGAPI.getEP(event.player))
     //event.server.runCommandSilent(`say ${playerEP}`)
     const UUID = event.player.getUuid()
     const owner = removePlayerEP(event.player.username, UUID)

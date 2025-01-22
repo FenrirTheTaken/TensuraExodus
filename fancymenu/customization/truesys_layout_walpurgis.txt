@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = truesys
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736921924115
+  last_edited_time = 1737094250684
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:390ec2fa-b962-4b69-9158-0b7dbc66434f-1736921924136] = [groups:][instances:]
+  [loading_requirement_container_meta:b8c41507-1e7d-4c1b-b8bf-94ec2e85b6fe-1737144412240] = [groups:][instances:]
 }
 
 customization {
@@ -67,8 +67,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 0.75
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_width = 1278
+  auto_sizing_base_screen_height = 1362
   sticky_anchor = false
   anchor_point = mid-centered
   x = -210
@@ -85,7 +85,9 @@ element {
 element {
   button_element_executable_block_identifier = d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825
   [executable_action_instance:0108f034-8bdc-46fc-a003-1286d1975a2c-1736920751521][action_type:set_variable] = subordinateinvited:true
-  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:0108f034-8bdc-46fc-a003-1286d1975a2c-1736920751521;]
+  [executable_action_instance:8092d118-6e0d-4bc6-8ee3-4cea4dc94294-1737093174415][action_type:sendmessage] = /inviteSub {"placeholder":"getvariable","values":{"name":"invitesubname"}}
+  [executable_action_instance:638b4967-f7ee-4516-92a1-47a2b17d23b2-1737093163145][action_type:set_variable] = invitesubname:
+  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:0108f034-8bdc-46fc-a003-1286d1975a2c-1736920751521;8092d118-6e0d-4bc6-8ee3-4cea4dc94294-1737093174415;638b4967-f7ee-4516-92a1-47a2b17d23b2-1737093163145;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -106,7 +108,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = -52
@@ -123,6 +125,7 @@ element {
 }
 
 element {
+  linked_variable = invitesubname
   input_field_type = text
   max_text_length = 10000
   navigatable = true
@@ -137,7 +140,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = -52
@@ -155,7 +158,7 @@ element {
 
 element {
   interactable = true
-  source = Confirmed:
+  source = Confirmed: {"placeholder":"getvariable","values":{"name":"invitedwalpurgis"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -188,13 +191,13 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = -194
   y = -54
   width = 94
-  height = 40
+  height = 101
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -205,60 +208,9 @@ element {
 }
 
 element {
-  interactable = true
-  source = Veto:
-  source_mode = direct
-  shadow = true
-  scale = 1.0
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  element_type = text_v2
-  instance_identifier = d0f31049-b029-4d7d-bc24-dcd451a9611d-1736919003271
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = 89
-  y = -54
-  width = 101
-  height = 40
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 29cff8da-1063-47fc-8695-b4f8f2e38152-1736919003271
-  [loading_requirement_container_meta:29cff8da-1063-47fc-8695-b4f8f2e38152-1736919003271] = [groups:][instances:0bca72a7-d087-4f60-8b09-b55b2bb3c294-1736919409068;b845985a-1757-49e0-b958-7920c98f7363-1736920624489;]
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:0bca72a7-d087-4f60-8b09-b55b2bb3c294-1736919409068] = startwalpurgis:true
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:b845985a-1757-49e0-b958-7920c98f7363-1736920624489] = walpurgison:false
-}
-
-element {
   button_element_executable_block_identifier = 06e3e7dc-37c3-43e7-bfe8-fb06f588923f-1736919059051
-  [executable_action_instance:14a2381a-72a4-4db3-b14b-55095fd7727b-1736920416600][action_type:set_variable] = walpurgisvotes:true
-  [executable_block:06e3e7dc-37c3-43e7-bfe8-fb06f588923f-1736919059051][type:generic] = [executables:14a2381a-72a4-4db3-b14b-55095fd7727b-1736920416600;]
+  [executable_action_instance:64ba58bf-9c8f-4672-b542-dce8209f18ff-1736977804974][action_type:sendmessage] = /voteWalpurgis
+  [executable_block:06e3e7dc-37c3-43e7-bfe8-fb06f588923f-1736919059051][type:generic] = [executables:64ba58bf-9c8f-4672-b542-dce8209f18ff-1736977804974;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -279,7 +231,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = -196
@@ -297,7 +249,8 @@ element {
 
 element {
   button_element_executable_block_identifier = d8d08e5d-ca26-4e99-babf-8e9f2ec28ffd-1736919064040
-  [executable_block:d8d08e5d-ca26-4e99-babf-8e9f2ec28ffd-1736919064040][type:generic] = [executables:]
+  [executable_action_instance:2187d06c-23af-414e-ba9f-3547719ccabf-1737063761447][action_type:sendmessage] = /denyWalpurgis
+  [executable_block:d8d08e5d-ca26-4e99-babf-8e9f2ec28ffd-1736919064040][type:generic] = [executables:2187d06c-23af-414e-ba9f-3547719ccabf-1737063761447;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -318,7 +271,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = 90
@@ -337,7 +290,8 @@ element {
 element {
   button_element_executable_block_identifier = 63543d91-f104-4b62-9dea-063390aefad3-1736919639985
   [executable_action_instance:90593767-3ec8-41ad-8cd9-abf463bc126e-1736920150598][action_type:set_variable] = walpurgison:true
-  [executable_block:63543d91-f104-4b62-9dea-063390aefad3-1736919639985][type:generic] = [executables:90593767-3ec8-41ad-8cd9-abf463bc126e-1736920150598;]
+  [executable_action_instance:73e0c715-3811-4758-8c96-6570b8576977-1736978219489][action_type:sendmessage] = /startWalpurgis
+  [executable_block:63543d91-f104-4b62-9dea-063390aefad3-1736919639985][type:generic] = [executables:90593767-3ec8-41ad-8cd9-abf463bc126e-1736920150598;73e0c715-3811-4758-8c96-6570b8576977-1736978219489;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -380,7 +334,8 @@ element {
   button_element_executable_block_identifier = dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600
   [executable_action_instance:17e43de8-b81d-4dc7-a6bd-ad3b9de8206b-1736919281527][action_type:set_variable] = startwalpurgis:true
   [executable_action_instance:cc30c2d9-dbea-43e2-9dcd-3e9868de445f-1736919938824][action_type:set_variable] = walpurgisorganizer:true
-  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:17e43de8-b81d-4dc7-a6bd-ad3b9de8206b-1736919281527;cc30c2d9-dbea-43e2-9dcd-3e9868de445f-1736919938824;]
+  [executable_action_instance:53bdb0fe-ae31-41d7-883f-69b15b6244ed-1736977719837][action_type:sendmessage] = /walpurgisStartVote
+  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:17e43de8-b81d-4dc7-a6bd-ad3b9de8206b-1736919281527;cc30c2d9-dbea-43e2-9dcd-3e9868de445f-1736919938824;53bdb0fe-ae31-41d7-883f-69b15b6244ed-1736977719837;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -423,7 +378,8 @@ element {
   [executable_action_instance:e723c55e-bc32-45bb-9589-949053913a02-1736920502643][action_type:set_variable] = startwalpurgis:false
   [executable_action_instance:a805e3b8-4f6e-4cd6-a679-97b83cf8da84-1736920555017][action_type:set_variable] = walpurgisvotes:false
   [executable_action_instance:cfbcb0a7-4eb1-4e18-bbcb-9f6d174f9720-1736921906397][action_type:set_variable] = subordinateinvited:false
-  [executable_block:34d5caba-7903-4804-bfe4-7e7b54d6890b-1736920086907][type:generic] = [executables:52cba78b-2847-459a-8409-73d5ddefbd03-1736920452296;efcfe0fd-b144-495d-8cb1-4d3123a43d88-1736920483137;e723c55e-bc32-45bb-9589-949053913a02-1736920502643;a805e3b8-4f6e-4cd6-a679-97b83cf8da84-1736920555017;cfbcb0a7-4eb1-4e18-bbcb-9f6d174f9720-1736921906397;]
+  [executable_action_instance:0fafc1a7-19e5-4a28-9c34-b63c741dbce3-1736977669328][action_type:sendmessage] = /endWalpurgis
+  [executable_block:34d5caba-7903-4804-bfe4-7e7b54d6890b-1736920086907][type:generic] = [executables:52cba78b-2847-459a-8409-73d5ddefbd03-1736920452296;efcfe0fd-b144-495d-8cb1-4d3123a43d88-1736920483137;e723c55e-bc32-45bb-9589-949053913a02-1736920502643;a805e3b8-4f6e-4cd6-a679-97b83cf8da84-1736920555017;cfbcb0a7-4eb1-4e18-bbcb-9f6d174f9720-1736921906397;0fafc1a7-19e5-4a28-9c34-b63c741dbce3-1736977669328;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -444,7 +400,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = -67
@@ -457,5 +413,47 @@ element {
   element_loading_requirement_container_identifier = c6964dac-d8ea-4c7d-88e6-86c9f748cdf2-1736920086907
   [loading_requirement_container_meta:c6964dac-d8ea-4c7d-88e6-86c9f748cdf2-1736920086907] = [groups:][instances:6d818841-9158-4ca5-a615-addaaf87a245-1736920238222;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:6d818841-9158-4ca5-a615-addaaf87a245-1736920238222] = walpurgison:true
+}
+
+element {
+  button_element_executable_block_identifier = 5a16ae18-aee0-4206-8dd5-53aac392e132-1737065672708
+  [executable_action_instance:141c8f33-4531-41d1-8b73-c6c6974b03cf-1737065729998][action_type:sendmessage] = /validVoteWalpurgis
+  [executable_action_instance:2e5566da-3573-4dd2-ae44-40ebff9f9dd1-1737093691940][action_type:sendmessage] = /getAttendingWalpurgis
+  [executable_block:5a16ae18-aee0-4206-8dd5-53aac392e132-1737065672708][type:generic] = [executables:141c8f33-4531-41d1-8b73-c6c6974b03cf-1737065729998;2e5566da-3573-4dd2-ae44-40ebff9f9dd1-1737093691940;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Refresh
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 5ecb1852-c642-48b3-9071-f9036063c343-1737065672708
+  [loading_requirement_container_meta:5ecb1852-c642-48b3-9071-f9036063c343-1737065672708] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 2e7c734b-7829-4f13-bbee-086ce0a2777d-1737065672708
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -188
+  y = 51
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 54d193ac-eaa9-4dd0-8274-f213e9c15cf8-1737065672708
+  [loading_requirement_container_meta:54d193ac-eaa9-4dd0-8274-f213e9c15cf8-1737065672708] = [groups:][instances:665c756a-882d-4aef-b125-d829ebb5d943-1737065697446;8da45fe8-59a0-408e-9832-d66b7a0c0ccd-1737065709905;8ab6afa8-0215-4633-b3d9-151081191253-1737065718142;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:665c756a-882d-4aef-b125-d829ebb5d943-1737065697446] = startwalpurgis:true
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:8da45fe8-59a0-408e-9832-d66b7a0c0ccd-1737065709905] = walpurgison:false
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:8ab6afa8-0215-4633-b3d9-151081191253-1737065718142] = walpurgisorganizer:true
 }
 

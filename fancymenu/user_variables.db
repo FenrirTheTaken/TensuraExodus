@@ -13,6 +13,12 @@ variable {
 }
 
 variable {
+  name = invitesubname
+  value = 
+  reset_on_launch = false
+}
+
+variable {
   name = factiondescription
   value = 
   reset_on_launch = true
@@ -50,7 +56,7 @@ variable {
 
 variable {
   name = playerall
-  value = FenrirTheTaken
+  value = 1. FenrirTheTaken
   reset_on_launch = false
 }
 
@@ -63,6 +69,12 @@ variable {
 variable {
   name = ismember
   value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = invitedroundtable
+  value = 
   reset_on_launch = false
 }
 
@@ -86,7 +98,7 @@ variable {
 
 variable {
   name = ishero
-  value = 
+  value = false
   reset_on_launch = false
 }
 
@@ -116,7 +128,7 @@ variable {
 
 variable {
   name = isdemon
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -158,7 +170,7 @@ variable {
 
 variable {
   name = infaction
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -176,13 +188,19 @@ variable {
 
 variable {
   name = faction1
-  value = Example Faction
+  value = Hiu
   reset_on_launch = false
 }
 
 variable {
   name = faction2
   value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = invitedwalpurgis
+  value = FenrirTheTaken
   reset_on_launch = false
 }
 
@@ -194,7 +212,7 @@ variable {
 
 variable {
   name = factionlist
-  value = Example Faction
+  value = 1. Hiu
   reset_on_launch = false
 }
 

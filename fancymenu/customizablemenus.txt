@@ -9,3 +9,6 @@ com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
 net.minecraft.client.gui.screens.inventory.InventoryScreen {
 }
 
+net.minecraft.client.gui.screens.PauseScreen {
+}
+

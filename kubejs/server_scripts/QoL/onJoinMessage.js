@@ -12,7 +12,10 @@ PlayerEvents.loggedIn(e => {
     else{
       e.player.persistentData.newPlayer = true;
       e.player.persistentData.playerGold = 0;
-      ctx.source.player.persistentData.divinity = ""
+      e.player.persistentData.divinity = ""
+      e.player.persistentData.skilsave=[]
+      e.player.persistentData.rebirthcount = 0
+
 
 
       e.server.runCommandSilent('title ' + e.player.username + ' title  {"bold":"true","color":"#91101D","text":"Welcome"}')
