@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736906611044
+  last_edited_time = 1738620489964
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:38cf7bf6-d4a2-483b-973d-4f2d23ad97ea-1737084273245] = [groups:][instances:]
+  [loading_requirement_container_meta:cbed84ed-a304-4f25-8803-1b6733b9465e-1738620489998] = [groups:][instances:]
 }
 
 customization {
@@ -124,17 +124,18 @@ element {
 
 element {
   button_element_executable_block_identifier = dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600
-  [executable_action_instance:75ec33f4-b24e-4261-83be-96fb52b48e8f-1736905566611][action_type:set_variable] = divinity:Riem
+  [executable_action_instance:75ec33f4-b24e-4261-83be-96fb52b48e8f-1736905566611][action_type:set_variable] = divinity:Xaero
   [executable_action_instance:5b5e4805-21ee-4b9a-8436-1ad1c9a7f2a6-1736905579029][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:1645a39a-ac67-4a33-a57f-4ef63693b31c-1736905592897][action_type:enable_layout] = divinity_layout
   [executable_action_instance:53e740a1-8ce5-46ac-bfdf-e7c10fab2c12-1736905605413][action_type:disable_layout] = divinity_layout_neutral
-  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:75ec33f4-b24e-4261-83be-96fb52b48e8f-1736905566611;5b5e4805-21ee-4b9a-8436-1ad1c9a7f2a6-1736905579029;1645a39a-ac67-4a33-a57f-4ef63693b31c-1736905592897;53e740a1-8ce5-46ac-bfdf-e7c10fab2c12-1736905605413;]
+  [executable_action_instance:9026c9a2-3700-43c4-bc47-79f58dda4fb1-1738620427910][action_type:sendmessage] = /chooseDivinity "Xaero"
+  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:75ec33f4-b24e-4261-83be-96fb52b48e8f-1736905566611;5b5e4805-21ee-4b9a-8436-1ad1c9a7f2a6-1736905579029;1645a39a-ac67-4a33-a57f-4ef63693b31c-1736905592897;53e740a1-8ce5-46ac-bfdf-e7c10fab2c12-1736905605413;9026c9a2-3700-43c4-bc47-79f58dda4fb1-1738620427910;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Riem
+  label = Xaero
   navigatable = true
   widget_active_state_requirement_container_identifier = b4010267-34bf-471a-a698-3e25ce14f925-1736807188600
   [loading_requirement_container_meta:b4010267-34bf-471a-a698-3e25ce14f925-1736807188600] = [groups:][instances:]
@@ -169,7 +170,8 @@ element {
   [executable_action_instance:0f376cbf-dede-4aa1-bcc4-376f7ac68545-1736905648266][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:90cf9473-e8c9-49d1-8764-e46b0535b29b-1736905659136][action_type:enable_layout] = divinity_layout
   [executable_action_instance:670b5424-3e5f-4a16-8d50-61d75796ed27-1736905669356][action_type:disable_layout] = divinity_layout_neutral
-  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:77c249ae-76be-4ff9-b8d3-e24dd31da73e-1736905631213;0f376cbf-dede-4aa1-bcc4-376f7ac68545-1736905648266;90cf9473-e8c9-49d1-8764-e46b0535b29b-1736905659136;670b5424-3e5f-4a16-8d50-61d75796ed27-1736905669356;]
+  [executable_action_instance:30e9710d-8dc8-4787-b47a-6343bcc62d38-1738620446696][action_type:sendmessage] = /chooseDivinity "Sinistram Ultimus"
+  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:77c249ae-76be-4ff9-b8d3-e24dd31da73e-1736905631213;0f376cbf-dede-4aa1-bcc4-376f7ac68545-1736905648266;90cf9473-e8c9-49d1-8764-e46b0535b29b-1736905659136;670b5424-3e5f-4a16-8d50-61d75796ed27-1736905669356;30e9710d-8dc8-4787-b47a-6343bcc62d38-1738620446696;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -206,17 +208,18 @@ element {
 
 element {
   button_element_executable_block_identifier = 95c91f2d-913b-457f-a739-78f5f5261810-1736807236622
-  [executable_action_instance:3a596aeb-32d0-46a7-ae47-f13da85ce51d-1736905772203][action_type:set_variable] = divinity:Plea
+  [executable_action_instance:3a596aeb-32d0-46a7-ae47-f13da85ce51d-1736905772203][action_type:set_variable] = divinity:Myxvaras
   [executable_action_instance:09d9fb0c-d1b1-4454-bea8-6a72166fe56b-1736905786408][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:260c4ac3-3354-408f-b886-1cb0115abc5c-1736905797282][action_type:enable_layout] = divinity_layout
   [executable_action_instance:d4b7adb6-0819-4f2d-aa66-a2a685f6a654-1736905809885][action_type:disable_layout] = divinity_layout_neutral
-  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:3a596aeb-32d0-46a7-ae47-f13da85ce51d-1736905772203;09d9fb0c-d1b1-4454-bea8-6a72166fe56b-1736905786408;260c4ac3-3354-408f-b886-1cb0115abc5c-1736905797282;d4b7adb6-0819-4f2d-aa66-a2a685f6a654-1736905809885;]
+  [executable_action_instance:9eee3e28-a452-4c30-a042-20e76c64351c-1738620474862][action_type:sendmessage] = /chooseDivinity "Myxvaras"
+  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:3a596aeb-32d0-46a7-ae47-f13da85ce51d-1736905772203;09d9fb0c-d1b1-4454-bea8-6a72166fe56b-1736905786408;260c4ac3-3354-408f-b886-1cb0115abc5c-1736905797282;d4b7adb6-0819-4f2d-aa66-a2a685f6a654-1736905809885;9eee3e28-a452-4c30-a042-20e76c64351c-1738620474862;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Plea
+  label = Myxvaras
   navigatable = true
   widget_active_state_requirement_container_identifier = a78098bf-cd60-4a2c-b8ba-f05635e29025-1736807236622
   [loading_requirement_container_meta:a78098bf-cd60-4a2c-b8ba-f05635e29025-1736807236622] = [groups:][instances:]
@@ -304,11 +307,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Riem
+  playername = Xaero
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/riem.png
+  skin_source = [source:local]/config/fancymenu/assets/xaero.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -361,11 +364,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Plea
+  playername = Myxvaras
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/plea.png
+  skin_source = [source:local]/config/fancymenu/assets/myxvaras.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false

@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736906419462
+  last_edited_time = 1738618840486
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:96d9fa00-b600-4353-a788-00395f927e6a-1737084273244] = [groups:][instances:]
+  [loading_requirement_container_meta:79d1ba50-ff30-47df-b779-188793ae124f-1738619594738] = [groups:][instances:]
 }
 
 customization {
@@ -124,17 +124,18 @@ element {
 
 element {
   button_element_executable_block_identifier = dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600
-  [executable_action_instance:7a911781-3bec-425f-b0a5-2dc66e2a71c4-1736905018568][action_type:set_variable] = divinity:Larius
+  [executable_action_instance:7a911781-3bec-425f-b0a5-2dc66e2a71c4-1736905018568][action_type:set_variable] = divinity:Ramoris
   [executable_action_instance:897bdd32-74f3-49c9-84e6-86023ffb8490-1736905234607][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:abcd5e9d-3a49-4b72-816c-c7f1ec6291ed-1736905295748][action_type:enable_layout] = divinity_layout
   [executable_action_instance:77e3fb9c-6e48-446d-bfb3-c6f3dbaa1ead-1736905310011][action_type:disable_layout] = divinity_layout_good
-  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:7a911781-3bec-425f-b0a5-2dc66e2a71c4-1736905018568;897bdd32-74f3-49c9-84e6-86023ffb8490-1736905234607;abcd5e9d-3a49-4b72-816c-c7f1ec6291ed-1736905295748;77e3fb9c-6e48-446d-bfb3-c6f3dbaa1ead-1736905310011;]
+  [executable_action_instance:6bd73283-92a6-40b1-91e6-ce10b0738224-1738618780566][action_type:sendmessage] = /chooseDivinity "Ramoris"
+  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:7a911781-3bec-425f-b0a5-2dc66e2a71c4-1736905018568;897bdd32-74f3-49c9-84e6-86023ffb8490-1736905234607;abcd5e9d-3a49-4b72-816c-c7f1ec6291ed-1736905295748;77e3fb9c-6e48-446d-bfb3-c6f3dbaa1ead-1736905310011;6bd73283-92a6-40b1-91e6-ce10b0738224-1738618780566;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Larius
+  label = Ramoris
   navigatable = true
   widget_active_state_requirement_container_identifier = b4010267-34bf-471a-a698-3e25ce14f925-1736807188600
   [loading_requirement_container_meta:b4010267-34bf-471a-a698-3e25ce14f925-1736807188600] = [groups:][instances:]
@@ -165,17 +166,18 @@ element {
 
 element {
   button_element_executable_block_identifier = d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825
-  [executable_action_instance:c9b5bb11-ffa5-4635-a54f-c4725c560ba1-1736905159192][action_type:set_variable] = divinity:Vokhra
+  [executable_action_instance:c9b5bb11-ffa5-4635-a54f-c4725c560ba1-1736905159192][action_type:set_variable] = divinity:Mijornil
   [executable_action_instance:ecf4634e-6024-4efe-a981-97afd855e938-1736905249350][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:d6a08404-7392-4c7a-aa16-4a868d8bc400-1736905342213][action_type:enable_layout] = divinity_layout
   [executable_action_instance:f120dfa9-e08e-4472-8ce4-7f394b39a3fd-1736905354606][action_type:disable_layout] = divinity_layout_good
-  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:c9b5bb11-ffa5-4635-a54f-c4725c560ba1-1736905159192;ecf4634e-6024-4efe-a981-97afd855e938-1736905249350;d6a08404-7392-4c7a-aa16-4a868d8bc400-1736905342213;f120dfa9-e08e-4472-8ce4-7f394b39a3fd-1736905354606;]
+  [executable_action_instance:8f7c782c-d736-4d13-aa3c-51a942e80377-1738618803537][action_type:sendmessage] = /chooseDivinity "Mijornil"
+  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:c9b5bb11-ffa5-4635-a54f-c4725c560ba1-1736905159192;ecf4634e-6024-4efe-a981-97afd855e938-1736905249350;d6a08404-7392-4c7a-aa16-4a868d8bc400-1736905342213;f120dfa9-e08e-4472-8ce4-7f394b39a3fd-1736905354606;8f7c782c-d736-4d13-aa3c-51a942e80377-1738618803537;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Vokhra
+  label = Mijornil
   navigatable = true
   widget_active_state_requirement_container_identifier = 68225978-8317-48ca-aa31-09d93007f008-1736807219825
   [loading_requirement_container_meta:68225978-8317-48ca-aa31-09d93007f008-1736807219825] = [groups:][instances:]
@@ -206,17 +208,18 @@ element {
 
 element {
   button_element_executable_block_identifier = 95c91f2d-913b-457f-a739-78f5f5261810-1736807236622
-  [executable_action_instance:580afffc-dcf1-42cb-8e7d-e6f26fa30158-1736905173889][action_type:set_variable] = divinity:Mok'Thar
+  [executable_action_instance:580afffc-dcf1-42cb-8e7d-e6f26fa30158-1736905173889][action_type:set_variable] = divinity:Gonko
   [executable_action_instance:0a8e3cae-b535-43a2-844c-49642a4cc59f-1736905264687][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:e455d6eb-2161-48fd-a0d4-311c6b7a7428-1736905373183][action_type:enable_layout] = divinity_layout
   [executable_action_instance:7deb4146-5833-42b5-a8df-5a78236ddf2b-1736905389863][action_type:disable_layout] = divinity_layout_good
-  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:580afffc-dcf1-42cb-8e7d-e6f26fa30158-1736905173889;0a8e3cae-b535-43a2-844c-49642a4cc59f-1736905264687;e455d6eb-2161-48fd-a0d4-311c6b7a7428-1736905373183;7deb4146-5833-42b5-a8df-5a78236ddf2b-1736905389863;]
+  [executable_action_instance:f7535386-a6d3-4a80-b1e3-74f3a8260330-1738618824759][action_type:sendmessage] = /chooseDivinity "Gonko"
+  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:580afffc-dcf1-42cb-8e7d-e6f26fa30158-1736905173889;0a8e3cae-b535-43a2-844c-49642a4cc59f-1736905264687;e455d6eb-2161-48fd-a0d4-311c6b7a7428-1736905373183;7deb4146-5833-42b5-a8df-5a78236ddf2b-1736905389863;f7535386-a6d3-4a80-b1e3-74f3a8260330-1738618824759;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Mok'thar
+  label = Gonko
   navigatable = true
   widget_active_state_requirement_container_identifier = a78098bf-cd60-4a2c-b8ba-f05635e29025-1736807236622
   [loading_requirement_container_meta:a78098bf-cd60-4a2c-b8ba-f05635e29025-1736807236622] = [groups:][instances:]
@@ -247,11 +250,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Vokhra
+  playername = Mijornil
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/vokhra.png
+  skin_source = [source:local]/config/fancymenu/assets/mijornil.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -304,11 +307,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Larius
+  playername = Ramoris
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/larius.png
+  skin_source = [source:local]/config/fancymenu/assets/ramoris.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -361,11 +364,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Mok'thar
+  playername = Gonko
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/mok'thar.png
+  skin_source = [source:local]/config/fancymenu/assets/gonko.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false

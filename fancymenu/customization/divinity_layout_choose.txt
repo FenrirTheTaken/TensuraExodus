@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736906528021
+  last_edited_time = 1738617753535
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:0109c5bd-3d43-41ed-87c5-21355d488e74-1737144412222] = [groups:][instances:]
+  [loading_requirement_container_meta:89d573ba-55ee-45cb-a745-1d9ea032d0c1-1738620545718] = [groups:][instances:]
 }
 
 customization {
@@ -298,11 +298,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Vokhra
+  playername = Mijornil
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/vokhra.png
+  skin_source = [source:local]/config/fancymenu/assets/mijornil.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -355,11 +355,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Makima
+  playername = Fowlfyr
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/makima.png
+  skin_source = [source:local]/config/fancymenu/assets/fowlfyr.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -412,11 +412,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Mok'thar
+  playername = Gonko
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/mok'thar.png
+  skin_source = [source:local]/config/fancymenu/assets/gonko.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -457,7 +457,7 @@ element {
   sticky_anchor = false
   anchor_point = mid-centered
   x = -99
-  y = -76
+  y = -75
   width = 18
   height = 54
   stretch_x = false
@@ -469,11 +469,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Larius
+  playername = Ramoris
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/larius.png
+  skin_source = [source:local]/config/fancymenu/assets/ramoris.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -526,11 +526,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Plea
+  playername = Myxvaras
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/plea.png
+  skin_source = [source:local]/config/fancymenu/assets/myxvaras.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -583,11 +583,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Riem
+  playername = Xaero
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/riem.png
+  skin_source = [source:local]/config/fancymenu/assets/xaero.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -640,11 +640,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Tumbra
+  playername = Visark
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/tumbra.png
+  skin_source = [source:local]/config/fancymenu/assets/visark.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -697,18 +697,18 @@ element {
 
 element {
   copy_client_player = false
-  playername = Blood God
+  playername = Grandfather
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/blood god.png
+  skin_source = [source:local]/config/fancymenu/assets/TheGrandfather.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -741,7 +741,7 @@ element {
   auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 150
+  x = 151
   y = -75
   width = 18
   height = 54

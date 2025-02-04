@@ -1,27 +1,9 @@
 type = user_variables
 
 variable {
-  name = isstaff
-  value = false
+  name = envy
+  value = 1
   reset_on_launch = false
-}
-
-variable {
-  name = divinity
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = invitesubname
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = factiondescription
-  value = 
-  reset_on_launch = true
 }
 
 variable {
@@ -31,44 +13,20 @@ variable {
 }
 
 variable {
-  name = playerpromote
-  value = 
+  name = severer
+  value = 0
   reset_on_launch = false
 }
 
 variable {
-  name = enemyfaction
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = walpurgison
+  name = enhancerebirth
   value = false
   reset_on_launch = false
 }
 
 variable {
-  name = leavefaction
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = playerall
-  value = 1. FenrirTheTaken
-  reset_on_launch = false
-}
-
-variable {
-  name = roundtablevotes
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = ismember
-  value = false
+  name = royal_beast
+  value = 0
   reset_on_launch = false
 }
 
@@ -79,25 +37,25 @@ variable {
 }
 
 variable {
-  name = playerkick
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = startwalpurgis
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = hasfaction
+  name = canrebirth
   value = true
   reset_on_launch = false
 }
 
 variable {
-  name = ishero
+  name = fusionist
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = observer
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = forbiddenrebirth
   value = false
   reset_on_launch = false
 }
@@ -110,49 +68,37 @@ variable {
 
 variable {
   name = divinity2
-  value = 
+  value = Gonko
+  reset_on_launch = false
+}
+
+variable {
+  name = wrath
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = divinity3
-  value = 
+  value = Sinistram Ultimus
+  reset_on_launch = false
+}
+
+variable {
+  name = greed
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = divinity1
-  value = 
+  value = Ramoris
   reset_on_launch = false
 }
 
 variable {
-  name = isdemon
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = walpurgisorganizer
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = player1
-  value = FenrirTheTaken
-  reset_on_launch = false
-}
-
-variable {
-  name = player2
-  value = None
-  reset_on_launch = false
-}
-
-variable {
-  name = player3
-  value = None
+  name = researcher
+  value = 0
   reset_on_launch = false
 }
 
@@ -163,56 +109,26 @@ variable {
 }
 
 variable {
-  name = newowner
-  value = 
+  name = spearhead
+  value = 0
   reset_on_launch = false
 }
 
 variable {
-  name = infaction
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = factiontitle
-  value = 
-  reset_on_launch = true
-}
-
-variable {
-  name = deletefaction
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = faction1
-  value = Hiu
-  reset_on_launch = false
-}
-
-variable {
-  name = faction2
-  value = None
-  reset_on_launch = false
-}
-
-variable {
-  name = invitedwalpurgis
-  value = FenrirTheTaken
-  reset_on_launch = false
-}
-
-variable {
-  name = faction3
-  value = None
+  name = gluttony
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = factionlist
   value = 1. Hiu
+  reset_on_launch = false
+}
+
+variable {
+  name = merciless
+  value = 0
   reset_on_launch = false
 }
 
@@ -235,20 +151,14 @@ variable {
 }
 
 variable {
-  name = staffdemote
-  value = 
+  name = pride
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = divinityall
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = divinityrank
-  value = 
+  value = 1. Ramoris
   reset_on_launch = false
 }
 
@@ -265,19 +175,476 @@ variable {
 }
 
 variable {
+  name = ememyfaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = enemyfaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = walpurgison
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = playerall
+  value = 1. FenrirTheTaken
+  reset_on_launch = false
+}
+
+variable {
+  name = seer
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = playerkick
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = oppressor
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = thrower
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = guardian
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = isdemon
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = musician
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = creator
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = great_sage
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = cook
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = deletefaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = mathematician
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = invitedwalpurgis
+  value = FenrirTheTaken
+  reset_on_launch = false
+}
+
+variable {
+  name = degenerate
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = shadow_striker
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = survivor
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = reflector
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = fighter
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
   name = roundtableon
   value = false
   reset_on_launch = false
 }
 
 variable {
-  name = allyfaction
+  name = unyielding
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = invitesubname
   value = 
   reset_on_launch = false
 }
 
 variable {
-  name = ememyfaction
+  name = villain
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = traveler
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = gourmet
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = reaper
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = startwalpurgis
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = commander
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = sniper
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hasfaction
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = ishero
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = suppressor
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = lust
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = usurper
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = healer
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = murderer
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = currentrebirth
+  value = 44
+  reset_on_launch = false
+}
+
+variable {
+  name = engorger
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = sloth
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = staffdemote
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = divinityrank
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = infinity_prison
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = savedskills
+  value = "tensura:fighter"
+
+  reset_on_launch = false
+}
+
+variable {
+  name = falsifier
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = isstaff
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = divinity
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = gourmand
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = factiondescription
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = playerpromote
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = leavefaction
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = roundtablevotes
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = ismember
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = chosen_one
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = berserker
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = martial_master
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = walpurgisorganizer
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = berserk
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = divine_berserker
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = tuner
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = player1
+  value = FenrirTheTaken
+  reset_on_launch = false
+}
+
+variable {
+  name = player2
+  value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = predator
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = player3
+  value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = newowner
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = chef
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = starved
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = bewilder
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = infaction
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = factiontitle
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = reverser
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = faction1
+  value = Hiu
+  reset_on_launch = false
+}
+
+variable {
+  name = faction2
+  value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = faction3
+  value = None
+  reset_on_launch = false
+}
+
+variable {
+  name = godly_craftsman
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = absolute_severance
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = allyfaction
   value = 
   reset_on_launch = false
 }

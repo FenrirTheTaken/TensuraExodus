@@ -19,6 +19,8 @@ ServerEvents.loaded(e => {
         return;
     }
     else{
-        Utils.server.persistentData.divinity = []
+        Utils.server.persistentData.divinity = [{god:"Ramoris", offering:0},{god:"Mijornil",offering:0},{god:"Gonko",offering:0},{god:"Xaero",offering:0},{god:"Sinistram Ultimus",offering:0},
+            {god:"Myxvaras", offering:0},{god:"Visark",offering:0},{god:"Fowlfyr",offering:0},{god:"The Grandfather",offering:0}
+        ]
     }
 })

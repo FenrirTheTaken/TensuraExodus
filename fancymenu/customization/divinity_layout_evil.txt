@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736906503766
+  last_edited_time = 1738620545706
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:3a416dfd-0b4b-4d92-9cf7-ab75ac020bc0-1736978233872] = [groups:][instances:]
+  [loading_requirement_container_meta:2701a002-1405-4441-bfad-97438e26de68-1738620545724] = [groups:][instances:]
 }
 
 customization {
@@ -124,17 +124,18 @@ element {
 
 element {
   button_element_executable_block_identifier = dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600
-  [executable_action_instance:565d2d6b-e684-4213-a490-d48560d26ce4-1736905842831][action_type:set_variable] = divinity:Tumbra
+  [executable_action_instance:565d2d6b-e684-4213-a490-d48560d26ce4-1736905842831][action_type:set_variable] = divinity:Visark
   [executable_action_instance:c17ea30a-d8f6-4366-80f8-29e9ac242db7-1736905854016][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:fb6d05a7-2c29-4ff7-8733-3daab56c1da9-1736905892399][action_type:enable_layout] = divinity_layout
   [executable_action_instance:0f68fbbc-a553-4642-b750-118d10ad470f-1736905866764][action_type:disable_layout] = divinity_layout_evil
-  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:565d2d6b-e684-4213-a490-d48560d26ce4-1736905842831;c17ea30a-d8f6-4366-80f8-29e9ac242db7-1736905854016;fb6d05a7-2c29-4ff7-8733-3daab56c1da9-1736905892399;0f68fbbc-a553-4642-b750-118d10ad470f-1736905866764;]
+  [executable_action_instance:890aa4a5-b49b-4a4b-86b9-886ec005f58c-1738620498564][action_type:sendmessage] = /chooseDivinity "Visark"
+  [executable_block:dd2c48b5-2d49-41ad-a758-06b69d7155cd-1736807188600][type:generic] = [executables:565d2d6b-e684-4213-a490-d48560d26ce4-1736905842831;c17ea30a-d8f6-4366-80f8-29e9ac242db7-1736905854016;fb6d05a7-2c29-4ff7-8733-3daab56c1da9-1736905892399;0f68fbbc-a553-4642-b750-118d10ad470f-1736905866764;890aa4a5-b49b-4a4b-86b9-886ec005f58c-1738620498564;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Tumbra
+  label = Visark
   navigatable = true
   widget_active_state_requirement_container_identifier = b4010267-34bf-471a-a698-3e25ce14f925-1736807188600
   [loading_requirement_container_meta:b4010267-34bf-471a-a698-3e25ce14f925-1736807188600] = [groups:][instances:]
@@ -165,17 +166,18 @@ element {
 
 element {
   button_element_executable_block_identifier = d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825
-  [executable_action_instance:f8db5a5a-53e8-4205-a029-ec2b3aab0711-1736905912070][action_type:set_variable] = divinity:Makima
+  [executable_action_instance:f8db5a5a-53e8-4205-a029-ec2b3aab0711-1736905912070][action_type:set_variable] = divinity:fowlfyr
   [executable_action_instance:a31372af-185a-47d3-a511-9ff0d82d269e-1736905936348][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:4fa56513-956f-4e3e-8303-f1ef28d2c00a-1736905947499][action_type:enable_layout] = divinity_layout
   [executable_action_instance:50ae8457-522d-42b4-8832-78cb54149c6b-1736905962299][action_type:disable_layout] = divinity_layout_evil
-  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:f8db5a5a-53e8-4205-a029-ec2b3aab0711-1736905912070;a31372af-185a-47d3-a511-9ff0d82d269e-1736905936348;4fa56513-956f-4e3e-8303-f1ef28d2c00a-1736905947499;50ae8457-522d-42b4-8832-78cb54149c6b-1736905962299;]
+  [executable_action_instance:6857f2bb-cd6b-4110-8bc1-762162cf3770-1738620512170][action_type:sendmessage] = /chooseDivinity "Fowlfyr"
+  [executable_block:d98dd17f-3c64-48ef-8637-3c5fff5da1b2-1736807219825][type:generic] = [executables:f8db5a5a-53e8-4205-a029-ec2b3aab0711-1736905912070;a31372af-185a-47d3-a511-9ff0d82d269e-1736905936348;4fa56513-956f-4e3e-8303-f1ef28d2c00a-1736905947499;50ae8457-522d-42b4-8832-78cb54149c6b-1736905962299;6857f2bb-cd6b-4110-8bc1-762162cf3770-1738620512170;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Makima
+  label = Fowlfyr
   navigatable = true
   widget_active_state_requirement_container_identifier = 68225978-8317-48ca-aa31-09d93007f008-1736807219825
   [loading_requirement_container_meta:68225978-8317-48ca-aa31-09d93007f008-1736807219825] = [groups:][instances:]
@@ -206,17 +208,18 @@ element {
 
 element {
   button_element_executable_block_identifier = 95c91f2d-913b-457f-a739-78f5f5261810-1736807236622
-  [executable_action_instance:3c612689-1b5e-4657-a31d-9c9e368f51e4-1736905980513][action_type:set_variable] = divinity:Blood God
+  [executable_action_instance:3c612689-1b5e-4657-a31d-9c9e368f51e4-1736905980513][action_type:set_variable] = divinity:TheGrandfather
   [executable_action_instance:097a7d5a-ea98-45ea-b4b4-be66c847122b-1736905995303][action_type:set_variable] = hasdivinity:true
   [executable_action_instance:20436ee8-5e7f-454b-aa96-2b5b03268a3f-1736906004697][action_type:enable_layout] = divinity_layout
   [executable_action_instance:8b460a67-9202-4580-be7e-fa9312ef69ab-1736906014451][action_type:disable_layout] = divinity_layout_evil
-  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:3c612689-1b5e-4657-a31d-9c9e368f51e4-1736905980513;097a7d5a-ea98-45ea-b4b4-be66c847122b-1736905995303;20436ee8-5e7f-454b-aa96-2b5b03268a3f-1736906004697;8b460a67-9202-4580-be7e-fa9312ef69ab-1736906014451;]
+  [executable_action_instance:ffe8c56a-81a5-4cfc-8e08-3c7b026948f6-1738620529594][action_type:sendmessage] = /chooseDivinity "The Grandfather"
+  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:3c612689-1b5e-4657-a31d-9c9e368f51e4-1736905980513;097a7d5a-ea98-45ea-b4b4-be66c847122b-1736905995303;20436ee8-5e7f-454b-aa96-2b5b03268a3f-1736906004697;8b460a67-9202-4580-be7e-fa9312ef69ab-1736906014451;ffe8c56a-81a5-4cfc-8e08-3c7b026948f6-1738620529594;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Blood God
+  label = The Grandfather
   navigatable = true
   widget_active_state_requirement_container_identifier = a78098bf-cd60-4a2c-b8ba-f05635e29025-1736807236622
   [loading_requirement_container_meta:a78098bf-cd60-4a2c-b8ba-f05635e29025-1736807236622] = [groups:][instances:]
@@ -247,11 +250,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Makima
+  playername = Fowlfyr
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/makima.png
+  skin_source = [source:local]/config/fancymenu/assets/fowlfyr.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -304,11 +307,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Tumbra
+  playername = Visark
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/tumbra.png
+  skin_source = [source:local]/config/fancymenu/assets/visark.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false
@@ -361,11 +364,11 @@ element {
 
 element {
   copy_client_player = false
-  playername = Blood God
+  playername = The Grandfather
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = [source:local]/config/fancymenu/assets/blood god.png
+  skin_source = [source:local]/config/fancymenu/assets/TheGrandfather.png
   scale = 30
   parrot = false
   parrot_left_shoulder = false

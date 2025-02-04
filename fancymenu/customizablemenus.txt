@@ -12,3 +12,6 @@ net.minecraft.client.gui.screens.inventory.InventoryScreen {
 net.minecraft.client.gui.screens.PauseScreen {
 }
 
+com.github.manasmods.tensura.client.screen.MainScreen {
+}
+

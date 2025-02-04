@@ -8,7 +8,7 @@ function part(arr, low, high) {
   
     for (let j = low; j <= high - 1; j++) { 
         // If current element is smaller than the pivot 
-        if (arr[j].ep < p.ep) { 
+        if (arr[j].ep > p.ep) { 
             // Increment index of smaller element 
             i++; 
             // Swap elements 

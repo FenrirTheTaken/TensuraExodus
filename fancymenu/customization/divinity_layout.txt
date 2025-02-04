@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736899998225
+  last_edited_time = 1738618222020
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:bc012a52-a85c-4c91-9319-e9bad280933b-1737144412220] = [groups:][instances:]
+  [loading_requirement_container_meta:0d4b4efd-4759-4f0b-8dbb-07a039c65bf1-1738620545710] = [groups:][instances:]
 }
 
 customization {
@@ -166,7 +166,8 @@ element {
   button_element_executable_block_identifier = 95c91f2d-913b-457f-a739-78f5f5261810-1736807236622
   [executable_action_instance:1ea3c15e-ae80-487a-bb12-1ca06df970bb-1736808056791][action_type:enable_layout] = divinity_layout_leaderboard
   [executable_action_instance:409c3463-0f3d-499a-be27-8117ecee34c3-1736808069998][action_type:disable_layout] = divinity_layout
-  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:1ea3c15e-ae80-487a-bb12-1ca06df970bb-1736808056791;409c3463-0f3d-499a-be27-8117ecee34c3-1736808069998;]
+  [executable_action_instance:3d9c4073-e5c2-4971-912f-a697757f504a-1738618198337][action_type:sendmessage] = /populateDivinityLeaderboard
+  [executable_block:95c91f2d-913b-457f-a739-78f5f5261810-1736807236622][type:generic] = [executables:1ea3c15e-ae80-487a-bb12-1ca06df970bb-1736808056791;409c3463-0f3d-499a-be27-8117ecee34c3-1736808069998;3d9c4073-e5c2-4971-912f-a697757f504a-1738618198337;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false

@@ -21,14 +21,17 @@ ServerEvents.commandRegistry(event => {
                 if (dem == true){
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set isdemon false true`)
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set ishero false false`)
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set canrebirth false true`)
                 }
                 else if (her == true){
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set ishero false true`)
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set isdemon false false`)
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set canrebirth false true`)
                 }
                 else{
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set ishero false false`)
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set isdemon false false`)
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set canrebirth false false`)
                 }
 
 

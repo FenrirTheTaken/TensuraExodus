@@ -49,7 +49,7 @@ custom_gui {
 }
 
 custom_gui {
-  identifier = rebirth
+  identifier = factionscreen
   title = 
   allow_esc = true
   transparent_world_background = true
@@ -58,7 +58,7 @@ custom_gui {
 }
 
 custom_gui {
-  identifier = factionscreen
+  identifier = rebirthup
   title = 
   allow_esc = true
   transparent_world_background = true

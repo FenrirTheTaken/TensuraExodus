@@ -6,7 +6,7 @@ function partdiv(arr, low, high) {
   
     for (let j = low; j <= high - 1; j++) { 
         // If current element is smaller than the pivot 
-        if (arr[j].devotion < p.devotion) { 
+        if (arr[j].offering > p.offering) { 
             // Increment index of smaller element 
             i++; 
             // Swap elements 
@@ -25,7 +25,7 @@ function partdiv(arr, low, high) {
 function quickSortdiv(arr, low, high) { 
 
     if (low >= high) return; 
-    let pi = part(arr, low, high); 
+    let pi = partdiv(arr, low, high); 
   
     quickSortdiv(arr, low, pi - 1); 
     quickSortdiv(arr, pi + 1, high); 
@@ -56,7 +56,7 @@ ServerEvents.commandRegistry(event => {
         .then(Commands.argument('divinity', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'divinity')
-                ctx.source.player.divinity = first
+                ctx.source.player.persistentData.divinity = first
                 return 1; // Returning a value is required; 1 indicates success.
             })
         )
@@ -70,7 +70,7 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('leaveDivinity')
             .executes(ctx => {
-                ctx.source.player.divinity = ""
+                ctx.source.player.persistentData.divinity = ""
                 return 1; // Returning a value is required; 1 indicates success.
             })
     );
@@ -85,8 +85,8 @@ ServerEvents.commandRegistry(event => {
         .then(Commands.argument('val', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'val')
-                const index = Utils.server.persistentData.divinity.findIndex((divinity) => divinity.god === ctx.source.player.divinity)
-                Utils.server.persistentData.divinity[index].devotion += first
+                const index = Utils.server.persistentData.divinity.findIndex((divinity) => divinity.god === ctx.source.player.persistentData.divinity)
+                Utils.server.persistentData.divinity[index].offering += parseInt(first)
                 return 1; // Returning a value is required; 1 indicates success.
             })
         )
@@ -168,9 +168,11 @@ ServerEvents.commandRegistry(event => {
         Commands.literal('divinityAll')
             .executes(ctx => {
                 let s = ""
+                let counter = 0
                 if(Utils.server.persistentData.faction.length > 0){
                     Utils.server.persistentData.divinity.forEach(f => {
-                        s += f.god +"\n" 
+                        counter++
+                        s += counter + ". " + f.god +"\n" 
                     })
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set divinityall false ${s}`)
     
@@ -190,11 +192,11 @@ ServerEvents.commandRegistry(event => {
     const { commands: Commands, arguments: Arguments } = event;
 
     event.register(
-        Commands.literal('populateLeaderboard')
+        Commands.literal('populateDivinityLeaderboard')
             .executes(ctx => {
                 ctx.source.player.runCommandSilent('divinity1')
                 ctx.source.player.runCommandSilent('divinity2')
-                ctx.source.player.runCommandSilent('divinity')
+                ctx.source.player.runCommandSilent('divinity3')
                 ctx.source.player.runCommandSilent('divinityAll')
 
 
@@ -203,9 +205,7 @@ ServerEvents.commandRegistry(event => {
     );
 });
 ServerEvents.loaded(event => {
-    if (Utils.server.persistentData.divinity,0,Utils.server.persistentData.divinity){
-        quickSort(Utils.server.persistentData.divinity,0,Utils.server.persistentData.divinity.length - 1)
-    }
+    quickSortdiv(Utils.server.persistentData.divinity,0,Utils.server.persistentData.divinity.length - 1)
 })
 
 // Find Rank
