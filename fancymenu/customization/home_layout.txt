@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = home
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738641039760
+  last_edited_time = 1741984505549
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:de830329-f5b8-41c9-9ec2-4bc3d7044dea-1738641033978] = [groups:][instances:]
+  [loading_requirement_container_meta:cf4d946d-9639-4586-8173-c5126c4c20c0-1741984435595] = [groups:][instances:]
 }
 
 customization {
@@ -86,7 +86,12 @@ element {
   button_element_executable_block_identifier = a7ffeb06-f490-45d2-9fdd-073e59877d77-1736477193496
   [executable_action_instance:6a8cb76e-f5d2-4de6-a050-81ffee482b47-1736477943963][action_type:opengui] = factionscreen
   [executable_action_instance:b39de1a6-9692-491e-91b2-3157b3a86c26-1736806628856][action_type:enable_layout] = factionscreen_layout
-  [executable_block:a7ffeb06-f490-45d2-9fdd-073e59877d77-1736477193496][type:generic] = [executables:6a8cb76e-f5d2-4de6-a050-81ffee482b47-1736477943963;b39de1a6-9692-491e-91b2-3157b3a86c26-1736806628856;]
+  [executable_action_instance:ae461ffe-e97d-447e-8af6-46fd077a74eb-1741984441975][action_type:disable_layout] = factionscreen_layout_factionleader
+  [executable_action_instance:29a82db8-941c-4b99-a8f2-00ae9eb2aeaa-1741984452310][action_type:disable_layout] = factionscreen_layout_factionstaff
+  [executable_action_instance:9c56e161-6579-46eb-86f0-a08aceeef8d1-1741984462690][action_type:disable_layout] = factionscreen_layout_factionmember
+  [executable_action_instance:d431b761-6cd1-49e4-9ad0-03e038f85eaa-1741984484300][action_type:disable_layout] = factionscreen_layout_factiondisplay
+  [executable_action_instance:1e511b25-830a-4997-a246-e823a6f27110-1741984497497][action_type:disable_layout] = factionscreen_layout_create
+  [executable_block:a7ffeb06-f490-45d2-9fdd-073e59877d77-1736477193496][type:generic] = [executables:6a8cb76e-f5d2-4de6-a050-81ffee482b47-1736477943963;b39de1a6-9692-491e-91b2-3157b3a86c26-1736806628856;ae461ffe-e97d-447e-8af6-46fd077a74eb-1741984441975;29a82db8-941c-4b99-a8f2-00ae9eb2aeaa-1741984452310;9c56e161-6579-46eb-86f0-a08aceeef8d1-1741984462690;d431b761-6cd1-49e4-9ad0-03e038f85eaa-1741984484300;1e511b25-830a-4997-a246-e823a6f27110-1741984497497;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -328,11 +333,11 @@ element {
 
 element {
   button_element_executable_block_identifier = 32d6bbb0-f0c7-4ecc-b63d-d84525fe615a-1736914319885
+  [executable_action_instance:59d932bb-86cd-4359-a732-6731d8f894b1-1736977745338][action_type:sendmessage] = /isWalpurgis
   [executable_action_instance:2b8f0c24-5584-4b3e-a69f-37beb876f0ec-1736918188639][action_type:opengui] = truesys
   [executable_action_instance:0434c2ed-5ee9-46be-96a6-11ac3c3ba1e7-1736918284892][action_type:enable_layout] = truesys_layout_walpurgis
   [executable_action_instance:a50abeb7-da04-4841-97ea-76c81314a1a3-1736918300674][action_type:disable_layout] = truesys_layout_roundtable
-  [executable_action_instance:59d932bb-86cd-4359-a732-6731d8f894b1-1736977745338][action_type:sendmessage] = /isWalpurgis
-  [executable_block:32d6bbb0-f0c7-4ecc-b63d-d84525fe615a-1736914319885][type:generic] = [executables:2b8f0c24-5584-4b3e-a69f-37beb876f0ec-1736918188639;0434c2ed-5ee9-46be-96a6-11ac3c3ba1e7-1736918284892;a50abeb7-da04-4841-97ea-76c81314a1a3-1736918300674;59d932bb-86cd-4359-a732-6731d8f894b1-1736977745338;]
+  [executable_block:32d6bbb0-f0c7-4ecc-b63d-d84525fe615a-1736914319885][type:generic] = [executables:59d932bb-86cd-4359-a732-6731d8f894b1-1736977745338;2b8f0c24-5584-4b3e-a69f-37beb876f0ec-1736918188639;0434c2ed-5ee9-46be-96a6-11ac3c3ba1e7-1736918284892;a50abeb7-da04-4841-97ea-76c81314a1a3-1736918300674;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false

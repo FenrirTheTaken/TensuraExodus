@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736553778579
+  last_edited_time = 1741984220152
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:69edd31b-5f52-472c-a366-e10cb403d184-1737942450626] = [groups:][instances:]
+  [loading_requirement_container_meta:be7d3719-51c0-4a72-bde3-5aa0a34bdfc1-1741984505590] = [groups:][instances:]
 }
 
 customization {
@@ -159,7 +159,7 @@ element {
 
 element {
   interactable = true
-  source = Leader
+  source = Leader: {"placeholder":"getvariable","values":{"name":"factionleader"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -197,7 +197,7 @@ element {
   anchor_point = mid-centered
   x = -191
   y = -55
-  width = 111
+  width = 142
   height = 17
   stretch_x = false
   stretch_y = false
@@ -208,7 +208,7 @@ element {
 
 element {
   interactable = true
-  source = Staff
+  source = Staff: {"placeholder":"getvariable","values":{"name":"factionstaff"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -246,7 +246,7 @@ element {
   anchor_point = mid-centered
   x = -191
   y = -40
-  width = 93
+  width = 123
   height = 17
   stretch_x = false
   stretch_y = false
@@ -365,7 +365,7 @@ element {
 
 element {
   interactable = true
-  source = Player's Invited
+  source = Player's Invited {"placeholder":"getvariable","values":{"name":"factionmemberinvited"}}
   source_mode = direct
   shadow = true
   scale = 1.0

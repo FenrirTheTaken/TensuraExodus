@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = warps
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736896326526
+  last_edited_time = 1739308497345
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:2ea2526b-f913-40b3-ad71-f66fb088d733-1736896322886] = [groups:][instances:]
+  [loading_requirement_container_meta:ffda54fe-2a77-4add-b9a7-0e502b5e60a3-1739308471568] = [groups:][instances:]
 }
 
 customization {
@@ -80,5 +80,119 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 05e13625-3fa3-44c3-9cac-a715e8316e0b-1736451852203
   [loading_requirement_container_meta:05e13625-3fa3-44c3-9cac-a715e8316e0b-1736451852203] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = ad666c1b-592a-4009-863e-b27b2b183b6a-1739305072069
+  [executable_action_instance:4a0ee568-3d71-4c14-9e27-4a6f4a11a0ee-1739308414663][action_type:sendmessage] = /warp cheat
+  [executable_block:ad666c1b-592a-4009-863e-b27b2b183b6a-1739305072069][type:generic] = [executables:4a0ee568-3d71-4c14-9e27-4a6f4a11a0ee-1739308414663;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Cheat(Test) Warp
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 2627d5cb-d01e-4bd4-9fab-28fc1471a435-1739305072069
+  [loading_requirement_container_meta:2627d5cb-d01e-4bd4-9fab-28fc1471a435-1739305072069] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 660d5b5c-65b7-46a2-9fc4-d639ae5b3322-1739305072069
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -49
+  y = -84
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = b7e21660-63b0-4544-9ba9-1431370310ad-1739305072069
+  [loading_requirement_container_meta:b7e21660-63b0-4544-9ba9-1431370310ad-1739305072069] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 498cc638-aad3-415d-9a1f-e0c87454ed21-1739305095801
+  [executable_action_instance:b4c13af1-c890-4ec6-ba3f-7a4b0a1a483c-1739308475849][action_type:sendmessage] = /warp labyrinth
+  [executable_block:498cc638-aad3-415d-9a1f-e0c87454ed21-1739305095801][type:generic] = [executables:b4c13af1-c890-4ec6-ba3f-7a4b0a1a483c-1739308475849;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Labyrinth
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 3207b4b6-9fbb-4d0a-b5c2-dfa4c83cf86b-1739305095801
+  [loading_requirement_container_meta:3207b4b6-9fbb-4d0a-b5c2-dfa4c83cf86b-1739305095801] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 373ad03c-d3f8-461d-b594-64ec68e2621a-1739305095801
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -194
+  y = -11
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = c31015d4-d763-441f-be76-7e8a25698a30-1739305095801
+  [loading_requirement_container_meta:c31015d4-d763-441f-be76-7e8a25698a30-1739305095801] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 89f55543-8467-4ff5-bea2-875e6ee25eab-1739305112436
+  [executable_action_instance:4a736980-8ade-4e2c-94f0-921c98f0e685-1739308488186][action_type:sendmessage] = /warp hellgate
+  [executable_block:89f55543-8467-4ff5-bea2-875e6ee25eab-1739305112436][type:generic] = [executables:4a736980-8ade-4e2c-94f0-921c98f0e685-1739308488186;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Hell Gate
+  navigatable = true
+  widget_active_state_requirement_container_identifier = a23d679c-26a8-405d-a151-3b77a75b719d-1739305112436
+  [loading_requirement_container_meta:a23d679c-26a8-405d-a151-3b77a75b719d-1739305112436] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = c4dd5ed5-7f59-4391-8755-07e93a0829d8-1739305112436
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 96
+  y = -11
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 38777c36-71b8-42ea-8189-ed670c7c00b5-1739305112436
+  [loading_requirement_container_meta:38777c36-71b8-42ea-8189-ed670c7c00b5-1739305112436] = [groups:][instances:]
 }
 

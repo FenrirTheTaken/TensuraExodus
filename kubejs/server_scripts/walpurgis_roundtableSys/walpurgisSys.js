@@ -6,7 +6,7 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('walpurgisStartVote')
             .executes(ctx => {
-                Utils.server.persistentData.walpurgis = {walpurgison:1, invited:[ctx.source.player.username], votes:0}
+                Utils.server.persistentData.walpurgis = {walpurgison:1, invited:[ctx.source.player.username], votes:1}
                 return 1; // Returning a value is required; 1 indicates success.
             })
         
@@ -49,7 +49,7 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('voteWalpurgis')
             .executes(ctx => {
-                    if (Utils.server.persistentData.walpurgis.walpurgison === 1){
+                    if (Utils.server.persistentData.walpurgis.walpurgison === 1 && !Utils.server.persistentData.walpurgis.invited.find(player => player === ctx.source.player.username)){
                         Utils.server.persistentData.walpurgis.votes += 1
                         Utils.server.persistentData.walpurgis.invited.push(ctx.source.player.username)
                     }  
@@ -88,6 +88,8 @@ ServerEvents.commandRegistry(event => {
                     if (Utils.server.persistentData.walpurgis.walpurgison === 1){
                         Utils.server.persistentData.walpurgis.invited.forEach(p => {
                             Utils.server.runCommandSilent(`execute in tensuradim:walpurgis run tp ${p} 8 -60 8`)
+                            Utils.server.runCommandSilent(`gamemode adventure ${p}`)
+
                         }
                         )
                         Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set walpurgison false true`)
@@ -109,6 +111,7 @@ ServerEvents.commandRegistry(event => {
                     if (Utils.server.persistentData.walpurgis.walpurgison === 1){
                         Utils.server.persistentData.walpurgis.invited.forEach(p => {
                             Utils.server.runCommandSilent(`execute in minecraft:overworld run tp ${p} 0 80 0`)
+                            Utils.server.runCommandSilent(`gamemode survival ${p}`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set walpurgison false false`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set startwalpurgis false false`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set walpurgisvotes false false`)

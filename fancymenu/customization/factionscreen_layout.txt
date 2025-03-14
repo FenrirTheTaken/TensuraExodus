@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738618183554
-  is_enabled = true
+  last_edited_time = 1741984310038
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:715612e3-c3bb-446c-9788-a49ef6abc145-1738620545730] = [groups:][instances:]
+  [loading_requirement_container_meta:60bad970-8cad-429f-9ef9-bbd94dee4e84-1741984505575] = [groups:][instances:]
 }
 
 customization {
@@ -166,12 +166,16 @@ element {
 
 element {
   button_element_executable_block_identifier = f042ccb6-fb87-403c-832c-0e2873a13929-1736469325092
+  [executable_action_instance:e38bf2e8-7f56-420d-b888-048061178154-1741983706517][action_type:sendmessage] = /getStaff
+  [executable_action_instance:539d9523-56c1-425f-96fd-71e033ed3ac3-1741983138282][action_type:sendmessage] = /getLeader
+  [executable_action_instance:3da0dcfd-9a96-4872-9e65-50eb6f80f6c8-1741984061506][action_type:sendmessage] = /getInvitedMembers
   [executable_action_instance:920a8dcd-bd2c-46f6-9c0a-b7d549e74354-1736489247636][action_type:enable_layout] = factionscreen_layout_factionleader
   [executable_action_instance:32cc59dc-764d-451b-93da-688dd4edd431-1736489316169][action_type:disable_layout] = factionscreen_layout
-  [executable_block:0dce2f3c-e1bc-4bca-9354-d0eca8a2863e-1736489245506][type:if] = [executables:920a8dcd-bd2c-46f6-9c0a-b7d549e74354-1736489247636;32cc59dc-764d-451b-93da-688dd4edd431-1736489316169;][appended:e19c3efd-126e-4f7f-ac15-3326e7a843e2-1736489296416]
+  [executable_block:0dce2f3c-e1bc-4bca-9354-d0eca8a2863e-1736489245506][type:if] = [executables:3da0dcfd-9a96-4872-9e65-50eb6f80f6c8-1741984061506;920a8dcd-bd2c-46f6-9c0a-b7d549e74354-1736489247636;32cc59dc-764d-451b-93da-688dd4edd431-1736489316169;][appended:e19c3efd-126e-4f7f-ac15-3326e7a843e2-1736489296416]
+  [executable_action_instance:7d821232-16ac-4787-8322-6b4c8aefaff0-1741984036043][action_type:sendmessage] = /getInvitedMembers
   [executable_action_instance:677e9af5-d43a-408d-974a-75503065672d-1736489298072][action_type:enable_layout] = factionscreen_layout_factionstaff
   [executable_action_instance:a47bfa54-73f8-4e3d-96bd-3789ab42bea3-1736489339481][action_type:disable_layout] = factionscreen_layout
-  [executable_block:e19c3efd-126e-4f7f-ac15-3326e7a843e2-1736489296416][type:else-if] = [executables:677e9af5-d43a-408d-974a-75503065672d-1736489298072;a47bfa54-73f8-4e3d-96bd-3789ab42bea3-1736489339481;][appended:b4061e70-fb51-47fb-8ac6-4169992da44d-1736489406707]
+  [executable_block:e19c3efd-126e-4f7f-ac15-3326e7a843e2-1736489296416][type:else-if] = [executables:7d821232-16ac-4787-8322-6b4c8aefaff0-1741984036043;677e9af5-d43a-408d-974a-75503065672d-1736489298072;a47bfa54-73f8-4e3d-96bd-3789ab42bea3-1736489339481;][appended:b4061e70-fb51-47fb-8ac6-4169992da44d-1736489406707]
   [executable_action_instance:e30aae87-7b1e-4c3f-8a69-2ba5c8203c33-1736489408511][action_type:enable_layout] = factionscreen_layout_factionmember
   [executable_action_instance:d58fa862-a488-4fb4-a2c0-3677236b944f-1736489429770][action_type:disable_layout] = factionscreen_layout
   [executable_block:b4061e70-fb51-47fb-8ac6-4169992da44d-1736489406707][type:else] = [executables:e30aae87-7b1e-4c3f-8a69-2ba5c8203c33-1736489408511;d58fa862-a488-4fb4-a2c0-3677236b944f-1736489429770;]
@@ -181,7 +185,7 @@ element {
   [if_executable_block_body:0dce2f3c-e1bc-4bca-9354-d0eca8a2863e-1736489245506] = a88fa9ff-7a90-48ea-9d0a-c95cdc9d6ea2-1736489227272
   [loading_requirement_container_meta:a88fa9ff-7a90-48ea-9d0a-c95cdc9d6ea2-1736489227272] = [groups:][instances:931237e9-2b2e-476b-b986-df003d48df34-1736489228615;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:931237e9-2b2e-476b-b986-df003d48df34-1736489228615] = isowner:true
-  [executable_block:f042ccb6-fb87-403c-832c-0e2873a13929-1736469325092][type:generic] = [executables:0dce2f3c-e1bc-4bca-9354-d0eca8a2863e-1736489245506;]
+  [executable_block:f042ccb6-fb87-403c-832c-0e2873a13929-1736469325092][type:generic] = [executables:e38bf2e8-7f56-420d-b888-048061178154-1741983706517;539d9523-56c1-425f-96fd-71e033ed3ac3-1741983138282;0dce2f3c-e1bc-4bca-9354-d0eca8a2863e-1736489245506;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false

@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738617753535
+  last_edited_time = 1739300562528
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:89d573ba-55ee-45cb-a745-1d9ea032d0c1-1738620545718] = [groups:][instances:]
+  [loading_requirement_container_meta:f0831b91-44b5-4a5d-8d47-873be3673999-1741984220168] = [groups:][instances:]
 }
 
 customization {
@@ -252,7 +252,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -309,7 +309,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -366,7 +366,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -423,7 +423,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -480,7 +480,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -537,7 +537,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -594,7 +594,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false
@@ -651,7 +651,7 @@ element {
   is_baby = false
   crouching = false
   showname = true
-  head_follows_mouse = false
+  head_follows_mouse = true
   body_follows_mouse = false
   body_x_rot_advanced_mode = false
   body_y_rot_advanced_mode = false

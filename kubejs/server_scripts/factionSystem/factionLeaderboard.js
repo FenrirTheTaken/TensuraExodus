@@ -35,21 +35,21 @@ function quickSort(arr, low, high) {
 
 function removePlayerEP(player, UUID){
     console.log(player)
-    const p = Utils.server.persistentData.playerEP.find(EP =>(EP.player === player))
-    const PartInst = $PACAPI.get(Utils.server)
-    const PartMan = PartInst.getPartyManager()
-    const ownerParty = PartMan.getPartyByMember(UUID)
-    let ownerName = ""
-    if (ownerParty !== null){
-        ownerName = ownerParty.getOwner().getUsername()
-    }
-    const index = findFactionIndex(ownerName)
-    if (p){
-        Utils.server.persistentData.playerEP = Utils.server.persistentData.playerEP.filter(EP =>!(EP.player === player))
-    }
-    if (index > 0){
-        Utils.server.persistentData.faction[index].ep -= p.ep
-    }
+        let p = Utils.server.persistentData.playerEP.find(EP =>(EP.player === player))
+        let PartInst = $PACAPI.get(Utils.server)
+        let PartMan = PartInst.getPartyManager()
+        let ownerParty = PartMan.getPartyByMember(UUID)
+        let ownerName = ""
+        if (ownerParty !== null){
+            ownerName = ownerParty.getOwner().getUsername()
+        }
+        let index = findFactionIndex(ownerName)
+        if (p){
+            Utils.server.persistentData.playerEP = Utils.server.persistentData.playerEP.filter(EP =>!(EP.player === player))
+        }
+        if (index > 0){
+            Utils.server.persistentData.faction[index].ep -= p.ep
+        }
     return ownerName
 }
 // Player Leaderboard

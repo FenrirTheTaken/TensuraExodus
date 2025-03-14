@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = com.github.manasmods.tensura.client.screen.MainScreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738636596948
+  last_edited_time = 1739300262876
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:282320c4-ca58-4200-820d-d186ddda9f19-1738636579806] = [groups:][instances:]
+  [loading_requirement_container_meta:32a01b77-e758-44a4-82a3-0741191aabb7-1739300194353] = [groups:][instances:]
 }
 
 customization {

@@ -15,3 +15,21 @@ net.minecraft.client.gui.screens.PauseScreen {
 com.github.manasmods.tensura.client.screen.MainScreen {
 }
 
+net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
+}
+
+com.github.manasmods.tensura.client.screen.SkillScreen {
+}
+
+com.github.manasmods.tensura.client.screen.MagicScreen {
+}
+
+com.github.manasmods.tensura.client.screen.BattlewillSelectionScreen {
+}
+
+com.github.manasmods.tensura.client.screen.MagicSelectionScreen {
+}
+
+com.github.manasmods.tensura.client.screen.SkillSelectionScreen {
+}
+

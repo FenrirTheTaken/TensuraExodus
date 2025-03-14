@@ -103,6 +103,7 @@ ServerEvents.commandRegistry(event => {
                     if (Utils.server.persistentData.roundtable.roundtableon === 1){
                         Utils.server.persistentData.roundtable.invited.forEach(p => {
                             Utils.server.runCommandSilent(`execute in tensuradim:theroundtable run tp ${p} 8 -60 8`)
+                            Utils.server.runCommandSilent(`gamemode adventure ${p}`)
                         }
                         )
                         Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set roundtableon false true`)
@@ -124,6 +125,7 @@ ServerEvents.commandRegistry(event => {
                     if (Utils.server.persistentData.roundtable.roundtableon === 1){
                         Utils.server.persistentData.roundtable.invited.forEach(p => {
                             Utils.server.runCommandSilent(`execute in minecraft:overworld run tp ${p} 0 80 0`)
+                            Utils.server.runCommandSilent(`gamemode survival ${p}`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set roundtableon false false`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set startroundtable false false`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set roundtablevotes false false`)

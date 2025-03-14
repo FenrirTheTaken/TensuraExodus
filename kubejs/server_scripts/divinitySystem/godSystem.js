@@ -169,7 +169,7 @@ ServerEvents.commandRegistry(event => {
             .executes(ctx => {
                 let s = ""
                 let counter = 0
-                if(Utils.server.persistentData.faction.length > 0){
+                if(Utils.server.persistentData.divinity.length > 0){
                     Utils.server.persistentData.divinity.forEach(f => {
                         counter++
                         s += counter + ". " + f.god +"\n" 
@@ -205,7 +205,9 @@ ServerEvents.commandRegistry(event => {
     );
 });
 ServerEvents.loaded(event => {
-    quickSortdiv(Utils.server.persistentData.divinity,0,Utils.server.persistentData.divinity.length - 1)
+    if (Utils.server.persistentData.divinity){
+        quickSortdiv(Utils.server.persistentData.divinity,0,Utils.server.persistentData.divinity.length - 1)
+    }
 })
 
 // Find Rank

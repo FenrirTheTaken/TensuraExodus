@@ -2,7 +2,13 @@ type = user_variables
 
 variable {
   name = envy
-  value = 1
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = factionstaff
+  value = FenrirTheTaken, 
   reset_on_launch = false
 }
 
@@ -67,6 +73,12 @@ variable {
 }
 
 variable {
+  name = factionmember
+  value = 
+  reset_on_launch = false
+}
+
+variable {
   name = divinity2
   value = Gonko
   reset_on_launch = false
@@ -80,7 +92,7 @@ variable {
 
 variable {
   name = divinity3
-  value = Sinistram Ultimus
+  value = The Grandfather
   reset_on_launch = false
 }
 
@@ -115,6 +127,12 @@ variable {
 }
 
 variable {
+  name = factionmemberinvited
+  value = 
+  reset_on_launch = false
+}
+
+variable {
   name = gluttony
   value = 0
   reset_on_launch = false
@@ -122,7 +140,8 @@ variable {
 
 variable {
   name = factionlist
-  value = 1. Hiu
+  value = 1. aa
+
   reset_on_launch = false
 }
 
@@ -159,6 +178,15 @@ variable {
 variable {
   name = divinityall
   value = 1. Ramoris
+2. Gonko
+3. The Grandfather
+4. Mijornil
+5. Sinistram Ultimus
+6. Xaero
+7. Myxvaras
+8. Visark
+9. Fowlfyr
+
   reset_on_launch = false
 }
 
@@ -195,6 +223,7 @@ variable {
 variable {
   name = playerall
   value = 1. FenrirTheTaken
+
   reset_on_launch = false
 }
 
@@ -242,7 +271,7 @@ variable {
 
 variable {
   name = creator
-  value = 0
+  value = 1
   reset_on_launch = false
 }
 
@@ -273,6 +302,7 @@ variable {
 variable {
   name = invitedwalpurgis
   value = FenrirTheTaken
+
   reset_on_launch = false
 }
 
@@ -302,7 +332,7 @@ variable {
 
 variable {
   name = fighter
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -326,7 +356,7 @@ variable {
 
 variable {
   name = villain
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -344,13 +374,13 @@ variable {
 
 variable {
   name = reaper
-  value = 0
+  value = 1
   reset_on_launch = false
 }
 
 variable {
   name = startwalpurgis
-  value = false
+  value = true
   reset_on_launch = false
 }
 
@@ -410,7 +440,7 @@ variable {
 
 variable {
   name = currentrebirth
-  value = 44
+  value = 14
   reset_on_launch = false
 }
 
@@ -446,14 +476,13 @@ variable {
 
 variable {
   name = savedskills
-  value = "tensura:fighter"
-
+  value = None
   reset_on_launch = false
 }
 
 variable {
   name = falsifier
-  value = 0
+  value = 1
   reset_on_launch = false
 }
 
@@ -472,6 +501,12 @@ variable {
 variable {
   name = gourmand
   value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = factionleader
+  value = FenrirTheTaken
   reset_on_launch = false
 }
 
@@ -525,7 +560,7 @@ variable {
 
 variable {
   name = walpurgisorganizer
-  value = false
+  value = true
   reset_on_launch = false
 }
 
@@ -615,7 +650,7 @@ variable {
 
 variable {
   name = faction1
-  value = Hiu
+  value = aa
   reset_on_launch = false
 }
 

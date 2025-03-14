@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = rebirthup
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738640642623
+  last_edited_time = 1739305383589
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:6e5e1411-e553-4b97-a5b3-ce74fb6d876d-1738702594593] = [groups:][instances:]
+  [loading_requirement_container_meta:d4cd26a4-f1b0-493b-a233-eda2d1aa8917-1739305383629] = [groups:][instances:]
 }
 
 customization {
@@ -260,8 +260,8 @@ element {
   [executable_action_instance:af465efb-a4f2-4473-9e92-3ff4bbc4b5b7-1738278316943][action_type:disable_layout] = rebirthup_layout_rebirthenhance
   [executable_action_instance:cff57313-c1ba-4927-85ec-d013b8e00161-1738457555740][action_type:sendmessage] = /initializeSkillSelection
   [executable_block:b792a529-2133-4443-8875-321069789085-1738277661407][type:generic] = [executables:fafcf28c-30f0-4673-aa4e-159f9f8c62c7-1738278303948;af465efb-a4f2-4473-9e92-3ff4bbc4b5b7-1738278316943;cff57313-c1ba-4927-85ec-d013b8e00161-1738457555740;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/skill_select.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/skill_select_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/skillselect.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/skillselecthover.png
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -382,5 +382,55 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = c9337d6c-47b6-40f6-94cb-a58726a0f4cb-1738459996576
   [loading_requirement_container_meta:c9337d6c-47b6-40f6-94cb-a58726a0f4cb-1738459996576] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = Choose Skills here -->
+  source_mode = direct
+  shadow = true
+  scale = 0.75
+  base_color = #FFFFFFFF
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = true
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = c599b85f-3d1b-489c-ada0-093ba46c809b-1739300828344
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1372
+  sticky_anchor = false
+  anchor_point = element
+  anchor_point_element = bc96709e-e6e1-4526-b0d9-8a1c4ea9c82b-1738273217476
+  x = 140
+  y = 11
+  width = 92
+  height = 40
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = d6d42a19-74e8-4038-8e3e-36ef333a3ed3-1739300828344
+  [loading_requirement_container_meta:d6d42a19-74e8-4038-8e3e-36ef333a3ed3-1739300828344] = [groups:][instances:]
 }
 

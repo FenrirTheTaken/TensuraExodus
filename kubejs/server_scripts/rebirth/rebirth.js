@@ -30,6 +30,15 @@ Not sure
     //     player.give('minecraft:diamond');
     // });
 
+const $SCHEMAPI = Java.loadClass('com.github.manasmods.tensura.capability.smithing.SmithingCapability')
+
+function schematic(play, schematic){
+    // schematic.forEach(e=>{
+    //     play.unlockSchematic(e)
+    // })
+    play.map(e => e.unlockSchematic(ResourceLocation(schematic)))
+}
+
 
 const unique = ['tensura:absolute_severance','tensura:berserk','tensura:berserker','tensura:bewilder','tensura:chef','tensura:chosen_one','tensura:commander','tensura:cook','tensura:creator','tensura:degenerate','tensura:divine_berserker','tensura:engorger','tensura:envy','tensura:falsifier',
     'tensura:fighter','tensura:fusionist','tensura:gluttony','tensura:godly_craftsman', 'tensura:gourmand','tensura:gourmet','tensura:great_sage','tensura:greed','tensura:guardian','tensura:healer','tensura:infinity_prison','tensura:lust','tensura:martial_master','tensura:mathematician','tensura:merciless',
@@ -43,7 +52,18 @@ const rebirth_list = ['tensura:absolute_severance','tensura:berserk','tensura:be
 
 
 function reset(player){
-    Utils.server.runCommandSilent(`tensura reset ${player.username}`)
+    // const play = $SCHEMAPI.getFrom(player)
+    // let per = player.nbt.get('ForgeCaps').get('tensura:schematics').get("0")
+    // Utils.server.tell(`${per}`)
+    player.persistentData.inRebirth = true
+    // Utils.server.runCommandSilent(`tensura reset ${player.username}`)
+    Utils.server.runCommandSilent(`tensura reset ${player.username} awakening`)
+    Utils.server.runCommandSilent(`tensura reset ${player.username} statistic`)
+    Utils.server.runCommandSilent(`tensura reset ${player.username} skill`)
+    Utils.server.runCommandSilent(`tensura reset ${player.username} race`)
+    
+    
+    // schematic(play,per)
     player.persistentData.rebirthcount++
     if (player.persistentData.rebirthcount == 2){
         player.persistentData.saveCount = 1
@@ -54,10 +74,56 @@ function reset(player){
     else if(player.persistentData.rebirthcount >= 4){
         player.persistentData.saveCount = 3
     }
+    if (player.persistentData.rebirthcount > 0){
+                let skil = player.nbt.get('ForgeCaps').get('manascore:skills').get('skills')
+                player.persistentData.skil = []
+                // event.player.persistentData.rebirthcount = 0
+        
+        
+                skil.forEach(e => {
+                    if (unique.find(s => s == e.skill)){
+                        player.persistentData.skil.push(e.skill)
+                    }
+                }
+                )
+                Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke ${player.persistentData.skil[0]}`)
+                if (player.persistentData.skil[0] == "tensura:oppressor"){
+                    Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke tensura:gravity_manipulation`)
+                }
+                if (player.persistentData.skil[0] == "tensura:martial_master"){
+                    Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke tensura:heavenly_eye`)
+                }
+                if (player.persistentData.rebirthcount > 2){
+                    let tempL = []
+                    for (let i = 0; i < 3 - player.persistentData.skilsave.length; i++){
+                        let temp = Math.floor(Math.random() * (rebirth_list.length-1))
+                        while(tempL.find(t => t === temp)!= null){
+                            temp = Math.floor(Math.random() * (rebirth_list.length-1))
+                        }
+                        tempL.push(temp)
+                        Utils.server.runCommandSilent(`tensura edit ${player.username} ability grant ${rebirth_list[temp]}`)
+                    }
+                    player.persistentData.skilsave.forEach(s =>{
+                        Utils.server.runCommandSilent(`tensura edit ${player.username} ability grant ${String(s).replace(/"/g, '')}`)
+                    })
+                }
+                else{
+                    let tempL = []
+                    for (let i = 0; i < player.persistentData.rebirthcount+1; i++){
+                        let temp = Math.floor(Math.random() * (rebirth_list.length-1))
+                        while(tempL.find(t => t === temp)!= null){
+                            temp = Math.floor(Math.random() * (rebirth_list.length-1))
+                        }
+                        tempL.push(temp)
+                        Utils.server.runCommandSilent(`tensura edit ${player.username} ability grant ${rebirth_list[temp]}`)
+                    }
+            }
+            player.persistentData.skilsave = []
+            }
    
 }
 PlayerEvents.advancement("tensura:reincarnated", (event) => {
-    if (event.player.persistentData.rebirthcount > 0){
+    if (event.player.persistentData.rebirthcount > 0 && event.player.persistentData.inRebirth == false){
         let skil = event.player.nbt.get('ForgeCaps').get('manascore:skills').get('skills')
         event.player.persistentData.skil = []
         // event.player.persistentData.rebirthcount = 0
@@ -70,6 +136,12 @@ PlayerEvents.advancement("tensura:reincarnated", (event) => {
         }
         )
         Utils.server.runCommandSilent(`tensura edit ${event.player.username} ability revoke ${event.player.persistentData.skil[0]}`)
+        if (player.persistentData.skil[0] == "tensura:oppressor"){
+            Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke tensura:gravity_manipulation`)
+        }
+        if (player.persistentData.skil[0] == "tensura:martial_master"){
+            Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke tensura:heavenly_eye`)
+        }
         if (event.player.persistentData.rebirthcount > 2){
             let tempL = []
             for (let i = 0; i < 3 - event.player.persistentData.skilsave.length; i++){
@@ -97,8 +169,13 @@ PlayerEvents.advancement("tensura:reincarnated", (event) => {
     }
     event.player.persistentData.skilsave = []
     }
+    else{
+        event.player.persistentData.inRebirth = false
+    }
 
 });
+
+
 ServerEvents.commandRegistry(event => {
     const { commands: Commands, arguments: Arguments } = event;
 
@@ -247,23 +324,25 @@ ServerEvents.commandRegistry(event => {
             .executes(ctx => {
                 let skil = ctx.source.player.nbt.get('ForgeCaps').get('manascore:skills').get('skills')
                 ctx.source.player.persistentData.skil = []
-                ctx.source.player.persistentData.skilsave = []
 
                 // event.player.persistentData.rebirthcount = 0
         
         
                 skil.forEach(e => {
-                    if (unique.find(s => s == e.skill)){
+                    if (unique.find(s => s == e.skill && e.RemoveTime == -1)){
                         ctx.source.player.persistentData.skil.push(e.skill)
                     }
                 }
                 )
-                ctx.source.player.persistentData.skilsave=[]
                 ctx.source.player.persistentData.skil.forEach(s => {
                     let temp = String(s).split(":")
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set ${temp[1].replace(/"/g, '')} false 1`)
                 }
                 );
+                ctx.source.player.persistentData.skilsave.forEach(s => {
+                    let temp = String(s).split(":")
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set ${temp[1].replace(/"/g, '')} false 2`)
+                })
                 unique.forEach(s => {
                     let temp = String(s).split(":")
                     if (!(ctx.source.player.persistentData.skil.find(l => l == s))){
@@ -307,6 +386,19 @@ ServerEvents.commandRegistry(event => {
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set savedskills false None`)
                 }
 
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+    );
+});
+
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('resetRebirths')
+            .executes(ctx => {
+                   ctx.source.player.persistentData.rebirthcount = 0
 
                 return 1; // Returning a value is required; 1 indicates success.
             })

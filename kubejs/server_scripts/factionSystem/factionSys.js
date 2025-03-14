@@ -67,7 +67,7 @@ ServerEvents.commandRegistry(event => {
             
                 const PartInst = $PACAPI.get(ctx.source.server)
                 const PartMan = PartInst.getPartyManager()
-                const party = PartMan.getPartyByOwner(ctx.source.player.getUuid())
+                const party = PartMan.getPartyByMember(ctx.source.player.getUuid())
                 const staffArray = party.getStaffInfoStream().toArray()
                 const memberArray = party.getNonStaffInfoStream().toArray()
                 const allyArray = party.getAllyPartiesStream().toArray()
@@ -317,5 +317,64 @@ ServerEvents.commandRegistry(event => {
                 return 1; // Returning a value is required; 1 indicates success.
             })
         )
+    );
+});
+
+
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('getLeader')
+            .executes(ctx => {
+                const PartInst = $PACAPI.get(ctx.source.server)
+                const PartMan = PartInst.getPartyManager()
+                const party = PartMan.getPartyByMember(ctx.source.player.getUuid())
+                let owner = party.getOwner().getUsername()
+                Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set factionleader false ${owner}`)
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+    );
+});
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('getStaff')
+            .executes(ctx => {
+                const PartInst = $PACAPI.get(ctx.source.server)
+                const PartMan = PartInst.getPartyManager()
+                const party = PartMan.getPartyByMember(ctx.source.player.getUuid())
+                let staffarray = party.getStaffInfoStream()
+                let staffstring = ""
+                staffarray.toList().forEach( p=> {
+                    staffstring += `${p.getUsername()}, `
+                })
+                Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set factionstaff false ${staffstring}`)
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+    );
+});
+
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('getInvitedMembers')
+            .executes(ctx => {
+                const PartInst = $PACAPI.get(ctx.source.server)
+                const PartMan = PartInst.getPartyManager()
+                const party = PartMan.getPartyByMember(ctx.source.player.getUuid())
+                let staffarray = party.getInvitedPlayersStream()
+                let staffstring = ""
+                staffarray.toList().forEach( p=> {
+                    staffstring += `${p.getUsername()}, `
+                })
+                Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set factionmemberinvited false ${staffstring}`)
+
+                return 1; // Returning a value is required; 1 indicates success.
+            })
     );
 });

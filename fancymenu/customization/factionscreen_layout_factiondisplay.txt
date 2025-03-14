@@ -4,12 +4,12 @@ layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1736547189619
-  is_enabled = false
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:2974e1e4-6dfb-435c-848f-82cdaaa3f9d0-1738620545731] = [groups:][instances:]
+  [loading_requirement_container_meta:56ce631f-950e-4f08-9375-c29ea6fc997c-1741984505584] = [groups:][instances:]
 }
 
 customization {

@@ -15,6 +15,7 @@ PlayerEvents.loggedIn(e => {
       e.player.persistentData.divinity = ""
       e.player.persistentData.skilsave=[]
       e.player.persistentData.rebirthcount = 0
+      e.player.persistentData.inRebirth = false
 
 
 
@@ -22,5 +23,8 @@ PlayerEvents.loggedIn(e => {
       e.player.tell(Text.of('Please Look In FTB Quests in Your Inventory To Look at the Rules!!'))  
       //e.player.tell(Text.of('Hi'))
       // do something
+    }
+    if (e.player.persistentData.inRebirth == true){
+      Utils.server.runCommandSilent(`execute as ${e.player.username} run tensura reset`)
     }
   })
