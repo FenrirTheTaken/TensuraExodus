@@ -61,7 +61,7 @@ ServerEvents.commandRegistry(event => {
     const { commands: Commands } = event;
 
     event.register(
-        Commands.literal('testFaction')
+        Commands.literal('factionDescription')
             .executes(ctx => {
                 const faction = findFaction(ctx.source.player.username)
             

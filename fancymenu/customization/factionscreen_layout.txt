@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1741984310038
-  is_enabled = false
+  last_edited_time = 1743970807474
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:60bad970-8cad-429f-9ef9-bbd94dee4e84-1741984505575] = [groups:][instances:]
+  [loading_requirement_container_meta:247f4a76-fe0c-49ee-935b-841674f85636-1743971362686] = [groups:][instances:]
 }
 
 customization {

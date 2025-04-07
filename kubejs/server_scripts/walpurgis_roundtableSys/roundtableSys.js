@@ -4,11 +4,17 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('roundtableStartVote')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 Utils.server.persistentData.roundtable = {roundtableon:1, invited:[ctx.source.player.username], votes:0}
                 return 1; // Returning a value is required; 1 indicates success.
             })
-        
+        )
     );
 });
 ServerEvents.commandRegistry(event => {
@@ -26,7 +32,6 @@ ServerEvents.commandRegistry(event => {
                     }
                 }
                 else{
-                    Utils.server.tell("Hi")
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set startroundtable false false`)
                 }
                 return 1; // Returning a value is required; 1 indicates success.
@@ -39,7 +44,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('voteRoundtable')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                     if (Utils.server.persistentData.roundtable.roundtableon === 1){
                         Utils.server.persistentData.roundtable.votes += 1
                         Utils.server.persistentData.roundtable.invited.push(ctx.source.player.username)
@@ -48,6 +59,7 @@ ServerEvents.commandRegistry(event => {
                 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -62,11 +74,11 @@ ServerEvents.commandRegistry(event => {
                     Utils.server.persistentData.faction.forEach(f => {
                         s += f.title +"\n" 
                     })
-                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set factionlist false ${s}`)
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set intvitedroundtable false ${s}`)
     
                 }
                 else{
-                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set factionlist false None`)
+                    Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set invitedroundtable false None`)
                 }
 
 
@@ -80,7 +92,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('denyRoundtable')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                     if (Utils.server.persistentData.roundtable.roundtableon === 1 && Utils.server.persistentData.roundtable.invited.find(player => player === ctx.source.player.username))
                     {
                         Utils.server.persistentData.roundtable.invited = Utils.server.persistentData.roundtable.invited.filter(player =>!(player === ctx.source.player.username))
@@ -90,6 +108,7 @@ ServerEvents.commandRegistry(event => {
                 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -98,7 +117,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('startRoundtable')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 if (Utils.server.persistentData.roundtable){
                     if (Utils.server.persistentData.roundtable.roundtableon === 1){
                         Utils.server.persistentData.roundtable.invited.forEach(p => {
@@ -112,6 +137,7 @@ ServerEvents.commandRegistry(event => {
                 }
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -120,7 +146,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('endRoundtable')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 if (Utils.server.persistentData.roundtable){
                     if (Utils.server.persistentData.roundtable.roundtableon === 1){
                         Utils.server.persistentData.roundtable.invited.forEach(p => {
@@ -139,6 +171,7 @@ ServerEvents.commandRegistry(event => {
                 }
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 ServerEvents.commandRegistry(event => {

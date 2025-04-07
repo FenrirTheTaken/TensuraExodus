@@ -276,11 +276,18 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('normalReset')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 reset(ctx.source.player)
                 ctx.source.player.persistentData.skilsave=[]
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 ServerEvents.commandRegistry(event => {
@@ -288,10 +295,17 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('specificReset')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 reset(ctx.source.player)
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -397,10 +411,17 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('resetRebirths')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                    ctx.source.player.persistentData.rebirthcount = 0
 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });

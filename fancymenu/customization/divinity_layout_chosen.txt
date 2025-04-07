@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738619594715
+  last_edited_time = 1743969375873
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:277c2ac5-d791-4e32-948d-c383ab317200-1739291651395] = [groups:][instances:]
+  [loading_requirement_container_meta:8d6e6e12-6d94-4d23-b54f-faf90a102a01-1743971362682] = [groups:][instances:]
 }
 
 customization {
@@ -166,7 +166,7 @@ element {
 
 element {
   interactable = true
-  source = Divinity Ranking : 1st
+  source = Divinity Ranking : {"placeholder":"getvariable","values":{"name":"divinityrank"}}
   source_mode = direct
   shadow = true
   scale = 1.0

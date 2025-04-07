@@ -2,7 +2,7 @@ type = user_variables
 
 variable {
   name = envy
-  value = 0
+  value = 1
   reset_on_launch = false
 }
 
@@ -44,7 +44,7 @@ variable {
 
 variable {
   name = canrebirth
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -80,7 +80,7 @@ variable {
 
 variable {
   name = divinity2
-  value = Gonko
+  value = Ramoris
   reset_on_launch = false
 }
 
@@ -92,7 +92,7 @@ variable {
 
 variable {
   name = divinity3
-  value = The Grandfather
+  value = Mijornil
   reset_on_launch = false
 }
 
@@ -104,7 +104,7 @@ variable {
 
 variable {
   name = divinity1
-  value = Ramoris
+  value = The Grandfather
   reset_on_launch = false
 }
 
@@ -116,7 +116,7 @@ variable {
 
 variable {
   name = hasdivinity
-  value = false
+  value = true
   reset_on_launch = false
 }
 
@@ -140,8 +140,7 @@ variable {
 
 variable {
   name = factionlist
-  value = 1. aa
-
+  value = 1. a
   reset_on_launch = false
 }
 
@@ -177,16 +176,7 @@ variable {
 
 variable {
   name = divinityall
-  value = 1. Ramoris
-2. Gonko
-3. The Grandfather
-4. Mijornil
-5. Sinistram Ultimus
-6. Xaero
-7. Myxvaras
-8. Visark
-9. Fowlfyr
-
+  value = 1. The Grandfather
   reset_on_launch = false
 }
 
@@ -222,8 +212,7 @@ variable {
 
 variable {
   name = playerall
-  value = 1. FenrirTheTaken
-
+  value = 1. 4ourHearts
   reset_on_launch = false
 }
 
@@ -259,7 +248,7 @@ variable {
 
 variable {
   name = isdemon
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -271,7 +260,7 @@ variable {
 
 variable {
   name = creator
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -302,7 +291,6 @@ variable {
 variable {
   name = invitedwalpurgis
   value = FenrirTheTaken
-
   reset_on_launch = false
 }
 
@@ -356,7 +344,7 @@ variable {
 
 variable {
   name = villain
-  value = 0
+  value = 1
   reset_on_launch = false
 }
 
@@ -374,7 +362,7 @@ variable {
 
 variable {
   name = reaper
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -440,7 +428,7 @@ variable {
 
 variable {
   name = currentrebirth
-  value = 14
+  value = 2
   reset_on_launch = false
 }
 
@@ -464,7 +452,7 @@ variable {
 
 variable {
   name = divinityrank
-  value = 
+  value = 1
   reset_on_launch = false
 }
 
@@ -476,13 +464,13 @@ variable {
 
 variable {
   name = savedskills
-  value = None
+  value = "tensura:starved"
   reset_on_launch = false
 }
 
 variable {
   name = falsifier
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -494,7 +482,7 @@ variable {
 
 variable {
   name = divinity
-  value = 
+  value = TheGrandfather
   reset_on_launch = false
 }
 
@@ -584,13 +572,13 @@ variable {
 
 variable {
   name = player1
-  value = FenrirTheTaken
+  value = 4ourHearts
   reset_on_launch = false
 }
 
 variable {
   name = player2
-  value = None
+  value = FenrirTheTaken
   reset_on_launch = false
 }
 
@@ -620,7 +608,7 @@ variable {
 
 variable {
   name = starved
-  value = 0
+  value = 2
   reset_on_launch = false
 }
 
@@ -650,7 +638,7 @@ variable {
 
 variable {
   name = faction1
-  value = aa
+  value = a
   reset_on_launch = false
 }
 

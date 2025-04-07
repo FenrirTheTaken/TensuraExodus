@@ -35,12 +35,20 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('inviteSub')
         .then(Commands.argument('player', Arguments.STRING.create(event))
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
             .executes(ctx => {
+                const auth = Arguments.STRING.getResult(ctx,'authentication')
+                if (auth !== '0mfiqzo1aays3c0'){
+                    Utils.server.tell(`You are not authenticated to use this command.`)
+                    return 1;
+                }
                 const first = Arguments.STRING.getResult(ctx,'player')
                 Utils.server.persistentData.walpurgis.invited.push(first)
                 return 1; // Returning a value is required; 1 indicates success.
+                
             })
         )
+    )
     );
 });
 ServerEvents.commandRegistry(event => {
@@ -48,7 +56,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('voteWalpurgis')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                     if (Utils.server.persistentData.walpurgis.walpurgison === 1 && !Utils.server.persistentData.walpurgis.invited.find(player => player === ctx.source.player.username)){
                         Utils.server.persistentData.walpurgis.votes += 1
                         Utils.server.persistentData.walpurgis.invited.push(ctx.source.player.username)
@@ -57,6 +71,7 @@ ServerEvents.commandRegistry(event => {
                 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -65,8 +80,14 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('denyWalpurgis')
-            .executes(ctx => {
-                    if (Utils.server.persistentData.walpurgis.walpurgison === 1 && Utils.server.persistentData.walpurgis.invited.find(player => player === ctx.source.player.username))
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }                    
+            if (Utils.server.persistentData.walpurgis.walpurgison === 1 && Utils.server.persistentData.walpurgis.invited.find(player => player === ctx.source.player.username))
                     {
                         Utils.server.persistentData.walpurgis.invited = Utils.server.persistentData.walpurgis.invited.filter(player =>!(player === ctx.source.player.username))
                         Utils.server.persistentData.walpurgis.votes -= 1
@@ -75,6 +96,7 @@ ServerEvents.commandRegistry(event => {
                 
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -83,7 +105,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('startWalpurgis')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 if (Utils.server.persistentData.walpurgis){
                     if (Utils.server.persistentData.walpurgis.walpurgison === 1){
                         Utils.server.persistentData.walpurgis.invited.forEach(p => {
@@ -98,6 +126,7 @@ ServerEvents.commandRegistry(event => {
                 }
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 
@@ -106,7 +135,13 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('endWalpurgis')
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 if (Utils.server.persistentData.walpurgis){
                     if (Utils.server.persistentData.walpurgis.walpurgison === 1){
                         Utils.server.persistentData.walpurgis.invited.forEach(p => {
@@ -126,6 +161,7 @@ ServerEvents.commandRegistry(event => {
                 }
                 return 1; // Returning a value is required; 1 indicates success.
             })
+        )
     );
 });
 ServerEvents.commandRegistry(event => {

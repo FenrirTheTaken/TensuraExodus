@@ -83,13 +83,20 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('increaseDivinity')
         .then(Commands.argument('val', Arguments.STRING.create(event))
-            .executes(ctx => {
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
                 const first = Arguments.STRING.getResult(ctx,'val')
                 const index = Utils.server.persistentData.divinity.findIndex((divinity) => divinity.god === ctx.source.player.persistentData.divinity)
                 Utils.server.persistentData.divinity[index].offering += parseInt(first)
                 return 1; // Returning a value is required; 1 indicates success.
             })
         )
+    )
     );
 });
 // 1st Place
@@ -217,7 +224,8 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('divinityRank')
             .executes(ctx => {
-                const rank = Utils.server.persistentData.divinity.findIndex((divinity) => divinity.god === ctx.source.player.divinity) + 1
+                console.log("Player divinity:", ctx.source.player.persistentData.divinity);
+                const rank = Utils.server.persistentData.divinity.findIndex((divinity) => divinity.god === ctx.source.player.persistentData.divinity) + 1
                 Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set divinityrank false ${rank}`)
 
                 return 1; // Returning a value is required; 1 indicates success.

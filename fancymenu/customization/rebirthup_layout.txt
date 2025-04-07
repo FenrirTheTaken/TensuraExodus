@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = rebirthup
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1739297887783
+  last_edited_time = 1742421665615
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:44fbe984-bc63-4ef9-a898-1c8205164f82-1739308497373] = [groups:][instances:]
+  [loading_requirement_container_meta:0822b2b6-b9eb-46bc-8c55-a9ba23ddc115-1742422056050] = [groups:][instances:]
 }
 
 customization {
@@ -218,8 +218,8 @@ element {
   [executable_action_instance:8e442942-000d-4dcf-83dc-b0eb0d9b26d3-1738274634054][action_type:enable_layout] = rebirthup_layout_rebirthnorm
   [executable_action_instance:fd0203a4-68e9-45a8-80be-8104a073dfe1-1738274649166][action_type:disable_layout] = rebirthup_layout
   [executable_block:daca3f58-2da4-4b42-a8a8-863c27124c97-1738274227024][type:generic] = [executables:8e442942-000d-4dcf-83dc-b0eb0d9b26d3-1738274634054;fd0203a4-68e9-45a8-80be-8104a073dfe1-1738274649166;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/normal_rebirth.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/normal_rebirth_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/normalrebirth.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/normalrebirthhover.png
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -240,7 +240,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1440
+  auto_sizing_base_screen_height = 1372
   sticky_anchor = false
   anchor_point = mid-centered
   x = 104
