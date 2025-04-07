@@ -291,6 +291,7 @@ variable {
 variable {
   name = invitedwalpurgis
   value = FenrirTheTaken
+
   reset_on_launch = false
 }
 
@@ -368,7 +369,7 @@ variable {
 
 variable {
   name = startwalpurgis
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -428,7 +429,7 @@ variable {
 
 variable {
   name = currentrebirth
-  value = 2
+  value = 0
   reset_on_launch = false
 }
 

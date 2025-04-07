@@ -1,0 +1,28 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tensura_7_deadly_sins_uniques"
+	group: "585976CCA6B0831E"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/skill/extra/magic_space_transform.png"
+		}
+	}
+	id: "50A601588B780E8E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "075CE4773A44DD02"
+		tasks: [{
+			id: "690DE14DF706B6FE"
+			title: "This is going to Stay"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&c[Tensura] 7 Deadly Sins Uniques"
+}

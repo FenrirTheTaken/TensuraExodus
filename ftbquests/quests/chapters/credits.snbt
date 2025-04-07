@@ -1,0 +1,460 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "credits"
+	group: "2093A896408BA921"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/skill/intrinsic/dragon_eye.png"
+		}
+	}
+	id: "37F77DCBA89B0F9E"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 1.0d
+		hover: [ ]
+		image: "tensura:textures/temp_textures/item/exclaimed_golden_rimuru.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: -0.5d
+		y: -5.5d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "chipped:starry_yellow_glazed_terracotta"
+			id: "3C0D99E31776035A"
+			subtitle: "Gather these materials and summon what you please"
+			tasks: [{
+				id: "39DAE1EF1428B770"
+				type: "checkmark"
+			}]
+			title: "Boss Summoning"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			icon: "tensura:slime_chunk_block"
+			id: "59632D39245B4423"
+			rewards: [{
+				command: "/execute at @p run summon tensura:supermassive_slime ~ ~ ~"
+				icon: "tensura:slime_chunk_block"
+				id: "7D9CC802FD463DF5"
+				title: "Summon Super Massive Slime"
+				type: "command"
+			}]
+			tasks: [
+				{
+					entity: "tensura:slime"
+					icon: "tensura:slime_core"
+					id: "0C7184D985941D0B"
+					type: "kill"
+					value: 400L
+				}
+				{
+					count: 36L
+					id: "214B79FD5C90FD79"
+					item: "tensura:magic_ore_shard"
+					type: "item"
+				}
+			]
+			title: "Supermassive Slime"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			icon: "tensura:charybdis_core"
+			id: "47FD8EF37C9FAD0F"
+			rewards: [{
+				id: "033244933BF9F841"
+				item: "tensura:charybdis_core"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "55F84D2C5E8BA699"
+					points: false
+					type: "xp"
+					value: 200L
+				}
+				{
+					entity: "tensura:megalodon"
+					icon: "tensura:raw_charybdis_meat"
+					id: "1AC9FACC1C97FCD3"
+					type: "kill"
+					value: 8L
+				}
+				{
+					count: 26L
+					id: "319F56EC789FE48E"
+					item: "tensura:magic_ore_shard"
+					type: "item"
+				}
+			]
+			title: "Charybdis"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			icon: "tensura:orc_disaster_head"
+			id: "04EA54C012BF41C7"
+			rewards: [{
+				command: "/execute at @p run summon tensura:orc_lord ~ ~ ~"
+				icon: "tensura:orc_disaster_head"
+				id: "43E32423CA07242E"
+				title: "Summon Orc Lord"
+				type: "command"
+			}]
+			tasks: [
+				{
+					entity: "tensura:orc"
+					icon: "minecraft:porkchop"
+					id: "79721FD8AD720556"
+					type: "kill"
+					value: 500L
+				}
+				{
+					count: 36L
+					id: "4C5D6487E709732C"
+					item: "tensura:magic_ore_shard"
+					type: "item"
+				}
+			]
+			title: "Orc Lord"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:wither_skeleton_skull"
+			id: "2B34E39D5842439A"
+			rewards: [{
+				command: "/execute at @p run summon minecraft:wither ~ ~ ~"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "47623CE95DD8C173"
+				title: "Summon Wither"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "686789289B5FEA93"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					entity: "minecraft:wither_skeleton"
+					id: "4D12C75BE41D568E"
+					type: "kill"
+					value: 300L
+				}
+				{
+					count: 50L
+					id: "6453EEB22E578044"
+					item: "iceandfire:witherbone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "721A878F78284403"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			title: "Wither"
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			can_repeat: true
+			icon: "tensuraitemaddon:ifrit_doll"
+			id: "2F7D1790C1298727"
+			rewards: [{
+				command: "/execute at @p run summon tensura:shizu ~ ~ ~"
+				icon: {
+					Count: 1b
+					id: "tensura:high_magisteel_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6747B58EB3860962"
+				title: "Summon Shizu"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2AFD7799666C25E4"
+					item: {
+						Count: 1b
+						id: "tensura:tempest_scale_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "1676ED902F69FB07"
+					type: "kill"
+					value: 400L
+				}
+				{
+					count: 16L
+					id: "22F4F87B51CCD3E8"
+					item: "tensura:elemental_essence"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "6737CD8A50A8C62F"
+					item: "tensura:magic_ore_shard"
+					type: "item"
+				}
+			]
+			title: "Shizu"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:armor_stand"
+			id: "32B2D3E48D652285"
+			rewards: [{
+				command: "/execute at @p run summon tensura:war_gnome ~ ~ ~"
+				icon: "minecraft:armor_stand"
+				id: "6BC7B091EA4E3353"
+				title: "Summon War Gnome"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 6L
+					id: "24621DB5CE6CC610"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					entity: "tensura:leech_lizard"
+					id: "49EE2E718FE510AC"
+					type: "kill"
+					value: 100L
+				}
+				{
+					id: "4637864D86BFC5E5"
+					points: false
+					type: "xp"
+					value: 10L
+				}
+				{
+					id: "0F9E69B0AC25B030"
+					item: "tensura:block_of_low_magisteel"
+					type: "item"
+				}
+			]
+			title: "War Gnome"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "tensura:moonlight"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1813364083380690"
+			rewards: [{
+				command: "/execute at @p run summon tensura:hinata_sakaguchi ~ ~ ~"
+				icon: {
+					Count: 1b
+					id: "tensura:moonlight"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4B094A1C01780409"
+				title: "Summon Hinata Sakaguchi"
+				type: "command"
+			}]
+			tasks: [
+				{
+					entity: "minecraft:pillager"
+					id: "64C7D585CF7AC8E7"
+					type: "kill"
+					value: 500L
+				}
+				{
+					count: 16L
+					id: "3BBED25F05ABE931"
+					item: "tensura:elemental_essence"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "21694BD7D2F76903"
+					item: "tensura:dragon_essence"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "154448329D121296"
+					item: "tensura:pure_magisteel_ingot"
+					type: "item"
+				}
+			]
+			title: "Hinata"
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "iceandfire:armor_silver_metal_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3CBA4301882E0422"
+			rewards: [{
+				auto: "disabled"
+				command: "/execute at @p run summon tensura:folgen ~ ~ ~"
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "tensura:item/low_magisteel_helmet"
+					}
+				}
+				id: "3887F4502C571457"
+				title: "Summon Folgen"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "538B61416ACF6DA4"
+					item: "tensura:low_magisteel_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "64F358AE066987AC"
+					item: {
+						Count: 1b
+						id: "tensura:silver_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5ED5899C17532BDD"
+					item: {
+						Count: 1b
+						id: "tensura:silver_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "05EF6B136A3D5BE0"
+					item: {
+						Count: 1b
+						id: "tensura:silver_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6A6A5975BA133897"
+					item: {
+						Count: 1b
+						id: "tensura:silver_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "27D82213E60367A6"
+					item: "tensura:magic_stone"
+					optional_task: true
+					type: "item"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "6458429AE3DE3258"
+					optional_task: true
+					type: "kill"
+					value: 100L
+				}
+			]
+			title: "Folgen"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			id: "642C6DD2A9D4F183"
+			invisible: true
+			rewards: [{
+				id: "51F91A14568B35D4"
+				item: {
+					Count: 1b
+					id: "tensura:charybdis_core"
+					tag: {
+						BlockEntityTag: {
+							EP: 0.0d
+						}
+						BlockStateTag: {
+							sculk_sensor_phase: "active"
+						}
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "235CC6A29EE920E5"
+					item: "tensura:charybdis_core"
+					type: "item"
+				}
+				{
+					id: "767A3150DE48C993"
+					type: "custom"
+				}
+			]
+			x: -3.0d
+			y: -5.5d
+		}
+	]
+	title: "&2[Tensura] Boss Summoning"
+}

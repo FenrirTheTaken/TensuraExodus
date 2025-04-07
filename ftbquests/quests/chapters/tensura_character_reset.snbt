@@ -1,0 +1,40 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tensura_character_reset"
+	group: "28241858A9C10465"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/mob_effect/casting.png"
+		}
+	}
+	id: "0AFCE33F90087C9D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "7FC0C76C7129FD78"
+		rewards: [{
+			auto: "disabled"
+			command: "/resetRace 0mfiqzo1aays3c0"
+			exclude_from_claim_all: true
+			icon: "tensura:labyrinth_barrier_block"
+			id: "06DE1D518E4ACC15"
+			player_command: true
+			silent: true
+			team_reward: false
+			title: "Reset Race 1 TIME USE"
+			type: "command"
+		}]
+		subtitle: "This is in case you picked the wrong race. Your ability will remain the same."
+		tasks: [{
+			id: "42C38AA7655B446D"
+			title: "Reset Character"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: 0.0d
+	}]
+	title: "&6[Tensura] Character Reset"
+}

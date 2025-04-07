@@ -1,0 +1,47 @@
+{
+	id: "511600D086EAD962"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			auto: "invisible"
+			icon: {
+				Count: 1b
+				id: "minecraft:stone_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			ignore_reward_blocking: true
+			stage: "Farmer"
+			team_reward: false
+			title: "Farmer"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: {
+				Count: 1b
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			ignore_reward_blocking: true
+			stage: "Miner"
+			team_reward: false
+			title: "Miner"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: "armourers_workshop:armourers-hammer"
+			ignore_reward_blocking: true
+			stage: "Blacksmith"
+			team_reward: false
+			title: "Blacksmith"
+			type: "gamestage"
+		}
+	]
+	title: "Choose A Class"
+}

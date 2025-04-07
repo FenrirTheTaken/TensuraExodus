@@ -156,7 +156,7 @@ ServerEvents.commandRegistry(event => {
                 if (Utils.server.persistentData.roundtable){
                     if (Utils.server.persistentData.roundtable.roundtableon === 1){
                         Utils.server.persistentData.roundtable.invited.forEach(p => {
-                            Utils.server.runCommandSilent(`execute in minecraft:overworld run tp ${p} 0 80 0`)
+                            Utils.server.runCommandSilent(`execute in minecraft:overworld run tp ${p} -53 71 62`)
                             Utils.server.runCommandSilent(`gamemode survival ${p}`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set roundtableon false false`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set startroundtable false false`)

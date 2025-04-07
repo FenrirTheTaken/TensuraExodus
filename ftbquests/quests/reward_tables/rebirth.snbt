@@ -1,0 +1,15 @@
+{
+	id: "7EE00803BA15199E"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "tensuraitemaddon:ifrit_doll" }
+		{ item: "tensuraitemaddon:tenebru_doll" }
+		{ item: "tensuraitemaddon:undine_doll" }
+		{ item: "tensuraitemaddon:gnome_doll" }
+		{ item: "tensuraitemaddon:luce_doll" }
+		{ item: "tensuraitemaddon:sylphide_doll" }
+		{ item: "tensuraitemaddon:akash_doll" }
+	]
+	title: "Rebirth"
+}

@@ -1,0 +1,19 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tensura_otherworlder_uniques"
+	group: "585976CCA6B0831E"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/magic/spiritual/swipe.png"
+		}
+	}
+	id: "2E10647895719439"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "&c[Tensura] Otherworlder Uniques"
+}

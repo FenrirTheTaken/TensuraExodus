@@ -5,11 +5,17 @@ ServerEvents.commandRegistry(event => {
 
     event.register(
         Commands.literal('walpurgisStartVote')
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
             .executes(ctx => {
+                const auth = Arguments.STRING.getResult(ctx,'authentication')
+                if (auth !== '0mfiqzo1aays3c0'){
+                    Utils.server.tell(`You are not authenticated to use this command.`)
+                    return 1;
+                }
                 Utils.server.persistentData.walpurgis = {walpurgison:1, invited:[ctx.source.player.username], votes:1}
                 return 1; // Returning a value is required; 1 indicates success.
             })
-        
+        )
     );
 });
 ServerEvents.commandRegistry(event => {
@@ -145,7 +151,7 @@ ServerEvents.commandRegistry(event => {
                 if (Utils.server.persistentData.walpurgis){
                     if (Utils.server.persistentData.walpurgis.walpurgison === 1){
                         Utils.server.persistentData.walpurgis.invited.forEach(p => {
-                            Utils.server.runCommandSilent(`execute in minecraft:overworld run tp ${p} 0 80 0`)
+                            Utils.server.runCommandSilent(`execute in minecraft:overworld run tp ${p} -53 71 62`)
                             Utils.server.runCommandSilent(`gamemode survival ${p}`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set walpurgison false false`)
                             Utils.server.runCommandSilent(`execute as ${p} run fmvariable set startwalpurgis false false`)
@@ -196,7 +202,6 @@ ServerEvents.commandRegistry(event => {
                         s += f +"\n" 
                     })
                     let k = s.replace(/"/g, '')
-                    Utils.server.tell(`${k}`)
                     console.log(k)
                     Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set invitedwalpurgis false ${k}`)
     

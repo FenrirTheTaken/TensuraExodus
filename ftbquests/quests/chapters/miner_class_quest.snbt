@@ -1,0 +1,1600 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "miner_class_quest"
+	group: "28241858A9C10465"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "relics:textures/gui/description/cards/holy_locket/steal.png"
+		}
+	}
+	id: "0B269086D1F7F259"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["47F82B45F5DA6D0E"]
+			description: ["{@pagebreak}"]
+			icon: {
+				Count: 1b
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06B8A3D6307C60CA"
+			rewards: [
+				{
+					id: "7DB50A6839C24722"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06E36788F45D172A"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2C64F8A361879ED8"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4A32F67C7D2E1A3B"
+				stage: "Miner"
+				title: "Miner"
+				type: "gamestage"
+			}]
+			title: "Miner"
+			x: -17.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["06B8A3D6307C60CA"]
+			icon: {
+				Count: 1b
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6244DE62614C2FF6"
+			rewards: [{
+				id: "3A5983B8DE6E5B5D"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0661CD3BA47C4CE6"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1EFD16F5A9CA8521"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			title: "Stone Pick"
+			x: -16.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6244DE62614C2FF6"]
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "18E1C0625652439D"
+			rewards: [{
+				id: "61AB144968B88D2A"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "61DA6849BEBA4210"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "682816617075BBBC"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Pick"
+			x: -14.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["18E1C0625652439D"]
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5435F9907BAF780B"
+			rewards: [{
+				id: "6B7A63657ED51BEF"
+				item: {
+					Count: 1b
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "20A1318CBA8AC998"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3B8BB725CA8460CC"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Diamond Pick"
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5435F9907BAF780B"]
+			icon: {
+				Count: 1b
+				id: "minecraft:netherite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "76CD611374DB770C"
+			rewards: [{
+				id: "6F176194C31F56F5"
+				item: {
+					Count: 1b
+					id: "minecraft:netherite_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "21E002B972BFF543"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1D7470FE7BA13F36"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Netherite Pick"
+			x: -11.5d
+			y: -0.5d
+		}
+		{
+			id: "47F82B45F5DA6D0E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B45A43995289ECE"
+				table_id: 5842858462176532834L
+				type: "choice"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Choose Carefully, This Cannot Be Reset."
+			tasks: [{
+				id: "1EC4FEA68212A727"
+				type: "checkmark"
+			}]
+			title: "Choose Your Class!"
+			x: -19.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["47F82B45F5DA6D0E"]
+			icon: {
+				Count: 1b
+				id: "minecraft:wooden_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "697539E2804998DC"
+			rewards: [
+				{
+					id: "48FF997AC83DD1C3"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5324D2B60230116E"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "6FE7E73F93F78221"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "68A8B5D9DB74552B"
+				stage: "Farmer"
+				title: "Farmer"
+				type: "gamestage"
+			}]
+			x: -17.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47F82B45F5DA6D0E"]
+			icon: "armourers_workshop:armourers-hammer"
+			id: "176399BF4AF82C8F"
+			rewards: [{
+				id: "083B1109F2FD595C"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "armourers_workshop:armourers-hammer"
+				id: "60F2FF2F8630A8E1"
+				stage: "Blacksmith"
+				title: "Blacksmith"
+				type: "gamestage"
+			}]
+			x: -17.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["697539E2804998DC"]
+			icon: {
+				Count: 1b
+				id: "minecraft:stone_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "726B9D3033D22DCF"
+			rewards: [
+				{
+					id: "78792A10FAFAEFDB"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7F2B09D771CA97D1"
+					item: "minecraft:beetroot_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "01BEA201A6C34E7B"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "1BE8BB25D9F6FC4B"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Stone Hoe"
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["726B9D3033D22DCF"]
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "772DFF4E817FADB7"
+			rewards: [
+				{
+					id: "6FC0D865897C8606"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4AC9F6487518868C"
+					item: "farmersdelight:cabbage_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6BC5276C770C0296"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "7837713378FBDA59"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Hoe"
+			x: -14.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["772DFF4E817FADB7"]
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "688F9E19B21AC3B0"
+			rewards: [
+				{
+					id: "4A4DC6F293FBA25C"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "351A314993C19BE5"
+					item: "farmersdelight:tomato_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "66EAE589891E844B"
+					item: "farmersdelight:cabbage"
+					type: "item"
+				}
+				{
+					id: "76D640A7A9365777"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Diamond Hoe"
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["688F9E19B21AC3B0"]
+			icon: {
+				Count: 1b
+				id: "minecraft:netherite_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1D88391F341EF5DA"
+			rewards: [
+				{
+					id: "605553DE3CFE0671"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "068BE8179AD37659"
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6C5640647D29CAC7"
+					item: "farmersdelight:tomato"
+					type: "item"
+				}
+				{
+					id: "3F51AC298019B8EF"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Netherite Hoe"
+			x: -11.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["176399BF4AF82C8F"]
+			icon: "minecraft:anvil"
+			id: "195DB8AC6BB30A83"
+			rewards: [{
+				id: "054C303AE772EC78"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "617551C4C268F3F2"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B6F2F2358F6C711"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2AC6AC1F5BDD2436"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Anvil"
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["195DB8AC6BB30A83"]
+			icon: "tensura:smithing_bench"
+			id: "26A3EF4FCA26AE77"
+			rewards: [{
+				id: "00FAE5533A451A3E"
+				item: "tensura:smithing_bench"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "18CF52FF5EDB3108"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "774BCE39FD96515B"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+			]
+			title: "Smithing Bench"
+			x: -14.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["26A3EF4FCA26AE77"]
+			icon: "tensura:kiln"
+			id: "0B46B7C62F037EEA"
+			rewards: [{
+				id: "7C06025C9E58B280"
+				item: "tensura:kiln"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F7D2F6143F30CA6"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7308049ABA8CB596"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31EC72FF75DCA566"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Kiln"
+			x: -13.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0B46B7C62F037EEA"]
+			icon: "armourers_workshop:skin-library-global"
+			id: "37BE2A6B08790690"
+			rewards: [
+				{
+					id: "148091CD6FCFE1C5"
+					item: "armourers_workshop:outfit-maker"
+					type: "item"
+				}
+				{
+					id: "1A32E17FA1AB212B"
+					item: "armourers_workshop:dye-table"
+					type: "item"
+				}
+				{
+					id: "056482E29F660DC0"
+					item: "armourers_workshop:skinning-table"
+					type: "item"
+				}
+				{
+					id: "18DE87E1A6072F3E"
+					item: "armourers_workshop:skin-library-global"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6D6353B92593199B"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75DFDA769FE355DB"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69201526096723DD"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Armourers Workbench"
+			x: -11.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1D88391F341EF5DA"]
+			icon: {
+				Count: 1b
+				id: "tensura:low_magisteel_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "63E1CA6EDCB1E8CB"
+			rewards: [
+				{
+					id: "7F3FA74BD97A083E"
+					item: {
+						Count: 1b
+						id: "tensura:low_magisteel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "67821C9ED3D7F6AC"
+					item: "minecraft:pumpkin_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3140AF4C48B46F85"
+					item: "minecraft:melon"
+					type: "item"
+				}
+				{
+					id: "6FB2D99B32FC0590"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Low Magisteel Hoe"
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["63E1CA6EDCB1E8CB"]
+			icon: {
+				Count: 1b
+				id: "tensura:high_magisteel_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "49ACA3EA0B6A333D"
+			rewards: [
+				{
+					id: "43E0C482E781DF3B"
+					item: {
+						Count: 1b
+						id: "tensura:high_magisteel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "76AF84D5DFE627B3"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "08847B82DE0B6450"
+					item: {
+						Count: 1b
+						id: "tensura:low_magisteel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "09F7DDFBD41956C0"
+					item: "minecraft:pumpkin"
+					type: "item"
+				}
+			]
+			title: "High Magisteel Hoe"
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["49ACA3EA0B6A333D"]
+			icon: {
+				Count: 1b
+				id: "tensura:mithril_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "63E28B78401A346E"
+			rewards: [
+				{
+					id: "1C400252222EA73C"
+					item: {
+						Count: 1b
+						id: "tensura:mithril_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0E5F4400EAD7EFA6"
+					item: "farmersdelight:rice"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "7F0B4A18476A6EFE"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "02FB676110100B14"
+					item: {
+						Count: 1b
+						id: "tensura:high_magisteel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mithril Hoe"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["63E28B78401A346E"]
+			icon: {
+				Count: 1b
+				id: "tensura:pure_magisteel_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "21A92262B6F32C89"
+			rewards: [
+				{
+					id: "523D934D99BA547F"
+					item: {
+						Count: 1b
+						id: "tensura:pure_magisteel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7C6F74EB61CAB458"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "14FEF9477B16FE71"
+					item: "farmersdelight:rice"
+					type: "item"
+				}
+				{
+					id: "2B43DA277BA91796"
+					item: {
+						Count: 1b
+						id: "tensura:mithril_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Pure Magisteel Hoe"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["21A92262B6F32C89"]
+			icon: {
+				Count: 1b
+				id: "tensura:hihiirokane_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1DBC2C6A6B08297A"
+			rewards: [
+				{
+					id: "5825FF12EB7C0264"
+					item: {
+						Count: 1b
+						id: "tensura:hihiirokane_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "71E69BAB8029A1D1"
+					item: "tensura:hipokute_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4D85547FA7E4ADA3"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "27E31047E1524AF7"
+					item: {
+						Count: 1b
+						id: "tensura:pure_magisteel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hihi'Irokane Hoe"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1DBC2C6A6B08297A"]
+			icon: "minecraft:bone_meal"
+			id: "33D46FA1CE729760"
+			rewards: [
+				{
+					count: 64
+					id: "427A1A5BCED74263"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "2C5F9B21E2829BA0"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2422D0307CE43B7F"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "3317AA3E5CB7E15C"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "2723BD23503EFAE7"
+					item: "farmersdelight:cabbage"
+					type: "item"
+				}
+			]
+			title: "Bonemeal"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["76CD611374DB770C"]
+			icon: {
+				Count: 1b
+				id: "tensura:low_magisteel_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "76EC758FBA2FE726"
+			rewards: [{
+				id: "501721FABA46AE94"
+				item: {
+					Count: 1b
+					id: "tensura:low_magisteel_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "728B4612CF429BB8"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "450B9AD9184DDA09"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7794C68A1B25704F"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Low Magisteel Pick"
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["76EC758FBA2FE726"]
+			icon: {
+				Count: 1b
+				id: "tensura:high_magisteel_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67892153A22C387C"
+			rewards: [{
+				id: "7A209A847D9837EA"
+				item: {
+					Count: 1b
+					id: "tensura:high_magisteel_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6CA8566DCDEC2B45"
+					item: {
+						Count: 1b
+						id: "tensura:low_magisteel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7959206C41F06A5B"
+					item: "tensura:magic_ore_shard"
+					type: "item"
+				}
+			]
+			title: "High Magisteel Pick"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["67892153A22C387C"]
+			icon: {
+				Count: 1b
+				id: "tensura:mithril_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "51E7338B713D2B11"
+			rewards: [{
+				id: "3959856CEB3A2CE2"
+				item: {
+					Count: 1b
+					id: "tensura:mithril_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "01ADADFFFC7C7945"
+					item: {
+						Count: 1b
+						id: "tensura:high_magisteel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4AAEB866DCF46AA1"
+					item: "tensura:block_of_high_magisteel"
+					type: "item"
+				}
+			]
+			title: "Mithril Pick"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["51E7338B713D2B11"]
+			icon: {
+				Count: 1b
+				id: "tensura:pure_magisteel_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4C6F1BFE64864606"
+			rewards: [{
+				id: "6CABB644B02BE574"
+				item: {
+					Count: 1b
+					id: "tensura:pure_magisteel_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2F07B56171EA692C"
+					item: {
+						Count: 1b
+						id: "tensura:mithril_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "09036E75EC0214EE"
+					item: "tensura:mithril_nugget"
+					type: "item"
+				}
+			]
+			title: "Pure Magisteel Pick"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4C6F1BFE64864606"]
+			icon: {
+				Count: 1b
+				id: "tensura:hihiirokane_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1140AC9FCB307216"
+			rewards: [{
+				id: "103CBC10A2E3C1E2"
+				item: {
+					Count: 1b
+					id: "tensura:hihiirokane_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "76DB072587491987"
+					item: {
+						Count: 1b
+						id: "tensura:pure_magisteel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3ED9CA8B4A1B294B"
+					item: "tensura:block_of_pure_magisteel"
+					type: "item"
+				}
+			]
+			title: "Hihi'Irokane Pick"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1140AC9FCB307216"]
+			icon: "minecraft:coal"
+			id: "71AF0438DBACCAF7"
+			rewards: [
+				{
+					count: 64
+					id: "2BF259DDC1F54A8A"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0F064CE0A93D8A15"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3BEF8FDE0CB840B3"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "1658DB00193AB3E9"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "2F589391986770BA"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Coal"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37BE2A6B08790690"]
+			icon: "armourers_workshop:skin-template"
+			id: "518D6B9B717CBB86"
+			rewards: [{
+				count: 16
+				id: "13B880B6A8DFA73B"
+				item: "armourers_workshop:skin-template"
+				type: "item"
+			}]
+			title: "Skin Template"
+			x: -11.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37BE2A6B08790690"]
+			icon: "minecraft:ender_chest"
+			id: "2CB721F0DC915B35"
+			rewards: [
+				{
+					count: 3
+					id: "1E14AAB358BB313F"
+					item: "minecraft:ender_chest"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "10B90EC92944C884"
+					item: "tensura:brick_magic_engine"
+					type: "item"
+				}
+				{
+					id: "55EF233B6B33A4C7"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "72C7828F01BB455E"
+					item: "minecraft:music_disc_pigstep"
+					type: "item"
+				}
+				{
+					id: "7D5931688CF9C926"
+					item: "minecraft:music_disc_strad"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "483199496B1BF210"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F5D4509C999D8CE"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "325DEBA2AC1D1915"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Chest and Engine"
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2CB721F0DC915B35"]
+			icon: "minecraft:enchanting_table"
+			id: "358F83DAE74061CF"
+			rewards: [
+				{
+					id: "01CAD4867ED78AC3"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "669C79C94DB2306F"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2FE4FDEDE4AD3EC5"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "72880EF2C54FB5B0"
+					item: {
+						Count: 1b
+						id: "tensura:low_magisteel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4CA5F1B919A937AF"
+					item: {
+						Count: 1b
+						id: "tensura:low_magisteel_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "76A720FC6E6EF6F7"
+					item: {
+						Count: 1b
+						id: "tensura:low_magisteel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Enchanting"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["358F83DAE74061CF"]
+			icon: "minecraft:lapis_lazuli"
+			id: "74C46139ECF673EF"
+			rewards: [{
+				count: 64
+				id: "72DCEC543C5D498B"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["358F83DAE74061CF"]
+			icon: "tensuraitemaddon:token_of_mathematician"
+			id: "0F173F84AFD7199B"
+			rewards: [{
+				id: "3478A672F0983559"
+				item: "tensuraitemaddon:token_of_creator"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "62D00034E1D5366F"
+					item: {
+						Count: 1b
+						id: "tensura:high_magisteel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55F2CCC73F5F0AD7"
+					item: {
+						Count: 1b
+						id: "tensura:high_magisteel_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Creator"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0F173F84AFD7199B"]
+			icon: "tensuraitemaddon:token_of_godly_craftsman"
+			id: "4FF73332AC4E4BC0"
+			rewards: [{
+				id: "3CD4A08170CC180C"
+				item: "tensuraitemaddon:token_of_godly_craftsman"
+				type: "item"
+			}]
+			tasks: [{
+				id: "536348679A0F33F5"
+				item: {
+					Count: 1b
+					id: "tensura:hihiirokane_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Godly Craftsman"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4FF73332AC4E4BC0"]
+			icon: "minecraft:redstone"
+			id: "4A58B44C2BBEA965"
+			rewards: [
+				{
+					count: 64
+					id: "6206A608EB322F95"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7B01CE9A6BC325CD"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "702E417671BA5C3F"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A7BEE398B2D32C7"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C3D96CC405CFA1B"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Redstone"
+			x: -4.0d
+			y: 1.0d
+		}
+	]
+	title: "&6[Tensura] Class Quests"
+}

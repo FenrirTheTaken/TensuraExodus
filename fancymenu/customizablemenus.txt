@@ -6,9 +6,6 @@ com.github.manasmods.tensura.util.TensuraTitleScreen {
 com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
 }
 
-net.minecraft.client.gui.screens.inventory.InventoryScreen {
-}
-
 net.minecraft.client.gui.screens.PauseScreen {
 }
 
@@ -31,5 +28,11 @@ com.github.manasmods.tensura.client.screen.MagicSelectionScreen {
 }
 
 com.github.manasmods.tensura.client.screen.SkillSelectionScreen {
+}
+
+dev.emi.emi.screen.RecipeScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
 }
 
