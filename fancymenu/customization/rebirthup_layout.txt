@@ -4,12 +4,12 @@ layout-meta {
   identifier = rebirthup
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1742421665615
-  is_enabled = true
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:0822b2b6-b9eb-46bc-8c55-a9ba23ddc115-1742422056050] = [groups:][instances:]
+  [loading_requirement_container_meta:0ca789bc-335c-4d62-a088-075fde50208c-1747005732845] = [groups:][instances:]
 }
 
 customization {
@@ -24,6 +24,11 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
 }
 
 element {

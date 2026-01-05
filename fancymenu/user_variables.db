@@ -2,7 +2,7 @@ type = user_variables
 
 variable {
   name = envy
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -15,6 +15,12 @@ variable {
 variable {
   name = playerinvite
   value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = spiritualist
+  value = 2
   reset_on_launch = false
 }
 
@@ -44,7 +50,7 @@ variable {
 
 variable {
   name = canrebirth
-  value = false
+  value = true
   reset_on_launch = false
 }
 
@@ -57,6 +63,12 @@ variable {
 variable {
   name = observer
   value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = compulsor
+  value = 1
   reset_on_launch = false
 }
 
@@ -80,7 +92,7 @@ variable {
 
 variable {
   name = divinity2
-  value = Ramoris
+  value = Mijornil
   reset_on_launch = false
 }
 
@@ -92,7 +104,7 @@ variable {
 
 variable {
   name = divinity3
-  value = Mijornil
+  value = Gonko
   reset_on_launch = false
 }
 
@@ -104,13 +116,19 @@ variable {
 
 variable {
   name = divinity1
-  value = The Grandfather
+  value = Ramoris
   reset_on_launch = false
 }
 
 variable {
   name = researcher
   value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = cultivator
+  value = 1
   reset_on_launch = false
 }
 
@@ -128,7 +146,7 @@ variable {
 
 variable {
   name = factionmemberinvited
-  value = 
+  value = Llamabb, 
   reset_on_launch = false
 }
 
@@ -140,7 +158,7 @@ variable {
 
 variable {
   name = factionlist
-  value = 1. a
+  value = 1. ROCK AND STONE
   reset_on_launch = false
 }
 
@@ -176,7 +194,7 @@ variable {
 
 variable {
   name = divinityall
-  value = 1. The Grandfather
+  value = 1. Ramoris
   reset_on_launch = false
 }
 
@@ -199,6 +217,12 @@ variable {
 }
 
 variable {
+  name = vainglory
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
   name = enemyfaction
   value = 
   reset_on_launch = false
@@ -212,7 +236,7 @@ variable {
 
 variable {
   name = playerall
-  value = 1. 4ourHearts
+  value = 1. EnderDanWie
   reset_on_launch = false
 }
 
@@ -248,7 +272,7 @@ variable {
 
 variable {
   name = isdemon
-  value = false
+  value = true
   reset_on_launch = false
 }
 
@@ -277,6 +301,12 @@ variable {
 }
 
 variable {
+  name = the_world
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
   name = deletefaction
   value = 
   reset_on_launch = false
@@ -290,8 +320,7 @@ variable {
 
 variable {
   name = invitedwalpurgis
-  value = FenrirTheTaken
-
+  value = aaa
   reset_on_launch = false
 }
 
@@ -345,7 +374,7 @@ variable {
 
 variable {
   name = villain
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 
@@ -362,8 +391,26 @@ variable {
 }
 
 variable {
+  name = plunderer
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
   name = reaper
-  value = 0
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = crasher
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = melancholy
+  value = 1
   reset_on_launch = false
 }
 
@@ -429,7 +476,7 @@ variable {
 
 variable {
   name = currentrebirth
-  value = 0
+  value = 4
   reset_on_launch = false
 }
 
@@ -441,7 +488,13 @@ variable {
 
 variable {
   name = sloth
-  value = 0
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = victorius_harbinger
+  value = 
   reset_on_launch = false
 }
 
@@ -453,7 +506,7 @@ variable {
 
 variable {
   name = divinityrank
-  value = 1
+  value = 4
   reset_on_launch = false
 }
 
@@ -465,7 +518,7 @@ variable {
 
 variable {
   name = savedskills
-  value = "tensura:starved"
+  value = None
   reset_on_launch = false
 }
 
@@ -483,7 +536,7 @@ variable {
 
 variable {
   name = divinity
-  value = TheGrandfather
+  value = fowlfyr
   reset_on_launch = false
 }
 
@@ -503,6 +556,12 @@ variable {
   name = factiondescription
   value = 
   reset_on_launch = true
+}
+
+variable {
+  name = dreamer
+  value = 1
+  reset_on_launch = false
 }
 
 variable {
@@ -548,8 +607,26 @@ variable {
 }
 
 variable {
+  name = stagnator
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
   name = walpurgisorganizer
   value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = hidden_ruler
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = inverse
+  value = 1
   reset_on_launch = false
 }
 
@@ -573,13 +650,13 @@ variable {
 
 variable {
   name = player1
-  value = 4ourHearts
+  value = EnderDanWie EP: 104,205,492
   reset_on_launch = false
 }
 
 variable {
   name = player2
-  value = FenrirTheTaken
+  value = xXFrancoisXx EP: 53,756,658
   reset_on_launch = false
 }
 
@@ -591,7 +668,7 @@ variable {
 
 variable {
   name = player3
-  value = None
+  value = MasterEldriel EP: 46,729,459
   reset_on_launch = false
 }
 
@@ -609,19 +686,19 @@ variable {
 
 variable {
   name = starved
-  value = 2
-  reset_on_launch = false
-}
-
-variable {
-  name = bewilder
   value = 0
   reset_on_launch = false
 }
 
 variable {
+  name = bewilder
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
   name = infaction
-  value = true
+  value = false
   reset_on_launch = false
 }
 
@@ -639,19 +716,19 @@ variable {
 
 variable {
   name = faction1
-  value = a
+  value = ROCK AND STONE EP: 649,296,883
   reset_on_launch = false
 }
 
 variable {
   name = faction2
-  value = None
+  value = 0 EP: 104,428,947
   reset_on_launch = false
 }
 
 variable {
   name = faction3
-  value = None
+  value = Abyss Corporation  EP: 39,858,574
   reset_on_launch = false
 }
 

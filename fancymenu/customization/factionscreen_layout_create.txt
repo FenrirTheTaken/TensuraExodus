@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = factionscreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736499915612
+  last_edited_time = 1744067310569
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:a016b2ac-9a93-4d79-8f0a-16019d3049fb-1743970915971] = [groups:][instances:]
+  [loading_requirement_container_meta:ae8225e0-bb96-4f6d-8624-875e307a0199-1745945671304] = [groups:][instances:]
 }
 
 customization {
@@ -24,6 +24,11 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
 }
 
 element {

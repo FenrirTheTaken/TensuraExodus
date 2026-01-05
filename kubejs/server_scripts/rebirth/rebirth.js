@@ -43,12 +43,14 @@ function schematic(play, schematic){
 const unique = ['tensura:absolute_severance','tensura:berserk','tensura:berserker','tensura:bewilder','tensura:chef','tensura:chosen_one','tensura:commander','tensura:cook','tensura:creator','tensura:degenerate','tensura:divine_berserker','tensura:engorger','tensura:envy','tensura:falsifier',
     'tensura:fighter','tensura:fusionist','tensura:gluttony','tensura:godly_craftsman', 'tensura:gourmand','tensura:gourmet','tensura:great_sage','tensura:greed','tensura:guardian','tensura:healer','tensura:infinity_prison','tensura:lust','tensura:martial_master','tensura:mathematician','tensura:merciless',
     'tensura:murderer','tensura:musician','tensura:observer','tensura:oppressor','tensura:predator','tensura:pride','tensura:reaper','tensura:reflector','tensura:researcher','tensura:reverser','tensura:royal_beast','tensura:seer','tensura:severer','tensura:shadow_striker',
-    'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:starved','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:villain','tensura:wrath'
+    'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:starved','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:villain','tensura:wrath', 'trmysticism:vainglory', 'trmysticism:stagnator','trmysticism:spiritualist',
+    'trmysticism:the_world','trmysticism:plunderer', 'trmysticism:melancholy','trmysticism:inverse','trmysticism:hidden_ruler','trmysticism:dreamer','trmysticism:cultivator','trmysticism:crasher','trmysticism:compulsor'
 ]
 const rebirth_list = ['tensura:absolute_severance','tensura:berserk','tensura:berserker','tensura:bewilder','tensura:chef','tensura:chosen_one','tensura:commander','tensura:cook','tensura:creator','tensura:degenerate','tensura:divine_berserker','tensura:engorger','tensura:envy','tensura:falsifier',
     'tensura:fighter','tensura:gluttony','tensura:godly_craftsman','tensura:gourmet','tensura:great_sage','tensura:greed','tensura:guardian','tensura:healer','tensura:lust','tensura:martial_master','tensura:mathematician',
     'tensura:murderer','tensura:musician','tensura:observer','tensura:oppressor','tensura:predator','tensura:pride','tensura:reaper','tensura:reflector','tensura:researcher','tensura:reverser','tensura:royal_beast','tensura:seer','tensura:severer','tensura:shadow_striker',
-    'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:starved','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:villain','tensura:wrath']
+    'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:starved','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:villain','tensura:wrath', 'trmysticism:vainglory', 'trmysticism:stagnator','trmysticism:spiritualist',
+    'trmysticism:plunderer', 'trmysticism:melancholy','trmysticism:inverse','trmysticism:hidden_ruler','trmysticism:dreamer','trmysticism:cultivator','trmysticism:crasher','trmysticism:compulsor']
 
 
 function reset(player){

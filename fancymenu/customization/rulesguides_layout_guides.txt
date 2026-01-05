@@ -9,7 +9,7 @@ layout-meta {
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:5cc6a824-ffa6-4910-b53e-63ecd32f3f48-1743971362748] = [groups:][instances:]
+  [loading_requirement_container_meta:2324c20d-14b1-493b-ae31-f58cb64114c9-1746928054208] = [groups:][instances:]
 }
 
 customization {
@@ -24,6 +24,11 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
 }
 
 element {

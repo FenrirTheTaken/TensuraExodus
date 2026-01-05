@@ -63,11 +63,11 @@ ServerEvents.commandRegistry(event => {
     event.register(
         Commands.literal('factionDescription')
             .executes(ctx => {
-                const faction = findFaction(ctx.source.player.username)
-            
                 const PartInst = $PACAPI.get(ctx.source.server)
                 const PartMan = PartInst.getPartyManager()
                 const party = PartMan.getPartyByMember(ctx.source.player.getUuid())
+                let owner = party.getOwner().getUsername()
+                const faction = findFaction(owner)
                 const staffArray = party.getStaffInfoStream().toArray()
                 const memberArray = party.getNonStaffInfoStream().toArray()
                 const allyArray = party.getAllyPartiesStream().toArray()
@@ -221,15 +221,22 @@ ServerEvents.commandRegistry(event => {
         .then(Commands.argument('player', Arguments.STRING.create(event))
             .executes(ctx => {
                 const first = Arguments.STRING.getResult(ctx,'player');
+                const PartInst = $PACAPI.get(ctx.source.server)
+                const PartMan = PartInst.getPartyManager()
+                const party = PartMan.getPartyByMember(ctx.source.player.getUuid())
+                ctx.source.player.runCommandSilent(`openpac-parties transfer ${first} confirm` )
+                let owner = party.getOwner().getUsername()
+                if (owner != first){
+                    Utils.server.tell("Not a valid player.")
+                    return 1;
+                }
 
                 const factionIndex = findFactionIndex(ctx.source.player.username)
-                ctx.source.player.runCommandSilent(`openpac-parties transfer ${first} confirm` )
                 changeFactionLeader(factionIndex,first)
                 ctx.source.player.runCommandSilent(`execute as ${first} run fmvariable set isowner false true`)
+                Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set isstaff false true`)
+                Utils.server.runCommandSilent(`execute as ${ctx.source.player.username} run fmvariable set isowner false false`)
                 
-
-
-
 
 
                 return 1; // Returning a value is required; 1 indicates success.

@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = divinity
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1738618421952
+  last_edited_time = 1746927834451
   is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:275feb64-126b-4e01-885b-145513aee6d1-1743971362684] = [groups:][instances:]
+  [loading_requirement_container_meta:5019c290-88fe-4d1d-bdcf-c5dd576f6b50-1746930041958] = [groups:][instances:]
 }
 
 customization {
@@ -24,6 +24,11 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
 }
 
 element {
@@ -52,6 +57,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 619ff74f-fb3e-4353-9183-3f5f441a7b60-1736451695394
   [loading_requirement_container_meta:619ff74f-fb3e-4353-9183-3f5f441a7b60-1736451695394] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -80,6 +93,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 05e13625-3fa3-44c3-9cac-a715e8316e0b-1736451852203
   [loading_requirement_container_meta:05e13625-3fa3-44c3-9cac-a715e8316e0b-1736451852203] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -88,6 +109,7 @@ element {
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
   element_type = image
   instance_identifier = 808d5be2-24c1-4f6b-9804-3c7704a8ac0a-1736451917541
   appearance_delay = no_delay
@@ -99,7 +121,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -193
@@ -111,6 +133,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = fbe26b39-ba9b-438f-b8a4-9321c64ba717-1736451917541
   [loading_requirement_container_meta:fbe26b39-ba9b-438f-b8a4-9321c64ba717-1736451917541] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -119,6 +149,7 @@ element {
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
   element_type = image
   instance_identifier = 28325e7e-207d-46a6-a686-d0eb9a827c3b-1736452142857
   appearance_delay = no_delay
@@ -130,7 +161,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -193
@@ -142,6 +173,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = b4c53650-273c-424a-bf1b-824910971441-1736452142857
   [loading_requirement_container_meta:b4c53650-273c-424a-bf1b-824910971441-1736452142857] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -150,6 +189,7 @@ element {
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
   element_type = image
   instance_identifier = 8b23fa12-d24d-4f54-9310-915dbd3435df-1736452167764
   appearance_delay = no_delay
@@ -161,7 +201,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -193
@@ -173,11 +213,19 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 21f900d3-7759-4e7a-a89c-137ebe52dfcf-1736452167764
   [loading_requirement_container_meta:21f900d3-7759-4e7a-a89c-137ebe52dfcf-1736452167764] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"divinity1"}}
+  source = &6{"placeholder":"getvariable","values":{"name":"divinity1"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -210,7 +258,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -169
@@ -222,11 +270,19 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = f6f58512-27a3-4935-99ff-0c0911a358a8-1736452239354
   [loading_requirement_container_meta:f6f58512-27a3-4935-99ff-0c0911a358a8-1736452239354] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"divinity2"}}
+  source = &d{"placeholder":"getvariable","values":{"name":"divinity2"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -259,11 +315,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -169
-  y = -53
+  y = -51
   width = 147
   height = 17
   stretch_x = false
@@ -271,11 +327,19 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 954e1c37-d541-4297-88b1-5238dd637ab3-1736452252537
   [loading_requirement_container_meta:954e1c37-d541-4297-88b1-5238dd637ab3-1736452252537] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
   interactable = true
-  source = {"placeholder":"getvariable","values":{"name":"divinity3"}}
+  source = &4{"placeholder":"getvariable","values":{"name":"divinity3"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -308,7 +372,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1372
+  auto_sizing_base_screen_height = 1370
   sticky_anchor = false
   anchor_point = mid-centered
   x = -169
@@ -320,6 +384,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 7f4a0df2-b1cc-44eb-b4c8-a5acb74cc088-1736452267395
   [loading_requirement_container_meta:7f4a0df2-b1cc-44eb-b4c8-a5acb74cc088-1736452267395] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -369,6 +441,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e5d60e66-dc49-44af-9db5-0fa4f65890d0-1736452468895
   [loading_requirement_container_meta:e5d60e66-dc49-44af-9db5-0fa4f65890d0-1736452468895] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -377,7 +457,6 @@ element {
   [executable_action_instance:f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002][action_type:enable_layout] = divinity_layout
   [executable_block:f6b2e0a3-880b-4ceb-9a7e-5760cbd42fea-1736457562521][type:generic] = [executables:3626b925-189f-4f6c-987e-2a6d3f9ff8a1-1736457603460;f1af1a7e-42f3-4b1d-a27d-4c52f77f1139-1736457631002;]
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
@@ -385,6 +464,18 @@ element {
   navigatable = true
   widget_active_state_requirement_container_identifier = 7ae11628-65d4-4ef2-888b-a33ac0a26026-1736457562521
   [loading_requirement_container_meta:7ae11628-65d4-4ef2-888b-a33ac0a26026-1736457562521] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = 1f120388-df9d-442a-af60-c9a6b97bbba6-1736457562521
   appearance_delay = no_delay
@@ -409,5 +500,13 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = f5b1abc2-ac49-4f6b-9eb1-7d2d895f3956-1736457562521
   [loading_requirement_container_meta:f5b1abc2-ac49-4f6b-9eb1-7d2d895f3956-1736457562521] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 

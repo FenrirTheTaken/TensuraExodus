@@ -1,0 +1,12 @@
+{
+	version: 1
+	uuid: "6e5b7d351c4642278b63d5bdc1410b9b"
+	name: "Vortexc1"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	player_data: { }
+}

@@ -30,9 +30,15 @@ com.github.manasmods.tensura.client.screen.MagicSelectionScreen {
 com.github.manasmods.tensura.client.screen.SkillSelectionScreen {
 }
 
-dev.emi.emi.screen.RecipeScreen {
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
 }
 
-net.minecraft.client.gui.screens.inventory.InventoryScreen {
+vazkii.quark.addons.oddities.client.screen.BackpackInventoryScreen {
+}
+
+top.theillusivec4.curios.client.gui.CuriosScreen {
+}
+
+com.github.manasmods.tensura.client.screen.EvolutionScreen {
 }
 
