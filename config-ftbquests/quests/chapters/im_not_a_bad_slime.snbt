@@ -1,0 +1,977 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "im_not_a_bad_slime"
+	group: "2093A896408BA921"
+	icon: "tensura:slime_core"
+	id: "5BF330B960F1AB74"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Hi there guys! This is my modpack focused on Tensura:Reincarnated mod hope you will enjoy it!"
+				""
+				"Some info first and foremost!"
+				"- Modpack is &6focused&r on showing you ways to &bcontinue&r trough hardship of this &cworld&r and some &6tips&r to make your &alife&r easier"
+				"- Head to &6&lFreaquently asked questions&r quest section where is most of things written down."
+				"- Go there and &bcheck&r, &aread&r and &6learn&r everything you can and then &6come back&r here! "
+				""
+				"When you are &areading&r this it should mean you are &6prepared&r to &bcontinue!"
+				""
+				"Finish this &aquest&r and your &bjourney&r wil &cbegin! &6Enjoy&r :)"
+				""
+				"[PS]: "
+				"- I want to thanks creators of this mods for bringing me chance to live a life in tensura verse <3"
+				"- And ofcourse our &6[God] Fuze-sensei&r creating thise awesome universe for us <3"
+			]
+			icon: "tensura:race_reset_scroll"
+			id: "12204DF3DC11596C"
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "Reincarnation... Successful."
+			tasks: [{
+				advancement: "tensura:reincarnated"
+				criterion: ""
+				id: "3787C084B9FACA6E"
+				type: "advancement"
+			}]
+			title: "TenSura"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			id: "40D50054157AFEDD"
+			subtitle: "Use a Reset scroll"
+			tasks: [{
+				advancement: "tensura:rewind_time"
+				criterion: ""
+				id: "264FD8B4EE6DAB60"
+				title: "Use a Reset scroll"
+				type: "advancement"
+			}]
+			title: "It's rewind time!"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			description: ["Not \"&6The Weakest Hunter of All Mankind.&r\" anymore!"]
+			id: "5011F3D690F6CEFE"
+			subtitle: "Reach &91,000 EP"
+			tasks: [{
+				advancement: "tensura:d_rank"
+				criterion: ""
+				id: "18806BAC2E47CC90"
+				title: "Reach &91,000 EP"
+				type: "advancement"
+			}]
+			title: "Becoming a D class"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5011F3D690F6CEFE"]
+			id: "2CACCE3118CA1295"
+			subtitle: "Reach &93,000 EP"
+			tasks: [{
+				advancement: "tensura:c_rank"
+				criterion: ""
+				id: "3D583B75F3337E1F"
+				title: "Reach &93,000 EP"
+				type: "advancement"
+			}]
+			title: "Become C class"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2CACCE3118CA1295"]
+			id: "7B0BDF1A6F4435EC"
+			subtitle: "Reach &910,000 EP"
+			tasks: [{
+				advancement: "tensura:a_rank"
+				criterion: ""
+				id: "1CF19ECCCAB7CAC5"
+				title: "Reach &910,000 EP"
+				type: "advancement"
+			}]
+			title: "Become A class"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B0BDF1A6F4435EC"]
+			id: "759FA7326A4C496C"
+			subtitle: "Reach &9100,000 EP"
+			tasks: [{
+				advancement: "tensura:sa_rank"
+				criterion: ""
+				id: "6E13D0B20B0B74BA"
+				title: "Reach &9100,000 EP"
+				type: "advancement"
+			}]
+			title: "Become Special-A class"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["759FA7326A4C496C"]
+			id: "75507254BCEE14F3"
+			subtitle: "Reach &9400,000 EP"
+			tasks: [{
+				advancement: "tensura:s_rank"
+				criterion: ""
+				id: "6C8C8117C2A91ED7"
+				title: "Reach &9400,000 EP"
+				type: "advancement"
+			}]
+			title: "Become S class"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["75507254BCEE14F3"]
+			id: "6910C33419902FBE"
+			subtitle: "Reach &9800,000 EP"
+			tasks: [{
+				advancement: "tensura:ss_rank"
+				criterion: ""
+				id: "23F1466BBDC090DB"
+				title: "Reach &9800,000 EP"
+				type: "advancement"
+			}]
+			title: "Become Special-S class"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75507254BCEE14F3"]
+			description: [
+				"[&l&cTrue Demon Lord]:"
+				""
+				"&6Demon Lord Seed&r: Be a &eMajin&r (Yellow Race name) and have &9200k EP"
+				""
+				"&eMajin&r can be acquired in &a4 main ways:"
+				"- Use a &aMarionette Heart&r (Found in &6Ancient City&r chests)"
+				"- Die to &6Magicule Poisoning&r (have more &9Magicules&r than your Max) (5%)"
+				"- Die to &cDemon Lord’s Haki&r (5%)"
+				"- Start as a &eMajin&r Race (&aSlime&r/&6Vampire&r/&bWight&r/&cLesser Daemon&r)"
+				""
+				"&6Awakening&r: have &610,000 souls&r and use the &abutton&r in Evo menu"
+				""
+				"{@pagebreak}"
+				""
+				"[&a&lTrue Hero&r]:"
+				""
+				"&aHero Egg&r:"
+				"- You need to be a not-default-Majin Race (so no &aSlime&r/&6Vampire&r/&bWight&r/&cLesser Daemon&r, but &eMajin&r &agoblin&r/&cBeastman&r/&bEtc. works&r)"
+				"- And you need to have at least &c6&r out of &a7&r &6Greater Spirits&r (This can be done over &btime&r, does &cnot&r need to happen all at &bonce&r.)"
+				""
+				"&6Awakening&r: "
+				"- Have the &aHero Egg&r, you will &6awaken&r to a &6True Hero&r when you &aregenerate HP&r while under &c25%&r of your &amax&r while fighting a &6boss&r (&cOrc Lord&r/ &cDisaster&r, &aSuper Massive Slime&r, &bWither&r, &6Ender Dragon&r) which has at least &9400k EP&r (&b40 armor&r points [the &6shield&r icons]) that is at &b50% HP&r or less. "
+				""
+				"&6This happens automatically"
+				""
+				"[&cWicked oni locks you out of evolution]"
+			]
+			id: "7260DA15B4E49F39"
+			subtitle: "Awaken as &cDemon Lord&r or become &aTrue Hero"
+			tasks: [{
+				advancement: "tensura:higher_form"
+				criterion: ""
+				id: "3D7AE6778B77AADA"
+				title: "Awaken as &cDemon Lord&r or become &aTrue Hero"
+				type: "advancement"
+			}]
+			title: "Higher form of existence"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5011F3D690F6CEFE"]
+			icon: "tensura:royal_blood"
+			id: "2F009D79372ACCC7"
+			subtitle: "Evolve &ayour&r race once"
+			tasks: [{
+				advancement: "tensura:grow_spurt"
+				criterion: ""
+				id: "6303015B81801DF7"
+				title: "Evolve &ayour&r race once"
+				type: "advancement"
+			}]
+			title: "&6Evolve!"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2F009D79372ACCC7"]
+			description: [
+				"[&6Tip&r]: "
+				"-You can name yourself through &6Mass Naming. "
+				""
+				"- Completing &a25 raids&r or killing &c1000 humans. "
+				""
+				"- If you &cdie&r both of these values &6reset&r to 0."
+			]
+			id: "378DC681ED0BC4B0"
+			subtitle: "Achieve Mass Naming by finishing raids or killing human mobs without dying."
+			tasks: [{
+				advancement: "tensura:infamy_famous"
+				criterion: ""
+				id: "79FD31B01233F019"
+				type: "advancement"
+			}]
+			title: "Mass Naming"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6FBB2C83074C4894"]
+			description: [
+				"For &6Naming&r entity &amust&r be in &cFear&r or have &aHP&r lower than &b25%&r of &aMax HP"
+				""
+				"- When &beither&r of &cconditions&r is &amet&r press &6N&r while &elooking&r on &centity"
+			]
+			id: "48B74BD50D1937CF"
+			subtitle: "Tame a Slime"
+			tasks: [{
+				advancement: "tensura:tamed_a_slime"
+				criterion: ""
+				id: "613201C8341004FC"
+				title: "Tame a Slime"
+				type: "advancement"
+			}]
+			title: "I'm not a bad slime!"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["48B74BD50D1937CF"]
+			description: [
+				"For &6Naming&r entity &amust&r be in &cFear&r or have &aHP&r lower than &b25%&r of &aMax HP"
+				""
+				"- When &beither&r of &cconditions&r is &amet&r press &6N&r while &elooking&r on &centity"
+			]
+			id: "623515BAED402851"
+			subtitle: "Tame a Direwolf"
+			tasks: [{
+				advancement: "tensura:hear_me_direwolves"
+				criterion: ""
+				id: "02BE5C2EAC54AF4B"
+				title: "Tame a Direwolf"
+				type: "advancement"
+			}]
+			title: "Hear me Direwolves!"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			description: [
+				"For &6Naming&r entity &amust&r be in &cFear&r or have &aHP&r lower than &b25%&r of &aMax HP"
+				""
+				"- When &beither&r of &cconditions&r is &amet&r press &6N&r while &elooking&r on &centity"
+			]
+			id: "6FBB2C83074C4894"
+			subtitle: "Name a mob"
+			tasks: [{
+				advancement: "tensura:name_a_mob"
+				criterion: ""
+				id: "194D59717169DA9F"
+				title: "Name a mob"
+				type: "advancement"
+			}]
+			title: "From now on, your name is..."
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["48B74BD50D1937CF"]
+			id: "586B5854E3C64DA0"
+			subtitle: "Pick up a slime with bucket"
+			tasks: [{
+				advancement: "tensura:get_bucketed"
+				criterion: ""
+				id: "2D88DEFAB2A10EC1"
+				title: "Pick up a slime with bucket"
+				type: "advancement"
+			}]
+			title: "Get bucketed!"
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["586B5854E3C64DA0"]
+			id: "2E91116557ED2566"
+			subtitle: "Feed a &6Slime Core&r to &atamed&r slime to grow its size"
+			tasks: [{
+				advancement: "tensura:grow_a_slime"
+				criterion: ""
+				id: "38BAD5270D28CE38"
+				title: "Feed a &6Slime Core&r to &atamed&r slime to grow its size"
+				type: "advancement"
+			}]
+			title: "Thrive, my child!"
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2E91116557ED2566"]
+			id: "00FB8B8C09AB6AEC"
+			subtitle: "Obtain a &aSlime staff"
+			tasks: [{
+				advancement: "tensura:slime_army"
+				criterion: ""
+				id: "22B616F5F6CB5C97"
+				title: "Obtain a &aSlime staff"
+				type: "advancement"
+			}]
+			title: "Can you win against 50 Slimes?"
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E91116557ED2566"]
+			id: "09F426B56726D6DF"
+			subtitle: "Get your own Suppermasive slime by growing a slime"
+			tasks: [{
+				advancement: "tensura:king_slime"
+				criterion: ""
+				id: "55EA117DC632A288"
+				title: "Get your own Suppermasive slime by growing a slime"
+				type: "advancement"
+			}]
+			title: "The King has arived!"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["586B5854E3C64DA0"]
+			id: "29336A24BCF0DB82"
+			subtitle: "Consume a slime in bucket with skills"
+			tasks: [{
+				advancement: "tensura:slime_traitor"
+				criterion: ""
+				id: "2F38B2164C3EF0AE"
+				title: "Consume a slime in bucket with skills"
+				type: "advancement"
+			}]
+			title: "Traitor!"
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			id: "58F733787AF31509"
+			subtitle: "Smelt or find a silver ingot"
+			tasks: [{
+				advancement: "tensura:acquire_silverware"
+				criterion: ""
+				id: "563CC928D5553390"
+				title: "Smelt or find a silver ingot"
+				type: "advancement"
+			}]
+			title: "Acquire Silverware"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			id: "50F6BB44FE8B70FB"
+			subtitle: "- Learn an &6Ability"
+			tasks: [{
+				advancement: "tensura:fast_learner"
+				criterion: ""
+				id: "22AA61BC9C5DAFC4"
+				title: "- Learn an &6Ability"
+				type: "advancement"
+			}]
+			title: "Fast Learner"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			id: "4E236815A210B409"
+			subtitle: "- Slay a &cGiant Ant&r and &aobtain&r its &bCarapace"
+			tasks: [{
+				advancement: "tensura:vigilant"
+				criterion: ""
+				id: "6513641FFD7EA82B"
+				title: "- Slay a &cGiant Ant&r and &aobtain&r its &bCarapace"
+				type: "advancement"
+			}]
+			title: "VigilAnt"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			id: "22E5BA18DA57BDDC"
+			subtitle: "- Use a &6Schematic"
+			tasks: [{
+				advancement: "tensura:start_smithing"
+				criterion: ""
+				id: "1BB45FE081D82D9B"
+				title: "- Use a &6Schematic"
+				type: "advancement"
+			}]
+			title: "Start Smithing and Crafting!"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["12204DF3DC11596C"]
+			id: "21B8FEFB17897EF8"
+			subtitle: "- Grow a &aHipokute Seed"
+			tasks: [{
+				advancement: "tensura:magic_seedy_place"
+				criterion: ""
+				id: "37258A73F872A7AD"
+				title: "- Grow a &aHipokute Seed"
+				type: "advancement"
+			}]
+			title: "A Magic Seedy Place"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["21B8FEFB17897EF8"]
+			id: "2B33DF0BEE58D1F6"
+			subtitle: "- Obtain a &aHipokute Flower"
+			tasks: [{
+				advancement: "tensura:hipokute_flower"
+				criterion: ""
+				id: "730F88341E5A6CF9"
+				title: "- Obtain a &aHipokute Flower"
+				type: "advancement"
+			}]
+			title: "Hipokute makes me hiccup-te"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B33DF0BEE58D1F6"]
+			id: "414ACC763E53B235"
+			subtitle: "- Consume a &aFull Potion"
+			tasks: [{
+				advancement: "tensura:good_as_new"
+				criterion: ""
+				id: "4092C7A7857C9A60"
+				title: "- Consume a &aFull Potion"
+				type: "advancement"
+			}]
+			title: "As good as new!"
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["58F733787AF31509"]
+			id: "29E5B56262AE22E7"
+			subtitle: "Obtain a Monster Leather"
+			tasks: [{
+				advancement: "tensura:getcha_better_leathers"
+				criterion: ""
+				id: "3F685B76D224B05B"
+				title: "Obtain a Monster Leather"
+				type: "advancement"
+			}]
+			title: "Getcha Better Leathers!"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29E5B56262AE22E7"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- To obtain &bMagic Ore&r is best to mine between &b-25&r to &b-31&r at &6Y Level&r most recommended is &6-27 Y Level&r"
+				""
+				"- Requires using &6Netherite Tier&r pickaxe to &amine it"
+			]
+			id: "222D21949180F996"
+			subtitle: "Mine a Magic Ore"
+			tasks: [{
+				advancement: "tensura:magic_ore"
+				criterion: ""
+				id: "1B11104DD98332BB"
+				title: "Mine a Magic Ore"
+				type: "advancement"
+			}]
+			title: "Ore! But Magic?!"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["29E5B56262AE22E7"]
+			id: "3ACA8F6A685B849F"
+			subtitle: "- Obtain a Dragon Peacock Feather"
+			tasks: [{
+				advancement: "tensura:believe_to_fly"
+				criterion: ""
+				id: "24E6954AD6C7D543"
+				title: "- Obtain a Dragon Peacock Feather"
+				type: "advancement"
+			}]
+			title: "I believe I can fly"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29E5B56262AE22E7"]
+			id: "78BF5A080C8EE732"
+			subtitle: "- Craft a Monster Saddle"
+			tasks: [{
+				advancement: "tensura:monster_rider"
+				criterion: ""
+				id: "4414429F0426F1E0"
+				title: "- Craft a Monster Saddle"
+				type: "advancement"
+			}]
+			title: "Monster Rider"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["222D21949180F996"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- To obtain &cthis&r and &bupcoming ingots&r you &cmust&r use &6Kiln&r"
+			]
+			id: "68206D0E3ADE4FAD"
+			tasks: [{
+				advancement: "tensura:low_magisteel"
+				criterion: ""
+				id: "3C014E8E52F9B24A"
+				type: "advancement"
+			}]
+			title: "Feeling Low?"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["68206D0E3ADE4FAD"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- To obtain &cthis&r and &bupcoming ingots&r you &cmust&r use &6Kiln&r"
+			]
+			id: "04577710A08FA173"
+			tasks: [{
+				advancement: "tensura:high_magisteel"
+				criterion: ""
+				id: "2D5B3E601BCB8363"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04577710A08FA173"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- To obtain &cthis&r and &bupcoming ingots&r you &cmust&r use &6Kiln&r"
+			]
+			id: "57D2F5CE073F5255"
+			tasks: [{
+				advancement: "tensura:mithril"
+				criterion: ""
+				id: "415ED7784FBE6979"
+				type: "advancement"
+			}]
+			title: "Isn't this just Silver but Magic?"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57D2F5CE073F5255"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- To obtain &cthis&r and &bupcoming ingots&r you &cmust&r use &6Kiln&r"
+			]
+			id: "5B217F07EB2CBC0E"
+			tasks: [{
+				advancement: "tensura:orichalcum"
+				criterion: ""
+				id: "6AE18AF8C5175BD9"
+				type: "advancement"
+			}]
+			title: "Divine Shining Gold!"
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B217F07EB2CBC0E"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- To obtain &cthis&r and &bupcoming ingots&r you &cmust&r use &6Kiln&r"
+			]
+			id: "333F11DD059AE5D6"
+			tasks: [{
+				advancement: "tensura:pure_magisteel"
+				criterion: ""
+				id: "07D93FEDCB7C3C68"
+				type: "advancement"
+			}]
+			title: "That's the quality!"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["333F11DD059AE5D6"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- Obtainable &4only&r by &6evolving&r your &aequipment&r which you can later &csmelt&r for &anuggets&r/&bingots"
+			]
+			id: "3B615275D6E4F569"
+			tasks: [{
+				advancement: "tensura:adamantite"
+				criterion: ""
+				id: "115AC2F214D06C28"
+				type: "advancement"
+			}]
+			title: "Biological Steel?!"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B615275D6E4F569"]
+			description: [
+				"[&6TIP&r]: "
+				""
+				"- Obtainable &4only&r by &6evolving&r your &aequipment&r which you can later &csmelt&r for &anuggets&r/&bingots"
+			]
+			id: "0773A4FA2F67EE78"
+			tasks: [{
+				advancement: "tensura:hihiirokane"
+				criterion: ""
+				id: "392798D4B89F0C8E"
+				type: "advancement"
+			}]
+			title: "The Ultimate Metal!"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3ACA8F6A685B849F"]
+			id: "1FB77A03B6D07F03"
+			subtitle: "- Obtain a Bat Glider"
+			tasks: [{
+				advancement: "tensura:ripoff_elytra"
+				criterion: ""
+				id: "15B667E045701CF3"
+				title: "- Obtain a Bat Glider"
+				type: "advancement"
+			}]
+			title: "Ripoff Eltytra, good enough?"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78BF5A080C8EE732"]
+			id: "11046A96D8A332E8"
+			subtitle: "- Ride an &cEvil Centipede&r or &cTempest Serpent"
+			tasks: [{
+				advancement: "tensura:choo_choo"
+				criterion: ""
+				id: "2E4E257548A58EDC"
+				title: "- Ride an &cEvil Centipede&r or &cTempest Serpent"
+				type: "advancement"
+			}]
+			title: "Choo Choo!"
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11046A96D8A332E8"]
+			id: "1E243C04D01D31EE"
+			subtitle: "- Ride a &6Tempest Star Wolf"
+			tasks: [{
+				advancement: "tensura:good_boy"
+				criterion: ""
+				id: "0004139FD1B574E6"
+				title: "- Ride a &6Tempest Star Wolf"
+				type: "advancement"
+			}]
+			title: "Who's a good boy?"
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50F6BB44FE8B70FB"]
+			id: "2756DD69FEA49596"
+			subtitle: "- Master an &6Ability"
+			tasks: [{
+				advancement: "tensura:master_skill"
+				criterion: ""
+				id: "046BAFD80A0021DF"
+				title: "- Master an &6Ability"
+				type: "advancement"
+			}]
+			title: "Master what you learnt!"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2756DD69FEA49596"]
+			id: "2101EF2B935C4EB8"
+			subtitle: "- Master a &6Unique Skill"
+			tasks: [{
+				advancement: "tensura:master_unique_skill"
+				criterion: ""
+				id: "2A44736AF3A83C4E"
+				title: "- Master a &6Unique Skill"
+				type: "advancement"
+			}]
+			title: "Master of one trade!"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4E236815A210B409"]
+			id: "21D5C7FEB6ADACBF"
+			subtitle: "- Slay a &cKnight Spider&r and &aobtain&r its &bCarapace"
+			tasks: [{
+				advancement: "tensura:goodnight_spider"
+				criterion: ""
+				id: "2B25BF7F0CE05261"
+				title: "- Slay a &cKnight Spider&r and &aobtain&r its &bCarapace"
+				type: "advancement"
+			}]
+			title: "Goodnight Spider"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21D5C7FEB6ADACBF"]
+			id: "6B8008E40CE41011"
+			subtitle: "- Slay a &cBlack Spider"
+			tasks: [{
+				advancement: "tensura:arachnophobic"
+				criterion: ""
+				id: "79E28856724FC332"
+				title: "- Slay a &cBlack Spider"
+				type: "advancement"
+			}]
+			title: "Arachnophobic"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6B8008E40CE41011"]
+			id: "5DBA7EB8E9990F12"
+			tasks: [{
+				advancement: "tensura:shell_lizard"
+				criterion: ""
+				id: "67902D6068C3B47B"
+				type: "advancement"
+			}]
+			title: "Shell Lizard"
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5DBA7EB8E9990F12"]
+			id: "7C18154DCEABD3B6"
+			subtitle: "- Slay a &cTempest Serpent&r and &aobtain&r its &bScales"
+			tasks: [{
+				advancement: "tensura:hiss_tory"
+				criterion: ""
+				id: "2C4EDC1D351E6006"
+				title: "- Slay a &cTempest Serpent&r and &aobtain&r its &bScales"
+				type: "advancement"
+			}]
+			title: "Hiss-tory"
+			x: 0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7C18154DCEABD3B6"]
+			id: "3C5E35FF042C4307"
+			subtitle: "- Defeat &cHinata Sakaguchi"
+			tasks: [{
+				advancement: "tensura:great_saint_of_the_west"
+				criterion: ""
+				id: "6310F502DD4306DC"
+				title: "- Defeat &cHinata Sakaguchi"
+				type: "advancement"
+			}]
+			title: "The Great Saint of the West"
+			x: -0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7C18154DCEABD3B6"]
+			id: "0FB8E45597229FF1"
+			subtitle: "- Defeat a natural &cIfrit"
+			tasks: [{
+				advancement: "tensura:conqueror_of_flames"
+				criterion: ""
+				id: "5B93901A756EB1A3"
+				title: "- Defeat a natural &cIfrit"
+				type: "advancement"
+			}]
+			title: "Conqueror of Flames"
+			x: -0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7C18154DCEABD3B6"]
+			id: "328F073182D95D06"
+			subtitle: "- Defeat an &4Orc Disaster"
+			tasks: [{
+				advancement: "tensura:eat_or_be_eaten"
+				criterion: ""
+				id: "13FDE68B4CCCDB77"
+				title: "- Defeat an &4Orc Disaster"
+				type: "advancement"
+			}]
+			title: "Eat or be eaten"
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7C18154DCEABD3B6"]
+			id: "63B300FFA2FE375B"
+			subtitle: "- Defeat a &5Charybdis"
+			tasks: [{
+				advancement: "tensura:ruler_of_the_skies"
+				criterion: ""
+				id: "4C4B34571663CBF2"
+				title: "- Defeat a &5Charybdis"
+				type: "advancement"
+			}]
+			title: "Ruler of the skies"
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["63B300FFA2FE375B"]
+			id: "1685EB28B234D757"
+			subtitle: "- Obtain the &6Nanoda disk&r by having a &5Charybdis&r kill an &4Orc Disaster"
+			tasks: [{
+				advancement: "tensura:nanoda"
+				criterion: ""
+				id: "6D76FB5152ED3DD6"
+				title: "- Obtain the &6Nanoda disk&r by having a &5Charybdis&r kill an &4Orc Disaster"
+				type: "advancement"
+			}]
+			title: "Nanoda!!!"
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["22E5BA18DA57BDDC"]
+			id: "0520AD34C5344F84"
+			subtitle: "- Use a &9Magic Engine"
+			tasks: [{
+				advancement: "tensura:no_no_square"
+				criterion: ""
+				id: "30966BC943620BEE"
+				title: "- Use a &9Magic Engine"
+				type: "advancement"
+			}]
+			title: "This is my no no square"
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22E5BA18DA57BDDC"]
+			id: "11BDDB55DE5E1EDA"
+			subtitle: "- Craft a &cKiln"
+			tasks: [{
+				advancement: "tensura:better_smelter"
+				criterion: ""
+				id: "68BC89F764A6CD4E"
+				title: "- Craft a &cKiln"
+				type: "advancement"
+			}]
+			title: "The better smelter!"
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["22E5BA18DA57BDDC"]
+			id: "17F8BD987CF2A6BC"
+			subtitle: "- Craft a &cKunai"
+			tasks: [{
+				advancement: "tensura:become_ninja"
+				criterion: ""
+				id: "181C540C09E2C3A0"
+				title: "- Craft a &cKunai"
+				type: "advancement"
+			}]
+			title: "Become a real ninja!"
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["11BDDB55DE5E1EDA"]
+			id: "4C850AF420769702"
+			subtitle: "- Craft a &6Pierrot Mask"
+			tasks: [{
+				advancement: "tensura:pierrot_mask"
+				criterion: ""
+				id: "5376637E987BAABF"
+				title: "- Craft a &6Pierrot Mask"
+				type: "advancement"
+			}]
+			title: "A Clown Troupe!"
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4C850AF420769702"]
+			id: "113967C049425B90"
+			subtitle: "- Craft a &dDragon Knuckle"
+			tasks: [{
+				advancement: "tensura:too_strong"
+				criterion: ""
+				id: "692D04D07E0DB5A6"
+				title: "- Craft a &dDragon Knuckle"
+				type: "advancement"
+			}]
+			title: "&dIt's bad to be too strong sometimes..."
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["17F8BD987CF2A6BC"]
+			id: "748CA436093ECB61"
+			subtitle: "- Craft a &6Spatial Blade"
+			tasks: [{
+				advancement: "tensura:unhealable_wound"
+				criterion: ""
+				id: "1EA553821EB6CB1C"
+				title: "- Craft a &6Spatial Blade"
+				type: "advancement"
+			}]
+			title: "Unhealable wound..."
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["748CA436093ECB61"]
+			id: "154348EC43142395"
+			subtitle: "- Craft a &bIce Blade"
+			tasks: [{
+				advancement: "tensura:a_bit_cold"
+				criterion: ""
+				id: "4F0048D8FAD83653"
+				title: "- Craft a &bIce Blade"
+				type: "advancement"
+			}]
+			title: "Isn't it a bit cold?"
+			x: -7.5d
+			y: 3.0d
+		}
+	]
+	title: "&9I'm Not a Bad Slime"
+}

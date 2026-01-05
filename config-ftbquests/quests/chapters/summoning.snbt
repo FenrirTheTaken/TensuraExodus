@@ -1,0 +1,82 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "summoning"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/magic/summoning/summon_greater_elemental.png"
+		}
+	}
+	id: "60300659C8D89D6A"
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["- Summon &ayour&r contracted &6Elemental Spirit&r to have it &btemporarily&r fight for &ayou"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/summoning/summon_medium_elemental.png"
+				}
+			}
+			id: "7417761213B258EE"
+			shape: "rsquare"
+			subtitle: "- Requires &bContract&r with &6Medium Spirit"
+			tasks: [{
+				id: "4844E05B81E8448E"
+				title: "- Requires &bContract&r with &6Medium Spirit"
+				type: "checkmark"
+			}]
+			title: "&9Summon Medium Elemental"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			description: ["- Summon &ayour&r contracted &9Greater Elemental Spirit&r to have it &cpurge&r the world of &4heretics&r for &ayou"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/summoning/summon_greater_elemental.png"
+				}
+			}
+			id: "04516924FF4D743A"
+			shape: "rsquare"
+			subtitle: "- Requires &bContract&r with &6Greater Spirit"
+			tasks: [{
+				id: "717F0507C7E3729B"
+				title: "- Requires &bContract&r with &6Greater Spirit"
+				type: "checkmark"
+			}]
+			title: "&9Summon Greater Spirit"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: ["Show &6everyone&r you &ahave&r that &cdawg&r in &ayou"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/summoning/summon_hound_dog.png"
+				}
+			}
+			id: "4076077138CA8E4E"
+			shape: "rsquare"
+			subtitle: "- Requires &anaming&r a &6Hound Dog&r with &csnake tail"
+			tasks: [{
+				id: "20D5F3285764F3D5"
+				title: "- Requires &anaming&r a &6Hound Dog&r with &csnake tail"
+				type: "checkmark"
+			}]
+			title: "&9Summon Hound Dog"
+			x: -3.5d
+			y: 0.0d
+		}
+	]
+	title: "&dSummoning"
+}

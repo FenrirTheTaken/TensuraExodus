@@ -1,0 +1,1474 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "resistance"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ftblibrary:icons/shield"
+		}
+	}
+	id: "6AEC857D61E43956"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Elemental Resistances"]
+			image: "tensura:textures/player_hud/mount_spiritual_heart.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Survival"]
+			image: "tensura:textures/player_hud/heart.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Abnormal"]
+			image: "tensura:textures/battlewill/aura_shield.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 11.5d
+			y: -7.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/abnormal_condition_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Abnormal Condition &bResistance&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r &5Hunger&r, &5Poison&r, &5Blindness&r, &5Confusion&r, &5Darkness&r, &5Mining Fatigue&r, &5Slowness&r, &5Weakness&r, &5Burden&r, &5Fragility&r and &5Curse&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/abnormal_condition_resistance.png"
+				}
+			}
+			id: "79CEB9581BF94ABC"
+			shape: "rsquare"
+			subtitle: "Take &cdamage&r while under &5Petrification&r, &5Fear&r or &5Insanity&r."
+			tasks: [{
+				id: "3DA289A83A130340"
+				title: "Take &cdamage&r while under &5Petrification&r, &5Fear&r or &5Insanity&r."
+				type: "checkmark"
+			}]
+			title: "&5Abnormal Condition &bResistance&r"
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["79CEB9581BF94ABC"]
+			description: [
+				"{image:tensura:textures/skill/resistance/abnormal_condition_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Abnormal Condition &3Nullification&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r &5Hunger&r, &5Poison&r, &5Blindness&r, &5Confusion&r, &5Darkness&r, &5Mining Fatigue&r, &5Slowness&r, &5Weakness&r, &5Burden&r, &5Fragility&r, &5Curse&r, &5Fatal Poison&r, &5Infection&r, &5Paralysis&r and &5Petrification&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/abnormal_condition_nullification.png"
+				}
+			}
+			id: "48E14B3E5E3BFB2B"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &5Abnormal Condition &bResistance&r"
+			tasks: [{
+				id: "6D39317C1A4B8F80"
+				title: "- &6Awakening&r while in possession of &5Abnormal Condition &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&5Abnormal Condition &3Nullification"
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/cold_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&bCold Resistance&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Chill&r and prevents &bCold damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/cold_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&bCold Resistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &aCopied&r from &7Snow Golem&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/cold_resistance.png"
+				}
+			}
+			id: "243594AE0AFADC38"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &bCold damage&r"
+			tasks: [{
+				id: "3B38008228B7B4DE"
+				title: "- Take &c15 damage&r from any source of &bCold damage&r"
+				type: "checkmark"
+			}]
+			title: "&bCold Resistance&r"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["243594AE0AFADC38"]
+			description: [
+				"{image:tensura:textures/skill/resistance/cold_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&bCold &3Nullification&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Chill&r and &5Frost&r and additionally &3nullifies&r &ball forms&r of &bCold damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/cold_nullification.png"
+				}
+			}
+			id: "50E791F2D851FB55"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &bCold Resistance&r"
+			tasks: [{
+				id: "1076391EA6944A3A"
+				title: "- &6Awakening&r while in possession of &bCold &3Nullification&r"
+				type: "checkmark"
+			}]
+			title: "&bCold &3Nullification&r"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/corrosion_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&2Corrosion &bResistance&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Wither&r and prevents &2Corrosion damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/corrosion_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&2Corrosion &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cSupermassive Slime&r"
+				"- &cOrc Lord&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/corrosion_resistance.png"
+				}
+			}
+			id: "0D6A94DF8FBD4896"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &2Corrosion damage&r"
+			tasks: [{
+				id: "0857A33B85980BEA"
+				title: "- Take &c15 damage&r from any source of &2Corrosion damage&r"
+				type: "checkmark"
+			}]
+			title: "&2Corrosion &bResistance&r"
+			x: 11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0D6A94DF8FBD4896"]
+			description: [
+				"{image:tensura:textures/skill/resistance/corrosion_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&2Corrosion &3Nullification&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Wither&r and &5Corrosion&r and additionally &3nullifies&r &2all forms&r of &2Corrosion damage&r."
+				"{@pagebreak}"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/corrosion_nullification.png"
+				}
+			}
+			id: "151790CACD41F2C5"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &2Corrosion &bResistance&r"
+			tasks: [{
+				id: "6F0784C96DD2162A"
+				title: "- &6Awakening&r while in possession of &2Corrosion &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&2Corrosion &3Nullification&r"
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/darkness_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Darkness Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &8Darkness damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/darkness_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Darkness Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &5Darkness Cannon&r"
+				"- &aCopied&r from &cHinata Sakaguchi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/darkness_attack_resistance.png"
+				}
+			}
+			id: "4C18AC2B14FF148D"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &8Darkness damage&r"
+			tasks: [{
+				id: "5BA44911095133BC"
+				title: "- Take &c15 damage&r from any source of &8Darkness damage&r"
+				type: "checkmark"
+			}]
+			title: "&8Darkness Attack &bResistance&r"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4C18AC2B14FF148D"]
+			description: [
+				"{image:tensura:textures/skill/resistance/darkness_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Darkness Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r &8all forms&r of &8Darkness damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/darkness_attack_nullification.png"
+				}
+			}
+			id: "29C1FBC87CC797FE"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &8Darkness Attack &bResistance&r"
+			tasks: [{
+				id: "0540CB1A8FC1E0ED"
+				title: "- &6Awakening&r while in possession of &8Darkness Attack &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&8Darkness Attack &3Nullification&r"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/earth_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&2Earth Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &2Earth damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/earth_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&2Earth Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cBeast Gnome&r"
+				"- &cWar Gnome&r"
+				"- &5Earth Jail&r"
+				"- &5Earth Spike&r "
+				"- &5Earth Storm&r "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/earth_attack_resistance.png"
+				}
+			}
+			id: "29185647B667621A"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &2Earth damage&r"
+			tasks: [{
+				id: "6D59DFC22ED3BB44"
+				title: "- Take &c15 damage&r from any source of &2Earth damage&r"
+				type: "checkmark"
+			}]
+			title: "&2Earth Attack &bResistance&r"
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["29185647B667621A"]
+			description: [
+				"{image:tensura:textures/skill/resistance/earth_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&2Earth Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &2all forms&r of &2Earth damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/earth_attack_nullification.png"
+				}
+			}
+			id: "7E6D58AD0AE51D8D"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &2Earth Attack &bResistance&r"
+			tasks: [{
+				id: "141E9DD0F5FF81D0"
+				title: "- &6Awakening&r while in possession of &2Earth Attack &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&2Earth Attack &3Nullification&r"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/electricity_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&1Electricity &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &1Lightning damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/electricity_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&1Electricity &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cSylphide&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/electricity_resistance.png"
+				}
+			}
+			id: "172897618BF18F12"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &1Electricity damage&r"
+			tasks: [{
+				id: "141C214BD3D97080"
+				title: "- Take &c15 damage&r from any source of &1Electricity damage&r"
+				type: "checkmark"
+			}]
+			title: "&1Electricity &bResistance&r"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["172897618BF18F12"]
+			description: [
+				"{image:tensura:textures/skill/resistance/electricity_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&1Electricity &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &1all forms&r of &1Lightning damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/electricity_nullification.png"
+				}
+			}
+			id: "0C2DFED3D0AF48A7"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &1Electricity &bResistance&r"
+			tasks: [{
+				id: "01D729F4A4C30271"
+				title: "- &6Awakening&r while in possession of &1Electricity &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&1Electricity &3Nullification&r"
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/flame_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &4Fire damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/flame_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cSalamander&r"
+				""
+				"- &cIfrit&r"
+				""
+				"- &5Fire Bolt&r"
+				""
+				"- &5Flare Circle&r"
+				""
+				"- &5Hellfire&r"
+				""
+				"- &5Magma Surge&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/flame_attack_resistance.png"
+				}
+			}
+			id: "7BFE06766E6C6D10"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &4Flame damage&r"
+			tasks: [{
+				id: "67E8C6ECA8BF34C4"
+				title: "- Take &c15 damage&r from any source of &4Flame damage&r"
+				type: "checkmark"
+			}]
+			title: "&4Flame Attack &bResistance&r"
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7BFE06766E6C6D10"]
+			description: [
+				"{image:tensura:textures/skill/resistance/flame_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &4all forms&r of &4Fire damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/flame_attack_nullification.png"
+				}
+			}
+			id: "760CA56CF713E583"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &4Flame Attack &bResistance&r"
+			tasks: [{
+				id: "341AB202E773D2B2"
+				title: "- &6Awakening&r while in possession of &4Flame Attack &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&4Flame Attack &3Nullification&r"
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/gravity_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Gravity Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &5Gravity damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/gravity_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Gravity Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cWar Gnome&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/gravity_attack_resistance.png"
+				}
+			}
+			id: "76CC748C6C689012"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &5Gravity damage&r"
+			tasks: [{
+				id: "1341057D8B37D894"
+				title: "- Take &c15 damage&r from any source of &5Gravity damage&r"
+				type: "checkmark"
+			}]
+			title: "&5Gravity Attack &bResistance&r"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76CC748C6C689012"]
+			description: [
+				"{image:tensura:textures/skill/resistance/gravity_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Gravity Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &5all forms&r of &5Gravity damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/gravity_attack_nullification.png"
+				}
+			}
+			id: "35B97D0F5EEE1C99"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &5Gravity Attack &bResistance&r"
+			tasks: [{
+				id: "5B1CFBB0006C73E0"
+				title: "- &6Awakening&r while in possession of &5Gravity Attack &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&5Gravity Attack &3Nullification&r"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/heat_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cHeat &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &cdamage&r from &cHeat&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/heat_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cHeat &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cIfrit"
+				"- &aCopied&r from &cWarden&r"
+				"- &aCopied&r from &cHinata Sakaguchi&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/heat_resistance.png"
+				}
+			}
+			id: "66BF48F0BA94BAE1"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &cHeat damage&r"
+			tasks: [{
+				id: "553EE244CBB7AF20"
+				title: "- Take &c15 damage&r from any source of &cHeat damage&r"
+				type: "checkmark"
+			}]
+			title: "&cHeat &bResistance&r"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["66BF48F0BA94BAE1"]
+			description: [
+				"{image:tensura:textures/skill/resistance/heat_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cHeat &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &call forms&r of &cdamage&r from &cheat&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/heat_nullification.png"
+				}
+			}
+			id: "73FEBE1A8118AEA3"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &cHeat &bResistance&r"
+			tasks: [{
+				id: "19846374220564E6"
+				title: "- &6Awakening&r while in possession of &cHeat &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&cHeat &3Nullification&r"
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/holy_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&6Holy Attack &bResistance&r:"
+				""
+				"- When &etoggled,&r prevents &6Holy damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/holy_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&6Holy Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cHinata Sakaguchi"
+				"- &aCopied&r from &cHinata Sakaguchi&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/holy_attack_resistance.png"
+				}
+			}
+			id: "19E82B2F4041B6BD"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &6Holy damage&r"
+			tasks: [{
+				id: "1C02E5B0FF8684CC"
+				title: "- Take &c15 damage&r from any source of &6Holy damage&r"
+				type: "checkmark"
+			}]
+			title: "&6Holy Attack &bResistance&r"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/magic_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Magic &bResistance&r:"
+				""
+				"- When &etoggled,&r prevents &9Magic damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/magic_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Magic &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cAkash&r"
+				"- &cFeathered Serpent&r"
+				"- &cWinged Cat&r"
+				"- &aCopied&r from &cHinata Sakaguchi&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/magic_resistance.png"
+				}
+			}
+			id: "73B6531DDEF45213"
+			shape: "rsquare"
+			subtitle: "- Take &c20 damage&r from any source of &9Magic damage&r"
+			tasks: [{
+				id: "08A0AD744899B78E"
+				title: "- Take &c20 damage&r from any source of &9Magic damage&r"
+				type: "checkmark"
+			}]
+			title: "&9Magic &bResistance&r"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/light_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&eLight Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &eLight damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/light_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&eLight Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &5Solar Beam&r"
+				"- &5Solar Wave&r"
+				"- &5Solar Flare&r"
+				"- &5Solar Rain&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/light_attack_resistance.png"
+				}
+			}
+			id: "36CF33763BB25E3B"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &eLight damage"
+			tasks: [{
+				id: "2D90F432C0A1610B"
+				title: "- Take &c15 damage&r from any source of &eLight damage"
+				type: "checkmark"
+			}]
+			title: "&eLight Attack &bResistance"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36CF33763BB25E3B"]
+			description: [
+				"{image:tensura:textures/skill/resistance/light_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&eLight Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &eall forms&r of &eLight damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/light_attack_nullification.png"
+				}
+			}
+			id: "15F829B5DAC59973"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &eLight Attack &bResistance"
+			tasks: [{
+				id: "1695DA893CE3FF40"
+				title: "- Take &c15 damage&r from any source of &eLight damage"
+				type: "checkmark"
+			}]
+			title: "&eLight Attack &3Nullification"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/pain_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cPain &bResistance:"
+				""
+				"- When &etoggled&r, it &3nullifies&r &cpain effects&r from &cweaker attacks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/pain_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cPain &bResistance:"
+				""
+				"[&6Sources&r]:"
+				""
+				"[&6Mobs&r]:"
+				""
+				"- &cArmoursaurus&r"
+				"- &cAkash&r"
+				"- &cBeast Gnome&r"
+				"- &cBlade Tiger&r"
+				"- &cFeathered Serpent&r "
+				"- &cKnight Spider&r"
+				"- &cMegalodon&r"
+				"- &cSissie&r "
+				"- &cSupermassive Slime&r"
+				"- &cSpear Toro&r"
+				"- &cWinged Cat&r"
+				"- &cIfrit&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/pain_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cPain &bResistance:"
+				""
+				"[&6Sources&r]:"
+				""
+				"[&6Skills&r]:"
+				""
+				"- &5Lightning Lance&r"
+				"- &5Aerial Blade&r"
+				"- &5Electro Blast&r"
+				"- &5Blizzard&r"
+				"- &5Darkness Cannon&r"
+				"- &5Earth Jail&r"
+				"- &5Earth Spike&r"
+				"- &5Fire Bolt&r"
+				"- &5Flare Circle&r"
+				"- &5Hellfire&r"
+				"- &5Magma Surge&r"
+				"- &5Meggido&r"
+				"- &5Solar Flare&r"
+				"- &5Solar Rain&r"
+				"- &5Solar Wave&r"
+				"- &5Swipe&r"
+				"- &5Water Cutter&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/pain_resistance.png"
+				}
+			}
+			id: "6DDC6A3B38FDF383"
+			shape: "rsquare"
+			subtitle: "- Take &c20 damage&r from any source of &cPain"
+			tasks: [{
+				id: "53A9FCEBA73F5FFC"
+				title: "- Take &c20 damage&r from any source of &cPain"
+				type: "checkmark"
+			}]
+			title: "&cPain &bResistance"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6DDC6A3B38FDF383"]
+			description: [
+				"{image:tensura:textures/skill/resistance/pain_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cPain &3Nullification:"
+				""
+				"- When &etoggled&r, it &3nullifies&r &cpain effects&r from &ceven&r the &cstrongest of attacks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/pain_nullification.png"
+				}
+			}
+			id: "2E9699371C8DDFBD"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &cPain &bResistance"
+			tasks: [{
+				id: "09CC65BDFB983CB5"
+				title: "- &6Awakening&r while in possession of &cPain &bResistance"
+				type: "checkmark"
+			}]
+			title: "&cPain &3Nullification"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/paralysis_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&eParalysis &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &eParalysis damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/paralysis_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&eParalysis &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cEvil Centipede&r"
+				"- &cHell Moth&r"
+				"- &cSylphide&r"
+				"- &5Electro Blast&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/paralysis_resistance.png"
+				}
+			}
+			id: "6CE5D49B33F554AE"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &eParalysis damage"
+			tasks: [{
+				id: "4E200F104E5E1108"
+				title: "- Take &c15 damage&r from any source of &eParalysis damage"
+				type: "checkmark"
+			}]
+			title: "&eParalysis &bResistance&r"
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6CE5D49B33F554AE"]
+			description: [
+				"{image:tensura:textures/skill/resistance/paralysis_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&eParalysis &3Nullification:"
+				""
+				"- When &etoggled&r, &3nullifies&r &eall forms&r of &eParalysis damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/paralysis_nullification.png"
+				}
+			}
+			id: "0174904D87D6DC70"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &eParalysis &bResistance&r"
+			tasks: [{
+				id: "3B3AC27350316FD1"
+				title: "- Take &c15 damage&r from any source of &eParalysis damage"
+				type: "checkmark"
+			}]
+			title: "&eParalysis &3Nullification"
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/physical_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&7Physical Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &cdamage&r from &7physical attacks&r if it falls below &a50%&r of your&a Max HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/physical_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&7Physical Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cBeast Gnome&r"
+				"- &cArmorsaurus&r"
+				"- &cBlade Tiger&r"
+				"- &cElemental Colossus&r"
+				"- &cGiant Bear&r"
+				"- &cKnight Spider&r"
+				"- &cMegalodon&r"
+				"- &cOrc Lord&r"
+				"- &cSpear Toro&r"
+				"- &cSissie&r"
+				"- &5Water Cutter&r "
+				"- &cFall damage"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/physical_attack_resistance.png"
+				}
+			}
+			id: "07C0F85846BB1C25"
+			shape: "rsquare"
+			subtitle: "- Take &c20 damage&r from any source of &7Physical damage"
+			tasks: [{
+				id: "6DE4F1505006127C"
+				title: "- Take &c20 damage&r from any source of &7Physical damage"
+				type: "checkmark"
+			}]
+			title: "&7Physical Attack &bResistance&r"
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["07C0F85846BB1C25"]
+			description: [
+				"{image:tensura:textures/skill/resistance/physical_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&7Physical Attack &3Nullification:"
+				""
+				"- When &etoggled&r, &3nullifies&r &call forms&r of &cdamage&r from &7physical attacks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/physical_attack_nullification.png"
+				}
+			}
+			id: "640F05625962F894"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &7Physical Attack &bResistance&r"
+			tasks: [{
+				id: "4629B5B76A6449AF"
+				title: "- &6Awakening&r while in possession of &7Physical Attack &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&7Physical Attack &3Nullification"
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/pierce_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&7Pierce &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &cdamage&r from &7piercing attacks&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/pierce_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&7Pierce &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &5Solar Rain&r"
+				"- &6Lizardman&r (Vortex Spear)"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/pierce_resistance.png"
+				}
+			}
+			id: "413DB3A7223D9FAF"
+			shape: "rsquare"
+			subtitle: "- Take &c20 damage&r from any source of &7Pierce damage"
+			tasks: [{
+				id: "4A15AFA10A6F3C60"
+				title: "- Take &c20 damage&r from any source of &7Pierce damage"
+				type: "checkmark"
+			}]
+			title: "&7Pierce &bResistance&r"
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["413DB3A7223D9FAF"]
+			description: [
+				"{image:tensura:textures/skill/resistance/pierce_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&7Pierce &3Nullification:"
+				""
+				"- When &etoggled&r, &3nullifies&r &call forms&r of &cdamage&r from &7piercing attacks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/pierce_nullification.png"
+				}
+			}
+			id: "1A449C1EDAD66E77"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &7Pierce &bResistance&r"
+			tasks: [{
+				id: "53919C36A9D329A1"
+				title: "- &6Awakening&r while in possession of &7Pierce &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&7Pierce &3Nullification"
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/poison_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&dPoison &bResistance&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Poison&r and prevents &dPoison damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/poison_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&dPoison &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cAqua Frog&r"
+				"- &cArmy Wasp&r"
+				"- &cTempest Serpent&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/poison_resistance.png"
+				}
+			}
+			id: "1D6EF3FB647CC59F"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &dPoison damage"
+			tasks: [{
+				id: "115740F2D17B9C80"
+				title: "- Take &c15 damage&r from any source of &dPoison damage"
+				type: "checkmark"
+			}]
+			title: "&dPoison &bResistance&r"
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1D6EF3FB647CC59F"]
+			description: [
+				"{image:tensura:textures/skill/resistance/poison_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&dPoison &3Nullification:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Poison&r and &5Fatal Poison&r and additionally &3nullifies&r &dall forms&r of &dPoison damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/poison_nullification.png"
+				}
+			}
+			id: "57981A87A07C0C70"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &dPoison &bResistance&r"
+			tasks: [{
+				id: "2917880A1B92945B"
+				title: "- Take &c15 damage&r from any source of &dPoison damage"
+				type: "checkmark"
+			}]
+			title: "&dPoison &3Nullification"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/spatial_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Spatial Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &5Spatial damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/spatial_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Spatial Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cWinged Cat&r"
+				"- &cAkash&r"
+				"- &5Swipe&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/spatial_attack_resistance.png"
+				}
+			}
+			id: "3C82614E8A6BCD6B"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &5Spatial damage"
+			tasks: [{
+				id: "235B631EC741186C"
+				title: "- Take &c15 damage&r from any source of &5Spatial damage"
+				type: "checkmark"
+			}]
+			title: "&5Spatial Attack &bResistance&r"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C82614E8A6BCD6B"]
+			description: [
+				"{image:tensura:textures/skill/resistance/spatial_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Spatial Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &4all forms&r of &5Spatial damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/spatial_attack_nullification.png"
+				}
+			}
+			id: "33B015E673B245DB"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &5Spatial Attack &bResistance&r"
+			tasks: [{
+				id: "3090931566E74E6C"
+				title: "- Take &c15 damage&r from any source of &5Spatial damage"
+				type: "checkmark"
+			}]
+			title: "&5Spatial Attack &3Nullification&r"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/spiritual_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&dSpiritual Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &dSpiritual damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/spiritual_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&dSpiritual Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cHinata Sakaguchi&r"
+				"- &5Shadow Bind&r"
+				"- &5True Darkness&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/spiritual_attack_resistance.png"
+				}
+			}
+			id: "7ADCB218555AF28A"
+			shape: "rsquare"
+			subtitle: "- Take &c20 damage&r from any source of &dSpiritual damage"
+			tasks: [{
+				id: "1E9438700ED85454"
+				title: "- Take &c20 damage&r from any source of &dSpiritual damage"
+				type: "checkmark"
+			}]
+			title: "&dSpiritual Attack &bResistance&r"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7ADCB218555AF28A"]
+			description: [
+				"{image:tensura:textures/skill/resistance/spiritual_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&dSpiritual Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Insanity&r and &5Fear&r and additionally &3nullifies&r &dall forms&r of &dSpiritual damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/spiritual_attack_nullification.png"
+				}
+			}
+			id: "6574103ACF64F4D6"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &dSpiritual Attack &bResistance&r"
+			tasks: [{
+				id: "793B1E6E52C82E3D"
+				title: "- Take &c20 damage&r from any source of &dSpiritual damage"
+				type: "checkmark"
+			}]
+			title: "&dSpiritual Attack &3Nullification&r"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/thermal_fluctuation_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cThermal Flunctuation &bResistance&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Chill&r and prevents &cdamage&r from &bCold damage&r and &cHeat&r if it falls below &a50%&r of your &aMax HP&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/thermal_fluctuation_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cThermal Flunctuation &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &aCopied&r from &cElemental Colossus&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/thermal_fluctuation_resistance.png"
+				}
+			}
+			id: "3C0E72A24A15C63C"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cElemental Colossus&r"
+			tasks: [{
+				id: "6CB82332DEAA50B7"
+				title: "- &aCopied&r from &cElemental Colossus&r"
+				type: "checkmark"
+			}]
+			title: "&cThermal Flunctuation &bResistance&r"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C0E72A24A15C63C"]
+			description: [
+				"{image:tensura:textures/skill/resistance/thermal_fluctuation_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&cThermal Flunctuation &3Nullification&r:"
+				""
+				"- When &etoggled&r, it &3nullifies&r the &5effects&r of &5Chill&r and &5Frost&r and additionally &3nullifies&r &call forms&r of &cdamage&r from &bCold damage&r and &cHeat&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/thermal_fluctuation_nullification.png"
+				}
+			}
+			id: "307710D1C3DE4534"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &cThermal Flunctuation &bResistance&r"
+			tasks: [{
+				id: "55F050AECB22BA1E"
+				title: "- &aCopied&r from &cElemental Colossus&r"
+				type: "checkmark"
+			}]
+			title: "&cThermal Flunctuation &3Nullification&r"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/water_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Water Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &9Water damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/water_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Water Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cAqua Frog&r "
+				"- &cUndine&r"
+				"- &5Acid Rain&r"
+				"- &5Blizzard&r"
+				"- &5Water Cutter&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/water_attack_resistance.png"
+				}
+			}
+			id: "28B178149FEE03AA"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &9Water damage"
+			tasks: [{
+				id: "0DB27F77F4340F71"
+				title: "- Take &c15 damage&r from any source of &9Water damage"
+				type: "checkmark"
+			}]
+			title: "&9Water Attack &bResistance&r"
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["28B178149FEE03AA"]
+			description: [
+				"{image:tensura:textures/skill/resistance/water_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Water Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &9all forms&r of &9Water damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/water_attack_nullification.png"
+				}
+			}
+			id: "3620DA06D285235C"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &9Water Attack &bResistance&r"
+			tasks: [{
+				id: "390357C2E546A322"
+				title: "- &6Awakening&r while in possession of &9Water Attack &bResistance&r"
+				type: "checkmark"
+			}]
+			title: "&9Water Attack &3Nullification&r"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/resistance/wind_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&aWind Attack &bResistance&r:"
+				""
+				"- When &etoggled&r, prevents &aWind damage&r if it falls below &a50%&r of your &aMax HP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/resistance/wind_attack_resistance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&aWind Attack &bResistance&r:"
+				""
+				"[&6Sources&r]:"
+				""
+				"- &cFeathered Serpent&r"
+				"- &cSylphide&r"
+				"- &5Electro Blast&r "
+				"- &5Aerial Blade&r "
+				"- &5Lightning Lance&r "
+				"- &5Wind Blade&r "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/wind_attack_resistance.png"
+				}
+			}
+			id: "65DC8FECF1AE7725"
+			shape: "rsquare"
+			subtitle: "- Take &c15 damage&r from any source of &aWind damage"
+			tasks: [{
+				id: "298548F3AA44E3C0"
+				title: "- Take &c15 damage&r from any source of &aWind damage"
+				type: "checkmark"
+			}]
+			title: "&aWind Attack &bResistance&r"
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["65DC8FECF1AE7725"]
+			description: [
+				"{image:tensura:textures/skill/resistance/wind_attack_nullification.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&aWind Attack &3Nullification&r:"
+				""
+				"- When &etoggled&r, &3nullifies&r &aall forms&r of &aWind damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/resistance/wind_attack_nullification.png"
+				}
+			}
+			id: "54796B2614AC2D1C"
+			shape: "rsquare"
+			subtitle: "- &6Awakening&r while in possession of &aWind Attack &bResistance&r"
+			tasks: [{
+				id: "472B80AFD926518B"
+				title: "- Take &c15 damage&r from any source of &aWind damage"
+				type: "checkmark"
+			}]
+			title: "&aWind Attack &3Nullification&r"
+			x: -5.5d
+			y: -2.5d
+		}
+	]
+	title: "&3Resistance"
+}

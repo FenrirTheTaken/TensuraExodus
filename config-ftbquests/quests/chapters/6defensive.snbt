@@ -1,0 +1,348 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6defensive"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "tensura:hihiirokane_chestplate"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "108E46E7A9E6C502"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["&lSurvivability"]
+			image: "tensura:textures/player_hud/heart.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["&lDefensive"]
+			image: "tensura:textures/player_hud/armor.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.5d
+			y: -1.5d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/survivor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive - &eToggle&r] &lSurvivor&r:"
+				""
+				"[&bUltraspeed Regeneration&r]:"
+				""
+				"- Unless the player's &aHP&r reaches &a0&r, instantly &aregenerate&r all lost hearts and &6SHP&r."
+				""
+				"Credit: &bGrubaRyba"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/survivor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive - &eToggle&r] &lSurvivor&r:"
+				""
+				"[&bVarious Attributes Nullification&r]:"
+				""
+				"- Grants &2Abnormal Condition Nullification&r, &aNatural Effects Resistance&r, &7Physical Attack Resistance&r, and &cPain Nullification&r."
+				""
+				"Credit: &bGrubaRyba"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/survivor.png"
+				}
+			}
+			id: "3E4ACB594DD0CF80"
+			shape: "rsquare"
+			tasks: [{
+				id: "69BCA7FBED8316BD"
+				type: "checkmark"
+			}]
+			title: "&6Survivor"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/unyielding.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lUnyielding&r:"
+				""
+				"[&bUnyield&r]:"
+				""
+				"- Once a mob is named by the user, it will gain &b1 Unyielding Point&r each 5s that it’s 30 Blocks around the player, this will decrease if the mob is too far away. "
+				"- If a subordinate dies to &cdamage source&r not from the owner, the user will gain &910%&r of the sub’s &9EP&r for each &b120 points&r it has."
+				"- The maximum amount of &9EP&r can gain is &9100%&r = &b1200 points&r. "
+				"- To gain the fallen subordinates’ &askills&r/&9magics&r/&6arts&r, the sub needs to have at least &b120 points&r for normal &askills&r and &b600 points&r for &6Unique&r Skills."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Sub will now gain &b2 Unyielding Points&r each 5s that it's 30 Blocks around the player"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/unyielding.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lUnyielding&r:"
+				""
+				"[&6Backup&r]:"
+				""
+				"- Upon activated, spawn a immobile Body with full &9EP&r and no &aSkill&r at where the user is. "
+				"- When activated again, transfer the user’s &6soul&r to where the Body is and spawn a new Body where the user is, swap their &bEquipments&r in &bArmor&r and Hand slots (other slots are untouched) "
+				"- Shift activate to remove the backup Body. If the user dies when there’s a backup Body available, automatically transfer them to that Body."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows multi-dimensional body transferring "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/unyielding.png"
+				}
+			}
+			id: "08F1AC79217D5325"
+			shape: "rsquare"
+			tasks: [{
+				id: "04511CD644B36332"
+				type: "checkmark"
+			}]
+			title: "&6Unyielding"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/guardian.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lGuardian&r:"
+				""
+				"[&6Grant Protection&r]: "
+				""
+				"- Grants all nearby &9subordinates&r/&9allies&r &b10 Armor&r and &330 barrier points&r for &l3,600 Ticks&r."
+				""
+				"Credit: &bGrubaRyba"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/guardian.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lGuardian&r:"
+				""
+				"[&eSubstitution&r]:"
+				""
+				"- The &7player&r takes &cdamage&r in place of their &9subordinates&r."
+				""
+				"Credit: &bGrubaRyba"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/guardian.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lGuardian&r:"
+				""
+				"[&6Iron Wall&r]:"
+				""
+				"- Grants the &7player&r an additional &b15 Armor&r and &20.4 Knockback Resistance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &bArmor&r granted to &b40&r"
+				"- Increases &2Knockback Resistance&r to &21.0&r"
+				""
+				"Credit: &bGrubaRyba"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/guardian.png"
+				}
+			}
+			id: "2F756B4BC564C359"
+			shape: "rsquare"
+			tasks: [{
+				id: "47B7BD18DF7D6C52"
+				type: "checkmark"
+			}]
+			title: "&6Guardian"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/reflector.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lReflector&r:"
+				""
+				"- Whenever the &7user&r takes &cdamage&r, add an &bequal amount&r of &bEcho Points&r as the &camount&r of &cdamage&r."
+				""
+				"Credit: &bGrubaRyba"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/reflector.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lReflector&r:"
+				""
+				"[&6Echo Reflection&r]:"
+				""
+				"- Consume &ball&r of the &7player's&r &bEcho Points&r and unleash an &1electric projectile&r that deals &cdamage&r equal to their &b5x Echo Points&r. "
+				"- Scroll mouse while sneak holding down this &6mode&r to change the power output percentage."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to their &b5x Echo Points&r."
+				""
+				"Credit: &bGrubaRyba"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/reflector.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lReflector&r:"
+				""
+				"[&6Echo&r &cCounter&r]:"
+				""
+				"- While &cheld&r, the &7user&r cannot &emove&r or &cattack&r, but the next &cattack&r they  take will be canceled and reflect that &cdamage&r back to the &cattacker&r. "
+				"- If the &cattack&r is &cnot Projectile&r, the &cdamage&r is reflected directly back to the &cattacker&r with &c2.5x force&r. "
+				"- If the &cattack type&r is &cProjectile&r, the &cprojectile&r will go back to its &7owner&r with &e2x speed&r and &c2.5x damage&r if it’s a &9Magic&r Projectile."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows &emovement&r and &cattacking&r while &cheld&r."
+				""
+				"Credit: &bGrubaRyba"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/reflector.png"
+				}
+			}
+			id: "536B1E29D83758D4"
+			shape: "rsquare"
+			tasks: [{
+				id: "1E1D922410D4FECF"
+				type: "checkmark"
+			}]
+			title: "&6Reflector"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/suppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSuppressor&r:"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Makes the player immune to &3Severance&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/suppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSuppressor&r:"
+				""
+				"[&6Spatial Suppression&r]:"
+				""
+				"- Inflicts a &3status debuff&r to all mobs within a 50x50 radius that prevents them from using teleportation &aabilities&r for 60 seconds."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/suppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSuppressor&r:"
+				""
+				"[&6Swap&r]:"
+				""
+				"- When activated, the player and the mob/enemy/entity that they're looking at swap places."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/suppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSuppressor&r:"
+				""
+				"[&6Spatial Motion&r]:"
+				""
+				"- Blink if not shifting, &bSpatial&r GUI if shifting."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/suppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSuppressor&r:"
+				""
+				"[&bThought &eAcceleration&r]:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, increase &2attack speed&r by &20.2&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/suppressor.png"
+				}
+			}
+			id: "5ED54DC930DE79A0"
+			shape: "rsquare"
+			tasks: [{
+				id: "167F88863D08DFB9"
+				type: "checkmark"
+			}]
+			title: "&6Suppressor"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/tuner.png width:100 height:100 align:1}"
+				""
+				"[&bPassive - &aIn Slot&r] &lTuner&r:"
+				""
+				"[&bDestiny Charge&r]:"
+				""
+				"- If the player would die, instead restore them to full &aHP&r, remove &3negative status effects&r, and restore their &9MP&r and &6AP&r up to &950&6%&r their maximum total."
+				"- Once this ability is triggered, the skill will start its 20 mins cooldown, the skill can still be used during the cooldown, when the 20 mins cooldown runs out, the user can again revive from the death type that they already got during the last 20 mins."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &9MP&r and &6AP&r restoration to &975&6%&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/tuner.png width:100 height:100 align:1}"
+				""
+				"[&bPassive - &aIn Slot&r] &lTuner&r:"
+				""
+				"[&bUnexpected &aResult&r]:"
+				""
+				"- If the player's &aHP&r is below &a25%&r, grants a &c30 damage boost&r, &2+ 0.2 Attack Speed&r, + &e0.04 Movement Speed&r, &e+ 1 Swim Speed&r , and &125%&r &7physical&r &1dodge chance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r"
+				"- Doubles all stat boost"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/tuner.png"
+				}
+			}
+			id: "1F7ADBA0BF44C33D"
+			shape: "rsquare"
+			tasks: [{
+				id: "4A96E3B9996A7987"
+				type: "checkmark"
+			}]
+			title: "&6Tuner"
+			x: 0.5d
+			y: 1.0d
+		}
+	]
+	title: "&6Defensive"
+}

@@ -1,0 +1,190 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "true_ultimate"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "irons_spellbooks:textures/gui/overlays/heartstop.png"
+		}
+	}
+	id: "48E6C63731C5C6E6"
+	order_index: 11
+	quest_links: [ ]
+	quests: [{
+		dependencies: [
+			"6807D193FF5AAC3E"
+			"547A874F08BB390D"
+			"55030C7A42C2828F"
+			"59533E1B122C4779"
+			"2D1B80A33455939C"
+		]
+		description: [
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"[&l&ePassives&r]:"
+			""
+			"+50 &6Spatial/Wind/Fire Damage&r"
+			""
+			"&6Void Vacuum&r [&eIn Slot&r]"
+			""
+			"- Gives a &btotal&r of &620 SHP&r dmg &btick&r, corrosion &cdmg&r and &4fear 4&r effects for &b30secs&r on &chit&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"&6Point Zero&r [&eIn Slot&r]"
+			""
+			"- Instantly &cbreaks&r any &bbarrier&r. "
+			""
+			"- Nullifications are &etreated&r as &cnon-existent&r. "
+			""
+			"- Ignores &cdodges&r and &4crit damage&r. "
+			""
+			"- &5Spatial Blockage&r is &cignored&r. "
+			""
+			"- &4Immune&r to &6Time Stop&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"&6Matter Repulsion&r [&eIs Toggled&r]"
+			""
+			"- &cEntities&r in the &eradius&r of &b10 blocks&r get &cpushed&r away. "
+			""
+			"- Every &cnot allied&r entity that gets &b5 blocks&r close and is &c1% weaker&r than the &aplayer&r or that is &b10% below&r their &amax HP&r, will &6immediately&r die. "
+			""
+			"- Every &cprojectile&r (Not &6Magic&r) or &4physical attack&r is &cignored&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"&6Isolation&r [&eTrue Passive&r]"
+			""
+			"- &6Cleans&r every &charmful effect&r from the &aplayer&r."
+			""
+			""
+			"&6Dragon Unification&r [&eTrue Passive&r]"
+			""
+			"- Upon acquiring &4Azathoth&r, your &9EP&r will &aincrease&r by a &2grand&r total of &b162.000.000&r, divided by &6Aura&r and &9MP&r, each &b82.000.000&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"[&l&cModes&r]:"
+			""
+			"&6Darkness Gravity Vortex&r [&cMode 1&r]"
+			""
+			"- Create a &4black hole&r that expands &ccontinuously&r, pulling &aeveryone&r in &b50 radius&r blocks as it &4absorbs&r &ceverything&r and &aeveryone&r below &b5%&r of your &9maximum EP&r around, dealing &c20.000 damage&r and draining &9200.000MP&r from those who are &astronger&r in &b10 base&r + &a40 max&r power &bradius&r blocks. "
+			""
+			"- The &alonger&r you &chold it&r, the less &bcooldown&r you'll obtain."
+			""
+			"- Gaining &6100%&r of their &9EP&r by the &efirst time&r. "
+			""
+			"- It's &cabsorption&r getting &abigger&r as it's &2size&r does. "
+			""
+			"- Feed it &buntil&r it &cexplodes&r into his &4disappearance&r from &5reality&r, &ceaten&r by it's &aown&r power, only leaving &6chaos&r behind. "
+			""
+			"- Acquire any &6Ultimate skill&r and &ebelow&r with this &4power&r that was &agiven&r, but &cdo not&r allow it to get into &ayour&r mind as &athy&r is &bonly&r a &evessel&r to &4Azathoth&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"&6Soul Consumption&r [&cMode 2&r]"
+			""
+			"- Kill &eanything&r below &b5%&r of your &9maximum EP&r or that is with &b10%&r below their &amax HP&r that defies &6you&r in the &bradius&r of &b40 blocks&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			"&6Gluttony&r [&cMode 3&r]"
+			""
+			"- &cConsume&r and &4absorb&r anything in &ayour&r path with a &eradius&r of &b3 to 50&r blocks, &cstealing&r their &6skills&r, acquire any &6Ultimate&r and &ebelow&r with this &4power&r, dealing &c5.000 damage&r and draining &950.000MP&r from &athose&r who are &2stronger&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"&6Nihility Collapse&r [&cMode 4&r]"
+			""
+			"- Weapon &cattacks&r deal &bfour times&r their &cnormal damage&r for &b10 minutes&r."
+			""
+			""
+			"&6Imaginary Space&r [&cMode 5&r]"
+			""
+			"- &cCrouch&r + &6Letter&r for &esub-mode&r."
+			""
+			"1 -> A &6storage&r with &balmost&r infinite &5space&r."
+			""
+			"2 -> A &6dimension&r under &ayour&r control, &abuild&r, &cdestroy&r as &ayou&r prefer. "
+			""
+			"- It's &6infinite&r space, &cnever-ending&r."
+			"{@pagebreak}"
+			"{image:btrultima:textures/skill/ultimate/azathoth.png width:100 height:100 align:1}"
+			""
+			"&6Multidimensional Barrier&r [&cMode 6&r]"
+			""
+			"- Acquire &b10 times&r your &amax hp&r as &bbarrier points&r while also &ccancelling&r most &4damage sources&r with &9lower MP&r cost (&b15.000&r Base + &cdamage taken&r)."
+			""
+			""
+			"&6Spacetime Domination&r [&cMode 7&r]"
+			""
+			"- &cCrouch&r + &6Letter&r for &esub-mode&r."
+			""
+			"1 -> &6Time Stop"
+			""
+			"2 -> &6Time Warp"
+			""
+			"3 -> &6Instant Motion"
+		]
+		icon: {
+			Count: 1b
+			id: "ftbquests:custom_icon"
+			tag: {
+				Icon: "btrultima:textures/skill/ultimate/azathoth.png"
+			}
+		}
+		id: "6EBCA14F5B8E6E09"
+		shape: "rsquare"
+		subtitle: "- Mastered &6Spacetime Domination, Raphael, Beelzebuth, Veldora, Velgrynd&r + &b50.000&c souls&r or &6Hero Egg&r + &b50&r &eSubordinates&r + Cost &965.000.000 MP"
+		tasks: [
+			{
+				id: "31A301C85B0D2BED"
+				title: "- Mastered &6Spacetime Domination&r"
+				type: "checkmark"
+			}
+			{
+				id: "6E3856FA00843AFC"
+				title: "- Mastered &6Raphael [Lord of Wisdom]"
+				type: "checkmark"
+			}
+			{
+				id: "217598AE9025754C"
+				title: "- Mastered &6Beelzebuth [Lord of Gluttony]"
+				type: "checkmark"
+			}
+			{
+				id: "4DD9273A86762218"
+				title: "- Mastered &6Veldora [Lord of Storms]"
+				type: "checkmark"
+			}
+			{
+				id: "0CFB3E69643D6DAC"
+				title: "- Mastered &6Vegrynd [Lord of Scorch]"
+				type: "checkmark"
+			}
+			{
+				id: "3B7D102F400095AC"
+				title: "- &b50.000&r &csouls&r / &6Hero Egg"
+				type: "checkmark"
+			}
+			{
+				id: "64705BA352EA7BE5"
+				title: "- &b50&r &eSubordinates"
+				type: "checkmark"
+			}
+			{
+				id: "1726378501A0368B"
+				title: "- Cost &965.000.000 MP"
+				type: "checkmark"
+			}
+		]
+		title: "&4Void God Azathoth"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&4God-Class Ultimate"
+}

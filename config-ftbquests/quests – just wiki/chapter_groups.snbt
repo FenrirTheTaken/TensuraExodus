@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "78C6A5142D0638AC", title: "&bSkills" }
+		{ id: "6E17A657D13F2413", title: "&6Unique Skills" }
+		{ id: "0CAC2A1FCCFA454E", title: "&3Dimensions" }
+	]
+}

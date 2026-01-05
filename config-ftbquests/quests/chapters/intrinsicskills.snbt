@@ -1,0 +1,932 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intrinsicskills"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/gui/skill/intrinsic.png"
+		}
+	}
+	id: "67265FFC36277232"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/dragon_mode.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lDragon Mode&r:"
+				""
+				"- Upon activation, grants the user a temporary &92x&r increase to their &9max Magicules&r and &6Aura&r; &b20 Armor&r; a &c12 damage boost&r and &e+0.05 Speed&r. "
+				"- Duration lasts for &l3,600 Ticks&r. "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l18,000 Ticks&r. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Duration lasts for &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/dragon_mode.png"
+				}
+			}
+			id: "6A79C25179BD13B7"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Dragonewt&r"
+			tasks: [{
+				id: "40825E6C65C66F45"
+				title: "- &aCopied&r from &6Dragonewt&r"
+				type: "checkmark"
+			}]
+			title: "Dragon Mode"
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/dragon_ear.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lDragon Ear&r:"
+				""
+				"- While held down, any &cmobs&r that emits sound within a &b60 Block radius&r will be highlighted in &agreen&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r with a &b40 Block radius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/dragon_ear.png"
+				}
+			}
+			id: "237EB32699E49A89"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Dragonewt&r"
+			tasks: [{
+				id: "38741026A3042FAA"
+				title: "- &aCopied&r from &6Dragonewt&r"
+				type: "checkmark"
+			}]
+			title: "Dragon ear"
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/dragon_eye.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lDragon Eye&r:"
+				""
+				"- Same as &6Analytical Appraisal&r but with the zoom effect like &6Farsight&r "
+				"[Max: x100]."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/dragon_eye.png"
+				}
+			}
+			id: "6FD309592C540A48"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Dragonewt&r"
+			tasks: [{
+				id: "197EE695FA553B50"
+				title: "- &aCopied&r from &6Dragonewt&r"
+				type: "checkmark"
+			}]
+			title: "Dragon eye"
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/thunder_breath.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&1Thunder Breath&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &120 Lightning damage&r every &l20 ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/thunder_breath.png"
+				}
+			}
+			id: "07F1B3461681FE5F"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Dragonewt&r"
+			tasks: [{
+				id: "46A5B172E6665BAD"
+				title: "- &aCopied&r from &6Dragonewt&r"
+				type: "checkmark"
+			}]
+			title: "&1Thunder Breath"
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/flame_breath.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Flame Breath&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &416 Fire damage&r every &l20 ticks&r and sets hit &ctargets&r and &7terrain&r on fire. "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/flame_breath.png"
+				}
+			}
+			id: "38AD2030FD93B51F"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Dragonewt&r"
+			tasks: [{
+				id: "3B66800F3B8317CA"
+				title: "- &aCopied&r from &6Dragonewt&r"
+				type: "checkmark"
+			}]
+			title: "&4Flame Breath"
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/dragon_skin.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lDragon Skin&r:"
+				""
+				"- Cannot activate while wearing &7armor&r. "
+				"- Grants the &7user&r &bArmor&r with effectiveness dependent on their &6EP&r. "
+				"- Base is equal to &7Pure Magisteel&r. "
+				"- &6400,000+&r is equal to &7Adamantite&r."
+				"- &6800,000+&r is equal to &bHihi'Irokane&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/dragon_skin.png"
+				}
+			}
+			id: "129C1FA4B4B318BC"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Dragonewt&r"
+			tasks: [{
+				id: "582EBB8FDEC5AC77"
+				title: "- &aCopied&r from &6Dragonewt&r"
+				type: "checkmark"
+			}]
+			title: "Dragon skin"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/scale_armor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lScale Armor&r:"
+				""
+				"- Grants the &7user&r &b6 Armor&r and they suffer &eno movement penalties&r from water and &7mud blocks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/scale_armor.png"
+				}
+			}
+			id: "68F78AB802CF0F0C"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Lizardman"
+			tasks: [{
+				id: "0683835AE18B9074"
+				title: "- &aCopied&r from &6Lizardman"
+				type: "checkmark"
+			}]
+			title: "Scale Armour"
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/absorb_and_dissolve.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &b&lAbsorb \\& Dissolve&r:"
+				""
+				"- Consumes the &7held item&r if it's flagged as a valid target for the &bskill&r, instantly consuming the &7item&r, &arecovering HP&r and &9MP&r."
+				"- Consumes &bSlime Core&r as a &6Slime&r, You are able to change your size. "
+				"- Shift to Shrink - Non Shift to Grow"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/intrinsic/absorb_and_dissolve.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &b&lAbsorb \\& Dissolve&r:"
+				""
+				"[&6Valid Targets&r]:"
+				""
+				"- &7Mana Crystal&r"
+				"- &7Monster Leather&r"
+				"- &bSlime Core&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/absorb_and_dissolve.png"
+				}
+			}
+			id: "76F8C74BB3F4F2B4"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r &ffrom&r &6Slime"
+			tasks: [{
+				id: "6C1C9FC62B9C5F4B"
+				title: "- &aCopied&r &ffrom&r &6Slime"
+				type: "checkmark"
+			}]
+			title: "&bAbsorb \\& Dissolve"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/ogre_berserker.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lOgre Berserker&r:"
+				""
+				"- Grants the &7user&r a &c30 damage boost&r, an additional &b10 Armor&r and &e+0.03 Speed&r. "
+				"- It lasts for &l3,600 Ticks&r"
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l18,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/ogre_berserker.png"
+				}
+			}
+			id: "42E77CFE97EE9A21"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Wicked Oni"
+			tasks: [{
+				id: "419EFADE8AE091E5"
+				title: "- &aCopied&r from &6Wicked Oni"
+				type: "checkmark"
+			}]
+			title: "Ogre Berserker"
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/drain.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lDrain&r:"
+				""
+				"- When activated, &a6 HP&r is taken from the target &centity&r"
+				"- The &lSkill&r is temporarily transformed into a random one of, the &ctarget's&r &aCommon&r/&eExtra&r/&bIntrinsic&r &lSkills&r for &l1,600 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/drain.png"
+				}
+			}
+			id: "40A3D59797F53790"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cGiant Bat"
+			tasks: [{
+				id: "48FD0F9BCBCE734A"
+				title: "- &aCopied&r from &cGiant Bat"
+				type: "checkmark"
+			}]
+			title: "Drain"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/ultrasonic_waves.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lUltrasonic Waves&r:"
+				""
+				"[&6Sonic Wave&r]:"
+				""
+				"- &bAoE&r &cattack&r that damages &7non&r-&dspiritual beings&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/intrinsic/ultrasonic_waves.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lUltrasonic Waves&r:"
+				""
+				"[&6Auditory Sense&r]:"
+				""
+				"- Sonar mode that highlights nearby noise-making &cmobs&r in a &b20x20 radius&r in &aGreen&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown to &l20 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/ultrasonic_waves.png"
+				}
+			}
+			id: "5BB4EE230F75C0D9"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cGiant Bat&r / &cWarden&r"
+			tasks: [{
+				id: "1EAC1D93377A591C"
+				title: "- &aCopied&r from &cGiant Bat&r / &cWarden&r"
+				type: "checkmark"
+			}]
+			title: "Ultrasonic Waves"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/paralysing_breath.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eParalysing Breath&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &c14 damage&r every &l20 ticks&r and inflicts &5Paralysis&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/paralysing_breath.png"
+				}
+			}
+			id: "5A4A14B33EE48888"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cEvil Centipede"
+			tasks: [{
+				id: "53B576B31B71BE47"
+				title: "- &aCopied&r from &cEvil Centipede"
+				type: "checkmark"
+			}]
+			title: "&eParalysing Breath"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/poisonous_breath.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&dPoisonous Breath&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &c14 damage&r every &l20 ticks&r and inflicts &5Noxious&r and &5Corossion&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/poisonous_breath.png"
+				}
+			}
+			id: "73C9F9BB92D882D9"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cTempest Serpent"
+			tasks: [{
+				id: "7AB6C3F2DEED896E"
+				title: "- &aCopied&r from &cTempest Serpent"
+				type: "checkmark"
+			}]
+			title: "&dPoisonous Breath"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/body_armor.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&bBody Armour&r:"
+				""
+				"- Upon activation, place &7Armoursaurous Armor&r in all empty armour slots. "
+				"- Also places &7Armoursaurous Gauntlet&r into the &7player's&r hand on shift + activation."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/body_armor.png"
+				}
+			}
+			id: "1CFB62017292E5BB"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r &ffrom &cArmoursaurus"
+			tasks: [{
+				id: "1AF3590748AC2635"
+				title: "- &aCopied&r from &cArmoursaurus"
+				type: "checkmark"
+			}]
+			title: "&bBody Armour"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/charm.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lCharm&r:"
+				""
+				"- Ineffective on &ctargets&r with &dSpiritual&r &3Null&r or with an &6EP&r over &650%&r (&630%&r if target has &dSpiritual&r &bResist&r) of the &7user's&r &6Max EP&r. "
+				"- Turns &ctargets&r between &625%&r and &650%&r Neutral (&65%&r - &630%&r if &ctarget&r has &dSpiritual&r &bResist&r), and turns &ctargets&r below &625%&r (&65%&r if &ctarget&r has &dSpiritual&r &bResist&r) &6Max EP&r into &9temporary allies&r for &l6,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration for &9temporary allies&r to &l12,000 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/charm.png"
+				}
+			}
+			id: "646E8003DB5AA2E3"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Vampires"
+			tasks: [{
+				id: "0087CE396CA7240A"
+				title: "- Copied from &6Vampires"
+				type: "checkmark"
+			}]
+			title: "Charm"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/blood_mist.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &b&lBlood Mist&r:"
+				""
+				"[&6Default&r]:"
+				""
+				"- Creates a blood mist in a &b10x10 area&r where the &7user&r is looking. "
+				"- &cMobs&r inside the bloodmist take &c10 damage&r per &lSecond&r and for &ceach enemy damaged&r in this way the &7user&r &aheals 10 HP&r. "
+				"- The Bloodmist lasts for &l30 Seconds&r and if activated again before the &l30 Seconds&r is over it deals &c100 damage&r to &call mobs&r in &brange&r. "
+				"- Costs &9500 MP&r and &cdeals 20 damage&r to the &7user&r on &6activation&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/intrinsic/blood_mist.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &b&lBlood Mist&r:"
+				""
+				"[&l&cBlood Ray&r]:"
+				""
+				"- Shoots a blood beam from the &7user&r that &9deals 50 magic damage&r every &l0.5 Second&r. "
+				"- &b40 block range&r and breaks &7blocks&r on contact while &cheld down&r. "
+				"- Costs &a10 HP&r and &610 000 EP&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/blood_mist.png"
+				}
+			}
+			id: "223D45398D6E9209"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r &ffrom &6Vampires Overcomer"
+			tasks: [{
+				id: "2D3CFD97B5A1F4C2"
+				title: "- &aCopied&r &ffrom &6Vampires Overcomer"
+				type: "checkmark"
+			}]
+			title: "&bBlood Mist"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/wind_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&f] &a&lWind Transform"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deal &a2 Wind damage&r and apply &5Paralysis&r for all &cmobs&r within a &b10x10&r &bradius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/wind_transform.png"
+				}
+			}
+			id: "558A54414A3A946F"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cFeathered Serpent&r / &cSylphide&r"
+			tasks: [{
+				id: "2DF06A67E361D69C"
+				title: "- &aCopied&r from &cFeathered Serpent&r / &cSylphide&r"
+				type: "checkmark"
+			}]
+			title: "&aWind Transform"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/darkness_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &l&8Darkness Transform&r:"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deal &42 Fire damage&r and apply &5Darkness&r for all &cmobs&r within a &b10x10&r &bradius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/darkness_transform.png"
+				}
+			}
+			id: "1B00F60DD63D9D98"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Kijin"
+			tasks: [{
+				id: "42415C514FC9959C"
+				title: "- &aCopied&r from &6Kijin"
+				type: "checkmark"
+			}]
+			title: "&8Darkness Transform"
+			x: 16.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/flame_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &l&4Flame Transform&r:"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deals &42 Fire damage&r and light all &cmobs&r on fire (and place fire where the &ctarget&r is) within a &b10x10 radius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/flame_transform.png"
+				}
+			}
+			id: "0A423C3EA0A60DFE"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cSalamander&r / &cIfrit&r"
+			tasks: [{
+				id: "7C49B119597ABDE6"
+				title: "- &aCopied&r from &cSalamander&r / &cIfrit&r"
+				type: "checkmark"
+			}]
+			title: "&4Flame Transform"
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/water_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&f] &l&9Water Transform&r:"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deal &92 Water damage&r and apply &5Poison&r for all &cmobs&r within a &b10x10&r &bradius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/water_transform.png"
+				}
+			}
+			id: "1378618B1C80CF7A"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cAqua Frog&r / &cUndine&r"
+			tasks: [{
+				id: "74DC1E8D7CFB47D3"
+				title: "- &aCopied&r from &cAqua Frog&r / &cUndine&r"
+				type: "checkmark"
+			}]
+			title: "&9Water Transform"
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/light_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &l&eLight Transform&r:"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deals &62 Holy damage&r and apply &5Nausea&r for all &cmobs&r within a &b10x10 radius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/light_transform.png"
+				}
+			}
+			id: "6239606ED8C9F70E"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Kijin"
+			tasks: [{
+				id: "703B20E7CA293938"
+				title: "- &aCopied&r from &6Kijin"
+				type: "checkmark"
+			}]
+			title: "&eLight Transform"
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/space_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &l&5Space Transform&r:"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deal &52 Space damage&r and apply &5Weakness&r for all &cmobs&r within a &b10x10 radius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/space_transform.png"
+				}
+			}
+			id: "6AF98CC428F2A160"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cWinged Cat&r / &cAkash&r"
+			tasks: [{
+				id: "22CEB13E40A5827B"
+				title: "- &aCopied&r from &cWinged Cat&r / &cAkash&r"
+				type: "checkmark"
+			}]
+			title: "&5Space Transform"
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/earth_transform.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &2&lEarth Transform&r:"
+				""
+				"- When held down, reduces &espeed&r to &e50%&r, deal &22 Earth damage&r and apply &5Burden&r for all &cmobs&r within a &b10x10 radius&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/earth_transform.png"
+				}
+			}
+			id: "00B9A1420BE3BEC9"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cBeast Gnome&r / &cWar Gnome&r"
+			tasks: [{
+				id: "28D557CFD1ACB3EE"
+				title: "- &aCopied&r from &cBeast Gnome&r / &cWar Gnome&r"
+				type: "checkmark"
+			}]
+			title: "&2Earth Transform"
+			x: 17.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/beast_transformation.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &b&lBeast Transformation&r:"
+				""
+				"- Fully &aheals&r the &7user&r and &6restores&r their &6EP&r, giving &c+15 damage&r, &b+10 Armor&r and &e+0.04 Speed&r, while temporarily increasing their &9max MP&r and &6AP&r by &92&6x&r. "
+				"- Duration lasts for &l3 Minutes&r and upon ending inflicts the &7user&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l10 Minutes&r. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l6 Minutes&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/beast_transformation.png"
+				}
+			}
+			id: "6060240E8580E6B5"
+			shape: "rsquare"
+			subtitle: "- &aCopied &ffrom &6Beastfolk"
+			tasks: [{
+				id: "44EF8EE30C69F8E9"
+				title: "- &aCopied &ffrom &6Beastfolk"
+				type: "checkmark"
+			}]
+			title: "&bBeast Transformation"
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/possession.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lPossession&r:"
+				""
+				"- If used while possessing a body, leaves the body and its &bIntrinsic&r &lSkills&r behind and turns the &7player&r into &dSpiritual Form&r. "
+				"- When possessing a &ctarget&r, the &7user&r turns back into &7Physical Form&r with the &ctarget’s&r &7physical&r &lStats&r and it's &lSkills&r."
+				"- While in &dSpiritual form&r if the &7player&r can possess a &ctarget&r: "
+				"[Ineffective against &ctargets&r with &dSpiritual&r &3Nullification&r &etoggled&r]"
+				""
+				"&lNon-Player Mobs&r:"
+				""
+				"- At below &a10% HP&r, Below &d10% Spiritual HP&r, or below &625% Maximum EP&r (Relative to the &7user&r) "
+				"- Reduce to &a5% HP&r, &d5% SHP&r or &612.5% EP&r if the target has &dSpiritual Attack&r &bResistance&r &etoggled&r."
+				""
+				"&lPlayer&r: "
+				""
+				"- Require 2 out of the 3 optional requirements above. "
+				"- If possessed, the &ctarget player&r will be put into &dSpiritual form&r and will die eventually without having [&6Possession&r]."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/possession.png"
+				}
+			}
+			id: "22116B767E3FF4AC"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Lesser Daemon&r / &6Demon Slime&r"
+			tasks: [{
+				id: "76B259BA50C082BB"
+				title: "- &aCopied&r from &6Lesser Daemon&r / &6Demon Slime&r"
+				type: "checkmark"
+			}]
+			title: "Possession"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/unpredictability.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lUnpredictability&r:"
+				""
+				"- When &etoggled&r, on &cattacking&r or &cbeing attacked&r, ignores every &3Dodge&r, &6Crit Chance&r, and &3Dodge Avoidance&r &6abilities&r. "
+				"- Cannot be used without being a &aTrue Hero&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/unpredictability.png"
+				}
+			}
+			id: "09F224F6380B3845"
+			shape: "rsquare"
+			subtitle: "- Become &aTrue Hero"
+			tasks: [{
+				id: "64E3DEF2D27ED983"
+				title: "- Become &aTrue Hero"
+				type: "checkmark"
+			}]
+			title: "Unpredictability"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/water_breathing.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lWater Breathing&r:"
+				""
+				"- Allows you to breath underwater."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/water_breathing.png"
+				}
+			}
+			id: "225BDCA8E856A60D"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Merfolk"
+			tasks: [{
+				id: "43766EF0E5FE92D5"
+				title: "- &aCopied&r from &6Merfolk"
+				type: "checkmark"
+			}]
+			title: "Water Breathing"
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/eye_of_truth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lEye of Truth&r:"
+				""
+				"- When toggled on, grants the user perfect vision and the ability to see through &dillusions&r and &dconcealments&r. "
+				"- Cannot be used without &6Hero Egg&r or &aTrue Hero&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/eye_of_truth.png"
+				}
+			}
+			id: "469C5CCB05A82DCE"
+			shape: "rsquare"
+			subtitle: "- Obtain &6Hero Egg"
+			tasks: [{
+				id: "287138A653D77215"
+				title: "- Obtains &6Hero Egg"
+				type: "checkmark"
+			}]
+			title: "Eye of Truth"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/intrinsic/divine_ki_release.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lDivine Ki Release&r:"
+				""
+				"- When &etoggled&r on, increases the&7 user’s&r &6battlewill&r &cdamage&r by &c100 damage&r and deals &cx3 durability damage&r on &ctargets'&r &barmor&r at legend grade or below when dealing &7Physical&r or &6Battlewill&r. "
+				"- If &acopied&r, cannot be used without &6Divinity&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/intrinsic/divine_ki_release.png"
+				}
+			}
+			id: "3D70856AF5079006"
+			shape: "rsquare"
+			subtitle: "- &6Awaken&r as a &aTrue Hero&r / &4True Demon Lord&r"
+			tasks: [{
+				id: "2CBB8E8E0FA2A0E1"
+				title: "- &6Awaken&r as a &aTrue Hero&r / &4True Demon Lord&r"
+				type: "checkmark"
+			}]
+			title: "&6Divine Ki Release"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:anitensura:textures/skill/intrinsic/phantoms_posession.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &b&lPhantom's Possession&r:"
+				""
+				"- If used while possessing a body, leaves the body and its &bIntrinsic&r &lSkills&r behind and turns the &7player&r into &dSpiritual Form&r. "
+				"- When possessing a &ctarget&r, the &7user&r turns back into &7Physical Form&r with the &ctarget’s&r &7physical&r &lStats&r + &l50%&r of the &7user's&r &6race&r &lStats&r, additionally acquire &lSkills&r"
+				"- While in &dSpiritual form&r if the &7player&r can possess a &ctarget&r: "
+				"[Ineffective against &ctargets&r with &dSpiritual&r &3Nullification&r &etoggled&r]"
+				""
+				"&lNon-Player Mobs&r:"
+				""
+				"- At below &a8% HP&r, Below &d8%&r Spiritual HP&r, or below &620% Maximum EP&r (Relative to the &7user&r) "
+				"- Reduce to &a4% HP&r, &d4% SHP&r or &610% EP&r if the target has &dSpiritual Attack&r &bResistance&r &etoggled&r."
+				""
+				"&lPlayer&r: "
+				""
+				"- Require 2 out of the 3 optional requirements above. "
+				"- If possessed, the &ctarget player&r will be put into &dSpiritual form&r and will die eventually without having [&bPossession&r]."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "anitensura:textures/skill/intrinsic/phantoms_posession.png"
+				}
+			}
+			id: "682C10E20C9DD668"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &6Phantoms"
+			tasks: [{
+				id: "63E4694855575D4E"
+				title: "&bPhantom's Possession"
+				type: "checkmark"
+			}]
+			title: "&bPhantom's Possession"
+			x: 5.0d
+			y: -0.5d
+		}
+	]
+	title: "&bIntrinsic"
+}

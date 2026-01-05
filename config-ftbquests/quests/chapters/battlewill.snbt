@@ -1,0 +1,619 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "battlewill"
+	group: "20DFC3C84883ACC7"
+	icon: "tensura:battlewill_manual"
+	id: "045684128C0C5416"
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/battlewill/air_flight.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lAir Flight&r:"
+				""
+				"- While held down, fly forward where the user is looking at, touch the ground while helding or sneak while releasing the skill button to stop."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Doubles flight speed"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/air_flight.png"
+				}
+			}
+			id: "6A156E67FABF4379"
+			shape: "rsquare"
+			tasks: [{
+				id: "51F3703F82B11704"
+				title: "Air Flight"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/aura_shield.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lAura Shield&r:"
+				""
+				"- On use, creates an Aura Shield item that behaves like a vanilla minecraft shield."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/aura_shield.png"
+				}
+			}
+			id: "4EE4858E79BF5233"
+			shape: "rsquare"
+			tasks: [{
+				id: "1D04807030AE36DD"
+				title: "Aura Shield"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/aura_slash.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lAura Slash&r:"
+				""
+				"- On activation, sends a cut-like projectile out from the player that deals &cslashing damage&r equal to &cdouble&r their &bweapon&r's &cdamage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- If holding &bweapon&r in off-hand, send out two cut-like projectiles"
+				"- Decreases cooldown to 20 ticks."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/aura_slash.png"
+				}
+			}
+			id: "4A8EA8340B2C9C25"
+			shape: "rsquare"
+			tasks: [{
+				id: "5E03712359A9ED10"
+				title: "Aura Slash"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/aura_sword.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lAura Sword&r:"
+				""
+				"- When activated, all of the player's &bweapon&r &7attacks&r deal &cdouble their normal damage&r for 60 seconds. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/aura_sword.png"
+				}
+			}
+			id: "368BF4BD14178E41"
+			shape: "rsquare"
+			tasks: [{
+				id: "099947C84310E34F"
+				title: "Aura Sword"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/battlewill.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lBattlewill&r:"
+				""
+				"- On held, converts &91%&r of player's &9MP&r into &6AP&r each 30 ticks."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- On held, converts &92%&r of player's &9MP&r into &6AP&r each 30 ticks."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/battlewill.png"
+				}
+			}
+			id: "17DB56991FEA6379"
+			shape: "rsquare"
+			tasks: [{
+				id: "70CC465F944E7407"
+				title: "Battlewill"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/dark_eight_palms.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lDark Eight Palms&r:"
+				""
+				"- Every 20 ticks held down charges up 1 magic bullet (up to 8) that deals &9100 damage&r, with all charged up bullets being launched where the user looks when released."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Every 10 ticks held down charges up 1 magic bullet"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/dark_eight_palms.png"
+				}
+			}
+			id: "60F0E589B6742BE2"
+			shape: "rsquare"
+			tasks: [{
+				id: "03E5275059E82DA8"
+				title: "Dark Eight Palms"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/death_march_dance.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lDeath March Dance&r:"
+				""
+				"- While held down, charges a meter that increases the size of a Magic Bullet above the player's head. "
+				"- The magic bullet increases in size every 40 ticks, with a maximum size level of 5. "
+				"- When the hold is released, sends regular sized Magic Bullets in all directions around the user, with the amount depending on the size level. "
+				"- Each magic bullet deals &c25 damage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- The magic bullet increases in size every 20 ticks"
+				"- Increases maximum size level to 10"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/death_march_dance.png"
+				}
+			}
+			id: "62175DC46D0BAF5E"
+			shape: "rsquare"
+			tasks: [{
+				id: "337738282D35D644"
+				title: "Death March Dance"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/diamond_path.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r]: &lDiamond Path&r:"
+				""
+				"- On use, grants the player &b10 Armor points&r, &20.4 knockback resistance&r, and &aNatural Effects Resistance&r for 1,200 ticks. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- On use, grants the player &b20 Armor points"
+				"- Increases duration to 3,600 ticks."
+				"- Becomes &eToggleable "
+				"[&b10 Armor points&r]"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/diamond_path.png"
+				}
+			}
+			id: "361B1DB54136076F"
+			shape: "rsquare"
+			tasks: [{
+				id: "22C5658EBB1B30C0"
+				title: "Diamond Path"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/earthshatter_kick.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lEarthshatter Kick&r:"
+				""
+				"- When activated, deals &c10 damage&r and knocks all mobs (on ground) into the air in a 10 block radius."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage deatl&r by &c20&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/earthshatter_kick.png"
+				}
+			}
+			id: "6E0CFF995B84092C"
+			shape: "rsquare"
+			tasks: [{
+				id: "1A39F3F8C38B8553"
+				title: "Earthshatter Kick"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/elephant_stampede.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lElephant Stampede&r:"
+				""
+				"- While held down, launches a dozen magic bullets into the air that rain down in a 10x10 block radius. "
+				"- Each magic bullet deals &c25 damage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase magic bullet &cdamage&r to &c50&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/elephant_stampede.png"
+				}
+			}
+			id: "7410C0AE40D4BAFF"
+			shape: "rsquare"
+			tasks: [{
+				id: "70014EBE06D5FBA8"
+				title: "Elephant Stampede"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/formhide.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lFormhide&r:"
+				""
+				"- While held down, grants the player invisibility."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/formhide.png"
+				}
+			}
+			id: "54A8B06A83B37A34"
+			shape: "rsquare"
+			tasks: [{
+				id: "4366DA9B3307A8E4"
+				title: "Formhide"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["54A8B06A83B37A34"]
+			description: [
+				"{image:tensura:textures/battlewill/haze.png width:100 height:100 align:1}"
+				""
+				"[&a&lEffect&r]: &lHaze&r"
+				""
+				"- While held, makes the user completely invisible, even to &6magic sense&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/haze.png"
+				}
+			}
+			id: "6D3980B951E0FB07"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Formhide"
+			tasks: [{
+				id: "4F94C9AAA1D4A6B5"
+				title: "- Mastered &6Formhide"
+				type: "checkmark"
+			}]
+			title: "Haze"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4A8EA8340B2C9C25"]
+			dependency_requirement: "one_completed"
+			description: [
+				"{image:tensura:textures/battlewill/heavy_slash.png width:100 height:100 align:1}"
+				""
+				"[&a&lEffect&r]: &lHeavy Slash&r"
+				""
+				"- When activated does a &cminor amount of damage&r. However, if you’re holding a &6weapon,&r it scales to be stronger than its &cbase attack damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/heavy_slash.png"
+				}
+			}
+			id: "222C787901E00F46"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Aura Slash"
+			tasks: [{
+				id: "3D49BD6413F99692"
+				title: "- Mastered &6Aura Slash"
+				type: "checkmark"
+			}]
+			title: "Heavy Slash"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/instant_move.png width:100 height:100 align:1}"
+				""
+				"[&a&lEffect&r]: &lInstant Move&r"
+				""
+				"- When activated, it instantly teleports the user up to 12 blocks away in a direction of their choosing."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/instant_move.png"
+				}
+			}
+			id: "6FD6ABD130FB2878"
+			shape: "rsquare"
+			tasks: [{
+				id: "0183997D497FCE7F"
+				title: "Instant-move"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/magic_bullet.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lMagic Bullet&r:"
+				""
+				"- While held down, increases Level by 1 every 30 ticks up to 300 ticks. "
+				"- Each Level deals &c10&r more &cdamage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- While held down, increases value by 1 every 20 ticks"
+				"- Increases maximum duratio to 600 ticks."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/magic_bullet.png"
+				}
+			}
+			id: "5CDE056D540C4C2D"
+			shape: "rsquare"
+			tasks: [{
+				id: "415C8109BFDCB6B0"
+				title: "Magic Bullet"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5CDE056D540C4C2D"]
+			description: [
+				"{image:tensura:textures/battlewill/maximum_magic_bullet.png width:100 height:100 align:1}"
+				""
+				"[&a&lEffect&r]: &lMaximum Magic Bullet&r"
+				""
+				"- A chargeable ability that when held begins to build into an orb, and when released it’s fired in a direction of your choosing, potentially doing &cmassive damage&r. "
+				""
+				"- This variant of magic bullet can be charged several times more than the original."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/maximum_magic_bullet.png"
+				}
+			}
+			id: "312482FF65AE25E7"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Magic Bullet"
+			tasks: [{
+				id: "287A4E9D8F39ECBF"
+				title: "- Mastered &6Magic Bullet"
+				type: "checkmark"
+			}]
+			title: "Maximum Magic Bullet"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/ogre_flame.png width:100 height:100 align:1}"
+				""
+				"[&a&lEffect&r]: &lOgre Flame&r"
+				""
+				"- A chargeable ability that when fully charged automatically creates a pillar of flames in the direction you’re looking, doing &cmassive damage&r to anything unlucky enough to be caught inside."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/ogre_flame.png"
+				}
+			}
+			id: "7A2A9422AA2770D1"
+			shape: "rsquare"
+			tasks: [{
+				id: "1F0670BE400E30F3"
+				title: "Ogre Flame"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6AAD673369229B70"]
+			description: [
+				"{image:tensura:textures/battlewill/ogre_sword_cannon.png width:100 height:100 align:1}"
+				""
+				"[&a&lEffect&r]: &lOgre Sword Cannon&r"
+				""
+				"- A chargeable ability that fires a flying blade towards the target, doing &cminor damage&r and upheaving any blocks caught in its path."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/ogre_sword_cannon.png"
+				}
+			}
+			id: "3C05A6C992B9128F"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Ogre-Sword Guillotine"
+			tasks: [{
+				id: "41C06D8B612A5A14"
+				title: "- Mastered &6Ogre-Sword Guillotine"
+				type: "checkmark"
+			}]
+			title: "Ogre-Sword Cannon"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/ogre_sword_guillotine.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lOgre Sword Guillontine&r:"
+				""
+				"- When activated, extends the player's &cattack&r reach by 1.5x and increases &cdamage&r by &c1.5x&r for 300 ticks."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases player's &cattack&r reach by 2x"
+				"- Increases &cdamage&r by 2x"
+				"- Increases duration to 600 ticks."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/ogre_sword_guillotine.png"
+				}
+			}
+			id: "6AAD673369229B70"
+			shape: "rsquare"
+			tasks: [{
+				id: "3C50E0748D5A71A7"
+				title: "Ogre-Sword Guillotine"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/roaring_lion_punch.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lRoaring Lion Punch&r:"
+				""
+				"- Requires Barehand"
+				"- When activated, the player makes a punch &cattack&r that consumes &610%&r of their &6AP&r up to &62,000 total AP&r and has &cdamage&r that scales to the &6amount&r of &6AP&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases total &6AP&r to &64,000&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/roaring_lion_punch.png"
+				}
+			}
+			id: "03E2F054AF07227C"
+			shape: "rsquare"
+			tasks: [{
+				id: "2C663737D86366AC"
+				title: "Roaring Lion Punch"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/battlewill/violent_break.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lViolent Break&r:"
+				""
+				"- When held for 60 ticks, removes &31 Level&r of all &3negative status effects&r and increases &cdamage&r to &c6&r for 1,200 ticks."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage boost&r to &c12&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/battlewill/violent_break.png"
+				}
+			}
+			id: "05408CD6D85335F2"
+			shape: "rsquare"
+			tasks: [{
+				id: "20DBD5A104E69377"
+				title: "Violent Break"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+	title: "&9Battlewill"
+}

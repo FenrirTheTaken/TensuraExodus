@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "labyrinth_tree"
+	group: "20DFC3C84883ACC7"
+	icon: "tensura:labyrinth_light_path"
+	id: "3EB1A9E4649688BB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"[&6TIP&f]"
+				"Its the biggest tree you will see hard to miss!"
+				""
+				"If you are struggling to find a labyrinth tree, make sure to use your trusty [&l&6Explorer's Compass&r]"
+			]
+			id: "3F95C0C012CB81D8"
+			shape: "rsquare"
+			subtitle: "Find and enter &aLabyrinth tree"
+			tasks: [{
+				dimension: "tensura:labyrinth"
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "tensura:block/labyrinth_light_path"
+					}
+				}
+				id: "599E84C4CA81BE5A"
+				title: "&aEnter the Labyrinth."
+				type: "dimension"
+			}]
+			title: "&a[Dungeon Encroachment]"
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F95C0C012CB81D8"]
+			description: [
+				"[&6TIP&r]:"
+				""
+				"Dont worry about dying it will teleport you outside arena with 1HP"
+			]
+			id: "25E33F080BB60AA6"
+			subtitle: "&aFight the Elemental Colossus and \"die\"."
+			tasks: [{
+				advancement: "tensura:just_a_test"
+				criterion: ""
+				icon: "ftbquests:book"
+				id: "4A91978CBC487B90"
+				title: "&aFight the Elemental Colossus and \"die\"."
+				type: "advancement"
+			}]
+			title: "&aChill! It's just a test!"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["25E33F080BB60AA6"]
+			description: [
+				"[&6TIP&r]:"
+				""
+				"To kill it you must be strong!"
+				""
+				"&5Recommendation&r for skill set:"
+				"- Aura Sword"
+				"- Ogre-sword Guillotine"
+				"- Magic Aura"
+				""
+				"With these you can hurt it ^_^"
+			]
+			id: "11639D27FC79CDAD"
+			subtitle: "Defeat the &5Elemental Colossus"
+			tasks: [{
+				advancement: "tensura:spirit_protector"
+				criterion: ""
+				id: "00EA5AB6E09DAEE5"
+				type: "advancement"
+			}]
+			title: "&5The fairy wont like this..."
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["25E33F080BB60AA6"]
+			description: [
+				"[&6TIP&f]"
+				""
+				"To form a contract go left road from the portal up the stairs."
+				""
+				"When you are on the platform &chold&r &asneak&r button to &5pray"
+				""
+				"If the screen goes &cdark&r and you see &6spirits&r everything praying is working!"
+				""
+				"If the screen doesnt go dark you must wait which is &a20 minutes&r from last praying!"
+				""
+				"To check prayings cooldown you can use command: ( time in seconds )"
+				"&a/tensura get PLAYER_NAME spirit cooldown"
+			]
+			id: "188356D5B81AC4C5"
+			subtitle: "&aForm a contract with any Spirit."
+			tasks: [{
+				advancement: "tensura:elementalist"
+				criterion: ""
+				id: "169DABEF540FC66B"
+				title: "&6Pray&r to form a contract"
+				type: "advancement"
+			}]
+			title: "&aElementalist"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["188356D5B81AC4C5"]
+			description: [
+				"[&6TIP&r]:"
+				""
+				"To make it happen you have to pray each and every day ^_^"
+			]
+			id: "1DF480C443F2B5D6"
+			subtitle: "&5Have a Greater Spirit or above in every elemental."
+			tasks: [{
+				advancement: "tensura:blessed_one"
+				criterion: ""
+				id: "22F0AD0C5755E4F9"
+				title: "&5Have a Greater Spirit or above in every elemental."
+				type: "advancement"
+			}]
+			title: "&5Blessed one!"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["188356D5B81AC4C5"]
+			id: "09B6511DF352DA32"
+			subtitle: "&5Use a weapon that has 3 Elemental cores slotted."
+			tasks: [{
+				advancement: "tensura:infinity_cores"
+				criterion: ""
+				id: "729617DB06C5A0E9"
+				title: "&5Use a weapon that has 3 Elemental cores slotted."
+				type: "advancement"
+			}]
+			title: "&5Infinity cores!"
+			x: 4.5d
+			y: 3.0d
+		}
+	]
+	title: "&aLabyrinth tree"
+}

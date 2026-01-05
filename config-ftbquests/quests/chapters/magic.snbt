@@ -1,0 +1,2351 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magic"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "tensura:hihiirokane_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "2A8FEF1111DEEFFB"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lOffensive"]
+			image: "tensura:item/hihiirokane_sword"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.0d
+			y: -6.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lPlundering"]
+			image: "tensura:textures/skill/unique/predator.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lBuffs"]
+			image: "tensura:textures/skill/extra/magic_aura.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lDebuffs"]
+			image: "minecraft:textures/mob_effect/weakness.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -3.0d
+			y: -6.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/absolute_severance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lAbsolute Severance&r:"
+				""
+				"[&6Resist Bypass&r]:"
+				""
+				"- Bypasses &bResistances&r and treats &3Nullification&r as &bResistance&r."
+				""
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/absolute_severance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lAbsolute Severance&r:"
+				""
+				"[&6Coating&r]:"
+				""
+				"- Adds a &c50 damage boost&r and a &bSeverance&r &deffect&r to the &7player's&r &cattacks&r for &l1,200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase &cdamage boost&r to &c200&r."
+				""
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/absolute_severance.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lAbsolute Severance&r:"
+				""
+				"[&6Projectile&r]:"
+				""
+				"- Launches an &cinvisible projectile&r that deals &c50 damage&r and has a &bSeverance effect&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to &c300&r."
+				""
+				"Credit: &bSachimi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/absolute_severance.png"
+				}
+			}
+			id: "20552282763AD36A"
+			shape: "rsquare"
+			tasks: [{
+				id: "04FADD57D6AE9329"
+				type: "checkmark"
+			}]
+			title: "&6Absolute Severance"
+			x: -12.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/divine_berserker.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lDivine Berserker&r:"
+				""
+				"[&6Divine Release&r]:"
+				""
+				"- Grants the &7user&r a &c60 damage boost&r, an additional &b20 Armor&r, and &e+0.06 Speed&r. "
+				"- It lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r. "
+				"- During the duration, &call damage taken&r is treated as &7physical damage&r. "
+				"- Every &6battlewill&r &cattack&r the &7user&r does in this &6mode&r will deal &66x damage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+				"- Doubles the &lStat&r boost."
+				"- Increase &6battlewill&r &cdamage&r multiplier to &68x&r"
+				""
+				"Credit: &9INFIRNAL_DRAGON"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/divine_berserker.png"
+				}
+			}
+			id: "0DE8BF0711B59341"
+			shape: "rsquare"
+			tasks: [{
+				id: "5AA62ABF7233A62F"
+				type: "checkmark"
+			}]
+			title: "&6Divine Berserker"
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/berserker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lBerserker&r:"
+				""
+				"[&bDeath Benefit&r]:"
+				""
+				"- Upon &ckilling&r an &cenemy&r, receive &64%&r of its &6EP&r."
+				"- This stacks with the base &63%&r given to &7ordinary players&r on &ckilling&r a &cmob&r, for a total of &67%&r."
+				""
+				"Credit: &9INFIRNAL_DRAGON"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/berserker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lBerserker&r:"
+				""
+				"[&bEquipment Destruction&r]:"
+				""
+				"- The &7user's&r &cattacks&r passively deal &cdouble damage&r to &bArmor&r durability. "
+				"- &cAttacks&r against the &7user&r take up &cdouble&r durability from their &7Weapon&r."
+				""
+				"Credit: &9INFIRNAL_DRAGON"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/berserker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lBerserker&r:"
+				""
+				"[&6Diamond Body&r]:"
+				""
+				"- When &6activated&r, grants the &7user&r an &bArmor&r and &7Physical Damage&r &dbuff&r temporarily. "
+				"- The &dbuff&r scales to the &7user's&r &6current max EP&r and does not consume any of the &7user's&r &6EP&r to &6activate&r:"
+				""
+				"• &cAttack Damage&r: &c5&r base then add &c1&r more for each &640k EP&r"
+				"• &bArmor&r: &b1&r for each &610k EP&r"
+				"• &eSpeed&r: &e0.01&r for each &625k EP&r"
+				"- All &dthree buffs&r cap at &62,000,000 EP&r"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- &cDoubles Attack Damage&r gain"
+				""
+				"Credit: &9INFIRNAL_DRAGON"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/berserker.png"
+				}
+			}
+			id: "0416557123D5C877"
+			shape: "rsquare"
+			tasks: [{
+				id: "067DBE41919F6F9E"
+				type: "checkmark"
+			}]
+			title: "&6Berserker"
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/berserk.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lBerserk&r:"
+				""
+				"[&6Rage&r]:"
+				""
+				"- Grants the &7player&r &dStrengthen X&r for &l6,000 Ticks&r on &6activation&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &dbuff&r to &dStrengthen XX&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/berserk.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lBerserk&r:"
+				""
+				"[&6Flame Aura&r]:"
+				""
+				"- Adds &4Flame Damage&r to the &7player's&r &7physical&r and &6aura&r &cattacks&r equal to their &cbase damage&r."
+				"- Increases &4Flame Damage&r by &42x&r. "
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/berserk.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lBerserk&r:"
+				""
+				"[&6Mad Ogre&r]:"
+				""
+				"- Grants the &7player&r &dStrength XV&r, doubles their size, gives them &2+0.4 Knockback Resistance&r, &e+0.04 Speed&r, and gives them &b20 Armor&r for &l12,000 Ticks&r. "
+				"- During the duration the player is inflicted with the &dRampage&r. "
+				"- After the duration gives the player &5Fragility II&r, &5Weakness II&r, and &5Paralysis II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases buff to &dStrength XXX&r"
+				"- Increases &2Knockback Resistance&r to &2+0.8&r"
+				"- Increases &bArmor&r to &b40&r"
+				"- &c6 Spheres&r of &cfire&r spawn behind the player and on &6activation&r again, one will be sent flying towards where the &7player&r is looking, exploding and dealing &c100 damage&r."
+				"- The &cFlame Orbs&r regenerate after &l400 Ticks&r after being fired."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/berserk.png"
+				}
+			}
+			id: "04B6F0379ED1833C"
+			shape: "rsquare"
+			tasks: [{
+				id: "5E17EB85CA1CE348"
+				type: "checkmark"
+			}]
+			title: "&6Berserk"
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/starved.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lStarved&r:"
+				""
+				"[&6Corrosion&r]:"
+				""
+				"- Give user’s &7physical attack&r with a &3Corrosion effect&r when this mode is &aIn Slot&r. "
+				"- When activated while looking at nothing, deals &25 corrosion damage&r every 10 ticks to all enemies in a 10x10 radius. "
+				"- Enemies killed by this have their &bIntrinsic&r, &aCommon&r, and &eExtra&r Skills taken by the player as well as have &950%&r of their &9EP&r added to the player's maximum. "
+				"- The other &950%&r is added to &6Stomach&r's energy storage."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/starved.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lStarved&r:"
+				""
+				"[&6Stomach&r]:"
+				""
+				"- When activated, grants access to a spatial storage with the size of a chest with 6 rows. "
+				"- Items are able to be stacked to 128 instead of 64."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/starved.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lStarved&r:"
+				""
+				"[&6Receive&r]:"
+				""
+				"- When activated while looking at a subordinate, &bIntrinsic&r, &aCommon&r, and &eExtra&r Skills owned by it are given to the player."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/starved.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lStarved&r:"
+				""
+				"[&6Spiritual Domination&r]:"
+				""
+				"- Like &6Thought Communication&r + 1 additional command."
+				""
+				"&lRampage&r:"
+				""
+				"- Activating &lRampage&r command will give 5 minutes of &bRampage effect&r to every subordinate in 30 block radius, activating again or using other commands will remove the effect."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/starved.png"
+				}
+			}
+			id: "1AD712ABCF2E7F18"
+			shape: "rsquare"
+			tasks: [{
+				id: "2276492654A85665"
+				type: "checkmark"
+			}]
+			title: "&6Starved"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/usurper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lUsurper&r:"
+				""
+				"- The player's &cattacks&r have a &950%&r chance to seize &91%&r of the enemies &9MP&r, which restores the player's expended &9MP&r."
+				""
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/usurper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lUsurper&r:"
+				""
+				"[&6Active&r]:"
+				""
+				"- Only works on opponents with an &9EP&r higher than the target. "
+				"- Steals 1 of their &6Battlewill&r, and &aSkills&r (Except &6Unique&r Skills, &bResistance&r and &bIntrinsic&r). "
+				"- 25% chance at success"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases chance of success to 50%"
+				""
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/usurper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lUsurper&r:"
+				""
+				"[&6Copy&r]:"
+				""
+				"- Copies 1 of the &6Battlewill&r, and &aSkills&r (Except &6Unique&r Skills, &bResistance&r and &bIntrinsic&r) of a target."
+				"- 25% chance at success."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases chance of success to 50%"
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/usurper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lUsurper&r:"
+				""
+				"[&6&lForce Takeover&r]:"
+				""
+				"- Works like &6Rob&r, but works on targets weaker than the user and has a 100% success rate. "
+				"- When used on a summon owned by someone with &975%&r the user's &9EP&r or lower, steal that summon."
+				""
+				"Credit: &bSachimi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/usurper.png"
+				}
+			}
+			id: "6BB29B37454997D0"
+			shape: "rsquare"
+			tasks: [{
+				id: "7F4105610496A525"
+				type: "checkmark"
+			}]
+			title: "&6Usurper"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/villain.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lVillain&r:"
+				""
+				"- When dying from &3Magicule Poisoning&r, the option to become a &eMajin&r appears 100% of the time."
+				"- Increases &9EP&r gained from defeating enemies from &93%&r to &96%&r."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/villain.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lVillain&r:"
+				""
+				"[&6Demon Lord's Haki&r]:"
+				""
+				"- All mobs within a 30x30 radius are affected. "
+				"- If their &9EP&r is &9>= 75%&r of the user's used &9EP&r, it does nothing. "
+				"- Otherwise, give &32 Fear Levels&r for each &920%&r difference with the used &9EP&r."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/villain.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lVillain&r:"
+				""
+				"[&bVillain's Intimidation&r]:"
+				""
+				"- The player and their allies have a &650% critical hit rate&r and a &125% dodge chance&r."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/villain.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lVillain&r:"
+				""
+				"[&6Villain's Charismas&r]:"
+				""
+				"- When activated, all passive and neutral mobs within a 20x20 radius will be treated as the player's allies and will assist them in combat for 120s "
+				"[Negated by &dSpiritual Attack Nullification&r, reduced to 60s by &dResistance&r]"
+				""
+				"Credit: &9Plushi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/villain.png"
+				}
+			}
+			id: "45DA0FF61BED4DF4"
+			shape: "rsquare"
+			tasks: [{
+				id: "41B9141E582EA466"
+				type: "checkmark"
+			}]
+			title: "&6Villain&r"
+			x: -13.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/musician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMusician&r:"
+				""
+				"[&bSense &eSoundwave&r]:"
+				""
+				"- When &etoggled&r, &centities&r that produce noise within a &b20 Block radius&r will be outlined in &aGreen&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/musician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMusician&r:"
+				""
+				"[&6Sonic Blast&r]:"
+				""
+				"- Fires a sonic boom that deals &c75 damage&r ignoring &bArmor&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to &c150&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/musician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMusician&r:"
+				""
+				"[&6Sound Wave&r]:"
+				""
+				"- Deals &c40 damage&r to everything in a &b10x10 radius&r ignoring &bArmor&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to &c70&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/musician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMusician&r:"
+				""
+				"[&l&6Mind Requiem&r]:"
+				""
+				"- Fires a sonic boom that does &c300 damage&r and &d100 Spiritual Damage&r ignoring &bArmor&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/musician.png"
+				}
+			}
+			id: "2D061F9178496ECF"
+			shape: "rsquare"
+			tasks: [{
+				id: "2E89C978B27AEE86"
+				type: "checkmark"
+			}]
+			title: "&6Musician"
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/lust.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lLust&r:"
+				""
+				"[&6Drain&r]:"
+				""
+				"- When used while not looking at a &cmob&r, adds an &5effect&r to the &7user's&r &cattacks&r that drains &9200 MP&r and &eAP&r and gives it to the &7user&r (temporary, not max) for &l200 Ticks&r. "
+				"- When used while looking at a &cmob&r, it drains &9200 MP&r and &eAP&r and gives it to the &7user&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases drain to (&9200&r + &90.1%&r)"
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/lust.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lLust&r:"
+				""
+				"[&6Invigorate&r]:"
+				""
+				"- When used while not looking at a &cmob&r or when sneaking, &afully heals&r the &7player&r and removes &dall status effects&r. "
+				"- When looking at a &cmob&r while sneaking, &afully heals&r them and removes &dall status effects&r."
+				"- If used on a &cmob&r that can breed while its at &afull HP&r, will cause them to enter hearts mode."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/lust.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lLust&r:"
+				""
+				"[&6Embracing Drain&r]:"
+				""
+				"- Requires the &7player&r to be looking at a &cmob&r and be within &b2 Block&r. "
+				"- Locks the &7player&r and the &cmob&r in place and &9drains 200 MP&r and &eAP&r every &l20 Ticks&r."
+				"- Lasts for a total of &l100 Ticks&r. "
+				"- Causes &5pain effects&r even with &bresistance&r/&3nullification&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases drain to (&9200 + 0.5%&r)"
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/lust.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lLust&r:"
+				""
+				"[&6Death&r &cBlessing&r]:"
+				""
+				"- Every &l100 Ticks&r, &cinstantly kills&r all &cmobs&r within a &b15x15 radius&r if their &6EP&r is lower than &650%&r of the &7player's&r and restores the &7player's&r &9expended MP&r and &eAP&r by the &ctarget's&r &6EP&r. "
+				"- If &cmob&r is between &650%&r and &675%&r, drains &625% EP&r and deals &ahalf&r their &aHP&r in &cdamage&r."
+				"- If above &675%&r drains &65%&r and deals &chalf&r their &aHP&r in &cdamage&r. "
+				""
+				"Credit: &9Plushi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/lust.png"
+				}
+			}
+			id: "0C6C6B8657696F06"
+			shape: "rsquare"
+			tasks: [{
+				id: "743BEFBCFBD0AC3F"
+				type: "checkmark"
+			}]
+			title: "&6Lust"
+			x: -11.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/fusionist.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lFusionist&r:"
+				""
+				"[&6Disassemble&r]:"
+				""
+				"- Breaks the &7block&r the &7player&r is looking at, but instead of dropping the &7block&r it adds &b1 Matter&r."
+				"- Shift activate to consume the &7block items&r in hand instead."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/fusionist.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lFusionist&r:"
+				""
+				"[&6Fuse&r]:"
+				""
+				"- Turns the &7block&r the &7player&r is looking at into a &blandmine&r at the cost of &b5 Matters&r. "
+				"- When its touched by an &cunallied player&r/&cmob&r or when the &lSkill&r button is pressed again, creates an explosion, dealing &cdamage&r."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/fusionist.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lFusionist&r:"
+				""
+				"[&6Stone&r]:"
+				""
+				"- At the cost of &b1 Matters&r, throws a &cprojectile&r that explodes on contact and deals &c100 damage&r and creates an explosion."
+				""
+				"Credit: &9Plushi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/fusionist.png"
+				}
+			}
+			id: "7310FAF4E2445E88"
+			shape: "rsquare"
+			tasks: [{
+				id: "194AC513F57843B4"
+				type: "checkmark"
+			}]
+			title: "&6Fusionist"
+			x: -14.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/reaper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lReaper&r:"
+				""
+				"[&6Attack&r]:"
+				""
+				"- Cannot activate when &6Recon&r is toggled. "
+				"- While &cheld&r, scroll mouse to choose the number of &9clones&r to summon, up to &95 clones&r. "
+				"- Upon release the &lSkill&r button, reduces player size by half, reduces &6EP&r by &650%&r and spawns the &9chosen number&r of &9clones&r with &lidentical Stats&r to the &7player&r and &650% EP&r divided evenly to &9every clone.&r "
+				"- Activate again to disable, having &6EP&r back to &6100%&r."
+				""
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/reaper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lReaper&r:"
+				""
+				"[&bRec&aon&r]:"
+				""
+				"- Cannot &etoggle&r when &6Attack&r is activated. "
+				"- Reduces player size by half, highlights all &cmobs&r within a &b30x30 area&r in &fwhite&r. "
+				"- Grants a &350%&r &7Physical Attack&r &3Dodge chance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &barea&r to &b50x50&r."
+				"- Increaes &7Physical Attack&r &3Dodge chance&r to &375%&r"
+				""
+				"Credit: &bSachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/reaper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lReaper&r:"
+				""
+				"[&6Infinite Eater&r]:"
+				""
+				"- Requires neither &6Recon&r nor &6Attack&r Mode to be active. "
+				"- When activated while looking at a &ctarget&r, if their &6EP&r is equal to or lower than the &7user's&r, they're &cinsta killed&r and &650%&r of the &ctarget’s&r &6EP&r is consumed."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown to &l100 Ticks&r. "
+				""
+				"Credit: &bSachimi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/reaper.png"
+				}
+			}
+			id: "7E1197C4E688CC4B"
+			shape: "rsquare"
+			tasks: [{
+				id: "2CC2420FA22ABEA3"
+				type: "checkmark"
+			}]
+			title: "&6Reaper"
+			x: -12.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/royal_beast.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lRoyal Beast&r:"
+				""
+				"- Fully &aheals&r the player and restores their &9MP&r and &6AP&r, gives them a &c30 damage increase&r, &b20 Armor points&r and &e+0.08 Speed&r, and temporarily increases their &9max MP&r and &6AP&r by &92&6x&r. "
+				"- Grants the player creative flight. "
+				"- It lasts for 3 Minutes and upon ending inflicts the player with &3Paralysis II&r, &3Fragility II&r, and &3Weakness II&r for 10 Minutes. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to 6 Minutes"
+				""
+				"Credit: &bGrubaRyba"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/royal_beast.png"
+				}
+			}
+			id: "0D17B37138AF1CD2"
+			shape: "rsquare"
+			tasks: [{
+				id: "427979AC3E720E40"
+				type: "checkmark"
+			}]
+			title: "&6Royal Beast"
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/sniper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lSniper&r:"
+				""
+				"[&bMagic &eSense&r]:"
+				""
+				"- While held down by the player, grant them &bNight Vision effect&r, the ability to see Invisible players, and mobs in a 30 radius are highlighted in Aqua."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sniper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lSniper&r:"
+				""
+				"[&bPredictive  &aCalculation&r]:"
+				""
+				"- &125% Chance&r to &1dodge&r an &cattack&r. "
+				"- &150% Chance&r to ignore &1dodge&r on enemies. "
+				"- &3Nullification&r is treated as &bresistance&r and &bresistance&r is bypassed. "
+				"- &bMagic Jamming&r's &cdamage&r mitigation is ignored."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sniper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lSniper&r:"
+				""
+				"[&6Create Weapon&r]:"
+				""
+				"- If activated while looking at an entity or already having a pistol in 1 hand, throws a grenade at the mob which explodes and deals damage in a 5x5 block radius."
+				"- If used when not looking at a mob, creates a &bWalther P99 Pistol&r in the player's empty hand [Sneak Right-clicking to change Bullet Mode: Magic and Physical. "
+				""
+				"&lPhysical Bullet&r:"
+				"- Deals &730 Physical Damage&r "
+				""
+				"&lMagic Bullet&r: "
+				"- Deals &9100 Magic Damage&r "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown of &lPhysical Bullet&r and &lMagic Bullet&r to 0 Seconds."
+				"- Bullets teleport behind enemy when fired"
+				"- Decreases grenade cooldown to 1 Second"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sniper.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lSniper&r:"
+				""
+				"[&aSpatial&r &eManipulation&r]:"
+				""
+				"- &5x2 Spatial Damage&r."
+				"- Projectiles automatically teleport behind the looked at mob when fired."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/sniper.png"
+				}
+			}
+			id: "23857EF40E2B80CA"
+			shape: "rsquare"
+			tasks: [{
+				id: "188B9E3C5E10C005"
+				type: "checkmark"
+			}]
+			title: "&6Sniper"
+			x: -13.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/chosen_one.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lChosen One&r:"
+				""
+				"[&6Hero's Haki&r]:"
+				""
+				"- When &6activated&r, all &cmobs&r within a &b30x30 radius&r are affected, If their &6EP&r is &6=<75%&r of the &7user's&r used &6EP&r, it does nothing. "
+				"- Otherwise, give &51 Fear Level&r for each &620% difference&r with the used &6EP&r,"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/chosen_one.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lChosen One&r:"
+				""
+				"[&bHero's &aBlessing&r]:"
+				""
+				"- Grants the &7user permanent &dLuck V&r. "
+				"- The &7player&r and their &9allies&r have a &6100% critical hit rate&r and a &325% dodge chance&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/chosen_one.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lChosen One&r:"
+				""
+				"[&6Hero's Charisma&r]:"
+				""
+				"- When activated, all &apassive&r and &7neutral mobs&r within a &b20x20 radius&r will be treated as the &7player's&r &9allies&r and will assist them in &ccombat&r for &l2,400 Ticks&r. "
+				"[&3Negated&r by &dSpiritual Attack &3Nullification&r, reduced to &l1,200 Ticks&r by &bResistance&r]. "
+				"- When &ain slot&r (any &6mode&r), any &cmobs&r they or the &7player&r defeat will be resurrected as &9allies&r with &ahalf max health&r (Except &cUndead&r)."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/chosen_one.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lChosen One&r:"
+				""
+				"[&bHero's &eAction&r]:"
+				""
+				"- Grants the &7user&r &dHero of the Village V&r while &etoggled."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/chosen_one.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lChosen One&r:"
+				""
+				"[&l&bHero's Beacon&r]:"
+				""
+				"- All &lSkills&r, &9Magic&r, and &6Battlewill&r owned by a &9subordinate&r become the &7player's&r when they &cdie&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/chosen_one.png"
+				}
+			}
+			id: "739778FD8A272F7A"
+			shape: "rsquare"
+			tasks: [{
+				id: "63D9A06782BAC06C"
+				type: "checkmark"
+			}]
+			title: "&6Chosen One"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/bewilder.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lBewilder&r:"
+				""
+				"[&6Target&r]:"
+				""
+				"- Turns the looked at &cmob&r into an &9ally&r for &l12,000 Ticks&r."
+				"- Negated by &dSpiritual Attack &3Nullification&r. "
+				"- Reduced to &l6,000 Ticks&r by &bResistance&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/bewilder.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lBewilder&r:"
+				""
+				"[&6Area&r]:"
+				""
+				"- Turns all &cmobs&r within a &b20x20 radius&r into &9allies&r for &l6,000 Ticks&r."
+				"- Negated by &dSpiritual Attack &3Nullification&r. "
+				"- Reduced to &l3,000 Ticks&r by &bResistance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &bradius&r to &b30x30&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/bewilder.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lBewilder&r:"
+				""
+				"[&6Charm&r]:"
+				""
+				"- Applies &dHero of the Village V&r for &l2,400 Ticks&r to the &7player&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/bewilder.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lBewilder&r:"
+				""
+				"[&6Kill&r]:"
+				""
+				"- &cKills&r all &cmobs&r under &5mind control&r within a &b20x20 radius&r."
+				"- &3Negated&r by &dSpiritual Attack &3Nullification&r. "
+				"- Deals &ahalf HP&r in &cdamage&r with &bresistance&r."
+				""
+				"[&l&6Mastery Bonus&r]"
+				""
+				"- Increases &bradius&r to &b30x30&r."
+				"- Decreases cooldown to &l60 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/bewilder.png"
+				}
+			}
+			id: "4251934D1A0CF4B6"
+			shape: "rsquare"
+			tasks: [{
+				id: "1A8E88D06EF9C95A"
+				type: "checkmark"
+			}]
+			title: "&6Bewilder"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/falsifier.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lFalsifier&r:"
+				""
+				"- Makes the &7player&r able to see through &billusions&r and &cinvisible targets&r."
+				""
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/falsifier.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lFalsifier&r:"
+				""
+				"[&6Presence Concealmeant&r]:"
+				""
+				"- When activated, makes &cmobs&r unable to register the &7player&r for &l2,400 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/falsifier.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lFalsifier&r:"
+				""
+				"[&6Illusion&r]:"
+				""
+				"- When activated, open a GUI that enables the &7player&r to choose any &7fake item&r to wear on each armor and hand slot."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/falsifier.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lFalsifier&r:"
+				""
+				"[&6Fake &cDeath&r]:"
+				""
+				"- When &cheld&r, decreases &espeed&r to &e60%&r. "
+				"- While this &6mode&r is &cheld&r(maximum &chold&r time is &l600 Ticks&r), if the &7user&r takes &cany type of damage&r, spawn &7a new body&r then &dinstant kill&r it with the &csame type of damage&r and send a fake death message to every &7player&r online. "
+				"- At the same time, &creduce&r the &cincoming damage&r by &chalf&r for the &7user&r and put the &7user&r into &bPresence Concealment&r, and stay in &bconcealment&r till &crelease&r or max hold time is reached. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- When &cheld&r, decreases &espeed&r to &e80%&r. "
+				"- Decreases cooldown to &l100 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/falsifier.png"
+				}
+			}
+			id: "5A5994B330099FA7"
+			shape: "rsquare"
+			tasks: [{
+				id: "563168F169BF3C0E"
+				type: "checkmark"
+			}]
+			title: "&6Falsifier"
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/envy.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lEnvy&r:"
+				""
+				"[&6Absorb&r]:"
+				""
+				"- Can only be activated on a &ctarget&r with a &6higher EP&r than the &7player&r. "
+				"- Success rate based on &7user’s&r &6EP&r / &ctarget’s&r &6EP&r."
+				"- Attempt to lower the &ctarget’s&r &6EP&r to be the same as the &7player&r, with the difference being returned to the &7player&r. "
+				"- &650%&r of the &6EP&r absorbed this way is converted into &6Maximum EP&r and the other &650%&r is only temporary &9MP&r and &eAP&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown to &l200 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/envy.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lEnvy&r:"
+				""
+				"[&bJealous&r &aLuck&r]:"
+				""
+				"- &320% dodge chance&r, &dLuck III&r, immune to &5Weakness&r and &4Slowness&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/envy.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lEnvy&r:"
+				""
+				"[&cStrength Sap&r]:"
+				""
+				"- In a &b30x30 block radius&r around the &7user&r (Can be &bresisted&r if the &7user&r has &960%&r of the &9magicule&r of the &7user&r or more), applies &l200 Ticks&r of &5Weakness&r and &5Slowness&r for each &910%&r difference, also drain &9MP&r/&eAP&r at every &l20 Ticks&r. of the &caffected entity&r which doesn't go to the &7user&r. "
+				"- Has &520% chance&r to increase &51 Level of Insanity&r for the &7user&r every &l200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase &9magicule&r resist limit to &980%&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/envy.png"
+				}
+			}
+			id: "0DE66F78AA45E47C"
+			shape: "rsquare"
+			tasks: [{
+				id: "3DEE734585309DF8"
+				type: "checkmark"
+			}]
+			title: "&6Envy"
+			x: -11.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/fighter.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lFighter&r:"
+				""
+				"- Makes learning &6Battlewill&r and &9Magic&r happen instantly."
+				"- The &7player&r earns 3x more mastery points with each usage."
+				"- The &7player&r gets a &c75 damage boost&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- The &7player&r gets a &c150 damage boost&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/fighter.png"
+				}
+			}
+			id: "3A83365BD762AA4B"
+			shape: "rsquare"
+			tasks: [{
+				id: "05C6CD2344092094"
+				type: "checkmark"
+			}]
+			title: "&6Fighter"
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/predator.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lPredator&r:"
+				""
+				"[&6Predation&r]:"
+				""
+				"- On use, creates a &bAoE&r &cattack&r in a &b2 Block radius&r in front of the &7player&r. "
+				"- If it comes into contact with a &cmob&r, deals &c10 damage&r and drains &9100MP&r, with a 10% chance to gain one random &bIntrinsic&r, &aCommon&r, &eExtra&r, or &bResistance&r &lSkills&r from the target. "
+				"- If an &cenemy&r is &ckilled&r by &6Predation&r, gains all of their &bIntrinsic&r, &aCommon&r, &eExtra&r, or &bResistance&r &lSkills&r. "
+				"- &cTargets killed&r have &650%&r of their &6EP&r added to the &7players&r instead of the usual &65%&r. "
+				"- The other &650%&r will be added to &6Stomach&r's energy storage. "
+				"- Shift-activate to &etoggle&r &6consume-block-mode&r, which will automatically be added to &6Stomach&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- &6Predator&r is capabile of eating &cprojectiles&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/predator.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lPredator&r:"
+				""
+				"[&6Stomach&r]:"
+				""
+				"- When activated, grants access to a spatial storage with the size of a chest with 7 rows. "
+				"- Items are able to be stacked to 128 instead of 64. "
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/predator.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lPredator&r:"
+				""
+				"[&6Isolation&r]:"
+				""
+				"- Consumes &7held item&r and restores &9MP&r similar to &6Absorb and Dissolve&r, but with &9twice&r the &9restored MP&r. "
+				"- If nothing is held and the &7player&r is looking at a target, remove all &5negative status effects&r from that target. "
+				"- If used while empty handed and not looking at a &cmob&r, removes all &5negative status effects&r from the &7player&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/predator.png"
+				}
+			}
+			id: "1015FB0C72850869"
+			shape: "rsquare"
+			tasks: [{
+				id: "0723DDD0742DEC93"
+				type: "checkmark"
+			}]
+			title: "&6Predator"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/gourmet.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGourmet&r:"
+				""
+				"[&6Predation&r]:"
+				""
+				"- On use, creates a &bAoE&r &cattack&r in a &b2 Block radius&r in front of the &7player&r. "
+				"- If it comes into contact with a &cmob&r, deals &c10 damage&r and drains &9100MP&r, with a 10% chance to gain one random &bIntrinsic&r, &aCommon&r, &eExtra&r, or &bResistance&r &lSkills&r from the target. "
+				"- If an &cenemy&r is &ckilled&r by &6Predation&r, gains all of their &bIntrinsic&r, &aCommon&r, &eExtra&r, or &bResistance&r &lSkills&r. "
+				"- &cTargets killed&r have &650%&r of their &6EP&r added to the &7players&r instead of the usual &65%&r. "
+				"- The other &650%&r will be added to &6Stomach&r's energy storage. "
+				"- Shift-activate to &etoggle&r &6consume-block-mode&r, which will automatically be added to &6Stomach&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- &6Predator&r is capabile of eating &cprojectiles&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gourmet.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGourmet&r:"
+				""
+				"[&6Corrosion&r]:"
+				""
+				"- When activated while looking at nothing, deal &25 corrosion damage&r every &l10 ticks&r to all &cenemies&r in a &b10x10 radius&r. "
+				"- &cEnemies killed&r by this have their &bIntrinsic&r, &aCommon&r, &eExtra&r &lSkills&r taken by the &7player&r as well as have &650%&r of their &6EP&r added to the &7player's&r &6maximum&r."
+				"- The other &650%&r is added to &6Stomach&r energy storage."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gourmet.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGourmet&r:"
+				""
+				"[&6Stomach&r]:"
+				""
+				"- When activated, grants access to a spatial storage with the size of a chest with 7 rows. "
+				"- Items are able to be stacked to 200 instead of 64."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gourmet.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGourmet&r:"
+				""
+				"[&6Receive&r]:"
+				""
+				"- When &6activated&r while looking at a &9subordinate&r, &bIntrinsic&r, &aCommon&r, &eExtra&r &lSkills&r owned by it are given to the &7player&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/gourmet.png"
+				}
+			}
+			id: "332584BB83098C18"
+			shape: "rsquare"
+			tasks: [{
+				id: "4D61DEE38FEED266"
+				type: "checkmark"
+			}]
+			title: "&6Gourmet"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/greed.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGreed&r:"
+				""
+				"[&cSpiritual Domination&r]: "
+				""
+				"- When &cheld&r and looking at a &cmob&r, put it &5under control&r after a certain amount of &ltime&r passes."
+				"- Being in a &bdistance&r of &b5 Block&r decreases &ltime&r of &5control&r and being at a &bdistance&r over &b20 Block&r increases the &ltime&r of &5control&r."
+				"- When used against a &cmob&r rather than a &7player&r, it increases the &ltime&r of &5control&r further. "
+				"- When used against &7players&r, it decreases the &ltime&r of &5mind control&r per &bdesire value&r."
+				"[&b1 Desire Value&r = 10 Village Trades]"
+				"[Shift activate can release/free the controlled target]"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/greed.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGreed&r:"
+				""
+				"[&6Greed Fire&r]:"
+				""
+				"- If used while looking at nothing, grants the &7player&r a &dbuff&r that increases the &cdamage&r of their &7physical attacks&r equal to &d20%&r of their current &dSHP&r divided by their Race’s &dSHP&r multiplier."
+				"- If used while looking at an &9ally&r, grant the &dbuff&r to them instead, equal to &d10%&r of that &9ally’s&r &dcurrent SHP&r divided by their Race’s &dSHP&r multiplier. "
+				"- If used while looking at a &cmob&r within &b20 Block&r, deals &cdamage&r to that &cmob&r the scales with the &7user's&r &dSHP&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/greed.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGreed&r:"
+				""
+				"[&cDeath Wish&r]:"
+				""
+				"- If &cheld&r for &l200 Ticks&r while looking at a &cmob&r within &b5 Block&r, instantly &ckills them&r."
+				"[You must be looking at the &ctarget&r for the whole time or the timer will go down]"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/greed.png"
+				}
+			}
+			id: "7C5B1C0EFC2A9DCD"
+			shape: "rsquare"
+			tasks: [{
+				id: "63CEC877E4E75EBF"
+				type: "checkmark"
+			}]
+			title: "&6Greed"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/engorger.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lEngorger&r:"
+				""
+				"[&eEngorge&r]:"
+				""
+				"- When &etoggled&r, increases the &7player's&r size by 1.5x and grants &dvarious passive buffs&r (&20.4 Knockback Resist&r, &aKnockback I&r, &c10 Bonus Damage&r, &e2x Speed&r, &b10 Armor&r). "
+				"- Makes the players hunger permanently fully saturated."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/engorger.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lEngorger&r:"
+				""
+				"[&6Amplify&r]:"
+				""
+				"- When activated (need &6Engorge&r &etoggled&r), double all the &dbuffs&r from &6Engorge&r for &l2,400 Ticks&r. "
+				"- If activated again while currently buffed, causes the &7user&r to &edash forward&r in the direction they're looking and deals &cCurrent Weapon Damage&r + &c50 damage&r to all &cmobs&r that they touch during the &edash&r. "
+				"[Sneaking will half the dash distance] "
+				"- &eToggling&r &6Engorge&r will stop this mode."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase &cdamage boost&r to &c100&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/engorger.png"
+				}
+			}
+			id: "4EF1799803B4D413"
+			shape: "rsquare"
+			tasks: [{
+				id: "4A7B2A1137B3292D"
+				type: "checkmark"
+			}]
+			title: "&6Engorger"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/martial_master.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMartial Master&r:"
+				""
+				"- Grants 5 learning and mastery points with &6Battlewill&r instead of 1."
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, increase &2attack speed&r by &20.2&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/martial_master.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r]:"
+				""
+				"[&6Ultra Acceleration&r]:"
+				""
+				"- &eMoves&r the &7player&r to where they're looking at &ehigh speed&r, &eeffectively teleportation&r, &b15 block radius&r, deal &6crit damage&r to anything on the way."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &6crit damage&r to &675&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/martial_master.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMartial Master&r:"
+				""
+				"[&bFore&asight&r]:"
+				""
+				"- Makes the &7player&r able to &3dodge&r &cprojectiles&r with &3100% accuracy&r. "
+				"- Able to &3dodge&r &7Melee attacks&r with &325% accuracy&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/martial_master.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMartial Master&r:"
+				""
+				"[&bSec&eret&r]:"
+				""
+				"- Makes all &6Battlewill&r and &7Melee attacks&r deal &c3x damage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/martial_master.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMartial Master&r:"
+				""
+				"[&bHeavenly Eye&r]:"
+				""
+				"- Highlights all &cmobs&r/&cplayers&r in a &b30x30 area&r in &9blue&r, even ones under disguising &lSkills&r. "
+				"- Grants a &350% chance&r to &3ignore dodging abilities&r (except &6Future Sight&r). "
+				"- When looking at a &9Magic circle&r, it displays what type of &9Magic&r it is."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/martial_master.png"
+				}
+			}
+			id: "68D8825B44A06834"
+			shape: "rsquare"
+			tasks: [{
+				id: "37FD71932EA37045"
+				type: "checkmark"
+			}]
+			title: "&6Martial Master"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/cook.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lCook&r:"
+				""
+				"[&bCertain&r &eOutcome&r]:"
+				""
+				"- All &cattacks&r made by the &7player&r become &6critical hits&r automatically."
+				"- &cAttacks&r made by the &7player&r shatter all &3barrier points&r unless the target has an &6EP&r more than &62x&r the &7player's&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/cook.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lCook&r:"
+				""
+				"[&bOptimal&r &aAction&r]:"
+				""
+				"- The player's &cattacks&r ignore &3all forms of dodge&r. "
+				"- Learning and Mastering &labilities&r grants 5 points instead of 1. "
+				"- &3Nullification&r is treated as &bresistance&r and &bresistance&r is bypassed."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/cook.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lCook&r:"
+				""
+				"[&6Chaotic Fate&r]:"
+				""
+				"- When &6activated&r, makes the &cdamage&r of the &7player's&r &cnext attack&r reduce the &ctarget's&r &amax HP&r by the &camount of damage dealt&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/cook.png"
+				}
+			}
+			id: "49D02F474AC9CBEC"
+			shape: "rsquare"
+			tasks: [{
+				id: "2A51A8A940237D49"
+				type: "checkmark"
+			}]
+			title: "&6Cook"
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/murderer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMurderer&r:"
+				""
+				"[&6Presence Concealment&r]:"
+				""
+				"- When &cheld&r, makes the &7player&r completely &dinvisible&r and undetectable by any &6sensory abilities&r until the &7player&r runs out of &9energy&r. "
+				"- While in slot, dealing extra &750 physical damage&r while concealed."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &7physical damage&r while concealed to &7150&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/murderer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMurderer&r:"
+				""
+				"[&bSilent &eMovement&r]:"
+				""
+				"- The player makes zero noise, undetectable by &7Sculk&r or &6Sense Sound Wave&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/murderer.png"
+				}
+			}
+			id: "4F45F0BBA508B025"
+			shape: "rsquare"
+			tasks: [{
+				id: "5BF4D3E6A8A108B4"
+				type: "checkmark"
+			}]
+			title: "&6Murderer"
+			x: -14.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/oppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lOppressor&r:"
+				""
+				"- Makes &5Gravity Manipulation&r learnable."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Makes the &7player&r &3immune&r to &cfall damage&r and &csimple projectiles&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/oppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lOppressor&r:"
+				""
+				"[&6Re&cpel&r]:"
+				""
+				"- &eRepels&r the &cmob&r the &7player&r is looking at, pushing them away. "
+				"- The longer its &cheld&r before releasing, the &ebigger&r the &edistance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows &eranges&r to be selected with keys (0 = Hold like normal)"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/oppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lOppressor&r:"
+				""
+				"[&6Attr&r&cact&r]:"
+				""
+				"- &eAttracts&r the &cmob&r the &7player&r is looking at, &epulling&r them towards the &7player&r. "
+				"- The length its &cheld down&r before releasing determines the &edistance pulled&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows ranges to be selected with keys (0 = Hold like normal)"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/oppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lOppressor&r:"
+				""
+				"[&cOppress&r]:"
+				""
+				"- Traps the &cmob&r the &7player&r is looking at inside a gravity field that reduces their &emovement&r to almost &e0&r for &l600 Ticks&r. "
+				"- Each &l200 Ticks&r, add &51 Level of Insanity&r. "
+				"- If activated again while a &cmob&r is trapped, deals &c100 damage&r (can be done repeatedly)."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to &c200&r"
+				"- Decreases cooldown to &l100 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/oppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lOppressor&r:"
+				""
+				"[&cBleve&r]:"
+				""
+				"- Deals &c100 damage&r to the &cmob&r the &7player&r is looking at and &eknocks them&r &b10 Blocks&r into the air."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/oppressor.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lOppressor&r:"
+				""
+				"[&6Flic&r&cker&r]:"
+				""
+				"- &ePushes&r the &7player&r forward at &ehigh speed&r. "
+				"- The longer the button is &cheld&r the farther they go when the button is released."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows &eranges&r to be selected with keys (0 = Hold like normal)"
+				"{@pagebreak}"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/oppressor.png"
+				}
+			}
+			id: "6A682036BA016F90"
+			shape: "rsquare"
+			tasks: [{
+				id: "4EE90D05A09A28B7"
+				type: "checkmark"
+			}]
+			title: "&6Oppressor"
+			x: -13.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/sloth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSloth&r:"
+				""
+				"[&6Deep &cHypno&r]:"
+				""
+				"- While looking at a mob, adds one level of &3Drowsiness&r every 10 seconds (15 with &dspiritual resistance&r, 20 with &dnullification&r) and 5 seconds of duration. "
+				"- Each level of sleep reduces &emovement speed&r by &e25%&r and has an &3additional effect&r identical to &3Weakness&r and &3Fragility&r. "
+				"- On &3Lvl 5&r, it &ckills&r the target &cinstantly&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases application duration to 10 Seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sloth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSloth&r:"
+				""
+				"[&6Fallen &cHypno&r]:"
+				""
+				"- &6Deep Hypno&r but within an AoE radius of 10x10 and has double the casting time."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases radius to 20x20"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sloth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSloth&r:"
+				""
+				"[&6Depr&cive&r]:"
+				""
+				"- Drains &91,000 MP&r and deals &610 Spiritual Damage&r every second while looking at a mob within 5 Blocks. "
+				"- If used on a mob with &6SHP&r below &650%&r, they become tamed/subordinate to the player."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Drains &91,000 MP&r + &90.3%&r of target's &9Max MP&r"
+				"- Deals &610 Spiritual Damage&r + &61%&6 of target's &6Max SHP&r"
+				"- Increases range to 15 Blocks"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sloth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSloth&r:"
+				""
+				"[&6Re&cst&r]:"
+				""
+				"- While held down, makes the player &eunable to move&r, &cattack&r, or activate other &aabilities&r. "
+				"- Regen &a10 HP&r and &6SHP&r per sec and increases the players &9MP&r, and &6AP&r regen by 10x. "
+				"- If &9MP&r is at &9max&r, it fills up a temporary &9MP&r Storage at the same rate. "
+				"- If there is enough &9MP&r in the temporary storage, right clicking will restore &91.000 MP&r, &61,000AP&r, &a50 HP&r and &610 SHP&r to all allies within a 30x30 radius."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sloth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSloth&r:"
+				""
+				"[&bPhantasmal &eStyle&r]:"
+				""
+				"- When activated, applies an &beffect&r to the player's &cattacks&r that deals &d10 Spiritual damage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &dSpiritual damage&r to &d10&r + &d1% of max &6SHP&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/sloth.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSloth&r:"
+				""
+				"[&6&lFallen Strike&r]:"
+				""
+				"- Deals &d500 Spiritual Damage&r to the looked at target. "
+				"- Ignores &dSpiritual Attack Resistance&r and &dNullification&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/sloth.png"
+				}
+			}
+			id: "53C011D77ADA8CF7"
+			shape: "rsquare"
+			tasks: [{
+				id: "46AF0405C8246ADC"
+				type: "checkmark"
+			}]
+			title: "&6Sloth"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/severer.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSeverer&r:"
+				""
+				"[&6Dummy Sword&r]:"
+				""
+				"- Creates a &bSpatial Blade&r with &bSeverance V&r in an empty hand slot. "
+				"- Blades infinitely regenerate."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Creates a &bSpatial Blade&r with &bSeverance X&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/severer.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSeverer&r:"
+				""
+				"[&6Blade Storm&r]:"
+				""
+				"- Require &bSpatial Blade&r to be user’s hand. "
+				"- Unleashes &b5 Severance Blades&r from behind the user to looked-at target with a max range of 20 Blocks."
+				""
+				"[&l&6Mastery Bonus&l]:"
+				""
+				"- Increases &bSeverance Blades&r unleashed to &b10&r"
+				"- Increases max range to 30 Blocks"
+				"- Decreases cooldown to 3 Seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/severer.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSeverer&r:"
+				""
+				"[&6Severance&r]:"
+				""
+				"- Applies a &3Severance effect&r and a &c10 damage boost&r to the player's &cattacks&r for 120 seconds."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage boost&r to &c30&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/severer.png"
+				}
+			}
+			id: "2C4AC9E88F74A758"
+			shape: "rsquare"
+			tasks: [{
+				id: "0EC5E4D05E570F95"
+				type: "checkmark"
+			}]
+			title: "&6Severer"
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/shadow_striker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lShadow Striker&r:"
+				""
+				"[&bThought&r &eAcceleration&r]:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, increase &2attack speed&r by &20.2&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/shadow_striker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lShadow Striker&r:"
+				""
+				"[&6Ultra Acceleration&r]:"
+				""
+				"- Moves the player to where they're looking at &ehigh speed&r, effectively teleportation, 10 block radius, deal &6Crit damage&r to anything on the way."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &6Crit damage&r by &670&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/shadow_striker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lShadow Striker&r:"
+				""
+				"[&bInsta&akill&r]:"
+				""
+				"- Makes the player's &cattacks&r deal &d500 Spiritual Damage&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown to 5 Seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/shadow_striker.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lShadow Striker&r:"
+				""
+				"[&6Espio&cnage&r]:"
+				""
+				"- Makes the player invisible and immune to being sensed by &bMagic Sense&r, &bSense Heat Source&r, and &bSense Soundwave&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/shadow_striker.png"
+				}
+			}
+			id: "33620F1E85CDA225"
+			shape: "rsquare"
+			tasks: [{
+				id: "014E9A2A212E213D"
+				type: "checkmark"
+			}]
+			title: "&6Shadow Striker"
+			x: -12.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/spearhead.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r] &lSpearhead&r:"
+				""
+				"- Allies do &c10 extra damage&r and &e+0.02 Speed&r, &e+1 Swim Speed&r, &b+5 Armor&r"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Doubles stats boost"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/spearhead.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r] &lSpearhead&r:"
+				""
+				"[&bSkill Collection&r]:"
+				""
+				"- When an ally dies near the user, the user can collect their &bResistance&r/&bIntrinsic&r/&aCommon&r/&eExtra&r/"
+				"&6Unique&r Skills."
+				"(Only works on players in &4Hardcore Mode&r)"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/spearhead.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r] &lSpearhead&r:"
+				""
+				"[&6Thought Domination&r]:"
+				""
+				"- Allows the player to command their subordinates, including a Meat Shield Option."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/spearhead.png"
+				}
+			}
+			id: "4D9AC2BFECC26B5A"
+			shape: "rsquare"
+			tasks: [{
+				id: "035DF95682088C83"
+				type: "checkmark"
+			}]
+			title: "&6Spearhead"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/thrower.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lThrower&r:"
+				""
+				"[&6Throw&r]:"
+				""
+				"- When activated, consumes the currently held item and creates a projectile with its texture as a model. "
+				"- The projectile deals &c50 damage&r boosted with &5Gravity Manipulation&r/&5Domination&r &etoggled&r by &c2x/3x damage&r, if the item is a &bWeapon&r, then it deals its &cnormal damage&r too. "
+				"- If used with an empty hand, creates an air projectile that deals &c30 damage&r. "
+				"- If activated while looking at an enemy within 2 blocks of the player, flings them 15 blocks instead (further with &5Gravity Manipulation&r/&5Domination&r &etoggled&r)."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases projectile &cdamage&r to &c100&r"
+				"- Increases air projectile &cdamage&r to &c50&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/thrower.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lThrower&r:"
+				""
+				"[&bHoming &eProjectile&r]:"
+				""
+				"- &bItem&r thrown by user will be homing toward where the user’s looking at (max range 50)."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/thrower.png"
+				}
+			}
+			id: "66427380360DE5E0"
+			shape: "rsquare"
+			tasks: [{
+				id: "6CAE0F4639A69844"
+				type: "checkmark"
+			}]
+			title: "&6Thrower"
+			x: -11.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/gourmand.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lGourmand&r:"
+				""
+				"- Grants the &7player's&r &cattacks&r a 50% chance to steal &61%&r of the &ctarget's &9current MP&r and &9restores&r their &9MP&r by that &9amount&r."
+				"- Increases the &6amount&r of &6permanent EP gained&r when &ckilling someone&r from &63%&r to &610%&r."
+				"- When &6activated&r on a &ctarget&r with &5Fear V+&r or &6maximum EP&r below &610%&r of the &7user's&r &6current EP&r, &ckills them&r and restores the &7player's&r &6EP&r by the &ctarget’s&r &6EP&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases chance for &7player's&r &cattacks&r to steal &9MP&r to 75%."
+				"- Increases &6EP gained&r when &ckilling someone&r to &620%&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/gourmand.png"
+				}
+			}
+			id: "0EC881421EB17938"
+			shape: "rsquare"
+			tasks: [{
+				id: "492C0090593CA78E"
+				type: "checkmark"
+			}]
+			title: "&6Gourmand"
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/pride.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lPride&r:"
+				""
+				"- When &chit&r with an &cattack&r there is a 25% chance of automatically obtaining it. "
+				"- Effective on &aCommon&r Skills, &eExtra&r Skills, &6Unique&r Skills, &bIntrinsic&r Skills, &9Magic&r, and &6Battlewill&r. "
+				"- &lAbilities&r gained in this manner will always start with 0 Mastery Points."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases obtaining chance to 100%"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/pride.png"
+				}
+			}
+			id: "692B919D5D1F5920"
+			shape: "rsquare"
+			tasks: [{
+				id: "49397B2E61204358"
+				type: "checkmark"
+			}]
+			title: "&cP&6r&ei&ad&de"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/wrath.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lWrath&r:"
+				""
+				"[&cBreeder Reactor&r]:"
+				""
+				"- While held down, gives the player &9MP&r equal to &92%&r of their maximum every 100 ticks."
+				"- Each usage has a &31%&r chance to add &31 Level of Rampage&r and 1 minute of duration which rises to &35%&r if the player's &9MP&r is past their natural maximum. "
+				"[&b+10 Armor&r, &c+60 Atk&r, &2+0.3 Atk Speed&r, &e+0.1 Speed&r, &e+1 Swim Speed&r, &2+0.2 Knockback Resist&r per &3Ramage Level&r]"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/wrath.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lWrath&r:"
+				""
+				"[&cEnrage&r]:"
+				""
+				"- While held down, gives every mob in a 15x15 radius &3Rampage effect&r (&3+1 level&r each 10 seconds) for 20 seconds. "
+				"- With &dspiritual attack resistance&r, reduced to a &325% chance&r. "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/wrath.png"
+				}
+			}
+			id: "07F32AB82D463F3A"
+			shape: "rsquare"
+			tasks: [{
+				id: "23B5FB81FCDF206C"
+				type: "checkmark"
+			}]
+			title: "&6Wrath"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/infinity_prison.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lInfinity Prison&r:"
+				""
+				"[&6Imprison&r]:"
+				""
+				"- Imprisons the &cmob&r/&cplayer&r the &7player&r is looking at. "
+				"- Seals all &emovement&r and &lSkill&r usage."
+				"- Lasts for &l6,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l12,000 Ticks&r."
+				"- Decreases cooldown to &l100 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/infinity_prison.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lInfinity Prison&r:"
+				""
+				"[&bAbsolute&r &aGuard&r]:"
+				""
+				"- Blocks &call attacks&r"
+				"- &cOpponents&r with an &6EP&r higher than &675%&r of the &7user's&r &6EP&r can bypass &6Absolute Guard&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/infinity_prison.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &lInfinity Prison&r:"
+				""
+				"[&6Imaginary Space&r]:"
+				""
+				"- Open a Spatial Storage with the size of a chest with 9 rows. "
+				"- Items are able to be stacked to 666 instead of 64. "
+				"- Stores the energy (&9MP Cost&r) of &cattacks&r blocked by &6Absolute Guard&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/infinity_prison.png"
+				}
+			}
+			id: "1F85DC957DE46F06"
+			shape: "rsquare"
+			tasks: [{
+				id: "6C4D64A3522FBD8B"
+				type: "checkmark"
+			}]
+			title: "&6Infinity prison"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/merciless.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMerciless&r:"
+				""
+				"[&6Soul &cSteal&r]:"
+				""
+				"- Instantly &ckills all mobs&r within a &b30x30 radius&r that are below &a10% HP&r, have an &6EP&r below &610%&r of the &7user's&r &6maximum&r, or have a &5Level 2&r or &5higher fear debuff&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/merciless.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMerciless&r:"
+				""
+				"[&6Soul &aConsume&r]:"
+				""
+				"- Applies a &5debuff&r to the &7player's&r &cattacks&r that drains the afflicted &cmob&r/&cplayer's&r &dspiritual health&r at &d10&r per &l10 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/merciless.png"
+				}
+			}
+			id: "20B1D5B628BAB958"
+			shape: "rsquare"
+			subtitle: "..."
+			tasks: [{
+				id: "1F689C0EFBD7CB6C"
+				type: "checkmark"
+			}]
+			title: "&l&6Merciless&r"
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1AD712ABCF2E7F18"
+				"1015FB0C72850869"
+			]
+			description: [
+				"{image:tensura:textures/skill/unique/gluttony.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lGluttony&r:"
+				""
+				"[&6Predation&r]:"
+				""
+				"- On use, creates a &bAoE &cattack&r up to a &a10 Block radius&r (slideable range with scroll mouse) in front of the &7player&r."
+				"- If it comes into contact with a &cmob&r, deals &c50 damage&r, applies &5Corrosion&r for &l100 Ticks&r, and drains &91,000MP&r, with a 30% chance to gain 1-3 random &bIntrinsic&r, &aCommon&r, &eExtra&r, or &bResistance&r &lSkills from the &ctarget&r. "
+				"- If an &cenemy&r is killed by &6Predation&r, gains all of their &bIntrinsic&r, &aCommon&r, &eExtra&r and &bResistance&r &lSkills."
+				"- If a &cMagic projectile&r is eaten, then the &7player&r gains that &9magic&r (consumed attacks have their &6EP&r added to &6Stomach&r's energy storage). "
+				"- &cTargets killed&r/&ccorpses&r eaten have &680%&r of their &6EP&r added to the players instead of the usual &65%&r. "
+				"- The other &620%&r will be added to &6Stomach&r's energy storage. "
+				"- Can be toggled to consume &7blocks&r, which will automatically be added to &6Stomach&r."
+				""
+				"[&l&6Mastery Bonus&r]"
+				""
+				"- Increases &bradius&r to &b15 Block&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gluttony.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lGluttony&r:"
+				""
+				"[&6Stomach&r]:"
+				""
+				"- When activated, grants access to a spatial storage with the size of a chest with 9 rows. "
+				"- Items are able to be stacked to 666 instead of 64."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gluttony.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lGluttony&r:"
+				""
+				"[&6Isolation&r]:"
+				""
+				"-  Consumes &7held item&r and restores &9MP&r similar to &bAbsorb and Dissolve&r, but with &9twice&r the &9restored MP&r. "
+				"- If nothing is held and the &7player&r is looking at a &ctarget&r, remove all &5negative status effects&r from that target. "
+				"- If used while empty handed and not looking at a mob, removes all &5negative status effects&r from the &7player&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gluttony.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lGluttony&r:"
+				""
+				"[&6Corrosion&r]:"
+				""
+				"- Deals &210 Corrosion&r damage&r every &l10 Ticks&r to &call enemies&r in a &b10x10 radius&r. "
+				"- &cEnemies killed&r by this have their &bIntrinsic&r, &aCommon&r, and &eExtra&r &lSkills&r taken by the &7player&r as well as have &680%&r of their &6EP&r added to the &7player's&r &6maximum&r and the other &620%&r is added to &6Stomach."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/gluttony.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lGluttony&r:"
+				""
+				"[&bReceive&r]:"
+				""
+				"- &bIntrinsic&r, &aCommon&r, and &eExtra&r &lSkills&r owned by the &7player's &9subordinates&r are given to the &7player&r."
+			]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/gluttony.png"
+				}
+			}
+			id: "3DE31E4FF4F43FFD"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Predator&r + Have &6Starved&r"
+			tasks: [{
+				id: "24AD3317A1795A97"
+				title: "- Mastered &6Predator&r + Have &6Starved&r"
+				type: "checkmark"
+			}]
+			title: "&l&6Gluttony&r"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			description: ["{image:trmysticism:textures/skill/unique/crasher.png width:100 height:100 align:1}"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "trmysticism:textures/skill/unique/crasher.png"
+				}
+			}
+			id: "03757DF93407FB78"
+			shape: "rsquare"
+			tasks: [{
+				id: "50E9A10182E4B8C7"
+				type: "checkmark"
+			}]
+			title: "&6Crasher"
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/unique/sentient_being.png width:100 height:100 align:1}"
+				""
+				"[&a&lPassives&r]:"
+				""
+				"&eWill Control&r [&eTrue Passive&r]"
+				""
+				"- All &esubordinates&r in the &bradius&r of &b30&r blocks &again&r &cInspiration 3&r (&6+90% Stat boost&r). "
+				""
+				"- &aIncreases&r to &4Inspiration 5&r (&6+150% Stat boost&r) on &6mastery&r."
+				""
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/sentient_being.png width:100 height:100 align:1}"
+				""
+				"[&c&lModes&r]:"
+				""
+				"&6Family Bond&r [&cMode 1&r]"
+				""
+				"- Acts as &dCharm&r, place most &abeings&r by &cyour&r side. "
+				""
+				"- Does &cnot work&r the same as &6Naming&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/sentient_being.png width:100 height:100 align:1}"
+				""
+				"&6Family Points&r [&cMode 2&r]"
+				""
+				"- You'll &bpassively&r gain &apoints&r (3, 5 if &6mastered&r) with &eallied&r in the &bradius&r of &b30&r blocks."
+				""
+				"- If a &bsubordinate&r dies to a &cdamage source&r not from the &aowner&r, the &auser&r will gain &b10%&r of the &bsub’s&r &9EP&r for each &a120 points&r it has "
+				""
+				"- The &cmaximum amount&r of &9EP&r can &again&r is &b100%&r = &a1200 points&r. "
+				""
+				"- To &again&r the &eSubordinates&r’ abilities, it &cneeds&r to have at least &a120 points&r for &6Skills, Battlewills, Magic&r, and &a600 points&r for &6Unique Skills&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/sentient_being.png"
+				}
+			}
+			id: "26B383EF12FC2EC5"
+			invisible: true
+			shape: "rsquare"
+			subtitle: "Reincarnation / Reroll"
+			tasks: [{
+				id: "4657B0132143040B"
+				type: "checkmark"
+			}]
+			title: "&6Sentient Being"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26B383EF12FC2EC5"]
+			description: [
+				"{image:btrultima:textures/skill/unique/carnation.png width:100 height:100 align:1}"
+				""
+				"[&l&ePassives&r]"
+				""
+				"&6Will Control&r [&eTrue Passive&r]"
+				""
+				"- All &esubordinates&r in the &bradius&r of &b30&r blocks &again&r &6Inspiration 4&r (&b+120%&r Stat &aboost&r). "
+				""
+				"- &aIncreases&r to &6Inspiration 6&r (&b+180%&r Stat boost) on &6mastery&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/carnation.png width:100 height:100 align:1}"
+				""
+				"[&l&cModes&r]:"
+				""
+				"&6Predation&r [&cMode 1&r]"
+				""
+				"- Absorbs any &ctarget&r in the &brange&r of &b0-25&r blocks, &aacquiring&r any &6skills&r below &6Uniques&r from the &cfallen enemy&r."
+				""
+				""
+				"&6Analysis&r [&cMode 2&r]"
+				""
+				"- Upon &ause&r copies any &eability&r below &6Uniques&r with a &ctotal&r chance of &b35%&r, &b65%&r if &6mastered&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/carnation.png width:100 height:100 align:1}"
+				""
+				"&6Recovery&r [&cMode 3&r]"
+				""
+				"- &cRemoves&r any &4harmful&r effects from the &aplayer&r upon &euse&r while also &6instantly&r healing &ayourself&r to the &cmax&r for the &bduration&r of &66 seconds&r."
+				""
+				""
+				"&6Stomach&r [&cMode 4&r]"
+				""
+				"- &aStore&r any &cabsorbed&r items by &ayour&r stomach with &e250 slots&r and &c999 stack&r capacity &6each&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/carnation.png width:100 height:100 align:1}"
+				""
+				"&6Family Share&r [&cMode 5&r]"
+				""
+				"- &aReceive&r the &6skills&r from any &esubordinate&r immediately."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/carnation.png width:100 height:100 align:1}"
+				""
+				"&6Family Points&r [&cMode 6&r]"
+				""
+				"- You'll &epassively&r gain &apoints&r (&b4, 6&r if &6mastered&r) with &eallied&r in the &bradius&r of &b30&r blocks.  "
+				""
+				"- If a &esubordinate&r dies to a &4damage&r source &cnot&r from the &aowner&r, the &auser will&r gain &b10%&r of the &esub’s&r &9EP&r for each &a120 points&r it &chas &r"
+				""
+				"- The &cmaximum&r amount of &9EP&r can gain is &b100%&r = &a1200 points&r. "
+				""
+				"- To gain the &eSubordinate’s&r abilities, it &cneeds&r to &ehave&r at least &a120 points&r for &6Skills, Battlewills, Magic&r, and &a600 points&r for &6Unique Skills&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/carnation.png"
+				}
+			}
+			id: "0A99C9B17E2ADC36"
+			invisible: true
+			shape: "rsquare"
+			subtitle: "- Mastered &6Sentient Being&r, &b3.500&r &cSouls&r / &6Hero Egg&r and Cost &9500.000 MP"
+			tasks: [
+				{
+					id: "11C08391E0A78094"
+					title: "- Mastered &6Sentient Being"
+					type: "checkmark"
+				}
+				{
+					id: "536C9324BE6186EF"
+					title: "- &b3.500&r &cSouls&r / &6Hero Egg&r"
+					type: "checkmark"
+				}
+				{
+					id: "4FA3DBE12C655882"
+					title: "- Cost &9500.000 MP"
+					type: "checkmark"
+				}
+			]
+			title: "&6Carnation"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/unique/tempter.png width:100 height:100 align:1}"
+				""
+				"[&l&ePassives&r]:"
+				""
+				"&6Thought Domination&r [&eTrue Passive&r]"
+				""
+				"- Gain &6thought acceleration&r and &6telepathy&r skills upon &aobtainment&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/tempter.png width:100 height:100 align:1}"
+				""
+				"[&l&cModes&r]:"
+				""
+				"&6Temptation World&r  [&cMode 1&r]"
+				""
+				"- Enter &ayour&r own &cdomain&r, a &bWorld&r where &6Temptation&r rules. "
+				""
+				"- Be &cstronger&r and &afaster&r than &canyone&r inside, able to &abuild&r and &csave&r your &bitems&r inside like a &5pocket dimension&r. "
+				""
+				"- But be &ccareful&r, someone &awith&r the same &6ability&r might try to &cfight&r over &5its&r control."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/tempter.png width:100 height:100 align:1}"
+				""
+				"&6Thought Domination&r [&cMode 2&r]"
+				""
+				"- &6Crouch&r + &cLetter&r for &esub-mode&r."
+				""
+				"1-> Control the &ctarget&r your &esubordinates&r will &4attack&r, either &afriendly&r, &caggressive&r or just on &ehold&r."
+				""
+				"1-> Control the &amovement&r of your &esubordinates&r, either &bfully&r stopped, &awandering&r or &efollowing&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/tempter.png width:100 height:100 align:1}"
+				""
+				"&6Charm&r [&cMode 3&r]"
+				""
+				"- Acts as &dCharm&r, place most &ebeings&r by &ayour&r side. Does &cnot work&r the same as &6Naming&r."
+				""
+				"&6Solicitation&r [&cMode 4&r]"
+				""
+				"- Acts as &6Possession&r, &csteal&r the &abody&r of most &ccreatures&r. Temporarily &cstealing&r their &6skills&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/tempter.png"
+				}
+			}
+			id: "4307D69F3C22008A"
+			invisible: true
+			shape: "rsquare"
+			subtitle: "Reincarnation / Reroll"
+			tasks: [{
+				id: "51788869945FBCA9"
+				type: "checkmark"
+			}]
+			title: "&6Tempter"
+			x: -8.0d
+			y: -0.5d
+		}
+	]
+	title: "&6Offensive"
+}

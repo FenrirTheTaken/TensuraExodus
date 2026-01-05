@@ -1,0 +1,37 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hell"
+	group: "20DFC3C84883ACC7"
+	icon: "tensura:hell_portal"
+	id: "2D5177054CFD4757"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"[&6TIP&f]"
+			"Its colossal gate structure which you cant miss!"
+			""
+			"If you are struggling to find a Hell gate you can locate it using your trusty [&l&6Explorer's Compass&r]"
+		]
+		id: "7BC47CE51A87F8F3"
+		shape: "rsquare"
+		subtitle: "Find and enter &cHell gate"
+		tasks: [{
+			dimension: "tensura:hell"
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:block/hell_portal"
+				}
+			}
+			id: "40BEAA7E778B5CC1"
+			type: "dimension"
+		}]
+		title: "Visit &cHell"
+		x: -2.0d
+		y: -1.0d
+	}]
+	title: "&cHell gate"
+}

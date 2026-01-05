@@ -1,0 +1,1149 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utility"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "minecraft:block/crafting_table_top"
+		}
+	}
+	id: "25A1016D252CB961"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lGUI"]
+			image: "enchdesc:textures/logo.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lBuffs and Debuffs"]
+			image: "minecraft:textures/mob_effect/strength.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["&lSkill Creation"]
+			image: "tensura:textures/skill/unique/creator.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 9.5d
+			y: -2.5d
+		}
+	]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/degenerate.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lDegenerate&r:"
+				""
+				"[&6Crafting&r]:"
+				""
+				"- Opens a crafting GUI that also has an option to Decraft items into their base components. "
+				"- Second tab is a combination of anvil (without renaming) and grindstone (be able to select what enchantments to remove)."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/degenerate.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lDegenerate&r:"
+				""
+				"[&6Synthesize&r]:"
+				""
+				"- When used, if the &7user&r is looking at a &7Charybdis Core&r, gain &lSkills&r and &6EP&r based on the Core’s state. "
+				"- If the &7player&r is looking at a &cmob&r tagged &dSpiritual&r that is at &a25% HP&r or lower, the &cmob&r perishes and the &7player&r gains all the &lSkills&r and &6EP&r of the &cmob&r. "
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/degenerate.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lDegenerate&r:"
+				""
+				"[&6Separate&r]:"
+				""
+				"- When used on &cmobs&r with an &6EP&r below &675%&r of the &7player&r, &csteals&r all &aCommon&r and &eExtra&r &lSkills&r. "
+				"- When used on &7oxidized copper&r, strip it. "
+				"- When used on &7ore blocks&r, it gives the &7player&r the &7ore&r and leaves a &7stone&r/&7deepslate block&r in its place. "
+				"- When used while not looking at anything, remove &dstatus effects&r (unless it’s a &dbeneficial&r &lSkill&r &deffect&r) from the &7user&r. "
+				"- When used while sneaking and looking at &9subordinate&r/&9ally&r, remove &dstatus effects&r from &9them&r instead."
+				""
+				"Credit: &9Plushi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/degenerate.png width:100 height:100 align:1}"
+				""
+				"[&6TIP&r]:"
+				""
+				"- With &6BTRUltima mod&r you can &again&r it using &6Great Sage&r analysis on &cShizu"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/degenerate.png"
+				}
+			}
+			id: "228482B02A5A8340"
+			shape: "rsquare"
+			tasks: [{
+				id: "6CE9670CFF26CF6C"
+				type: "checkmark"
+			}]
+			title: "&6Degenerate"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/great_sage.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]: &lGreat Sage&r:"
+				""
+				"[&bThought &eAcceleration&r]:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, increase &2attack speed&r by &20.2&r."
+				""
+				"Credit: &6Bader"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/great_sage.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]: &lGreat Sage&r:"
+				""
+				"[&6Analytical Appraisal&r]:"
+				""
+				"&lAnalysis Level 2&r:"
+				""
+				"- When &6activated&r, creates a screen overlay that displays information about the currently looked at &lBlock&r or &cmob&r in a &b20 Block radius&r. "
+				"- Displays &7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r, etc."
+				"- Displays the &lSkills&r of the &ctarget&r except for &6mastered&r &lSkills&r."
+				"- If a &ctarget&r has &6greater&r than &62x&r the &7player's&r &6EP&r, then only its base stats are shown (&7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r)."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &bdistance&r to &b30 Block&r."
+				""
+				"Credit: &6Bader"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/great_sage.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]: &lGreat Sage&r:"
+				""
+				"[&bParallel Processing&r]:"
+				""
+				"- Increases the amount of Learned Points and Mastery Points gained when learning/using &lSkills&r, &9Magic&r, &6Battlewill&r, and &3Arts&r by 9."
+				""
+				"Credit: &6Bader"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/great_sage.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]: &lGreat Sage&r:"
+				""
+				"[&bChant&r &eAttunement&r]:"
+				""
+				"- For &9Mastered Magic&r, completely fills up the Magic Circle's &9MP meter&r instantly."
+				""
+				"Credit: &6Bader"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/great_sage.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]: &lGreat Sage&r:"
+				""
+				"[&6Analysis&r]:"
+				""
+				"- When used while looking at a &cmob&r, copies 1 of the &9Magic&r, and &lSkills&r (Except &6Unique Skills&r \\& &bResistances&r) of a target. "
+				"- Ineffective against &cUltimate Skill&r &7Users&r. "
+				"- 25% Chance at Success."
+				"- When looking at nothing, opens up a GUI that can craft or refine items with increased stack numbers."
+				""
+				"&lCrafting Tab&r: "
+				"- Works like a normal crafting table. "
+				"- Put an item in the copy slot on the left, to craft that item like a smithing bench without the need of Schematics, the user can copy that item just by having the materials in the crafting grid. "
+				"- Has a button on the right to auto craft desired items."
+				""
+				"&lRefining Table&r:"
+				"- Brewing any potions like brewing stand but all at once."
+				"- If a &7Hipokute Grass&r is placed into a slot with any bottle, it brews into a &bHigh Potion&r. "
+				"- If a &7Hipokute Flower&r is placed into a slot with any bottle, it brews into a &bFull Potion&r. "
+				"- If a &7Magic Ore&r is placed into a slot, refine it into &7Pure Magisteel Nuggets&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases copy chance to 50%"
+				""
+				"Credit: &6Bader"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/great_sage.png width:100 height:100 align:1}"
+				""
+				"[&6TIP&r]:"
+				""
+				"- With &6BTRUltima mod&r you can &again&r it by consuming &b250x Wisdom Shard"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/great_sage.png"
+				}
+			}
+			id: "511132ECD8A67BAE"
+			shape: "rsquare"
+			tasks: [{
+				id: "43B90589C29A3904"
+				type: "checkmark"
+			}]
+			title: "&6Great Sage&r"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/healer.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lHealer&r:"
+				""
+				"[&6Heal&r]:"
+				""
+				"- Fully &arestores&r all &aHP&r."
+				"- If used while not looking at a &ctarget&r, applies to the &7player&r. "
+				"[Also remove &5Virus&r from the &7user&r]"
+				"- If used while looking at a &ctarget&r it &aheals&r them instead (require sneaking to &aheal&r &cothers&r). "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Fully &drestores all SHP&r"
+				"- Decreases &9MP&r/&aHP&r"
+				""
+				"Credit: &9Sachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/healer.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lHealer&r:"
+				""
+				"[&6Infection&r]:"
+				""
+				"- Applies &5Virus&r to the looked at &ctarget&r. "
+				"[Cure &5Virus&r if the &ctarget&r already has the &5debuff&r]."
+				""
+				"Credit: &9Sachimi"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/healer.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lHealer&r:"
+				""
+				"[&l&6Pla&cgue&r]:"
+				""
+				"- Applies &5Virus&r to &ceverything&r in a &b15x15 radius&r."
+				""
+				"Credit: &9Sachimi"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/healer.png"
+				}
+			}
+			id: "667B3EDD92B0D112"
+			shape: "rsquare"
+			tasks: [{
+				id: "50629BB1DC1E4B33"
+				type: "checkmark"
+			}]
+			title: "&6Healer"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/chef.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lChef&r:"
+				""
+				"- When used while not looking at a &ctarget&r, remove all &5negative status effects&r from the &7user&r and &arestore&r their &aHP&r to full including &bSeverance&r &cdamage&r. "
+				"- When looking at a &cmob&r, remove all their &5negative status effects&r and &arestores&r their &aHP&r to full."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases &9MP&r/&aHP&r to &940&r/&a1&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/chef.png"
+				}
+			}
+			id: "694F22761CC0C06B"
+			shape: "rsquare"
+			tasks: [{
+				id: "217ECBF4BFBD769C"
+				type: "checkmark"
+			}]
+			title: "&6Chef"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/creator.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lCreator&r:"
+				""
+				"[&6Analytical Appraisal&r]:"
+				""
+				"&lAnalysis Level 1&r:"
+				""
+				"- Displays &7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r, etc."
+				"- &bDistance 5 Block&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"&lAnalysis Level 2&r:"
+				""
+				"- Displays the &lSkills&r of the &ctarget&r except for &6mastered&r &lSkills&r."
+				"- If a &ctarget&r has &6greater&r than &62x&r the &7player's&r &6EP&r, then only its base stats are shown (&7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r)."
+				"- Increases &bDistance&r to &b10 Blocks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/creator.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lCreator&r:"
+				""
+				"[&6Skill Creation&r]:"
+				""
+				"- When &6used&r, allows the &7player&r to select one &6Unique Skill&r or &8Anti-Skill&r, which is then granted to the &7user&r for &l24,000 Ticks&r. "
+				"- If &6used again&r, removes the &lability&r and allows a new one to be selected.  "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows same &lSkill&r to be created twice in a roll."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/creator.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lCreator&r:"
+				""
+				"[&6Anti&r-&aSkill&r]:"
+				""
+				"- Makes the user immune to &9Magic&r, &lSkills&r, and &6Battlewill&r. "
+				"- When punching a &3Ranged Barrier&r, instantly destroy it. "
+				"- When &cattacking&r a &ctarget&r when both hand empty, remove all &3barrier points&r from &ctarget&r and inflict a &5debuff&r on &ctarget&r that makes &lSkills&r unable to be &6activated&r for &l80 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r."
+				"- Allows &lSkill&r proc with only main hand empty."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/creator.png"
+				}
+			}
+			id: "177C05478CDB3221"
+			shape: "rsquare"
+			tasks: [{
+				id: "56569C7A0D6356FA"
+				type: "checkmark"
+			}]
+			title: "&6Creator"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:trmysticism:textures/skill/unique/dreamer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&6Dreamer&r:"
+				""
+				"[&bEthereal &aPresence&r]"
+				""
+				"- &310% chance&r to &3dodge&r &7projectiles&r or &7physical attacks&r."
+				"{@pagebreak}"
+				"{image:trmysticism:textures/skill/unique/dreamer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&6Dreamer&r:"
+				""
+				"[&bRec&aall&r]"
+				""
+				"- If the &7user&r has been out of &ccombat&r for &l15 Seconds&r, restore &92%&r of &9MP&r every &l5 Seconds&r."
+				"{@pagebreak}"
+				"{image:trmysticism:textures/skill/unique/dreamer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&6Dreamer&r:"
+				""
+				"[&bLucid Dream&r]"
+				""
+				"- If the &7user&r had set a &bDream&r before &cdying&r, &einstantly teleport&r to the location of the &bDream&r, restore &lall stats&r, and &0cheat death&r. "
+				"Cooldown: &l20 Minutes&r"
+				"{@pagebreak}"
+				"{image:trmysticism:textures/skill/unique/dreamer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&6Dreamer&r:"
+				""
+				"[&6Dream&r]:"
+				""
+				"- Save your &acurrent health&r, &dSHP&r, &9magicules&r, &eaura&r, and &7location&r."
+				"- Reactivating &bDream&r will &lrestore&r your &lstats&r back to the saved values and instantly &eteleport&r the &7user&r to the &7location&r you saved. "
+				"- &cDying&r will also trigger &bDream&r if you've saved one.  "
+				"- Crouching and activating will cancel the &bDream&r."
+				"Cooldown: &l5 Minutes&r"
+				"MP Cost: &91 000 MP&r"
+				"{@pagebreak}"
+				"{image:trmysticism:textures/skill/unique/dreamer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&6Dreamer&r:"
+				""
+				"[&6Hypnosis&r]"
+				""
+				"- Induce &5Drowsiness&r on &cnearby mobs&r for &l10 Seconds&r."
+				"{@pagebreak}"
+				"{image:trmysticism:textures/skill/unique/dreamer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&6Dreamer&r:"
+				""
+				"[&6Dream &cEater&r]"
+				""
+				"- While &cheld down&r while looking at a &cmob&r that is inflicted with &5Dowsiness&r, deal &c50 damage&r and &d50 spiritual damage&r after &l5 Seconds&r."
+				"- Successfully consuming a &bDream&r will reduce &l&6Dreamer&r cooldown by &l30 Seconds&r."
+				"MP Cost: &9100 MP&r per &lSecond&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "trmysticism:textures/skill/unique/dreamer.png"
+				}
+			}
+			id: "23147A590E01C587"
+			shape: "rsquare"
+			tasks: [{
+				id: "62EEBABB67EEED45"
+				type: "checkmark"
+			}]
+			title: "&6Dreamer&r"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/seer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSeer&r:"
+				""
+				"[&bPrecog&enition&r]: "
+				""
+				"- &350% chance&r to &3dodge&r a &7physical&r/&7projectile attack&r, &cattacks&r that land will get reduced to &c70%&r of their &cdamage&r. "
+				"- Gain &633% Crit Chance boost&r on &cattack&rs."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &3dodge chance&r to &370%&r"
+				"- Increases &cdamage&r reduced to &c50%&r of its &coriginal damage&r"
+				"- Increases &6Crit Chance boost&r to &650%&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/seer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSeer&r:"
+				""
+				"[&6Future Sight&r]:"
+				""
+				"- When activated, grants the &7player&r &3perfect dodge&r for &l10 Second&r."
+				"- After the duration, it cannot be used again for another &l10 Second&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l20 Second&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/seer.png"
+				}
+			}
+			id: "4D7BDBD5A7D75D4F"
+			shape: "rsquare"
+			tasks: [{
+				id: "4B17B0B24421832A"
+				type: "checkmark"
+			}]
+			title: "&6Seer"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/commander.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r - &eToggle&r] &lCommander&r:"
+				""
+				"[&bThought &eAcceleration&r]:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, and increase &2attack speed&r by &20.2&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/commander.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r - &eToggle&r] &lCommander&r:"
+				""
+				"[&6Thought Communication&r]:"
+				""
+				"- Able to give commands to allies similar to &6Thought Communication&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/commander.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r - &eToggle&r] &lCommander&r:"
+				""
+				"[&6Thought Domination&r]:"
+				""
+				"- Works likes &6Vampire's Charm&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/commander.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r - &eToggle&r] &lCommander&r:"
+				""
+				"[&bPredictive&r &aCalculation&r]:"
+				""
+				"- &325% Chance&r to &3dodge&r an &cattack&r. "
+				"- &350% Chance&r to &3ignore dodge&r on &cenemies&r. "
+				"- &3Nullification&r is treated as &bresistance&r and &bresistance&r is bypassed. "
+				"- &6Magic Jamming&r's &cdamage&r mitigation is ignored."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/commander.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn slot&r - &eToggle&r] &lCommander&r:"
+				""
+				"[&bInspire&r &eForces&r]:"
+				""
+				"- Boosts the &lStats&r of &9all allies&r in &b30 block radius&r by &l30%&r and gives them &630% Crit Chance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &lstats&r boost to &l60%&r"
+				"- Increases &6Crit Chance&r boost to &660%&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/commander.png"
+				}
+			}
+			id: "1EDA986F8C8BD964"
+			shape: "rsquare"
+			tasks: [{
+				id: "1D00E8563C85FD7E"
+				type: "checkmark"
+			}]
+			title: "&6Commander"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/mathematician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMathematician&r:"
+				""
+				"- Gain 2 Extra points towards Mastery and Learning"
+				""
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/mathematician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMathematician&r:"
+				""
+				"[&6Analytical Appraisal&r]:"
+				""
+				"&lAnalysis Level 1&r:"
+				""
+				"- When activated, creates a screen overlay that displays information about the currently looked at &lBlock&r or &cmob&r in a &b10 Block radius&r. "
+				"- Displays &7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r, etc."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"&lAnalysis Level 2&r:"
+				""
+				"- Displays the &lSkills&r of the &ctarget&r except for &6mastered&r &lSkills&r."
+				"- If a &ctarget&r has &6greater&r than &62x&r the &7player's&r &6EP&r, then only its base stats are shown (&7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r)."
+				""
+				"- Increases &bradius&r to &b20 Blocks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/mathematician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMathematician&r:"
+				""
+				"[&bThought &aAcceleration&r]:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, increase &2attack speed&r by &20.2&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/mathematician.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lMathematician&r:"
+				""
+				"[&bPredictive &eCalculation&r]:"
+				""
+				"- &325% Chance&r to &3dodge&r an &cattack&r. "
+				"- &350% Chance&r to ignore &3dodge&r on &cenemies&r. "
+				"- &675%&r to deal &6Crit damage&r. "
+				"- &3Nullification&r is treated as &bresistance&r and &bresistance&r is bypassed. "
+				"- &6Magic Jamming&r's &cdamage&r mitigation is ignored."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/mathematician.png"
+				}
+			}
+			id: "60506553DB6C7FFC"
+			shape: "rsquare"
+			tasks: [{
+				id: "55B70F1D9BF3E9F6"
+				type: "checkmark"
+			}]
+			title: "&6Mathematician"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/observer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle &r] &lObserver&r:"
+				""
+				"[&bInstinctual&r &aAvoidance&r]:"
+				""
+				"- &350% Chance&r to &3Dodge&r &7melee attacks&r. "
+				"- &3100% chance&r to &3avoid&r &cthrown projectiles&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/observer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle &r] &lObserver&r:"
+				""
+				"[&bDanger&r &eSense&r]:"
+				""
+				"- If a &cmob&r starts to target the &7user&r, play a bell noise to the user."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/observer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle &r] &lObserver&r:"
+				""
+				"[&6Trap&r &cDetection&r]:"
+				""
+				"- Highlights any trap blocks in a &b30x30 area&r in &cred&r and &7chests&r/&7barrels&r in &eyellow&r. "
+				"[Trap blocks: Lava, Pointed Dripstone, Tripwire, Sculk Sensor, Sculk Shrieker, Cobweb, Powder Snow, Trapped Chest]."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/observer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle &r] &lObserver&r:"
+				""
+				"[&6Monster&r &cDetection&r]:"
+				""
+				"- Highlights any &cmonsters&r in a &b50x50 area&r in certain colors"
+				"[&7Neutral&r: &eYellow&r, &cEnemy&r: &cRed&r]."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/observer.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle &r] &lObserver&r:"
+				""
+				"[&6Presence&r &cDetection&r]:"
+				""
+				"- Highlights all &cmobs&r in a &b30x30 area&r in &9blue&r, even &dinvisible ones&r or ones under the effect of &6concealing abilities&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/observer.png"
+				}
+			}
+			id: "2E6C6F13444B0E21"
+			shape: "rsquare"
+			tasks: [{
+				id: "375442488C3D6E62"
+				type: "checkmark"
+			}]
+			title: "&6Observer"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/reverser.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lReverser&r:"
+				""
+				"[&bAlignment &eReverser&r]:"
+				""
+				"- If the player is a &eMajin&r, or &aTrue Chosen Hero&r, sets Alignment to &cChaos&r. "
+				"- When the alignment is set to &cChaos&r, the player can become &cTDL&r without being &eMajin&r, or become &aTH&r even when their race is &eMajin&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Allows alignment of others to &cChaos&r"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/reverser.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lReverser&r:"
+				""
+				"[&6Inverted Fusion&r(&6Buff&r)]:"
+				""
+				"- When activated, removes &3all negative status effects&r from the player if looking at nothing or the looked at mob/player and grants &bbuffs&r based on the &bstatus effect&r removed."
+				""
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/reverser.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lReverser&r:"
+				""
+				"[&6Inverted Fusion&r(&6Debuff&r)]:"
+				""
+				"- When activated, removes &ball posivite status effects&r from the player if looking at nothing or the looked at mob/player and grants &3debuffs&r based on the &bstatus effect&r removed."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/reverser.png"
+				}
+			}
+			id: "0FF97159503F8A98"
+			shape: "rsquare"
+			tasks: [{
+				id: "3E3B493984E4BA01"
+				type: "checkmark"
+			}]
+			title: "&6Reverser"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/traveler.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lTraveler&r:"
+				""
+				"[&6Instant Motion&r]:"
+				""
+				"- Teleports the player to where they're looking instantly"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/traveler.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lTraveler&r:"
+				""
+				"[&6Teleport&r]:"
+				""
+				"- Opens &bSpatial Motion&r GUI."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/traveler.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lTraveler&r:"
+				""
+				"[&bSpatial&r &aManipu&elation&r]:"
+				""
+				"- &5x2 Spatial Damage&r."
+				"- Projectiles automatically teleport behind the looked at mob when fired."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/traveler.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lTraveler&r:"
+				""
+				"[&6Stardust Arrow&r]:"
+				""
+				"- Launches a singular energy arrow where the player is looking that deals &c30 damage&r and applies &3Severance&r. [Sneak to apply warp shot on the arrow]"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/unique/traveler.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r - &eToggle&r] &lTraveler&r:"
+				""
+				"[&l&6Stardust Rain&r]:"
+				""
+				"- Launches energy arrows from 360⁰ in a sphere around the looked at enemy. [Radius: 20 Blocks]"
+				"- Each arrow does &c30 Damage&r and applies a &3Severance effect&r. [Around 10-12 arrows at once]. "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/traveler.png"
+				}
+			}
+			id: "3C813E2B1889556A"
+			shape: "rsquare"
+			tasks: [{
+				id: "4356B7FADC4379F1"
+				type: "checkmark"
+			}]
+			title: "&6Traveler"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/unique/researcher.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lResearcher&r:"
+				""
+				"- Opens a GUI with access to a Spatial Storage. "
+				"- Has a slot that instantly smelts entire stacks of objects. "
+				"- Has a built in crafting table and a custom &benchanting table&r allowing the player to freely add whatever they wish from the list of analyzed &benchantments&r. "
+				"- &bEnchanted Items&r have their &beffects&r stored to be selected in the &benchantment table&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/researcher.png"
+				}
+			}
+			id: "25C0EEDA0B0A158B"
+			shape: "rsquare"
+			tasks: [{
+				id: "43B76833B6A8E5A7"
+				type: "checkmark"
+			}]
+			title: "&6Researcher"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["25C0EEDA0B0A158B"]
+			description: [
+				"{image:tensura:textures/skill/unique/godly_craftsman.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGodly Craftsman&r:"
+				""
+				"- The same as &6Researcher&r, but can store &bEngraving&r, &bEnchantments&r and &7Crafted Equipments&r has a &6percentage&r of its &6maximum potential EP&r already. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- &7Equipment&r crafted has a &6higher percentage&r of its &6maximum potential EP&r"
+			]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/unique/godly_craftsman.png"
+				}
+			}
+			id: "0F53381C84F24B4B"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Researcher"
+			tasks: [{
+				id: "7B33C470A42ABB77"
+				title: "- Mastered &6Researcher"
+				type: "checkmark"
+			}]
+			title: "&l&6Godly Craftsman&r"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: ["{image:trmysticism:textures/skill/unique/hidden_ruler.png width:100 height:100 align:1}"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "trmysticism:textures/skill/unique/hidden_ruler.png"
+				}
+			}
+			id: "0ED8E3CE419ABD95"
+			shape: "rsquare"
+			tasks: [{
+				id: "0A801F414791C31B"
+				type: "checkmark"
+			}]
+			title: "&6Hidden Ruler"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/unique/time_letter.png width:100 height:100 align:1}"
+				""
+				"[&e&lPassives&r]:"
+				""
+				"+3 &6Spatial, Lightning, Earth Damage"
+				""
+				"- &6Abnormal Condition, Magic Resistance&r acquired on &aobtainment."
+				""
+				"- Can &9Fly"
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/time_letter.png width:100 height:100 align:1}"
+				""
+				"&6Timeless Knowledge&r [&eTrue Passive&r]"
+				""
+				"+10 &aLearning Points. "
+				""
+				"+5 &cMastery Points."
+				""
+				"&6Counter Analysis [&eTrue Passive&r]"
+				""
+				"- Cleans every &charmful effect&r from the &aplayer&r. (Configurable)"
+				""
+				"- &9Magic Jamming&r mitigation &cignored&r. "
+				""
+				"- Instantly &cbreaks&r any &abarrier&r below &b50%&r of the &aowner&r EP. "
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/time_letter.png width:100 height:100 align:1}"
+				""
+				"&6Concealment&r [&eTrue Passive&r]"
+				""
+				"- &cBlocks&r the &6making of sounds&r."
+				""
+				"&6Mana Output&r [&eTrue Passive&r]"
+				""
+				"- Increases &9EP&r gained from &cdefeating&r enemies from &b3%&r to &b4.5%&r (same ratio as normal. &91/3 MP&r and &62/3 AP&r for &aNon-Majin&r and the opposite for &6Majin&r)."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/time_letter.png width:100 height:100 align:1}"
+				""
+				"[&c&lModes&r]:"
+				""
+				""
+				"&6Zoltraak&r [&cMode 1&r]"
+				""
+				"- Shoots a &cray blast&r of &9spatial magic&r with a &blong range&r dealing &c120 dmg&r if &6mastered&r and &c80&r if not + &9spatial&r bonus. "
+				""
+				"- Can &ago&r through &cblocks&r."
+				""
+				"&6Judradjim [&cMode 2&r]"
+				""
+				"- Controls the &aweather&r to cast &elightning bolts&r of &6magic&r towards the &ctarget&r in the &bradius&r limit of &b40&r blocks, dealing &c35 dmg&r + &elightning bonus&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/time_letter.png width:100 height:100 align:1}"
+				""
+				"&6Beauty Field&r [&cMode 3&r]"
+				""
+				"- Produces a &afield&r of &dbeautiful flowers&r."
+				""
+				"&6Recovery&r [&cMode 4&r]"
+				""
+				"- &cRecover&r your &chp/shp&r fully with a high &9Magicule&r usage and &bcooldown&r. (Instant &aregen&r for a &eduration&r of &b40 ticks&r) "
+				""
+				"- Aim at a &esubbordinate&r to &aheal&r it instead."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/time_letter.png width:100 height:100 align:1}"
+				""
+				"&6Hex Barrier&r [&cMode 5&r]"
+				""
+				"- Acquire &b3 times&r your &amax hp&r as &ebarrier points&r with &9low MP&r costs."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/time_letter.png"
+				}
+			}
+			id: "42212E461DD6FC38"
+			invisible: true
+			shape: "rsquare"
+			tasks: [{
+				id: "43C647C05FCB0621"
+				type: "checkmark"
+			}]
+			title: "&6Time Letter"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/unique/seeker.png width:100 height:100 align:1}"
+				""
+				"[&a&lPassives&r]:"
+				""
+				"+5 &bSpatial&r and &5Gravity&r damage."
+				""
+				"&6Law Manipulation&r [&eTrue Passive&r / &6Is Toggled&r]"
+				""
+				"- &5Magic Jamming&r mitigation &cignored&r. "
+				""
+				"- Nullifications are &atreated&r as &bResistances&r. "
+				""
+				"- &bResistances&r are &cignored&r. "
+				""
+				"- Ignores &cdodges&r and &6crit damage&r. "
+				""
+				"- Can &5fly&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/seeker.png width:100 height:100 align:1}"
+				""
+				"&eThought Acceleration&r [&6Is Toggled&r]"
+				""
+				"- Increase &emovement speed&r by &b0.01&r (&b0.02&r with &6Mastery&r), increase &aattack speed&r by &b0.2&r (&b0.4&r with &6Mastery&r)"
+				""
+				""
+				"&eChant Annulment&r [&6Is Toggled&r]"
+				""
+				"- Immediately &acasts&r any &6magic&r skill."
+				""
+				""
+				"&eAll The Creation&r [&eTrue Passive&r] "
+				""
+				"- Immediate &aunlock&r of all &cSchematics&r from the &6official mod."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/seeker.png"
+				}
+			}
+			id: "5D7A8C486B771D5B"
+			invisible: true
+			shape: "rsquare"
+			tasks: [{
+				id: "0C1B3E745D9B62A6"
+				type: "checkmark"
+			}]
+			title: "&6Seeker"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/unique/manufacturer.png width:100 height:100 align:1}"
+				""
+				"[&l&ePassives&r]:"
+				""
+				"&9Alteration&r [&bCommand&r | &6Mastered&r]"
+				""
+				"- Able to &6evolve&r every &6skill&r via &bcommands&r, &esupported&r with &6Mysticism&r."
+				""
+				"- &b/btrultima alteration&r (Click &6space&r if there's more &crequired&r Skills)."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/manufacturer.png width:100 height:100 align:1}"
+				""
+				"[&l&cModes&r]:"
+				""
+				"&6Synthesis&r [&cMode 1&r]"
+				""
+				"- When &cused&r, if the &auser&r is &elooking&r at a &6Charybdis Core&r, gain &6skills&r and &9EP&r based on the &6Core’s&r state. "
+				""
+				"- If the &aplayer&r is &elooking&r at a &cmob&r tagged &6Spiritual&r that is at &a40% hp&r or &2lower&r or &cthat&r has below &420%&r of the &aplayer's&r max &9EP, the &cmob&r perishes and the &aplayer&r gains &eall&r the &6skills&r and &9EP&r of the &cmob&r. (&cCannot&r be a &6summoned spirit&r, has to be &afound&r in the &2wild&r)"
+				""
+				"- While &cnot&r aiming at a &6core&r or &cmob&r opens &5Crafting Menu&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/manufacturer.png width:100 height:100 align:1}"
+				""
+				"&6Separate&r [&cMode 2&r]"
+				""
+				"- When &aused&r on &cmobs&r with an &9EP&r below &b40%&r of the &aplayer&r, &csteal&r one &6skill&r of type &2Common&r / &eExtra&r. "
+				""
+				"- When &aused&r on &coxidized copper&r, strip it. "
+				""
+				"- When &aused&r on &bore blocks&r, it &cgives&r the &aplayer&r the &6ore&r and &cleaves&r a &estone&r/&6deepslate&r block in its &bplace&r. "
+				""
+				"- When &aused&r while &cnot&r &elooking&r at &6anything&r, &cremove&r status &6effects&r (&cunless&r it’s a &6beneficial skill&r effect) from the &auser&r. "
+				""
+				"- When &aused&r while &csneaking&r and &elooking&r at &asubordinate&r/&2ally&r, &cremove&r status &6effects&r from &cthem&r instead [Costs &9100 MP&r each &6effect&r level &cremoved&r]."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/manufacturer.png"
+				}
+			}
+			id: "0DA54FFC0A4C5384"
+			invisible: true
+			shape: "rsquare"
+			tasks: [{
+				id: "0F91F4CF40A5FB0E"
+				type: "checkmark"
+			}]
+			title: "&6Manufacturer"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/unique/analyst.png width:100 height:100 align:1}"
+				""
+				"[&l&ePassives&r]:"
+				""
+				"+5 &6Spatial and Gravity damage&r."
+				""
+				"- &6Abnormal Condition, Spatial, Gravity Resistances and Gravity, Time Manipulations&r acquired on obtainment."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/analyst.png width:100 height:100 align:1}"
+				""
+				"&6Law Manipulation&r [&eTrue Passive&r / &eIs Toggled&r]"
+				""
+				"- &6Magic Jamming&r mitigation &cignored&r. "
+				""
+				"- &6Nullifications&r are &etreated&r as &bResistances&r. "
+				""
+				"- &bResistances&r are &cignored&r. "
+				""
+				"- Ignores &cdodges&r and &4crit damage&r. "
+				""
+				"- Can &5fly&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/analyst.png width:100 height:100 align:1}"
+				""
+				"&6Thought Acceleration&r [&eIs Toggled&r]"
+				""
+				"- Increase &amovement speed&r by &b0.01&r (&b0.02&r with &6Mastery&r), increase &eattack speed&r by &b0.2&r (&b0.4&r with &6Mastery&r)"
+				""
+				""
+				"&6Chant Annulment&r [&eIs Toggled&r]"
+				""
+				"- Immediately &ccasts&r any &9magic&r skill. &6Mastered&r or &cnot&r."
+				""
+				""
+				"&9All The Creation&r [&eTrue Passive&r] "
+				""
+				"- Immediate &aunlock&r of all &6Schematics&r from the &6official mod."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/unique/analyst.png width:100 height:100 align:1}"
+				""
+				"[&l&cModes&r]:"
+				""
+				"&6Analytical Appraisal&r [&cMode 1&r]"
+				""
+				"- &6Analysis&r Level &b2&r, distance &b20 blocks&r (&b30&r with &6Mastery&r)"
+				""
+				"- If a &ctarget&r has &agreater&r than &b5x&r (&b10x&r with &6Mastery&r) the &aplayer's&r &9EP&r, then &conly&r its &abase stats&r are &eshown&r (&6Name, HP, SHP, Armor&r)."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/unique/analyst.png"
+				}
+			}
+			id: "059054378557C05B"
+			invisible: true
+			shape: "rsquare"
+			tasks: [{
+				id: "6E2901F464A2CFA6"
+				type: "checkmark"
+			}]
+			title: "&6Analyst"
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "&6Utility"
+}

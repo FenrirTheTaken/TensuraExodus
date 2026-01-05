@@ -1,0 +1,528 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "common_skills"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/gui/skill/common.png"
+		}
+	}
+	id: "3212C53B6E16C77A"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6B8A42F37DEBD7E4"]
+			description: [
+				"{image:tensura:textures/skill/common/water_current_control.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lWater Current Control&r:"
+				""
+				"- Grants the &7user&r a &dDolphin’s Grace-like effect&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/water_current_control.png"
+				}
+			}
+			id: "7E4C9900BE955309"
+			shape: "rsquare"
+			subtitle: "Reach &66,000 EP"
+			tasks: [{
+				id: "3EFAA1B35D2FF98F"
+				title: "Reach &66,000 EP"
+				type: "checkmark"
+			}]
+			title: "Water Current Control"
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E4C9900BE955309"]
+			description: [
+				"{image:tensura:textures/skill/common/hydraulic_propulsion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lHydraulic Propulsion&r:"
+				""
+				"- Grants a &dboost effect&r similar to the &briptide enchantment&r that can only be used underwater."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/hydraulic_propulsion.png"
+				}
+			}
+			id: "5EE9EEBBBAB188E1"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Water Current Control"
+			tasks: [{
+				id: "670C462DF6D5F4D8"
+				title: "- Mastered &6Water Current Control"
+				type: "checkmark"
+			}]
+			title: "Hydraulic Propulsion"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7E4C9900BE955309"
+				"5EE9EEBBBAB188E1"
+			]
+			description: [
+				"{image:tensura:textures/skill/common/water_blade.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWater Blade&r:"
+				""
+				"- Shoots a &cblade-shaped water projectile&r that deals &c40 damage&r and moves at &b120 Blocks&r per &l20 Ticks&r. "
+				"- Requires the &7user&r to be underwater or have a &6spatial storage-type skill&r with water inside of it, which consumes one bottles worth of water on each use."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/water_blade.png"
+				}
+			}
+			id: "7D7D8AB46C942DBC"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Hydraulic Propulsion"
+			tasks: [{
+				id: "0506A4FFE7B242CF"
+				title: "- Mastered &6Hydraulic Propulsion"
+				type: "checkmark"
+			}]
+			title: "Water Blade"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/common/telepathy.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lTelepathy&r:"
+				""
+				"- While looking at a &9subordinate&r in &b30 Block radius&r, activate to cycle through stay/follow/wander &6modes&r of that &9subordinate&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/telepathy.png"
+				}
+			}
+			id: "2FA6CA666B01BD75"
+			shape: "rsquare"
+			subtitle: "Reach &62,000 EP"
+			tasks: [{
+				id: "16533070A6FC71A6"
+				title: "Reach &62,000 EP"
+				type: "checkmark"
+			}]
+			title: "Telepathy"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2FA6CA666B01BD75"]
+			description: [
+				"{image:tensura:textures/skill/common/thought_communication.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lThought Communication&r:"
+				""
+				"[&6Movement Behaviour&r]: "
+				""
+				"- Activate when looking at an &centity&r in &b30 Block radius&r, if that’s a &9subordinate&r, cycle through stay/follow/wander &6modes&r, if that’s a &cnon-ally target&r, all &9subordinate&r in the &brange&r of &b30x30x30 radius&r around the &7user&r will start to &cattack&r that &ctarget&r. "
+				"- If shifted when activating, cycle through stay/follow/wander &6modes&r of all &9subordinates&r in &b30x30x30 radius&r. "
+				"[In wander mode, the &9subordinate&r will wander &b50 Block&r around the position where it is set to Wander.]"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/common/thought_communication.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lThought Communication&r:"
+				""
+				"[&l&6Targeting Behavior&r]:"
+				""
+				"- Activate when looking at a &9subordinate&r in &b30 Block radius&r, cycle through neutral/passive/aggressive/protect &6modes&r. "
+				"- If shifted when activating, cycle through neutral/passive/aggressive/protect &6modes&r of all &9subordinates&r in &b30x30x30 radius&r. "
+				"[In Neutral mode, the &9subordinate&r will defend when &cattacked&r or if the &7owner&r &cattacked&r or is &cattacked&r.]"
+				"[In Passive mode, it will not target anything even if got &chit&r.]"
+				"[In Aggressive mode, the &9subordinate&r will target &ceverything&r that is not an &9ally&r.] "
+				"[In protect mode, it will target everything that is targeting its &7owner&r or &9ally&r.]"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/thought_communication.png"
+				}
+			}
+			id: "36DB27EA426372EE"
+			shape: "rsquare"
+			subtitle: "- Mastered &6Telepathy"
+			tasks: [{
+				id: "4ECEAAC453C8C5C1"
+				title: "- Mastered &6Telepathy"
+				type: "checkmark"
+			}]
+			title: "Thought Communication"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/common/self_regeneration.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSelf Regeneration&r:"
+				""
+				"- &aRestores HP&r at a rate of &a2&r per &l20 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Doubles &aHP restoration&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/self_regeneration.png"
+				}
+			}
+			id: "4295DC614A1B4B1B"
+			shape: "rsquare"
+			subtitle: "- Kill &c500x Slimes"
+			tasks: [{
+				id: "3B3C87B06A3E8FFD"
+				title: "- Kill &c500x Slimes"
+				type: "checkmark"
+			}]
+			title: "Self Regeneration"
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/common/paralysis.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&eParalysis&r:"
+				""
+				"- Inflicts &5Paralysis&r onto &ctarget&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/paralysis.png"
+				}
+			}
+			id: "115D2B0C3BC2DBC3"
+			shape: "rsquare"
+			subtitle: "- Kill &c500x Evil Centipedes"
+			tasks: [{
+				id: "5648FEC38B67F023"
+				title: "- Kill &c500x Evil Centipedes"
+				type: "checkmark"
+			}]
+			title: "&eParalysis"
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/common/corrosion.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&2Corrosion&r:"
+				""
+				"- Inflicts &5Corrosion&r onto &ctarget&r. "
+				"- Turn &7meat items&r into &7rotten flesh&r. "
+				"- Oxidize &7Copper&r. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/corrosion.png"
+				}
+			}
+			id: "71116D2A8EC798B2"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4C04A8ECAB83C249"
+					title: "- Eat 100 &7rotten flesh"
+					type: "checkmark"
+				}
+				{
+					id: "0B846716BEEF03DE"
+					title: "- Kill &c100x Tempest Serpents"
+					type: "checkmark"
+				}
+				{
+					id: "2825A5975116D19F"
+					title: "- Defeat the &cOrc Lord"
+					type: "checkmark"
+				}
+			]
+			title: "&2Corrosion"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/common/poison.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &aIn Slot&r] &l&dPoison&r:"
+				""
+				"- Inflicts &5Poison&r onto &ctarget&r."
+				""
+				"[&l&6Mastery Bonus&l]:"
+				""
+				"- Becomes &eToggleable&r."
+				"- Inflicts &5Fatal Poison&r onto &ctarget&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/poison.png"
+				}
+			}
+			id: "6F81D86F0D959B47"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "32E1EDD238BEE59F"
+					title: "- Eat 100 &7Spider Eyes&r"
+					type: "checkmark"
+				}
+				{
+					id: "1C48346797106E91"
+					title: "- Kill &c100x Black Spiders"
+					type: "checkmark"
+				}
+			]
+			title: "&dPoison"
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/common/ranged_barrier.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lRanged Barrier&r:"
+				""
+				"- Creates a &3barrier&r centered on the user’s cursor on activation. "
+				"- The &3barrier&r acts as a &3physical barrier&r that needs to be broken to be escaped from."
+				"- The &bsize&r can be changed from &b5x5&r, &b10x10&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Can increase &bsize&r to &b20x20&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/ranged_barrier.png"
+				}
+			}
+			id: "776DAE84E461B877"
+			shape: "rsquare"
+			subtitle: "- Requires &680.000 EP&r and defeating &cIfrit&r"
+			tasks: [
+				{
+					id: "420150A5547DB9DF"
+					title: "- Requires &680.000 EP&r"
+					type: "checkmark"
+				}
+				{
+					id: "19592FDAF12092AF"
+					title: "- Defeat &cIfrit"
+					type: "checkmark"
+				}
+			]
+			title: "Ranged Barrier"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2FA6CA666B01BD75"]
+			description: [
+				"{image:tensura:textures/skill/common/strength.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lStrength&r:"
+				""
+				"- Grants the &7user&r &dStrengthen I&r (Equal to &dStrength II&r) for &l1,200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r."
+				"[&dStrengthen I&r]"
+				"- Grants the &7user&r &dStrengthen II&r (Equal to &dStrength IV&r) for &l2,400 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/strength.png"
+				}
+			}
+			id: "2761AB6A311DD6ED"
+			shape: "rsquare"
+			subtitle: "Reach &63,000 EP"
+			tasks: [{
+				id: "6AD2FE4A03342125"
+				title: "Reach &63,000 EP"
+				type: "checkmark"
+			}]
+			title: "Strength"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2761AB6A311DD6ED"
+				"216DA1C722BCA6A8"
+			]
+			description: [
+				"{image:tensura:textures/skill/common/coercion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lCoercion&r:"
+				""
+				"- &cLong ranged attack&r that inflicts &5Fear&r and &5Weakness&r based on &6EP&r (&51 Level&r for each &625%&r difference)"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Reduces cooldown to &l20 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/coercion.png"
+				}
+			}
+			id: "6B8A42F37DEBD7E4"
+			shape: "rsquare"
+			subtitle: "Reach &65,000 EP"
+			tasks: [{
+				id: "23F6057CAA4D84F4"
+				title: "Reach &65,000 EP"
+				type: "checkmark"
+			}]
+			title: "Coercion"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E4C9900BE955309"]
+			description: [
+				"{image:tensura:textures/skill/common/gravity_flight.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lGravity Flight&r:"
+				""
+				"- While held, gives the &7user&r a &dfloat effect&r similar to the &cshulker’s&r. "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/gravity_flight.png"
+				}
+			}
+			id: "523EFB932B912E30"
+			shape: "rsquare"
+			subtitle: "Reach &610,000 EP"
+			tasks: [{
+				id: "469FBC8701E5B684"
+				title: "Reach &610,000 EP"
+				type: "checkmark"
+			}]
+			title: "Gravity Flight"
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["523EFB932B912E30"]
+			description: [
+				"{image:tensura:textures/skill/common/gravity_field.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lGravity Field&r:"
+				""
+				"- Creates a &3barrier&r that inflicts &chostile mobs&r with &5Slownes II&r and grants &9allied mobs&r and the &7player&r &5Speed II&r. "
+				"- The &brange&r of the &3barrier&r can be changed by changing the &6mode&r."
+				"- The ranges are &bSelf&r, &b10x10&r."
+				"- Lasts for &l12,400 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Can increases range up to &b20x20&r."
+				"- Increases duration to &l4,800 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/gravity_field.png"
+				}
+			}
+			id: "520ACE7630F059AC"
+			shape: "rsquare"
+			subtitle: "Reach &620,000 EP"
+			tasks: [{
+				id: "51CB0D3983344ABE"
+				title: "Reach &620,000 EP"
+				type: "checkmark"
+			}]
+			title: "Gravity Field"
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2FA6CA666B01BD75"]
+			description: [
+				"{image:tensura:textures/skill/common/farsight.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lFarsight&r:"
+				""
+				"- &7Spyglass&r, when held, scroll mouse to change zoom &bdistance&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &6Analytical Appraisal&r &bdistance&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/common/farsight.png"
+				}
+			}
+			id: "216DA1C722BCA6A8"
+			shape: "rsquare"
+			subtitle: "Reach &63,000 EP"
+			tasks: [{
+				id: "666C03587A19EB34"
+				title: "Reach &63,000 EP"
+				type: "checkmark"
+			}]
+			title: "Farsight"
+			x: 0.5d
+			y: -5.5d
+		}
+	]
+	title: "&aCommon"
+}

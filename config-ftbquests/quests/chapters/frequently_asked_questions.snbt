@@ -1,0 +1,561 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "frequently_asked_questions"
+	group: ""
+	icon: "ftbquests:missing_item"
+	id: "07293DF0094B4A32"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"There are checkmark quests for skills others then uniques, they serve mostly just for info about skill and so you can &6pin it&r to see what you have to do in order to obtain it while playing."
+				""
+				"There are currently 3 questlines:"
+				"- &6Main questline&r ( Follows Advancements made by mod creator )"
+				"- Simple questline for &6common skills&r"
+				"- And last but not least &6Labyrinth tree&r"
+				""
+				"There are also some &bRepeatable quests&r which you can do infinite times in order to get reward."
+				"There are easier &bRepeatable quests&r from which you get random reward."
+				"Or more difficult ones but you can choose reward."
+				""
+				"And then there is &6original&r quest for each &6unique skill!"
+			]
+			icon: "ftbquests:book"
+			id: "034421CD3DAE74C6"
+			tasks: [{
+				id: "3601FD086E48D88E"
+				title: "Quests basics"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["034421CD3DAE74C6"]
+			description: [
+				"- When &aquest&r for &6skill&r has &crequirement&r similar to this: \"&cSlime Killer&r\"."
+				""
+				"- It means &ayou can&r get it &cby&r most of the time &6Killing 500&r of &cthem."
+				""
+				"Other ways to obtain skill:"
+				"- You can try to &acopy&r it using &6Great Sage&r if you have it"
+				"- You can try to &cpredate&r the skill when you have &6Predator&r or &6Glutonny&r (&b10%&r chance or &6100%&r when mob has below &b10%&r HP)"
+				"- Or use some other skills like &6Pride&r"
+				"- &6Uniques&r are &aObtainable&r just by using &6Pride&r thats why we made &aquests&r for each &6unique&r so you can get &awhich&r you &cwant&r."
+				""
+				"- Sometimes &6skill&r require &areach&r certain &9EP&r count which &ayou&r can do by &ckilling enemies"
+				"- And &bsometimes&r in &border&r to obtain &6skill&r you &ahave&r to first &6master&r other &6skill&r or &6skills&r "
+				"Example: ( &bwater current control&r -> &bwater prepulsion&r -> &bwater blade&r )"
+			]
+			icon: "tensura:skill_reset_scroll"
+			id: "019A32EC6A67A324"
+			tasks: [{
+				id: "135AE89B48B50179"
+				title: "Obtaining skills"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["034421CD3DAE74C6"]
+			description: [
+				"&9Monster Leather&r Armor sets Evolutions:"
+				""
+				"- Monster Leather D (&91000EP&r)"
+				""
+				"- Monster Leather C (&92500EP&r)"
+				""
+				"- Monster Leather B (&95000EP&r)"
+				""
+				"- Monster Leather A (&98000EP&r)"
+				""
+				"- Monster Leather Special A (&980000EP&r)"
+				"{@pagebreak}"
+				"&9Magisteel&r Armor sets Evolutions:"
+				""
+				"- Low Magisteel (&96000EP&r)"
+				""
+				"- High Magisteel (&918000EP&r)"
+				""
+				"- Pure Magisteel (&952000EP&r)"
+				""
+				"- Adamantite (&9225000EP&r)"
+				""
+				"- Hihi'Irokane (&9750000EP&r)"
+				""
+				"{@pagebreak}"
+				"&9Special&r Armor sets and their base values:"
+				""
+				"- Ant Carapace (&93000EP&r)"
+				""
+				"- Armorsaurus (&96000EP&r)"
+				""
+				"- Armorsaurus Scalemail (&96000EP&r)"
+				""
+				"- Knight Spider (&99000EP&r)"
+				""
+				"- Orichalcum (&950000EP&r)"
+				""
+				"- Holy Armament (&950000EP&r)"
+				""
+				"- Charybdis Scalemail (&960000EP&r)"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "54E4DD0DB5CA44EB"
+			tasks: [{
+				id: "4C8AD26DA2B0821F"
+				title: "Equipment"
+				type: "checkmark"
+			}]
+			title: "&9Evolution Points&r for &aEquipment&r"
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["55B99C04F5FE9819"]
+			description: [
+				"- Grants &62.5x Max EP&r."
+				"- &lDouble Stats&r for &9subordinate&r."
+				"- An Evolution to a &7player's&r &9subordinate&r."
+				"- Evolution of &ball resistances&r to &3nullifications&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/gui/main/tdl_awakening.png"
+				}
+			}
+			id: "2787A0FAB5D3F9E1"
+			shape: "rsquare"
+			subtitle: "- &6Awaken&r by having &b10,000 Souls&r"
+			tasks: [{
+				id: "12A759DF6DB4E263"
+				title: "- &6Awaken&r by having &b10,000 Souls&r"
+				type: "checkmark"
+			}]
+			title: "&l&4True Demon Lord&r"
+			x: 21.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7F5C5E664E48EF25"]
+			description: [
+				"- Grants a &63x Max EP&r."
+				"- Evolution of &ball Resistances&r to &3Nullifications&r."
+				"- Grants &bUnpredictability&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/gui/main/th_awakening.png"
+				}
+			}
+			id: "41E0F0BE7F0AD35B"
+			shape: "rsquare"
+			subtitle: "&aRegenerate HP&r while under &a25%&r of your &amax&r while fighting a &cBoss&r which has at least &6400,000 EP&r that is at &a50% HP&r or &aless&r."
+			tasks: [{
+				id: "05A948BB1658CD5C"
+				title: "&aRegenerate HP&r while under &a25%&r of your &amax&r while fighting a &cBoss&r which has at least &6400,000 EP&r that is at &a50% HP&r or &aless&r."
+				type: "checkmark"
+			}]
+			title: "&l&2True Hero&r"
+			x: 19.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4F3379E0C3EAE0A3"]
+			description: [
+				"[&6Important Stuff to Know Before You Start!&r]"
+				""
+				"&cMobs&r and &6skills&r which &caren't&r on the &6lists&r don't &cgive&r you any &bresistance&r."
+				""
+				"- If u get &cdamaged&r over a &bcertain amount&r by a &ccertain damage&r U will get a resistance &6learning point"
+				""
+				"- &6Sage&r boost getting &alearning points&r (Credit: &bSachimi)"
+				""
+				"- &6Great Sage&r boost Greately getting &alearning points&r (Credit: &bSachimi)"
+				""
+				"- Every &bresistance&r or &6nullification&r can be &cpredated&r from &aentities&r which &ahave&r them ( Example: &bCold&r resistance ( &6Snow Golem&r ))"
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "tensura:tempest_scale_shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3C7B482B92488C34"
+			tasks: [{
+				id: "765C5DF927788ECB"
+				type: "checkmark"
+			}]
+			title: "Resistances"
+			x: 9.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"3C7B482B92488C34"
+				"79CEB9581BF94ABC"
+				"243594AE0AFADC38"
+				"0D6A94DF8FBD4896"
+				"4C18AC2B14FF148D"
+				"29185647B667621A"
+				"172897618BF18F12"
+				"7BFE06766E6C6D10"
+				"76CC748C6C689012"
+				"66BF48F0BA94BAE1"
+				"19E82B2F4041B6BD"
+				"36CF33763BB25E3B"
+				"73B6531DDEF45213"
+				"6DDC6A3B38FDF383"
+				"6CE5D49B33F554AE"
+				"07C0F85846BB1C25"
+				"413DB3A7223D9FAF"
+				"1D6EF3FB647CC59F"
+				"3C82614E8A6BCD6B"
+				"7ADCB218555AF28A"
+				"3C0E72A24A15C63C"
+				"28B178149FEE03AA"
+				"65DC8FECF1AE7725"
+			]
+			hide_dependency_lines: false
+			icon: "citadel:fancy_item"
+			id: "264F2CF5D863C224"
+			subtitle: "&4Dont go any further until you have all the resistances from quests before this one!"
+			tasks: [{
+				id: "73BFD18A0635A59F"
+				type: "checkmark"
+			}]
+			title: "&4Loosing Nullifications [Warning]!"
+			x: 12.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["54E4DD0DB5CA44EB"]
+			icon: "citadel:fancy_item"
+			id: "4F3379E0C3EAE0A3"
+			subtitle: "You &6must&r get &call&r of the &bresistances&r before you &6Evolve&r into &4True Demon Lord&r or &aTrue Hero&r; otherwise, you &cwont&r get &6nullification&r for each &bresistance&r you &aown."
+			tasks: [{
+				id: "41E06A18EF09433C"
+				type: "checkmark"
+			}]
+			title: "&4Important note"
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["264F2CF5D863C224"]
+			description: ["I just &ahope&r you have &6all&r the resistances &aacquired&r so you wont &cregret&r it later!"]
+			icon: "itemfilters:not"
+			id: "71AFBD9806B16D3F"
+			subtitle: "You have been &ewarned&r twice hope &ayou&r know what &ayou&r are &cdoing!"
+			tasks: [{
+				id: "41885DB04E484EFB"
+				type: "checkmark"
+			}]
+			title: "&eLast final warning!"
+			x: 15.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7BA5A86064F6A31C"]
+			description: [
+				"- Once you have the &cseed&r, you are able to gain &bsouls&r. "
+				"- &62,000 EP&r is equivalent to &b1 soul&r."
+			]
+			icon: "tensura:demon_essence"
+			id: "55B99C04F5FE9819"
+			shape: "rsquare"
+			subtitle: "- Requires &6200,000 EP&r and being a &l&eMajin&r"
+			tasks: [{
+				id: "543CAFC5EAEE9D6A"
+				title: "- Requires &6200,000 EP&r and being a &l&eMajin&r"
+				type: "checkmark"
+			}]
+			title: "&l&cDemon Lord Seed&r"
+			x: 19.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["71AFBD9806B16D3F"]
+			description: [
+				"- You must not be a &eDefault &lMajin&r &eRace&r."
+				"- Grants &bEye of Truth&r."
+			]
+			icon: "minecraft:turtle_egg"
+			id: "7F5C5E664E48EF25"
+			shape: "rsquare"
+			subtitle: "- Requires &b6/7 Greater Spirits&r"
+			tasks: [{
+				id: "07B3EDF8CB38546F"
+				title: "- Requires &b6/7 Greater Spirits&r"
+				type: "checkmark"
+			}]
+			title: "&l&aHero Egg&r"
+			x: 17.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["71AFBD9806B16D3F"]
+			description: [
+				"You can become a &l&eMajin&r in 4 different ways:"
+				"- Use a &bMarionette Heart&r. (Found in Ancient City chests)"
+				"- &cDie&r to &5Magicule Poisoning&r. (5%)"
+				"- &cDie&r to &eDemon Lord’s Haki&r. (5%)"
+				"- Start as a Majin Race ."
+				"(&9Slime&r · &dGhoul&r · &7Wight&r · &6Lesser Daemon&r)"
+			]
+			icon: "tensura:marionette_heart"
+			id: "7BA5A86064F6A31C"
+			shape: "rsquare"
+			subtitle: "- Complete &6one&r of the &6conditions&r below"
+			tasks: [{
+				id: "7F15A92883A2635A"
+				title: "- Complete one of the &6conditions&r below"
+				type: "checkmark"
+			}]
+			title: "&l&eMajin&r"
+			x: 17.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["034421CD3DAE74C6"]
+			description: [
+				"&cQ.) How do you change skill presets?"
+				""
+				"&a- Alt + Scroll or Alt + Preset 2/3/4/5 etc..."
+				""
+				""
+				"&cQ.) How do I change skill mode?"
+				""
+				"&a- Alt + Ability button"
+				""
+				""
+				"&cQ.) How do I get out of Hell?"
+				""
+				"&a- Find a Hell Gate to the Overworld"
+				""
+				""
+				"&cQ.) How do I get past the colossus boss room, there was no boss?"
+				""
+				"&a- Someone probably took the Block of Pure Magisteel; "
+				""
+				"&a- you need to drop a (new) Block of Pure Magisteel in the center of the room"
+				""
+				""
+				"&cQ.) \"How/ Can I get more Unique Skills? \""
+				""
+				"&a- unless you have Pride; Spearhead; Possession, you cannot"
+				""
+				""
+				"&cQ.) How do I get magic?"
+				""
+				"&a- Go into the labyrinth and pray at the spirit tree."
+				"{@pagebreak}"
+				"&cQ.) How do I get [insert resistance]?"
+				""
+				"&a- Get hit by the desired damage type for over 10+ damage."
+				""
+				""
+				"&cQ.) How do I allow myself to be named?"
+				""
+				"&a- Shift + N"
+				""
+				""
+				"&cQ.) How do I name a mob?"
+				""
+				"&a- Weaken it and then press N while looking at it"
+				""
+				""
+				"&cQ.) How do you activate a Charybdis Core?"
+				""
+				"&a- By killing mobs near it it will slowly gain EP (Checkable with skill or picking it up) and once it gets to 100k EP, right click it to summon Charybdis."
+				""
+				""
+				"&cQ.) How do I turn the Orc Lord into a Orc Disaster"
+				""
+				"&a- Have the Orc lord kill mobs around it, it will gain ep from the mobs it kills, once it reaches 200k Ep it will automatically evolve into a Orc Disaster"
+				""
+				""
+				"&cQ.) Where do I find Monster Leather (A)?"
+				""
+				"&a- Monster leather A only drops from Blade Tigers, which is found in forest biomes"
+				"{@pagebreak}"
+				"&cQ.) What are the requirements to possession?"
+				""
+				"&a- For mobs: 10% HP or less, 10% SHP or less, or 25% Target's EP relative to your EP"
+				""
+				"&a- To possess a players, need to meet 2/3 of the above requirements."
+				""
+				""
+				"&cQ.) Where do otherworlders spawn?"
+				"&a- Otherworlders can spawn in these Vanilla biomes: "
+				""
+				"- Plains"
+				""
+				"- Snowy plains"
+				""
+				"- Sunflower plains"
+				""
+				"- Meadow"
+				""
+				"- Desert"
+				""
+				"- Badlands"
+				""
+				"- Windswept hills"
+				""
+				"- Sparse jungle"
+				""
+				"- Savanna plateau"
+				""
+				"- Badlands."
+				"{@pagebreak}"
+				"&cQ.) How do I evolve into TDL (True Demon Lord)/ TH (True Hero)?"
+				""
+				"&a- True Hero:"
+				"Hero Egg: You need to be a not-default-Majin Race (so no Slime/Vampire/Wight, but Majin goblin/Beastman/Etc. works) and you need to have at least 6 out of 7 GreaterSpirits(This can be done over time, does not need to happen all at once.)"
+				"Awakening: Have the Hero Egg, you will awaken to a True Hero when you regenerate HP while under 25% of your max while fighting a boss (Orc Lord/ Disaster, Super Massive Slime, Wither, Ender Dragon) which has at least 400k EP (40 armor points [the shield icons]) that is at 50% HP or less. This happens automatically"
+				""
+				"&a- True Demon Lord:"
+				"Demon Lord Seed: Be a Majin (Yellow Race name) and have 200k EP"
+				"Majin can be acquired in 4 main ways"
+				"Use a Marionette Heart (Found in Ancient City chests)"
+				"Die to Magicule Poisoning (have more Magicules than your Max) (5%)"
+				"Die to Demon Lord’s Haki (5%)"
+				"Start as a Majin Race (Slime/Vampire/Wight/Lesser Daemon)"
+				"Awakening: have 10k souls and use the button in Evo menu"
+				"{@pagebreak}"
+				"&cQ.) What are all the commands?"
+				"/nameable commands to set if you want to be named."
+				""
+				"/tensura get spirit (without any number behind) will show all of the player's spirits."
+				""
+				"/skill storage skillName - to quickly open the skill's stomach."
+				""
+				"/skill storage add skillName - to quickly add the items in main hand to the skill's stomach."
+				""
+				"/tensura edit forceevo, can force evolve you race or awakening, no matter if you are already awakened or not"
+				""
+				"/engrave [Username] tensura:slotting [1 - 3] - adds slotting enchant"
+				""
+				"/engrave [Username] - lets you add TR enchants to items"
+				""
+				"/tensura worldData trulyUnique list to check for list of Skills taken."
+				""
+				"/tensura edit ability toggle to force toggle other's abilities."
+				""
+				"/skill (all/unique/resistance/etc) and magic for /skill toggle along with everything."
+				""
+				"/tensura worldData trulyUnique list remaining to check for skills that haven't been taken."
+				"{@pagebreak}"
+				"Q.) \"What does (effect) do?\""
+				""
+				"Paralysis - decreases movement speed per level"
+				""
+				"Fatal Poison - Strong Poison Effect"
+				""
+				"Insanity - hear random scary sounds, items in inventory have a chance to randomly move around and have nightmares when sleeping."
+				"Level 2+ - If in shadow/ darkness, will take Physical damage and Spiritual damage"
+				""
+				"Fear - At level 1, hear a heartbeat sound. From level 2 onward, get speed debuff for each level; From level 5-9, actively avoid the source and take Insanity damage; From level 10, start taking armor-ignoring damage for each level every few seconds."
+				""
+				"Corrosion - damages SHP (Spiritual HP) and armor/ tools"
+				""
+				"Burden - increases weight, preventing jumping"
+				""
+				"Strengthen - gives Strength 2 per level"
+			]
+			icon: "ftbquests:missing_item"
+			id: "663B816AB56E2D48"
+			tasks: [{
+				id: "49C436FDEA39D7A2"
+				type: "checkmark"
+			}]
+			title: "&6Frequently asked Questions"
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["034421CD3DAE74C6"]
+			description: [
+				"I introduce to you,"
+				""
+				"- The [&6&lExplorer's Compass&r]"
+				""
+				"With this compass, it allows you the ability to locate any structure known to man."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:item/recovery_compass_20"
+				}
+			}
+			id: "7947798474EF7F4B"
+			rewards: [{
+				id: "31BB28AF3CE602A7"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B934BAFB40B294B"
+				title: "Explorer's Compass"
+				type: "checkmark"
+			}]
+			title: "Explorer's Compass"
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["034421CD3DAE74C6"]
+			description: [
+				"I introduce to you,"
+				""
+				"- The [&6&lNature's Compass&r]"
+				""
+				"With this compass, it allows you the ability to locate any biome known to man."
+			]
+			icon: "irons_spellbooks:nature_upgrade_orb"
+			id: "6A2D2AC56CDA2CA1"
+			rewards: [{
+				id: "29FC6EEE34FA1C7D"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0BE84B82B0F8F4D1"
+				title: "Explorer's Compass"
+				type: "checkmark"
+			}]
+			title: "Nature's Compass"
+			x: -1.0d
+			y: 10.5d
+		}
+	]
+	title: "&6FAQ"
+}

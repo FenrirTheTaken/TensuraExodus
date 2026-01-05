@@ -1,0 +1,2570 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extra_skills"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/gui/skill/extra.png"
+		}
+	}
+	id: "1070C0D06F4CC0BA"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/all_seeing_eye.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lAll-Seeing Eye&r:"
+				""
+				"- When held down, locks the &7player&r into a 360° View, abit further zoomed out than regular 3rd person. "
+				"- While active, grants the &7player&r &e+0.02 Speed&r, &3+0.5 Swim Speed&r, &2+0.1 Attack Speed&r and a &8Mining Speed&r [equal to &dHaste&r I] &8boost&r, increases &bPresence Sense Level&r by &b1&r if there’s any and increases the &bBlock&r radius&r of &bPresence Sense skills&r by &b10 Blocks&r. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r."
+				"- Gives a &310% dodge chance&r."
+				"- Doubles &espeed boost&r and &bPresence Sense Radius&r when &cheld down&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/all_seeing_eye.png"
+				}
+			}
+			id: "3B91391FDFDD07AF"
+			shape: "rsquare"
+			subtitle: "- Requires &65,000 EP"
+			tasks: [{
+				id: "27B936F483DF88E9"
+				title: "- Requires &65,000 EP"
+				type: "checkmark"
+			}]
+			title: "All-Seeing Eye"
+			x: -20.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["31494C11D1925A4D"]
+			description: [
+				"{image:tensura:textures/skill/extra/analytical_appraisal.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lAnalytical Appraisal&r:"
+				""
+				"- When activated, creates a screen overlay that displays information about the currently looked at &lBlock&r or &cmob&r in a &b5 Block radius&r. "
+				""
+				"&lAnalysis Level 1&r:"
+				""
+				"- Displays &7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r, etc."
+				""
+				"[&l&6Mastery Bonus&r]: "
+				""
+				"&lAnalysis Level 2&r:"
+				""
+				"- Displays the &lSkills&r of the &ctarget&r except for &6mastered&r &lSkills&r."
+				"- If a &ctarget&r has &6greater&r than &62x&r the &7player's&r &6EP&r, then only its base stats are shown (&7Name&r, &aHP&r, &9MP&r, &eAP&r, &bArmor&r)."
+				""
+				"- Increases &bradius&r to &b10 Blocks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/analytical_appraisal.png"
+				}
+			}
+			id: "085D7768FB0EE3C8"
+			shape: "rsquare"
+			subtitle: "- Requires &620,000 EP"
+			tasks: [{
+				id: "4FBFACD6DB65A968"
+				title: "- Requires &620,000 EP"
+				type: "checkmark"
+			}]
+			title: "Analytical Appraisal"
+			x: -13.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"182AE2204CA1555F"
+				"2582964F855BFC38"
+			]
+			description: [
+				"{image:tensura:textures/skill/extra/black_flame.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Black Flame&r:"
+				""
+				"[&6Default&r]: "
+				""
+				"- Unleashes Black Flames outward from the &7user&r in a &bAoE&r &cattack&r, dealing &c20 damage&r per &l20 Ticks&r and lighting &7Blocks&r on fire. "
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_flame.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Black Flame&r:"
+				""
+				"[&6Projectile&r]:"
+				""
+				"- Fires a &cFlame Charge-esc projectile&r that explodes on contact and deals &c50 Damage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_flame.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Black Flame&r:"
+				""
+				"[&eCoating&r]:"
+				""
+				"- On &7tools&r it grants an &bautosmelt effect&r "
+				"- On &7melee weapons&r it grants a &bfire aspect effect&r; and on &7Bows&r it lights their &carrows&r on fire. "
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Applies a &5debuff&r that &5blocks regeneration&r for &l600 Ticks&r to the &7user's&r &cattacks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_flame.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&8Black Flame&r:"
+				""
+				"[&6Hell Flare&r(Requires &6Ranged Barrier&r, and &4Flame Manipulation&r)]:"
+				""
+				"- Launches a &cprojectile&r on activation that creates a &b30x30 &3Barrier&r where it lands. "
+				"- The &3barrier&r is filled with Black Flames that deal &c750 damage&r on spawn. "
+				"- The &3barrier&r and the flames last for &l60 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"[&6Limited Hell Flare&r]:"
+				""
+				"- Launches a &cprojectile&r that creates a &b5x5 &3barrier&r where it lands. "
+				"- The &3barrier&r is filled with Black Flames that deal &c2500 damage&r on spawn. "
+				"- The &3barrier&r and flames last for &l60 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/black_flame.png"
+				}
+			}
+			id: "79BBD566931393F0"
+			shape: "rsquare"
+			subtitle: " - Requires &8Black Lightning&r, &4Flame Manipulation&r, and mastering &4Flame Transform&r."
+			tasks: [{
+				id: "04FD0E1541BC7147"
+				title: " - Requires &8Black Lightning&r, &4Flame Manipulation&r, and mastering &4Flame Transform&r."
+				type: "checkmark"
+			}]
+			title: "Black Flame"
+			x: -10.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4FE3C9D43E6EB277"]
+			description: [
+				"{image:tensura:textures/skill/extra/black_lightning.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Black Lightning&r:"
+				""
+				"- Anything besides &6Default&r requires &6Molecular Manipulation&r."
+				""
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_lightning.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Black Lightning&r:"
+				""
+				"[&6Default&r]:"
+				""
+				"- Fires a large bolt of lightning down on their cursor, dealing &c50 damage&r, lighting &7Blocks&r on fire and and turning &7Sand&r into &7Glass&r in a &b20 Block&r &bradius&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_lightning.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Black Lightning&r:"
+				""
+				"[&6Weak&r]:"
+				""
+				"- Fires a smaller bolt of lightning down on their cursor, dealing &c25 damage&r, lighting &7Blocks&r on fire and and turning &7Sand&r into &7Glass&r in a &b10 Block&r &bradius&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_lightning.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Black Lightning&r:"
+				""
+				"[&6Strong&r]:"
+				""
+				"- Fires a smaller bolt of lightning down on their cursor, dealing &c150 damage&r, lighting &7Blocks&r on fire and and turning &7Sand&r into &7Glass&r in a &b35 Block&r &bradius&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_lightning.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Black Lightning&r:"
+				""
+				"[&6&lBlast&r]:"
+				""
+				"- Unleashes electricity in a &cbeam-like&r &bradius&r up to &b30 Blocks&r in-front of the &7user&r. "
+				"- Deals &c50 Damage&r per &l20 Ticks&r. "
+				"- Inflicts &ctargets&r with &5Paralysis II&r for 5 seconds on contact."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/black_lightning.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Black Lightning&r:"
+				""
+				"[&6Death Storm&r(Requires &aWind Manipulation&r)]:"
+				""
+				"- When activated, changes the weather to stormy and any &7neutral&r or &chostile mob&r within a &b50x50 radius&r is considered a &ctarget&r. "
+				"- Every &l200 Ticks&r, every &cmob&r within range is hit with either a &6Black Lightning Strike&r or a &6Tornado&r automatically. "
+				"- &6Black Lightning&r deals &150 Lightning damage&r and &6Tornado&r last for &l200 Ticks&r, moves the &ctarget&r up and deal &a10 Wind damage&r every &l20 Ticks&r. "
+				"- Lasts for a total of &l1,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/black_lightning.png"
+				}
+			}
+			id: "182AE2204CA1555F"
+			shape: "rsquare"
+			subtitle: "- Copied from &cTempest Star Wolf&r and requires &aWind Manipulation&r and mastering &4Flame Transform&r and reaching &6200,000 EP&r."
+			tasks: [{
+				id: "336FE760820CA70C"
+				title: "- Copied from &cTempest Star Wolf&r and requires &aWind Manipulation&r and mastering &4Flame Transform&r and reaching &6200,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "&8Black Lightning"
+			x: -5.0d
+			y: 16.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/body_double.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lBody Double&r:"
+				""
+				"[&6Clone Creation&r]:"
+				""
+				"- Costs &910%&r of the &7user's&r &9Max MP&r and creates a &9Body Double entity&r with identical &lStats&r to the &9player&r and &acopy&r set of &7gears&r, but with a &5permanent Fragility II&r and &apassively regenerate 2 HP&r every &l20 Ticks&r. "
+				"- The &9entity&r acts as a &afriendly mob&r to the &7player&r similar to a &adog&r and will &cattack enemies&r. "
+				"- Lasts until deactivated, it &9runs out of energy&r or is &ckilled&r. "
+				"- Remaining &9energy&r is returned to the &7player&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/body_double.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lBody Double&r:"
+				""
+				"[&6Clone Control&r]:"
+				""
+				"- Shift activate while looking at a &9clone&r to remove it. "
+				"- If activated while looking at a &9created clone&r in &b50 Block radius&r, switch &7body&r with that &9clone&r, leaving the &7original body&r behind, when this &7original body&r is &ckilled&r, the &7user&r &cdies&r. "
+				"- While controlling a &9clone&r, the &7user&r will not generate &9MP&r and going without the &7original body&r in &b50 Block radius&r, the &7user&r takes &710&d%&r of both &7physical&r and &dspiritual damage&r. "
+				"- If &7user&r &cdies&r while being in a &9clone&r, the &7user&r &cdoesn’t die&r and gets moved back to the &7original body&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/body_double.png"
+				}
+			}
+			id: "5E0709DCE5A0FBE2"
+			shape: "rsquare"
+			subtitle: "- Requires &6100,000 EP&r and defeat &cIfrit"
+			tasks: [{
+				id: "07CA307030EF017D"
+				title: "- Requires &6100,000 EP&r and defeat &cIfrit"
+				type: "checkmark"
+			}]
+			title: "Body Double"
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/chant_annulment.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lChant Annulment&r:"
+				""
+				"- For &6Mastered Magic&r, &9casting&r becomes instant. "
+				"- &7User&r will be able to cast &9magic&r even when air level is under max or &5silence effect&r is active. "
+				"- &bEnchantment particles&r are also reduced."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/chant_annulment.png"
+				}
+			}
+			id: "6083DF83C93BF0B6"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &910 different&r types of &9magic&r."
+			tasks: [{
+				id: "2DBC3DF50FBB8B7A"
+				title: "- Requires mastering &910 different&r types of &9magic&r."
+				type: "checkmark"
+			}]
+			title: "Chant Annulment"
+			x: -9.0d
+			y: 6.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/snake_eye.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lSnake Eye&r:"
+				""
+				"- While &cheld down&r and looking at a &cmob&r within &b20 blocks&r of the &7player&r, inflict them with &51 Level&r of a &5status effect&r each &l300 Ticks&r and add &l200 Ticks&r for every &l100 Ticks&r that pass."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/snake_eye.png"
+				}
+			}
+			id: "210735DBAE7D22D5"
+			shape: "rsquare"
+			subtitle: "- &aAvailable&r upon &6completing&r a &cquest&r related to &6status effects&r."
+			tasks: [{
+				id: "3B9C17C3DD69D983"
+				title: "- &aAvailable&r upon &6completing&r a &cquest&r related to &6status effects&r."
+				type: "checkmark"
+			}]
+			title: "Snake Eye"
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/danger_sense.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lDanger Sense&r:"
+				""
+				"- If a &cmob&r starts to target the &7user&r, play a bell noise to the &7user&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/danger_sense.png"
+				}
+			}
+			id: "340C17CAD514AAD8"
+			shape: "rsquare"
+			subtitle: "- Always &aavailable&r to &6learn&r through basic &bsurvival training&r or &6experience&r in the &bfield."
+			tasks: [{
+				id: "466D578448DB5A8D"
+				title: "- Always &aavailable&r to &6learn&r through basic &bsurvival training&r or &6experience&r in the &bfield."
+				type: "checkmark"
+			}]
+			title: "Danger Sense"
+			x: 5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["011CF72F4528C641"]
+			description: [
+				"{image:tensura:textures/skill/extra/demon_lord_haki.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lDemon Lord Haki&r:"
+				""
+				"[&6Default&r]:"
+				""
+				"- When &cheld&r, decreases &eSpeed&r to &e5%&r."
+				"- All &cmobs&r within a &b30x30 radius&r are affected. "
+				"- If their &6EP&r is&6 >= 75%&r of the &7user's&r used &6EP&r, it does nothing. "
+				"- Otherwise, give &52 Fear Levels&r for each &620% difference&r with the used &6EP&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &espeed&r when &cheld down&r to &e10%&r."
+				"- Scroll while holding down the &lSkill&r button to change the percentage of &6EP&r used for calculation."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/demon_lord_haki.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lDemon Lord Haki&r:"
+				""
+				"[&6Coating&r]:"
+				""
+				"- Applies a &dbuff&r to the &7user's&r &7physical&r and &6battlewill attacks&r for &l2,400 Ticks&r, allowing their &cattacks&r to bypass &7Physical Attack&r &bResistance&r (&3Nullification&r is also treated as &bResistance&r) and &ddamage Spiritual Lifeforms&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/demon_lord_haki.png"
+				}
+			}
+			id: "78AC610459942A85"
+			shape: "rsquare"
+			subtitle: "- Requires &6Haki, &6200,000 EP&r and being a &eMajin&r"
+			tasks: [{
+				id: "3BF5C60F92249DCD"
+				title: "- Requires &6Haki, &6200,000 EP&r and being a &eMajin&r"
+				type: "checkmark"
+			}]
+			title: "Demon Lord Haki"
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3249AB0327D67C72"]
+			description: [
+				"{image:tensura:textures/skill/extra/earth_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &2Earth related attacks&r by &22x&r."
+				"- Doesn't stack with &2Earth Domination&r."
+				"- Manipulation only works on &7weak earth blocks&r like &7Dirt&r, &7Sand&r, &7Gravel&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/earth_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Manipulation&r:"
+				""
+				"[&6Wall&r]:"
+				""
+				"- Creates a &b4x5&r &7wall&r of &7earth blocks&r in front of the &7user&r that lasts for &l1,200 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/earth_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Manipulation&r:"
+				""
+				"[&6Wall Break&r]:"
+				""
+				"- Break &b3x3&r &7wall&r in front of the &7user&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/earth_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Manipulation&r:"
+				""
+				"[&6Pit&r]:"
+				""
+				"- Creates a &b5x5x5&r &7hole&r in the &7ground&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/earth_manipulation.png"
+				}
+			}
+			id: "4774C4276A3D893E"
+			shape: "rsquare"
+			subtitle: "- Requires &6200,000 EP&r and &2Earth Spirit&r."
+			tasks: [{
+				id: "18EF28AF2DF7E612"
+				title: "- Requires &6200,000 EP&r and &2Earth Spirit&r."
+				type: "checkmark"
+			}]
+			title: "&2Earth Manipulation"
+			x: -11.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4774C4276A3D893E"]
+			description: [
+				"{image:tensura:textures/skill/extra/earth_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &2Earth related attacks&r by &24x&r."
+				"- Doesn't stack with &2Earth Manipulation&r."
+				"- Manipulation only works on &7earth blocks&r like &7Dirt&r, &7Sand&r, &7Gravel&r, &7Stone&r, and &7Deepslate&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/earth_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Domination&r:"
+				""
+				"[&6Wall&r]:"
+				""
+				"- Creates a &b4x5&r &7wall&r of &7earth blocks&r in front of the &7user&r that lasts for &l1,200 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/earth_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Domination&r:"
+				""
+				"[&6Wall Break&r]:"
+				""
+				"- Break &b3x3&r &7wall&r in front of the &7user&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/earth_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &2&lEarth Domination&r:"
+				""
+				"[&6Pit&r]:"
+				""
+				"- Creates a &b5x5x5&r &7hole&r in the &7ground&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/earth_domination.png"
+				}
+			}
+			id: "1B1859AACC2DDC46"
+			shape: "rsquare"
+			subtitle: "- Requires&r mastering &2Earth Manipulation&r and &6400,000 EP&r."
+			tasks: [{
+				id: "6A0466DBEA4D2CAC"
+				title: "- Requires&r mastering &2Earth Manipulation&r and &6400,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "&2Earth Domination"
+			x: -13.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["011CF72F4528C641"]
+			description: [
+				"{image:tensura:textures/skill/extra/mortal_fear.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lMortal Fear&r:"
+				""
+				"- When &cheld&r, decreases &espeed&r to &e5%&r. "
+				"- All &cmobs&r within a &b10x10 radius&r are affected."
+				"- If their &6EP&r is &6=<75%&r of the &7user's&r used &6EP&r, it does nothing. "
+				"- Otherwise, give &51 Fear Level&r for each &620%&r difference with the used &6EP&r."
+				"- Additionally grants &dStrength IV&r to &9subordinates&r for &l1,200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &espeed&r when &cheld down&r to &e10%&r."
+				"- Scroll while holding down the &lSkill&r button to change the percentage of &6EP&r used for calculation."
+				""
+				" "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/mortal_fear.png"
+				}
+			}
+			id: "06B9E0A17ECB8831"
+			shape: "rsquare"
+			subtitle: "- Requires Mastered &6Haki&r."
+			tasks: [{
+				id: "103AB388CADC2479"
+				title: "- Requires Mastered &6Haki&r."
+				type: "checkmark"
+			}]
+			title: "Mortal Fear"
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1CD798A81CFD447E"]
+			description: [
+				"{image:tensura:textures/skill/extra/flame_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &4Fire/Flame related attacks&r by &42x&r. "
+				"- Doesn't Stack with &4Flame Domination&r. "
+				"- When activated, if &7player&r is on fire, breath fire, distinguish the fire."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/flame_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Manipulation&r:"
+				""
+				"[&aCoating&r]:"
+				""
+				"- If the &7user&r is on fire: On &7tools&r it grants an &dautosmelt effect&r; on &cattacking enemies&r, set the &ctarget&r on fire for &l100 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Set the &ctarget&r on fire for &l200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/flame_manipulation.png"
+				}
+			}
+			id: "2582964F855BFC38"
+			shape: "rsquare"
+			subtitle: "- Requires &6200,000 EP&r and &4Flame Spirit&r."
+			tasks: [{
+				id: "77C50C0932E5A1FC"
+				title: "- Requires &6200,000 EP&r and &4Flame Spirit&r."
+				type: "checkmark"
+			}]
+			title: "&4Flame Manipulation"
+			x: -10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2582964F855BFC38"]
+			description: [
+				"{image:tensura:textures/skill/extra/flame_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &4Fire/Flame related attacks&r by &44x&r. "
+				"- Doesn't Stack with &4Flame Domination&r. "
+				"- When activated, if &7player&r is on fire, breath fire, distinguish the fire."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/flame_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&4Flame Domination&r:"
+				""
+				"[&aCoating&r]:"
+				""
+				"- If the &7user&r is on fire: On &7tools&r it grants an &dautosmelt effect&r; on &cattacking enemies&r, set the &ctarget&r on fire for &l200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Set the &ctarget&r on fire for &l400 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/flame_domination.png"
+				}
+			}
+			id: "18EE84E901A181ED"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &4Flame Manipulation&r and &6400,000 EP&r."
+			tasks: [{
+				id: "4F7A413E37F870D2"
+				title: "- Requires mastering &4Flame Manipulation&r and &6400,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "&4Flame Domination"
+			x: -11.5d
+			y: 12.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/gravity_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Gravity Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &5Gravity related attacks&r by &52x&r. "
+				"- Doesn't Stack with &5Gravity Domination&r. "
+				"- &6Creative Flight&r &etoggle&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/gravity_manipulation.png"
+				}
+			}
+			id: "16985DA959D2AD79"
+			shape: "rsquare"
+			subtitle: "- Requires absorbing &cCharybdis&r or having &6Oppressor&r."
+			tasks: [{
+				id: "78790D02DA483272"
+				title: "- Requires absorbing &cCharybdis&r or having &6Oppressor&r."
+				type: "checkmark"
+			}]
+			title: "&5Gravity Manipulation"
+			x: -13.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6B8A42F37DEBD7E4"]
+			description: [
+				"{image:tensura:textures/skill/extra/haki.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lHaki&r:"
+				""
+				"- When &cheld&r, decreases &espeed&r to &e5%&r. "
+				"- All &cmobs&r within a &b30x30 radius&r are affected."
+				"- If their &6EP&r is &6=<75%&r of the &7user's&r used &6EP&r, it does nothing. "
+				"- Otherwise, give &51 Fear Level&r for each &620%&r difference with the used &6EP&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &espeed&r when &cheld down&r to &e10%&r."
+				"- Scroll while holding down the &lSkill&r button to change the percentage of &6EP&r used for calculation."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/haki.png"
+				}
+			}
+			id: "011CF72F4528C641"
+			shape: "rsquare"
+			subtitle: "- Requires Mastered &6Coercion&r and &6100,000 EP&r"
+			tasks: [{
+				id: "7B6B27F1B6197666"
+				title: "- Requires Mastered &6Coercion&r and &6100,000 EP&r"
+				type: "checkmark"
+			}]
+			title: "Haki"
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2582964F855BFC38"]
+			description: [
+				"{image:tensura:textures/skill/extra/heat_wave.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Heat Damage&r:"
+				""
+				"[&6Projectile&r]:"
+				""
+				"- Launch a &cprojectile&r where the &7player&r is looking."
+				"- The &cProjectile&r does &c30 damage&r on contact and does &c10 damage&r every &l10 Ticks&r to everything in a &b5x5 radius&r around it while in &emotion&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/heat_wave.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Heat Damage&r:"
+				""
+				"[&6Storm&r]:"
+				""
+				"- All &cmobs&r around the &7player&r in a &b10x10 radius&r take &c10 damage&r every 1&l0 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/heat_wave.png"
+				}
+			}
+			id: "13F66EEE249D93C0"
+			shape: "rsquare"
+			subtitle: "- Requires Mastered &4Flame Manipulation&r."
+			tasks: [{
+				id: "2BBB18699223AAF8"
+				title: "- Requires Mastered &4Flame Manipulation&r."
+				type: "checkmark"
+			}]
+			title: "&4Heat Wave"
+			x: -8.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["011CF72F4528C641"]
+			description: [
+				"{image:tensura:textures/skill/extra/hero_haki.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lHero's Haki&r:"
+				""
+				"- When &cheld&r, decreases &espeed&r to &e5%&r. "
+				"- All &cmobs&r within a &b30x30 radius&r are affected."
+				"- If their &6EP&r is &6=<75%&r of the &7user's&r used &6EP&r, it does nothing. "
+				"- Otherwise, give &51 Fear Level&r for each &620%&r difference with the used &6EP&r."
+				"- Doesn't &ckill mobs&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &espeed&r when &cheld down&r to &e10%&r."
+				"- Scroll while holding down the &lSkill&r button to change the percentage of &6EP&r used for calculation."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/hero_haki.png"
+				}
+			}
+			id: "54995C2FD8496E41"
+			shape: "rsquare"
+			subtitle: "- Requires &6Haki&r and &6200,000 EP&r and &cnot&r being &eMajin&r."
+			tasks: [{
+				id: "14A19A4E30179177"
+				title: "- Requires &6Haki&r and &6200,000 EP&r and &cnot&r being &eMajin&r."
+				type: "checkmark"
+			}]
+			title: "Hero's Haki"
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/lightning_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&1Lightning Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &1Lightning related attacks&r by &12x&r. "
+				"- Doesn't Stack with &1Lightning Domination&r. "
+				"- If thundering, spawn lightning where &7player&r looks."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/lightning_manipulation.png"
+				}
+			}
+			id: "06808EDEA57089A2"
+			shape: "rsquare"
+			subtitle: "- Requires mastering 2 or more &awind&r/&1lightning&r-related &lSkills&r or a &aGreater Spirit of Wind&r."
+			tasks: [{
+				id: "32286A488D8907E1"
+				title: "- Requires mastering 2 or more &awind&r/&1lightning&r-related &lSkills&r or a &aGreater Spirit of Wind&r."
+				type: "checkmark"
+			}]
+			title: "&1Lightning Manipulation"
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["06808EDEA57089A2"]
+			description: [
+				"{image:tensura:textures/skill/extra/lightning_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&1Lightning Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &1Lightning related attacks&r by &14x&r. "
+				"- Doesn't Stack with &1Lightning Manipulation&r. "
+				"- If thundering, spawn lightning where &7player&r looks."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/lightning_domination.png"
+				}
+			}
+			id: "32A861F66E744320"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &1Lightning Manipulation&r and &6400,000 EP&r."
+			tasks: [{
+				id: "1E8150542566CFC3"
+				title: "- Requires mastering &1Lightning Manipulation&r and &6400,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "&9Lightning Domination"
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"- Grants the &7player&r a &dbuff&r that effects their &7physical attacks&r and &6Battlewill attacks&r for &l6,000 Ticks&r. "
+				"- &7Physical Attack&r &bResistance&r is ignored and &3Nullification&r is treated as &bResistance&r. "
+				"- &67 Modes&r, can not change &6mode &ronce the &l6,000 Ticks&r &deffect&r starts. "
+				"- Will not apply &cadditional damage&r if your attack is already buffed by &bElement Core Slotting&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Default&r]:"
+				""
+				"- &9Additional Magic damage&r equal to &c1.5x&r their &cattack damage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Holy&r]:"
+				""
+				"- Additional &6Holy damage&r equal to &c1.5x&r their &cattack damage&r. Requires knowing Holy Magic."
+				"- Requires knowing &6Holy Magic&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Fire&r]:"
+				""
+				"- Additional &4Fire damage&r equal to &c1.5x&r their &cattack damage&r. "
+				"- Requires knowing &4Fire Magic&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Earth&r]:"
+				""
+				"- Additional &2Earth damage&r equal to &c1.5x&r their &cattack damage&r. "
+				"- Requires knowing &2Earth Magic&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Water&r]:"
+				""
+				"- Additional &9Water damage&r equal to &c1.5x&r their &cattack damage&r. "
+				"- Requires knowing &9Water Magic&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Wind&r]:"
+				""
+				"- Additional &aWind damage&r equal to &c1.5x&r their &cattack damage&r. "
+				"- Requires knowing &aWind Magic&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/magic_aura.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMagic Aura&r:"
+				""
+				"[&6Space&r]:"
+				""
+				"- Additional &5Space damage&r equal to &c1.5x&r their &cattack damage&r. "
+				"- Requires knowing &5Spatial Magic&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_aura.png"
+				}
+			}
+			id: "5E8439D3E9FC42DF"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &97 Magics&r."
+			tasks: [{
+				id: "063C8CD5EB7296C0"
+				title: "- Requires mastering &97 Magics&r."
+				type: "checkmark"
+			}]
+			title: "Magic Aura"
+			x: -11.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0A423C3EA0A60DFE"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_flame_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Magic Flame Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &4Fire Spirit Magic&r."
+				"- Set &cattacked target&r on fire for &l200 Ticks&r, makes the &7user's&r &4Fire attacks&r deal &42x damage&r and makes &7user&r immune to &7physical attacks&r. "
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_flame_transform.png"
+				}
+			}
+			id: "3AA3AAD944C7725C"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &4Flame Transform&r."
+			tasks: [{
+				id: "236376F3D7676C5F"
+				title: "- Requires mastering &4Flame Transform&r."
+				type: "checkmark"
+			}]
+			title: "&4Magic Flame Transform"
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00B9A1420BE3BEC9"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_earth_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&2Magic Earth Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &2Earth Spirit Magic&r."
+				"- Give &cattacked targets&r &5Burden&r for &l200 Ticks&r, makes the &7user's&r &2Earth attacks&r deal &22x damage&r and makes the &7user&r immune to &7physical attacks&r. "
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_earth_transform.png"
+				}
+			}
+			id: "334D83A56B9FFAAD"
+			shape: "rsquare"
+			subtitle: "- Requires&r mastering &2Earth Transform&r."
+			tasks: [{
+				id: "791D4958475F7582"
+				title: "- Requires&r mastering &2Earth Transform&r."
+				type: "checkmark"
+			}]
+			title: "&2Magic Earth Transform"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1378618B1C80CF7A"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_water_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&9Magic Earth Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &9Water Spirit Magic&r."
+				"- Give &cattacked targets&r &5Poison&r for &l200 Ticks&r, makes the &7user's&r &9Water attacks&r deal &92x damage&r and makes the &7user&r immune to &7physical attacks&r. "
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_water_transform.png"
+				}
+			}
+			id: "29831EE34C57E8D5"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &9Water Transform&r."
+			tasks: [{
+				id: "3AA8357E76DCF6E7"
+				title: "- Requires mastering &9Water Transform&r."
+				type: "checkmark"
+			}]
+			title: "&9Magic Water Transform"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["558A54414A3A946F"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_wind_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&aMagic Wind Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &aWind Spirit Magic&r."
+				"- Give &cattacked targets&r &5Paralysis&r for &l200 Ticks&r, makes the &7user's&r &aWind attacks&r deal &a2x damage&r and makes the &7user&r immune to &7physical attacks&r. "
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_wind_transform.png"
+				}
+			}
+			id: "31AD6D715C09FE38"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &aWind Transform&r."
+			tasks: [{
+				id: "761877B6733AA083"
+				title: "- Requires mastering &aWind Transform&r."
+				type: "checkmark"
+			}]
+			title: "&aMagic Wind Transform"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6AF98CC428F2A160"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_space_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Magic Space Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &6Space Spirit Magic&r."
+				"- Give the &7user's&r &5space attacks&r deal &52x damage&r, &7physical attacks&r deal &dSeverance&r and makes &7user&r immune to &7physical attacks&r."
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_space_transform.png"
+				}
+			}
+			id: "7946B55A4086549B"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &5Space Transform&r."
+			tasks: [{
+				id: "71084929FCC220B9"
+				title: "- Requires mastering &5Space Transform&r."
+				type: "checkmark"
+			}]
+			title: "&5Magic Space Transform"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6239606ED8C9F70E"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_light_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eMagic Light Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &eLight Spirit Magic&r."
+				"- Give &cattacked targets&r &5Nausea&r for &l200 Ticks&r, makes the &7user's&r &eLight attacks&r deal &e2x damage&r and makes the &7user&r immune to &7physical attacks&r. "
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_light_transform.png"
+				}
+			}
+			id: "7AE47B0D6A596BE9"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &eLight Transform&r."
+			tasks: [{
+				id: "4FF37C0EFB6200F7"
+				title: "- Requires mastering &eLight Transform&r."
+				type: "checkmark"
+			}]
+			title: "&eMagic Light Transform"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B00F60DD63D9D98"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_darkness_transform.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Magic Darkness Transform&r:"
+				""
+				"- Grants access to the &bGreater Levels&r of &8Darkness Spirit Magic&r."
+				"- Give &cattacked targets&r &5Darkness&r for &l200 Ticks&r, makes the &7user's&r &8Darkness attacks&r deal &82x damage&r and makes the &7user&r immune to &7physical attacks&r. "
+				"- Duration lasts for &l3,600 Ticks&r "
+				"- Upon ending inflicts the &7player&r with &5Paralysis II&r, &5Fragility II&r, and &5Weakness II&r for &l12,000 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to &l7,200 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_darkness_transform.png"
+				}
+			}
+			id: "5B68195581A1920F"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &8Darkness Transform&r."
+			tasks: [{
+				id: "613BB7FE6E2CE1F9"
+				title: "- Requires mastering &8Darkness Transform&r."
+				type: "checkmark"
+			}]
+			title: "&8Magic Darkness Transform"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/magic_jamming.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]:"
+				""
+				"- &9Magic&r, &lSkill&r, and &6Battlewill&r deal only &c50% damage&r to the &7user&r."
+				"- Additionally, &cmobs&r within a &b20x20 radius&r of the &7user&r are unable to use any &6flight-based skills&r or &9magic&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- &9Magic&r, &lSkill&r, and &6Battlewill&r deal only &c33% damage&r to the &7user&r."
+				"- Increases &bradius&r to &b30x30&r."
+				"- Disable &lTransformation Skills&r (&6Mimic&r, &6Transform&r, &6Dragon Mode&r, &6Beast Mode&r) for &l600 Ticks&r if &7physically attacking&r a &6transformed &cmob&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_jamming.png"
+				}
+			}
+			id: "3635DCD96B7ED857"
+			shape: "rsquare"
+			subtitle: "- Requires &cstealing&r, &acopying&r, or &6successfully merging&r from/with &cCharybdis&r."
+			tasks: [{
+				id: "3BB067B276AC8CB3"
+				title: "- Requires &cstealing&r, &acopying&r, or &6successfully merging&r from/with &cCharybdis&r."
+				type: "checkmark"
+			}]
+			title: "Magic Jamming"
+			x: -11.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/majesty.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lMajesty&r:"
+				""
+				"- Grants the &7player&r a permanent &dHero of the Village-like effect&r, giving them better prices at shops."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/majesty.png"
+				}
+			}
+			id: "3B8DAAFBB99195F5"
+			shape: "rsquare"
+			subtitle: "- Requires clearing &a10 Pillager Raids&r."
+			tasks: [{
+				id: "7C23A8306ECD159B"
+				title: "- Requires clearing &a10 Pillager Raids&r."
+				type: "checkmark"
+			}]
+			title: "Majesty"
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["340C17CAD514AAD8"]
+			description: [
+				"{image:tensura:textures/skill/extra/magic_sense.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lMagic Sense&r:"
+				""
+				"- While held down by the &7player&r, grant them &dNight Vision&r, the ability to see &7Invisible players&r, and &cmobs&r in a &b30 Block radius&r are highlighted in &bAqua&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/magic_sense.png"
+				}
+			}
+			id: "41D203B2A58E8B0C"
+			shape: "rsquare"
+			subtitle: "- Requires being a &6Slime&r or being &bBlinded&r while having &6Danger Sense&r"
+			tasks: [{
+				id: "6CFF7A7DBE41628A"
+				title: "- Requires being a &6Slime&r or being &bBlinded&r while having &6Danger Sense&r"
+				type: "checkmark"
+			}]
+			title: "Magic Sense"
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"2124A75B3F44267F"
+				"4FE3C9D43E6EB277"
+				"4774C4276A3D893E"
+				"2582964F855BFC38"
+			]
+			description: [
+				"{image:tensura:textures/skill/extra/molecular_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMolecular Manipulation&r:"
+				""
+				"[&6Block&r]:"
+				""
+				"- Breaks the &7block&r the &7player&r is currently looking at, and give &7player&r the &7block&r like &bsilk touch&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/molecular_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMolecular Manipulation&r:"
+				""
+				"[&6Entity&r]:"
+				""
+				"- &cHolding down&r while looking at an &centity&r, with a hitbox smaller than &b1 Block&r, will &emove&r that &centity&r to where the &7user&r look "
+				"- Scroll down to change the &brange&r from &b0&r to &b30&r"
+				"- Ineffective against &csome bosses&r and &ctargets&r with &5Gravity Manipulation&r or &5Gravity Domination&r &etoggled&r."
+				"- &5Gravity Manipulation&r increases &centity&r hitbox limit by &b3 Block&r."
+				"- &5Gravity Domination&r increases &centity&r hitbox limit by &b5 Block&r"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &centity&r hitbox limit to &b2 Block&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/molecular_manipulation.png"
+				}
+			}
+			id: "5D98324A48A3BC1B"
+			min_required_dependencies: 2
+			shape: "rsquare"
+			subtitle: "- Requires mastering at least 2 from &2Earth Manipulation&r, &4Fire Manipulation&r, &9Water Manipulation&r, &5Spatial Manipulation&r, and &aWind Manipulation&r."
+			tasks: [{
+				id: "768952231978B751"
+				title: "- Requires mastering at least 2 from &2Earth Manipulation&r, &4Fire Manipulation&r, &9Water Manipulation&r, &5Spatial Manipulation&r, and &aWind Manipulation&r."
+				type: "checkmark"
+			}]
+			title: "Molecular Manipulation"
+			x: -7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["776DAE84E461B877"]
+			description: [
+				"{image:tensura:textures/skill/extra/multilayer_barrier.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lMultilayer Barrier&r:"
+				""
+				"- On use, set the &7player's&r &3Barrier Points &requal to their &aMax HP&r."
+				"- &c1.5x damage taken&r under the &3Barrier Point threshold&r."
+				"- &cAttacks&r above the threshold reduce the &3barrier points&r to &30&r and have their &cdamage reduced&r by the &3amount of barrier points&r the &7player&r has."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/multilayer_barrier.png"
+				}
+			}
+			id: "7A8446625A8B10B7"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &6Ranged Barrier&r."
+			tasks: [{
+				id: "10C69346AF4DAB73"
+				title: "- Requires mastering &6Ranged Barrier&r."
+				type: "checkmark"
+			}]
+			title: "Multilayer Barrier"
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54995C2FD8496E41"]
+			description: [
+				"{image:tensura:textures/skill/extra/sacred_haki.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lSacred Haki&r:"
+				""
+				"[&6Default&r]:"
+				""
+				"- When &cheld&r, decreases &espeed&r to &e5%&r. "
+				"- All &cmobs&r within a &b30x30 radius&r are affected."
+				"- If their &6EP&r is &6=<75%&r of the &7user's&r used &6EP&r, it does nothing. "
+				"- Otherwise, give &52 Fear Level&r for each &620%&r difference with the used &6EP&r."
+				"- All &9allies&r within the &bactivation radius&r are &ahealed&r by &a30 HP&r and have any &5negative status effects&r removed."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &espeed&r when &cheld down&r to &e10%&r."
+				"- Scroll while holding down the &lSkill&r button to change the percentage of &6EP&r used for calculation."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/sacred_haki.png width:100 height:100 align:1}"
+				""
+				"[&cHold&r] &lSacred Haki&r:"
+				""
+				"[&6Coating&r]:"
+				""
+				"- Applies a &dbuff&r to the &7user'ss physical&r and &6battlewill attacks&r for &l2,400 Ticks&r, allowing their &cattacks&r to bypass &7Physical Attack&r &bResistance&r (&3Nullification&r is also treated as &bResistance&r) and &cdamage&r &dSpiritual Lifeforms&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sacred_haki.png"
+				}
+			}
+			id: "3402E6C842645686"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &6Hero Haki&r and being a &aTrue Hero&r"
+			tasks: [{
+				id: "501B2C8CB163D8AB"
+				title: "- Requires mastering &6Hero Haki&r and being a &6True Hero&r"
+				type: "checkmark"
+			}]
+			title: "Sacred Haki"
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/sage.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lSage&r:"
+				""
+				"- Increases the amount of Learned Points and Mastery Points gained when learning/using &lSkills&r, &dMagic&r, &6Battlewill&r, and &3Arts&r by 2,"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sage.png"
+				}
+			}
+			id: "653B1CD29339DEC5"
+			shape: "rsquare"
+			subtitle: "- Requires mastering at least &920 Magic&r or &9Battlewill Arts&r."
+			tasks: [{
+				id: "3EA9D63B92D58F8B"
+				title: "- Requires mastering at least &920 Magic&r or &9Battlewill Arts&r."
+				type: "checkmark"
+			}]
+			title: "Sage"
+			x: -7.0d
+			y: 6.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/sense_heat_source.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSense Heat Source&r:"
+				""
+				"- When &etoggled&r, outline &centities&r flagged &cwarm blooded&r in &cred outline&r in a &b20 block radius&r. "
+				"- &cEntities&r flagged &bCold-blooded&r don't appear at all and &centities&r flagged &bCold Source&r like &7Snow Golem&r will have &bcyan outline&r. "
+				"- Doesn't work in the nether."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sense_heat_source.png"
+				}
+			}
+			id: "65B8DA7DB988D281"
+			shape: "rsquare"
+			subtitle: "- Requires &acopying&r from &cLeech Lizard"
+			tasks: [{
+				id: "5086951FFEA7B775"
+				title: "- Requires &acopying&r from &cLeech Lizard"
+				type: "checkmark"
+			}]
+			title: "Sense Heat Source"
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"41D203B2A58E8B0C"
+				"340C17CAD514AAD8"
+			]
+			description: [
+				"{image:tensura:textures/skill/extra/sense_soundwave.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lSense Soundwave&r:"
+				""
+				"- When &etoggled&r, &centities&r that produce noise within a &b20 Block radius&r will be outlined in &aGreen&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sense_soundwave.png"
+				}
+			}
+			id: "39CB139DE0E0ADD2"
+			shape: "rsquare"
+			subtitle: "- Requires &acopying&r from &cBats&r/&cWardens&r/&cGiants Bats&r or mastering &6Danger Sense&r and learning &6Magic Sense&r."
+			tasks: [{
+				id: "5A843BEAAF33508B"
+				title: "- Requires &acopying&r from &cBats&r/&cWardens&r/&cGiants Bats&r or mastering &6Danger Sense&r and learning &6Magic Sense&r."
+				type: "checkmark"
+			}]
+			title: "Sense Soundwave"
+			x: 7.0d
+			y: 16.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/shadow_motion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lShadow Motion&r:"
+				""
+				"- If &6activated&r and the &7player&r is standing on a &7block&r with a light level of 10 or lower, then grant them &dtrue invisibility&r, &cimmunity&r to &cdamage&r, and &e+0.1 Speed&r and &e+1 Step Height&r. "
+				"- This lasts as long as the button is &cheld down&r and &cno attacks&r can be made nor can &7blocks&r be broken. "
+				"- While &cheld down&r, the &7player&r will lose oxygen unless they don't need to breathe."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/shadow_motion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lShadow Motion&r:"
+				""
+				"[&l&6Shadow Step&r]:"
+				""
+				"- Instantly &eteleport&r behind the &clooked-at entity&r."
+				"[Max distance: &b20 blocks&r]"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/shadow_motion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lShadow Motion&r:"
+				""
+				"[&l&6Shadow Storage&r]:"
+				""
+				"- While looking at a &9tamed subordinate&r, save the &9mob&r into a &7shadow item&r that doesn't break to &cenvironmental damage&r except &8Void damage&r. "
+				"[Only works on &9mobs&r that don't need air]"
+				"- Right-click on the &7ground&r again to &arespawn&r the &9mob&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/shadow_motion.png"
+				}
+			}
+			id: "4B14AD24E6D59C89"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cTempest Wolf&r/&cEndermen&r/&cVampire&r"
+			tasks: [{
+				id: "43182BF08C03366E"
+				title: "- &aCopied&r from &cTempest Wolf&r/&cEndermen&r/&cVampire&r"
+				type: "checkmark"
+			}]
+			title: "Shadow Motion"
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/sound_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Sound Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &9Sonic related attacks&r by &92x&r."
+				"- Doesn't stack with &9Sound Domination&r. "
+				"- Become hidden by &6Sense Soundwave&r, &7Sculk&r and &cWarden&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sound_manipulation.png"
+				}
+			}
+			id: "2AFB44D21A76995B"
+			shape: "rsquare"
+			subtitle: "- Requires mastering at least two &aWind&r/&9Sound abilities&r."
+			tasks: [{
+				id: "317C2F35B242AE17"
+				title: "- Requires mastering at least two &aWind&r/&9Sound abilities&r."
+				type: "checkmark"
+			}]
+			title: "&9Sound Manipulation"
+			x: 1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2AFB44D21A76995B"]
+			description: [
+				"{image:tensura:textures/skill/extra/sound_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Sound Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &9Sonic related attacks&r by &94x&r."
+				"- Doesn't stack with &9Sound Manipulation&r. "
+				"- Become hidden by &6Sense Soundwave&r, &7Sculk&r and &cWarden&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sound_domination.png"
+				}
+			}
+			id: "11082519BF000592"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &9Sound Manipulation&r and &6400,000 EP"
+			tasks: [{
+				id: "4DAC4677F70FC1DE"
+				title: "- Requires mastering &9Sound Manipulation&r and &6400,000 EP"
+				type: "checkmark"
+			}]
+			title: "&9Sound Domination"
+			x: 1.0d
+			y: 16.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/spatial_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &5Spatial related attacks&r by &52x&r."
+				"- Doesn't stack with &5Spatial Domination&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Manipulation&r:"
+				""
+				"[&6Warp Shot&r]:"
+				""
+				"- &cProjectiles&r automatically &eteleport&r behind the looked at &cmob&r when fired,"
+				"[Shift to not trigger this]"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/spatial_manipulation.png"
+				}
+			}
+			id: "71EB53AD630360C0"
+			shape: "rsquare"
+			subtitle: "- Requires &6200,000 EP&r and &5Space Spirit&r"
+			tasks: [{
+				id: "103D96850EF9A1D3"
+				title: "- Requires &6200,000 EP&r and &5Space Spirit&r"
+				type: "checkmark"
+			}]
+			title: "&5Spatial Manipulation"
+			x: -20.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["73ABF4B2DC441F74"]
+			description: [
+				"{image:tensura:textures/skill/extra/spatial_motion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Spatial Motion&r:"
+				""
+				"[&6Blink&r]:"
+				""
+				"- &eTeleports&r the &7player&r to where their cursor is looking. "
+				"[&bRange&r: &b30 Block&r]"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &brange&r to &b50 Block&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_motion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Spatial Motion&r:"
+				""
+				"[&6Coordinates&r]:"
+				""
+				"- Prompts the &7player&r to enter coordinates (X, Y, Z) and &eteleports&r them there after &l200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases &eteleport&r time to &l0 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_motion.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Spatial Motion&r:"
+				""
+				"[&6Portal&r]:"
+				""
+				"- Same as &6Coordinates&r, but opens a portal instead of &eteleporting&r that other &centities&r can also pass through and lasts for &l400 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/spatial_motion.png"
+				}
+			}
+			id: "2F94FD34C9240B09"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &5Gate&r"
+			tasks: [{
+				id: "096B03B5993C32AE"
+				title: "- Requires mastering &5Gate&r"
+				type: "checkmark"
+			}]
+			title: "&5Spatial Motion"
+			x: -9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["31494C11D1925A4D"]
+			description: [
+				"{image:tensura:textures/skill/extra/steel_strength.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSteel Strength&r:"
+				""
+				"- Grants the &7user&r &dStrengthen II&r (Equal to &dStrength IV&r) for &l1,200 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Becomes &eToggleable&r."
+				"[&dStrengthen II&r]"
+				"- Grants the &7user&r &dStrengthen III&r (Equal to &dStrength VI&r) for &l2,400 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/steel_strength.png"
+				}
+			}
+			id: "67E8DC3CE34AE191"
+			shape: "rsquare"
+			subtitle: "- Requires &620,000 EP"
+			tasks: [{
+				id: "4499F21777BE3731"
+				title: "- Requires &620,000 EP"
+				type: "checkmark"
+			}]
+			title: "Steel Strength"
+			x: -13.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/sticky_steel_thread.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSticky Steel Thread&r:"
+				""
+				"[&6Sticky&r]:"
+				""
+				"- Throws a &7projectile&r that unleashes sticky thread in an &barea&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown to &l20 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/sticky_steel_thread.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSticky Steel Thread&r:"
+				""
+				"[&6Sticky-Steel&r]:"
+				""
+				"- Throws a &cprojectile&r that unleashes sticky-steel thread in an &barea&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cooldown to &l20 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/sticky_steel_thread.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSticky Steel Thread&r:"
+				""
+				"[&6Web-Slinger&r]:"
+				""
+				"- Sends out a &cweb projectile&r to the &7block&r the &7player&r is looking at. "
+				"- If it lands, the web string will be attached to that &7landed block&r, the &7player&r can crouch to get pulled to the &7attached block&r, there will be &cno fall damage&r as long as they are below the Y level of the &7attached block&r. "
+				"- The string will dissolve after &l1,200 Ticks&r, when the &blength&r exceeds &b50 Block&r, when the &7player&r reaches the &7attached block&r or when the &7player&r shift activates this &6mode&r again. "
+				"- If the &cweb projectile&r hits an &centity&r instead, attach it to that &centity&r and this will work like a &7Lead&r but the &centity&r doesn’t take &dfall damage&r as long as its Y level is lower than the &7user’s&r, crouch to pull the &centity&r closer to the &7user&r, the string will snap if it exceeds &b30 Block length&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/sticky_steel_thread.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lSticky Steel Thread&r:"
+				""
+				"[&6Arcane Thread Feathers&r]:"
+				""
+				"- Encases the looked at &cmob&r in &b10 Block radius&r in sticky-steel thread for &l500 Ticks&r. "
+				"- Once activated again, during &l100 Ticks&r since encasing it, while looking at an &cencased mob&r, deal &c30 damage&r to the &cmob&r, remove &5Webbed&r."
+				"- This &3Art&r is affected by &lAbilities&r that apply effects on attack like &6Corrosion&r, &6Poison&r, &6Shadow Striker&r, etc."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &bradius&r to &b20 Block&r."
+				"- Once activated again, during &l200 Ticks&r since encasing it, while looking at an &cencased mob&r, deal &c60 damage&r to the &cmob&r, remove &5Webbed&r."
+				"- Decreases cooldown to &l60 Ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/sticky_steel_thread.png"
+				}
+			}
+			id: "154B069F4753AE5F"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cBlack Spider&r"
+			tasks: [{
+				id: "69443E29CF7B1055"
+				title: "- &aCopied&r from &cBlack Spider&r"
+				type: "checkmark"
+			}]
+			title: "Sticky Steel Thread"
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6576358E2C03A828"]
+			description: [
+				"{image:tensura:textures/skill/extra/strengthen_body.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lStrengthen Body&r:"
+				""
+				"- Resist &c20% of damage&r and grants &b5&r bonus &bArmor&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/strengthen_body.png"
+				}
+			}
+			id: "31494C11D1925A4D"
+			shape: "rsquare"
+			subtitle: "- Requires &615,000 EP&r"
+			tasks: [{
+				id: "5E138896EEAFBFCD"
+				title: "- Requires &615,000 EP&r"
+				type: "checkmark"
+			}]
+			title: "Strengthen Body"
+			x: -16.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3B91391FDFDD07AF"]
+			description: [
+				"{image:tensura:textures/skill/extra/thought_acceleration.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lThought Acceleration&r:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.01&r, increase &2attack speed&r by &20.2&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase &9magic casting&r speed multiplier by &92&r, increase &emovement speed&r by &e0.02&r, increase &2attack speed&r by &20.4&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/thought_acceleration.png"
+				}
+			}
+			id: "6576358E2C03A828"
+			shape: "rsquare"
+			subtitle: "- Requires &615,000 EP&r"
+			tasks: [{
+				id: "0C2A8A592885EA47"
+				title: "- Requires &615,000 EP&r"
+				type: "checkmark"
+			}]
+			title: "Thought Acceleration"
+			x: -18.0d
+			y: 6.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/ultra_instinct.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r] &lUltra Instinct&r:"
+				""
+				"- When taking &cdamage&r from a &7physical source&r, there is a &320% chance&r to &3dodge&r the &cattack&r and take &c0 damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/ultra_instinct.png"
+				}
+			}
+			id: "33568AB9BAB644BE"
+			shape: "rsquare"
+			subtitle: "- &aCopied&r from &cTempest Star Wolf"
+			tasks: [{
+				id: "60F25C663F69C754"
+				title: "- &aCopied&r from &cTempest Star Wolf"
+				type: "checkmark"
+			}]
+			title: "Ultra-Instinct"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4295DC614A1B4B1B"]
+			description: [
+				"{image:tensura:textures/skill/extra/ultraspeed_regeneration.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lUltraspeed Regeneration&r:"
+				""
+				"- Unless the &7player's&r &aHP&r or &dSHP&r reaches &a0&r, instantly &aregenerate&r all &aHP&r and &dSHP&r. "
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/ultraspeed_regeneration.png"
+				}
+			}
+			id: "730AB9176A059C06"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &6Self-Regeneration&r, &6300,000 EP&r and defeated &cCharybdis, &acopying&r it from &cSupermassive Slime&r/&cCharybdis&r, or using &6Degenerate&r on an &7Inert Charybdis Core &r"
+			tasks: [{
+				id: "153CF81927D02C4C"
+				title: "- Requires mastering &6Self-Regeneration&r, &6300,000 EP&r and defeated &cCharybdis, &acopying&r it from &cSupermassive Slime&r/&cCharybdis&r, or using &6Degenerate&r on an &7Inert Charybdis Core &r"
+				type: "checkmark"
+			}]
+			title: "Ultraspeed Regeneration"
+			x: -7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"41D203B2A58E8B0C"
+				"39CB139DE0E0ADD2"
+				"65B8DA7DB988D281"
+			]
+			description: [
+				"{image:tensura:textures/skill/extra/universal_perception.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lUniversal Perception&r:"
+				""
+				"- Combines the effects of &6Magic Sense&r, &6Sense Heat Source&r, and &6Sense Soundwave&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/universal_perception.png"
+				}
+			}
+			id: "1856EED50CF7F175"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &6Magic Sense&r, obtaining &6Sense Heat Source&r and &6Sense Soundwave&r."
+			tasks: [{
+				id: "1EC053B76913B0B8"
+				title: "- Requires mastering &6Magic Sense&r, obtaining &6Sense Heat Source&r and &6Sense Soundwave&r."
+				type: "checkmark"
+			}]
+			title: "Universal Perception"
+			x: 7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["19D6C0C1CB3FA4C1"]
+			description: [
+				"{image:tensura:textures/skill/extra/water_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Water Manipulation:"
+				""
+				"- Increases &cdamage dealt&r by &9Water related attacks&r by &92x&r. "
+				"- Doesn't Stack with &9Water Domination&r. "
+				""
+				"&lWhen Sneaking&r:"
+				""
+				"- Shoot a &cwater ball&r dealing &c12 damage&r with knockback if in water or has water points in &6spatial storage&r."
+				""
+				"&lWhen not Sneaking&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &c8 damage&r every &l20 ticks&r if in water or has water points in &6spatial storage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/water_manipulation.png"
+				}
+			}
+			id: "2124A75B3F44267F"
+			shape: "rsquare"
+			subtitle: "- Requires &6200,000 EP&r and &9Water Spirit&r."
+			tasks: [{
+				id: "238F91D83EE566C5"
+				title: "- Requires &6200,000 EP&r and &9Water Spirit&r."
+				type: "checkmark"
+			}]
+			title: "&9Water Manipulation"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2124A75B3F44267F"]
+			description: [
+				"{image:tensura:textures/skill/extra/water_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&9Water Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &9Water related attacks&r by &94x&r. "
+				"- Doesn't Stack with &9Water Manipulation&r. "
+				""
+				"&lWhen Sneaking&r:"
+				""
+				"- Shoot a &cwater ball&r dealing &c12 damage&r with knockback if in water or has water points in &6spatial storage&r."
+				""
+				"&lWhen not Sneaking&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &c8 damage&r every &l20 ticks&r if in water or has water points in &6spatial storage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/water_domination.png"
+				}
+			}
+			id: "6EC87BF9308EF4EE"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &9Water Manipulation&r and &6400,000 EP&r."
+			tasks: [{
+				id: "551D2A1D49ABDB2B"
+				title: "- Requires mastering &9Water Manipulation&r and &6400,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "&bWater Domination"
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"2124A75B3F44267F"
+				"4FE3C9D43E6EB277"
+				"06808EDEA57089A2"
+			]
+			description: [
+				"{image:tensura:textures/skill/extra/weather_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWeather Manipulation&r:"
+				""
+				"[&6Clear Weather&r]:"
+				""
+				"- Clears any weather and makes the sky clear."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/weather_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWeather Manipulation&r:"
+				""
+				"[&6Rain&r]:"
+				""
+				"- Sets the weather to Rain."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/weather_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWeather Manipulation&r:"
+				""
+				"[&6Storm&r]:"
+				""
+				"- Sets the weather to Thunderstorm"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/weather_manipulation.png"
+				}
+			}
+			id: "4439EEF75F272D58"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &9Water Manipulation&r, &aWind Manipulation&r, and &1Lightning Manipulation&r."
+			tasks: [{
+				id: "04B622A56D179983"
+				title: "- Requires mastering &bWater Manipulation&r, &aWind Manipulation&r, and &9Lightning Manipulation&r."
+				type: "checkmark"
+			}]
+			title: "Weather Manipulation"
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4439EEF75F272D58"]
+			description: [
+				"{image:tensura:textures/skill/extra/weather_domination.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWeather Domination&r:"
+				""
+				"[&6Clear Weather&r]:"
+				""
+				"- Clears any weather and makes the sky clear."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/weather_domination.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWeather Domination&r:"
+				""
+				"[&6Rain&r]:"
+				""
+				"- Sets the weather to Rain."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/weather_domination.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &lWeather Domination&r:"
+				""
+				"[&6Storm&r]:"
+				""
+				"- Sets the weather to Thunderstorm"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/weather_domination.png"
+				}
+			}
+			id: "1312BDBB6E9E31F2"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &9Weather Manipulation&r and &6400,000 EP&r."
+			tasks: [{
+				id: "33A42AD0632FD5AE"
+				title: "- Requires mastering &9Weather Manipulation&r and &6400,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "Weather Domination"
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2DB7DCBC1D1D9C09"]
+			description: [
+				"{image:tensura:textures/skill/extra/wind_manipulation.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&aWind Manipulation&r:"
+				""
+				"- Increases &cdamage dealt&r by &aWind related attacks&r by &a2x&r. "
+				"- Doesn't Stack with &aWind Domination&r. "
+				""
+				"&lWhen Sneaking&r:"
+				""
+				"- Shoot a &cwind sphere&r dealing &c12 damage&r with strong knockback."
+				""
+				"&lWhen not Sneaking&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &c8 damage&r every &l20 ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/wind_manipulation.png"
+				}
+			}
+			id: "4FE3C9D43E6EB277"
+			shape: "rsquare"
+			subtitle: "- Requires &9200,000 EP&r and &aWind Spirit&r."
+			tasks: [{
+				id: "2648A394B7DAD9A5"
+				title: "- Requires &9200,000 EP&r and &aWind Spirit&r."
+				type: "checkmark"
+			}]
+			title: "&aWind Manipulation"
+			x: -5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4FE3C9D43E6EB277"]
+			description: [
+				"{image:tensura:textures/skill/extra/wind_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&aWind Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &aWind related attacks&r by &a4x&r. "
+				"- Doesn't Stack with &aWind Manipulation&r. "
+				""
+				"&lWhen Sneaking&r:"
+				""
+				"- Shoot a &cwind sphere&r dealing &c12 damage&r with strong knockback."
+				""
+				"&lWhen not Sneaking&r:"
+				""
+				"- &bAoE&r &cattack&r that deals &c8 damage&r every &l20 ticks&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/wind_domination.png"
+				}
+			}
+			id: "23994B28B93AD718"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &aWind Manipulation&r and &6400,000 EP&r."
+			tasks: [{
+				id: "4481CBF51799AF3B"
+				title: "- Requires mastering &aWind Manipulation&r and &6400,000 EP&r."
+				type: "checkmark"
+			}]
+			title: "&aWind Domination"
+			x: -6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["16985DA959D2AD79"]
+			description: [
+				"{image:tensura:textures/skill/extra/gravity_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &l&5Gravity Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &5Gravity related attacks&r by &54x&r. "
+				"- Doesn't Stack with &5Gravity Manipulation&r. "
+				"- &6Creative Flight&r &etoggle&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/gravity_domination.png"
+				}
+			}
+			id: "65E799015FC4A438"
+			shape: "rsquare"
+			subtitle: "- Requires Mastering &5Gravity Manipulation&r and &6400,000 EP"
+			tasks: [{
+				id: "319966CA12A3B72C"
+				title: "- Requires Mastering &5Gravity Manipulation&r and &6400,000 EP"
+				type: "checkmark"
+			}]
+			title: "&5Gravity Domination"
+			x: -13.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["71EB53AD630360C0"]
+			description: [
+				"{image:tensura:textures/skill/extra/spatial_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Domination&r:"
+				""
+				"- Increases &cdamage dealt&r by &5Spatial related attacks&r by &54x&r."
+				"- Doesn't stack with &5Spatial Manipulation&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Manipulation&r:"
+				""
+				"[&aWarp Shot&r]:"
+				""
+				"- &cProjectiles&r automatically &eteleport&r behind the looked at &cmob&r when fired,"
+				"[Shift to not trigger this]"
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Manipulation&r:"
+				""
+				"[&cDimension Ray&r]:"
+				""
+				"- Spawn a ray &branging 30 blocks&r that deals &c100 damage&r to any &cmobs&r touching this ray every &l20 Ticks&r."
+				"- Maximum &cheld&r time is &l60 Ticks&r."
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage dealt&r to &c200&r."
+				"- Decreases cooldown to &l140 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Manipulation&r:"
+				""
+				"[&6Dimension Storm&r]:"
+				""
+				"- Deals &c100 damage&r to all &cmobs&r within a &b10x10 radius&r of where the &7player&r looks."
+				"[&bRange&r: &b20 Block&r]"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage dealt&r to &c200&r."
+				"- Decreases cooldown to &l200 Ticks&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/skill/extra/spatial_domination.png width:100 height:100 align:1}"
+				""
+				"[&bPassve&r - &eToggle&r] &l&5Spatial Manipulation&r:"
+				""
+				"[&cFault Field&r]:"
+				""
+				"- Makes the &7user&r immune to all &cnon-ultimate skill attacks&r that don't deal &bspatial damage&r or &6mental&r/&dspiritual damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/spatial_domination.png"
+				}
+			}
+			id: "1E54BCA573C398B2"
+			shape: "rsquare"
+			subtitle: "- Requires mastering &5Spatial Manipulation&r and &6400,000 EP"
+			tasks: [{
+				id: "6A915AB5F98860BD"
+				title: "- Requires mastering &5Spatial Manipulation&r and &6400,000 EP"
+				type: "checkmark"
+			}]
+			title: "&5Spatial Domination"
+			x: -20.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/godwolf_sense.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r]:"
+				""
+				"- While &etoggled&r, grant the &7player&r a &dNight Vision&r, the ability to see &dInvisible&r &7players&r, and &cmobs&r in a &b30 radius&r are highlighted in &9blue&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/godwolf_sense.png"
+				}
+			}
+			id: "2E96E1CD559BCB5C"
+			shape: "rsquare"
+			subtitle: "- Can be &acopied&r from &6Beastfolk&r"
+			tasks: [{
+				id: "1043B4057A99AB06"
+				title: "- Can be &acopied&r from &6Beastfolk&r"
+				type: "checkmark"
+			}]
+			title: "Godwolf Sense"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			description: [
+				"{image:tensura:textures/skill/extra/heavenly_eye.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lHeavenly Eye&r:"
+				""
+				"- Highlights all &cmobs&r/&7players&r in a &b30x30 area&r in &9blue&r, even ones under &6disguising skills&r. "
+				"- Grants a &350% chance&r to &3ignore dodging&r &labilities&r (except &6Future Sight&r). "
+				"- When looking at a &9magic circle&r, it displays what type of &9magic&r it is."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/heavenly_eye.png"
+				}
+			}
+			id: "7DF93ED2694A58E9"
+			shape: "rsquare"
+			subtitle: "- Requires &6Martial Master&r"
+			tasks: [{
+				id: "45610DCA45602BC6"
+				title: "- Requires &6Martial Master&r"
+				type: "checkmark"
+			}]
+			title: "Heavenly Eye"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["730AB9176A059C06"]
+			description: [
+				"{image:tensura:textures/skill/extra/infinite_regeneration.png width:100 height:100 align:1}"
+				""
+				"[&bPassive&r - &eToggle&r] &lInfinite Regeneration&r:"
+				""
+				"- The &7player's&r &9MP&r essentially becomes their &aHP&r and &dSHP&r. "
+				"- Even if their &aHP&r or &dSHP&r reaches &a0&r, as long as their &aregeneration&r isn't &5impeded&r they'll &aregen&r to &amax instantly&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/skill/extra/infinite_regeneration.png"
+				}
+			}
+			id: "66C5BABA458FE88C"
+			shape: "rsquare"
+			subtitle: "- Requires &6Ultraspeed Regeneration&r and &62,000,000 EP&r"
+			tasks: [{
+				id: "7C7C4BD8437AD9A6"
+				title: "- Requires &6Ultraspeed Regeneration&r and &62,000,000 EP&r"
+				type: "checkmark"
+			}]
+			title: "Infinite Regeneration"
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1E54BCA573C398B2"
+				"373AC9F86F4422B4"
+			]
+			description: [
+				"{image:btrultima:textures/skill/extra/spacetimemd.png width:100 height:100 align:1}"
+				""
+				"[&l&ePassives&r]:"
+				""
+				"&5+6 Spatial Damage"
+				""
+				"&6Void Vacuum&r [&eIn Slot&r]"
+				""
+				"- Gives a &btotal&r of &620 SHP&r dmg &btick&r, corrosion &cdmg&r and &efear 4&r effects for &b3secs&r on &chit&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/extra/spacetimemd.png width:100 height:100 align:1}"
+				""
+				"[&l&cModes&r]:"
+				""
+				"&6Distortion Field&r [&cMode 1&r]"
+				""
+				"- While &cheld&r makes the &auser&r immune to &ball&r non-ultimate &6skill&r attacks that &cdon't&r deal &6mental/spiritual&r damage."
+				""
+				""
+				"&6Instant Motion&r [&cMode 2&r]"
+				""
+				"- Teleports the &aplayer&r to &bwhere&r they're &elooking&r instantly. A total of &b200&r blocks."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/extra/spacetimemd.png width:100 height:100 align:1}"
+				""
+				"&6Time Warp&r [&cMode 3&r]"
+				""
+				"- Opens &5Spatial Motion&r GUI."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/extra/spacetimemd.png"
+				}
+			}
+			id: "120D15B31F4B08F0"
+			invisible: true
+			shape: "rsquare"
+			subtitle: "- Requires mastered &5Spatial Manipulation&r, &5Spatial Domination&r,&5Time Manipulation&r,&5Time Domination&r and &65.500.000 EP"
+			tasks: [
+				{
+					id: "77D0B4FB88EEBD6F"
+					title: "- Requires mastered &5Spatial Manipulation&r and &5Spatial Domination&r"
+					type: "checkmark"
+				}
+				{
+					id: "310B30A18CAB4555"
+					title: "- Requires mastered &5Time Manipulation&r,&5Time Domination&r"
+					type: "checkmark"
+				}
+				{
+					id: "0600941967E7BDFB"
+					title: "- Requires &65.500.000 EP"
+					type: "checkmark"
+				}
+			]
+			title: "&9Spacetime Manipulation"
+			x: -18.0d
+			y: 12.5d
+		}
+		{
+			description: [
+				"{image:btrultima:textures/skill/extra/timem.png width:100 height:100 align:1}"
+				""
+				"&6Time Stop&r [&aMode 1&r] "
+				""
+				"- Stops &6time&r and &centities&r in the total &bradius&r of &b160 blocks&r for &e2 minutes&r with a &6cooldown&r of &c15 minutes&r. "
+				""
+				"- Be the &conly&r one &astanding&r in the &6end&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/extra/timem.png"
+				}
+			}
+			id: "01BE78394E68E249"
+			invisible: true
+			shape: "rsquare"
+			subtitle: "- Requires &63.000.000 EP"
+			tasks: [{
+				id: "324ABA40D1A9C1A5"
+				title: "- Requires &63.000.000 EP"
+				type: "checkmark"
+			}]
+			title: "&5Time Manipulation"
+			x: -16.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["01BE78394E68E249"]
+			description: [
+				"{image:btrultima:textures/skill/extra/timed.png width:100 height:100 align:1}"
+				""
+				"&6Time Stop&r [&aMode 1&r] "
+				""
+				"- Stops &6time&r and &centities&r in the total &bradius&r of &b180 blocks&r for &e3 minutes&r with a &6cooldown&r of &c12 minutes&r. "
+				""
+				"- Be the &conly&r one &astanding&r in the &6end&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/extra/timed.png"
+				}
+			}
+			id: "373AC9F86F4422B4"
+			invisible: true
+			shape: "rsquare"
+			subtitle: "- Requires mastered &5Time Manipulation&r and &63.000.000 EP"
+			tasks: [
+				{
+					id: "3723AF3A7510E1A9"
+					title: "- Requires mastered &5Time Manipulation"
+					type: "checkmark"
+				}
+				{
+					id: "23D1A9988F4DD585"
+					title: "- Requires &63.000.000 EP"
+					type: "checkmark"
+				}
+			]
+			title: "&5Time Domination"
+			x: -16.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["120D15B31F4B08F0"]
+			description: [
+				"{image:btrultima:textures/skill/extra/spacetimemd.png width:100 height:100 align:1}"
+				""
+				"[&l&ePassives&r]:"
+				""
+				"&5+7 Spatial Damage"
+				""
+				"&6Void Vacuum&r [&eIn Slot&r]"
+				""
+				"- Gives a &btotal&r of &620 SHP&r dmg &btick&r, corrosion &cdmg&r and &efear 4&r effects for &b4secs&r on &chit&r."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/extra/spacetimemd.png width:100 height:100 align:1}"
+				""
+				"[&l&cModes&r]:"
+				""
+				"&6Distortion Field&r [&cMode 1&r]"
+				""
+				"- While &cheld&r makes the &auser&r immune to &ball&r non-ultimate &6skill&r attacks."
+				""
+				""
+				"&6Instant Motion&r [&cMode 2&r]"
+				""
+				"- Teleports the &aplayer&r to &bwhere&r they're &elooking&r instantly. A total of &b200&r blocks."
+				"{@pagebreak}"
+				"{image:btrultima:textures/skill/extra/spacetimemd.png width:100 height:100 align:1}"
+				""
+				"&6Time Stop&r [&cMode 3&r]"
+				"- Stops &6time&r and &centities&r in the total &bradius&r of &b180&r blocks for &b3 minutes&r with a &ecooldown&r of &b10 minutes&r."
+				""
+				"&6Time Warp&r [&cMode 4&r]"
+				""
+				"- Opens &5Spatial Motion&r GUI."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "btrultima:textures/skill/extra/spacetimemd.png"
+				}
+			}
+			id: "6807D193FF5AAC3E"
+			shape: "rsquare"
+			subtitle: "- Requires mastered &9Spacetime Manipulation&r and &66.000.000 EP"
+			tasks: [
+				{
+					id: "2B09C2345BAA1D44"
+					title: "- Requires mastered &9Spacetime Manipulation"
+					type: "checkmark"
+				}
+				{
+					id: "302EDDA4BD107C66"
+					title: "- Requires &66.000.000 EP"
+					type: "checkmark"
+				}
+			]
+			title: "&9Spacetime Domination"
+			x: -18.0d
+			y: 14.5d
+		}
+	]
+	title: "&eExtra"
+}

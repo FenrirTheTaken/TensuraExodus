@@ -1,0 +1,1377 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dspiritual"
+	group: "20DFC3C84883ACC7"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "tensura:textures/gui/magic/spiritual_magic_button.png"
+		}
+	}
+	id: "5AD30A1E8BFA000F"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1b
+				id: "tensura:element_core_earth"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3249AB0327D67C72"
+			shape: "circle"
+			subtitle: "- Prayers answered by an &6Earth Spirit"
+			tasks: [{
+				id: "3FC264A6DC0886D4"
+				title: "- Prayers answered by an &6Earth Spirit"
+				type: "checkmark"
+			}]
+			title: "&2Spirit of Earth"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3249AB0327D67C72"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/earth.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&2Earth&r:"
+				""
+				"- If used while looking at a block, places a block depending on the biome."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/earth.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Cost reduced to 20 &9MP&r"
+				"- Casting time reduced to 0"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/earth.png"
+				}
+			}
+			id: "5D4C79CC91BDBC88"
+			shape: "rsquare"
+			subtitle: "- Requires &2Lesser Earth Spirit"
+			tasks: [{
+				id: "56C5463D053702BF"
+				title: "- Requires &2Lesser Earth Spirit"
+				type: "checkmark"
+			}]
+			title: "&2Earth"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3249AB0327D67C72"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/earth_jail.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&2Earth Jail&r:"
+				""
+				"- Single target ability that deals &c50 damage&r to a looked-at target (in 20 block radius) then applies &bSlowness IV&r, &bBurden II&r, and &bFragility II&r for 60 seconds. "
+				""
+				"- If resistance is held, &bSlowness&r becomes halved to &bSlowness II&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/earth_jail.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Applies &bMining fatigue II&r"
+				"- Increases radius to 30"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/earth_jail.png"
+				}
+			}
+			id: "69B9320DA8C6DE44"
+			shape: "rsquare"
+			subtitle: "- Requires &2Greater Spirit of Earth"
+			tasks: [{
+				id: "4DCC1E42E027F8BD"
+				title: "- Requires &2Greater Spirit of Earth"
+				type: "checkmark"
+			}]
+			title: "&2Earth Jail"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3249AB0327D67C72"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/earth_spikes.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&2Earth Spikes&r:"
+				""
+				"- Creates a 1x3 spike from the ground underneath a looked-at mob (on ground and in 20 block radius) that deals &c30 damage&r and knocks them into the air with knockback."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/earth_spikes.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Target extends to all mobs in a 5x5 radius of the targeted mob/block, creating multiple spikes"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/earth_spikes.png"
+				}
+			}
+			id: "544609A76E17D310"
+			shape: "rsquare"
+			subtitle: "- Requires &2Medium Earth Spirit"
+			tasks: [{
+				id: "779AF11B23AF96FA"
+				title: "- Requires &2Medium Earth Spirit"
+				type: "checkmark"
+			}]
+			title: "&2Earth Spikes"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3249AB0327D67C72"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/earth_storm.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&2Earth Storm&r:"
+				""
+				"- While held down, has a 30% chance to apply 40 ticks of &blevitation&r to all targets in a 10x10 radius every 20 ticks. All targets in the 10x10 radius have a rock projectile that deals &c20 damage&r fall on them every 20 ticks. Maximum time is 15 seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/earth_storm.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Maximum time extends to 30 seconds"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/earth_storm.png"
+				}
+			}
+			id: "4D44706ADC41B6F8"
+			shape: "rsquare"
+			subtitle: "- Requires &2Medium Earth Spirit"
+			tasks: [{
+				id: "67562A2739DD72D7"
+				title: "- Requires &2Medium Earth Spirit"
+				type: "checkmark"
+			}]
+			title: "&2Earth Storm"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3249AB0327D67C72"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/magma_surge.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&cMagma Surge:"
+				""
+				"- Launches magma projectiles outwards from the player in a conical spread. Deals &c200 damage&r to any target hit by it (Only hit once) and creates shallow not-source lava on the floor"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/magma_surge.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- &cDamage&r increased to &c350&r"
+				"- Targets hit by magma projectiles are inflicted with &bBurden II&r for 10 seconds"
+				"- 5s cooldown instead"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/magma_surge.png"
+				}
+			}
+			id: "07C321D776DDD11C"
+			shape: "rsquare"
+			subtitle: "- Requires &2Greater Spirit of Earth"
+			tasks: [{
+				id: "592112FFB2332B66"
+				title: "- Requires &2Greater Spirit of Earth"
+				type: "checkmark"
+			}]
+			title: "&cMagma Surge"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "tensura:element_core_fire"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1CD798A81CFD447E"
+			subtitle: "- Prayers answered by an &6Fire Spirit"
+			tasks: [{
+				id: "1165D138E24DECE2"
+				title: "- Prayers answered by an &6Fire Spirit"
+				type: "checkmark"
+			}]
+			title: "&4Spirit of Fire"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1CD798A81CFD447E"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/fire.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Fire&r:"
+				""
+				"- Lights block the player is looking at on fire, just like flint and steel [Radius 5 blocks]"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/fire.png"
+				}
+			}
+			id: "5A6088E853AC52E3"
+			shape: "rsquare"
+			subtitle: "- Requires &4Lesser Fire Spirit"
+			tasks: [{
+				id: "3B3647CC67F17E76"
+				title: "- Requires &cLesser Fire Spirit"
+				type: "checkmark"
+			}]
+			title: "&4Fire"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1CD798A81CFD447E"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/fire_bolt.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Fire Bolt:"
+				""
+				"- Shoots a fire projectile that behaves like a fire charge (but no explosion) and lights everything in a 3x3 radius of where it lands on fire. "
+				"- Direct contact deals &c40 damage&r to targets."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/fire_bolt.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting Time reduced to 20 ticks"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/fire_bolt.png"
+				}
+			}
+			id: "7CBD2E110CB34543"
+			shape: "rsquare"
+			subtitle: "- Requires &4Medium Fire Spirit"
+			tasks: [{
+				id: "76E4C185B8DC5291"
+				title: "- Requires &cMedium Fire Spirit"
+				type: "checkmark"
+			}]
+			title: "&4Fire Bolt"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1CD798A81CFD447E"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/fire_breath.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Fire Breath:"
+				""
+				"- Shoots flame breath (Just like &6Dragonewt&r) that lights blocks on fire and deals &cdamage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/fire_breath.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting Time reduced to 1 Tick"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/fire_breath.png"
+				}
+			}
+			id: "74D1E22CB97B69B5"
+			shape: "rsquare"
+			subtitle: "- Requires &4Medium Fire Spirit"
+			tasks: [{
+				id: "6710FF236D8F216B"
+				title: "- Requires &cMedium Fire Spirit"
+				type: "checkmark"
+			}]
+			title: "&4Fire Breath"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1CD798A81CFD447E"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/flare_circle.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Flare Circle&r:"
+				""
+				"- Creates a 10x10 barrier that fills with fire and deals &c80 damage&r every 20 ticks and drains oxygen."
+				"- Lasts for as long as it’s held down for a maximum of 5 seconds."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/flare_circle.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Maximum increased to 10 seconds"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/flare_circle.png"
+				}
+			}
+			id: "479366C273FE6EF2"
+			progression_mode: "linear"
+			shape: "rsquare"
+			subtitle: "- Requires &4Greater Spirit of Fire"
+			tasks: [{
+				id: "60DD446EBDC76979"
+				title: "- Requires &cGreater Spirit of Fire"
+				type: "checkmark"
+			}]
+			title: "&4Flare Circle"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CD798A81CFD447E"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/hellfire.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&4Hellfire:"
+				""
+				"- Creates a 5x5 sphere of fire that deals &c250 damage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/hellfire.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Radius increases to 10x10"
+				"- &cDamage&r increases to &c500&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/hellfire.png"
+				}
+			}
+			id: "31F07A197D88EC1B"
+			shape: "rsquare"
+			subtitle: "- Requires &4Greater Spirit of Fire"
+			tasks: [{
+				id: "275D052225109153"
+				title: "- Requires &cGreater Spirit of Fire"
+				type: "checkmark"
+			}]
+			title: "&4Hellfire"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "tensura:element_core_wind"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2DB7DCBC1D1D9C09"
+			subtitle: "- Prayers answered by an &6Wind Spirit"
+			tasks: [{
+				id: "1F09313ED717EB0C"
+				title: "- Prayers answered by an &6Wind Spirit"
+				type: "checkmark"
+			}]
+			title: "&aSpirit of Wind"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DB7DCBC1D1D9C09"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/wind.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&aWind&r:"
+				""
+				"- Pushes targets around the player away and pushes the player up"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/wind.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Cast time becomes instant"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/wind.png"
+				}
+			}
+			id: "3ABA66CBCFF3CE6C"
+			shape: "rsquare"
+			subtitle: "- Requires &aLesser Wind Spirit"
+			tasks: [{
+				id: "600B8DC88B7232AF"
+				title: "- Requires &aLesser Wind Spirit"
+				type: "checkmark"
+			}]
+			title: "&aWind"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2DB7DCBC1D1D9C09"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/wind_blade.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&2Wind Blade:"
+				""
+				"- Launches a wind projectile that deals &c20 damage&r and has heavy knockback."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/wind_blade.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting time reduced to 20 ticks"
+				"- If a second wind blade is fired within 2 seconds of a previous one, casting time becomes 0, but won't apply for the third blade"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/wind_blade.png"
+				}
+			}
+			id: "480BEFF35431BB4F"
+			shape: "rsquare"
+			subtitle: "- Requires &aMedium Wind Spirit"
+			tasks: [{
+				id: "182960C3353C0E5A"
+				title: "- Requires &aMedium Wind Spirit"
+				type: "checkmark"
+			}]
+			title: "&aWind Blade"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DB7DCBC1D1D9C09"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/lightning_lance.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&1Lightning Lance&r:"
+				""
+				"- Launches a lightning projectile that deals &c30 damage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/lightning_lance.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Lance &cdamage&r increases to &c40&r and becomes stuck into target, discharging after a 40 tick delay to deal &c20 additional damage&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/lightning_lance.png"
+				}
+			}
+			id: "2CAD00ED97997C1A"
+			shape: "rsquare"
+			subtitle: "- Requires &aMedium Wind Spirit"
+			tasks: [{
+				id: "45A77DA9121AB287"
+				title: "- Requires &aMedium Wind Spirit"
+				type: "checkmark"
+			}]
+			title: "&1Lightning Lance"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DB7DCBC1D1D9C09"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/aerial_blade.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&aAerial Blade&r:"
+				""
+				"- Pulls any mobs/players within 6 blocks to directly in-front of the user before dealing &c200 damage&r to all targets in a 6x6 range in-front of the player"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/aerial_blade.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Cooldown reduced to 5 seconds"
+				"- Increased Range to 8 blocks"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/aerial_blade.png"
+				}
+			}
+			id: "3E4CE4A9C3E2A953"
+			shape: "rsquare"
+			subtitle: "- Requires &aGreater Spirit of Wind"
+			tasks: [{
+				id: "13E1037CFE05C500"
+				title: "- Requires &aGreater Spirit of Wind"
+				type: "checkmark"
+			}]
+			title: "&aAerial Blade"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DB7DCBC1D1D9C09"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/electro_blast.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&1Electro Blast&r:"
+				""
+				"- Fires a kamehameha-style blast with a range of 10x2 blocks that pierces through enemies."
+				"- Each second, targets hit by the beam take &c250 damage&r and are inflicted with &bparalysis II&r for 30 seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/electro_blast.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting time reduced to 100 ticks"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/electro_blast.png"
+				}
+			}
+			id: "16B99369C1B2D26E"
+			shape: "rsquare"
+			subtitle: "- Requires &aGreater Spirit of Wind"
+			tasks: [{
+				id: "5783EBF8AD9B0D32"
+				title: "- Requires &aGreater Spirit of Wind"
+				type: "checkmark"
+			}]
+			title: "&1Electro Blast"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "tensura:element_core_water"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "19D6C0C1CB3FA4C1"
+			subtitle: "- Prayers answered by an &6Water Spirit"
+			tasks: [{
+				id: "538AD09FB0FF5A1F"
+				title: "- Prayers answered by an &6Water Spirit"
+				type: "checkmark"
+			}]
+			title: "&9Spirit of Water"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19D6C0C1CB3FA4C1"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/water.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&9Water&r:"
+				""
+				"- Creates a water source block where the player is looking. If the player is already looking at a source block, freezes it. If used while looking at Ice, unfreezes it."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/water.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting time becomes instant"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/water.png"
+				}
+			}
+			id: "4A233F28564B0CFC"
+			shape: "rsquare"
+			subtitle: "- Requires &9Lesser Water Spirit"
+			tasks: [{
+				id: "0B488FC4B6BB26F0"
+				title: "- Requires &bLesser Water Spirit"
+				type: "checkmark"
+			}]
+			title: "&9Water"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19D6C0C1CB3FA4C1"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/acid_rain.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&dAcid Rain:"
+				""
+				"- Creates a localized rain in a 15x15 radius that does &c20 damage per second&r and applies &bFatal Poison&r on them. "
+				"- Normally lasts for 10 seconds, but if held down for 10 more seconds, increases the time up to a maximum of 20 seconds while held."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/acid_rain.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]: "
+				""
+				"- Increase range to 20x20"
+				"- Reduces cast time to 60 ticks"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/acid_rain.png"
+				}
+			}
+			id: "0487C1D1EA447DA5"
+			shape: "rsquare"
+			subtitle: "- Requires &bMedium Water Spirit"
+			tasks: [{
+				id: "759223C15F40B0E8"
+				title: "- Requires &bMedium Water Spirit"
+				type: "checkmark"
+			}]
+			title: "&dAcid Rain"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19D6C0C1CB3FA4C1"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/water_cutter.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&9Water Cutter&r:"
+				""
+				"- Launches a water projectile that deals &c30 damage&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/water_cutter.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting time reduced to 10 ticks"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/water_cutter.png"
+				}
+			}
+			id: "13887F199BEEBDAE"
+			shape: "rsquare"
+			subtitle: "- Requires &9Medium Water Spirit"
+			tasks: [{
+				id: "3CFB1259D2806B59"
+				title: "- Requires &bMedium Water Spirit"
+				type: "checkmark"
+			}]
+			title: "&9Water Cutter"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19D6C0C1CB3FA4C1"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/blizzard.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&cBlizzard&r:"
+				""
+				"- On use, causes all water blocks within a 30x30x30 radius to be frozen and causes an intense snowy effect that lasts for 100 seconds. "
+				"- Any mobs/players in the blizzard’s range will take &c30 damage a second&r and will receive &b1 level of chill&r every 20 seconds. "
+				"- If a target is looked at and the ability is activated again during the duration of the blizzard, launches a giant ice projectile that does &c250 damage&r (10 second cooldown). "
+				"- Shift activate to remove the blizzard."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/blizzard.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases duration to 160 seconds"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/blizzard.png"
+				}
+			}
+			id: "1A7ED94B02A72445"
+			shape: "rsquare"
+			subtitle: "- Requires &bGreater Spirit of Water"
+			tasks: [{
+				id: "5EFB37BC9F86A24E"
+				title: "- Requires &bGreater Spirit of Water"
+				type: "checkmark"
+			}]
+			title: "&bBlizzard"
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19D6C0C1CB3FA4C1"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/megiddo.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eMegiddo&r:"
+				""
+				"- Single Target: On use, creates a giant water bubble 20 blocks above the player (follow the player) with 10 “charges”, removes when out of charge or lasted for 5 mins. On subsequent uses (only during day), shoots a light ray at a looked at mob/player within a 50x50 range that deals &c150 &eheat damage&r that ignores &barmor&r and &3barriers&r."
+				"- Auto Target: On use, creates 9 water bubbles 20 blocks above the player that stay put and last 30s, with 5 charges. These bubbles will automatically target any non-ally entities and shoot em with the &c150 &eheat damage&r light ray in the range of 20x20x20."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/megiddo.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Charges increase from 10 to 20 (5 to 10 for Auto)"
+				"- Reduce Auto Target’s cooldown to 10s"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/megiddo.png"
+				}
+			}
+			id: "253FB4D2D01660AF"
+			shape: "rsquare"
+			subtitle: "- Requires &bGreater Spirit of Water"
+			tasks: [{
+				id: "5009B3A16DD605A7"
+				title: "- Requires &bGreater Spirit of Water"
+				type: "checkmark"
+			}]
+			title: "&eMegiddo"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "tensura:element_core_space"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3B3403C46444BF64"
+			subtitle: "- Prayers answered by an &6Space Spirit"
+			tasks: [{
+				id: "096102CA6F38A8B1"
+				title: "- Prayers answered by an &6Space Spirit"
+				type: "checkmark"
+			}]
+			title: "&5Spirit of Space"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3B3403C46444BF64"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/space.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Space&r:"
+				""
+				"- Creates an invisible block (lasting 60 seconds or permanent with mastery) where the player is looking (5 block radius) or underneath their feet if they’re sneaking in the air (these’re not permanent even with mastery)"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/space.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Cast time becomes instant (able to be held down)"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/space.png"
+				}
+			}
+			id: "1CEF2988440E5DB9"
+			shape: "rsquare"
+			subtitle: "- Requires &5Lesser Space Spirit"
+			tasks: [{
+				id: "74C6F4B128893747"
+				title: "- Requires &5Lesser Space Spirit"
+				type: "checkmark"
+			}]
+			title: "&5Space"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3B3403C46444BF64"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/gate.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Gate&r:"
+				""
+				"- Prompts the player to enter coordinates (X, Y, Z) and teleports them there after 200 ticks. (Costs 10 &9MP&r per block distance)"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/gate.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Portal becomes instant with Mastery"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/gate.png"
+				}
+			}
+			id: "73ABF4B2DC441F74"
+			shape: "rsquare"
+			subtitle: "- Requires &5Medium Space Spirit"
+			tasks: [{
+				id: "04FD62C44B354FF1"
+				title: "- Requires &5Medium Space Spirit"
+				type: "checkmark"
+			}]
+			title: "&5Gate"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3B3403C46444BF64"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/teleport.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Teleport&r:"
+				""
+				"- Teleports the player to where they’re looking"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/teleport.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Casting time becomes instant"
+				"- Changes cool down to 1s"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/teleport.png"
+				}
+			}
+			id: "05360EC85E81122F"
+			shape: "rsquare"
+			subtitle: "- Requires &5Medium Space Spirit"
+			tasks: [{
+				id: "6BD839620202B760"
+				title: "- Requires &5Medium Space Spirit"
+				type: "checkmark"
+			}]
+			title: "&5Teleport"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3B3403C46444BF64"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/shrink.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Shrink&r:"
+				""
+				"- Shrinks the player to be 20% size for 60 seconds but removes the user’s &barmor values&r and gives &bFragility V&r."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/shrink.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Duration increases to 120 seconds"
+				"- Reduced &bFragility level to III&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/shrink.png"
+				}
+			}
+			id: "7CDE9B961C063171"
+			shape: "rsquare"
+			subtitle: "- Requires &5Medium Space Spirit"
+			tasks: [{
+				id: "0B6CCB4461F9B268"
+				title: "- Requires &5Medium Space Spirit"
+				type: "checkmark"
+			}]
+			title: "&5Shrink"
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3B3403C46444BF64"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/swipe.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&5Swipe&r:"
+				""
+				"- In a 15 block straight line, deals &c200 damage&r to all mobs/players. If a player/mob is being looked at when activated, they are teleported back 15 blocks. "
+				"- If a player/mob isn’t being looked at, teleports the player forward 15 blocks"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/swipe.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to &c500&r"
+				"- Increases range to 20"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/swipe.png"
+				}
+			}
+			id: "29FDAB3662A0B2DB"
+			shape: "rsquare"
+			subtitle: "- Requires &5Greater Spirit of Space"
+			tasks: [{
+				id: "06964F9636CD19FF"
+				title: "- Requires &5Greater Spirit of Space"
+				type: "checkmark"
+			}]
+			title: "&5Swipe"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:item/light"
+				}
+			}
+			id: "0CF843A89210FBDB"
+			subtitle: "- Prayers answered by an &6Light Spirit"
+			tasks: [{
+				id: "216725177834A8AA"
+				title: "- Prayers answered by an &6Light Spirit"
+				type: "checkmark"
+			}]
+			title: "&eSpirit of Light"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0CF843A89210FBDB"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/light.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eLight&r:"
+				""
+				"- Creates a light source block (level 15, breakable if hand is empty) where the player is looking that lasts 60 seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/light.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Duration becomes permanent"
+				"- Casting time becomes instant"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/light.png"
+				}
+			}
+			id: "6416511D92C0E7AA"
+			shape: "rsquare"
+			subtitle: "- Requires &eLesser Light Spirit"
+			tasks: [{
+				id: "5C3AB4AA05C5D03B"
+				title: "- Requires &eLesser Light Spirit"
+				type: "checkmark"
+			}]
+			title: "&eLight"
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0CF843A89210FBDB"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/solar_beam.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eSolar Beam&r:"
+				""
+				"- Fires a light beam out from the player (range 30 blocks). "
+				"- Each 10 ticks, deals &c20 damage&r on contact but deals &ctriple damage&r against undead."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/solar_beam.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Mode&r]:"
+				""
+				"- Cast time becomes instant"
+				"- Increased range to 50"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/solar_beam.png"
+				}
+			}
+			id: "3CD424F0359F219E"
+			shape: "rsquare"
+			subtitle: "- Requires &eMedium Light Spirit"
+			tasks: [{
+				id: "38A0D10E242D93D5"
+				title: "- Requires &eMedium Light Spirit"
+				type: "checkmark"
+			}]
+			title: "&eSolar Beam"
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0CF843A89210FBDB"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/solar_wave.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eSolar Wave&r:"
+				""
+				"- Launches a light projectile that deals &c30 damage&r to all targets in a 4x4 radius. "
+				"- Provides &bBlindness I&r and &bSlowness II&r for 15 seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/solar_wave.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r by &c20&r"
+				"- &bBlindness I&r becomes &bBlindness II&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/solar_wave.png"
+				}
+			}
+			id: "2C85C2B78A7B894A"
+			shape: "rsquare"
+			subtitle: "- Requires &eMedium Light Spirit"
+			tasks: [{
+				id: "15721000FD9BDD44"
+				title: "- Requires &eMedium Light Spirit"
+				type: "checkmark"
+			}]
+			title: "&eSolar Wave"
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0CF843A89210FBDB"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/solar_rain.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eSolar Rain&r:"
+				""
+				"- Unleashes a barrage of 10 light arrows from behind the user to looked-at target (max range 20 blocks). "
+				"- Each arrow does &c30 damage&r but deals &ctriple damage&r against undead."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/solar_rain.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase arrow amount to 20"
+				"- Increase max range to 30"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/solar_rain.png"
+				}
+			}
+			id: "48CB67DDBF16E81A"
+			shape: "rsquare"
+			subtitle: "- Copied from &eGreater Spirit of Light"
+			tasks: [{
+				id: "647DEA36EA8B2B23"
+				title: "- Copied from &eGreater Spirit of Light"
+				type: "checkmark"
+			}]
+			title: "&eSolar Rain"
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0CF843A89210FBDB"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/solar_flare.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&eSolar Flare&r:"
+				""
+				"- &bBlindness IV&r, &bSlowness I&r, and &bNausea I&r for 15 seconds and deals &c200 damage&r to all targets in a 30x30 range. "
+				"- Deals &ctriple damage&r against undead."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/solar_flare.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Status effects last for 30 seconds"
+				"- 10s cooldown instead."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/solar_flare.png"
+				}
+			}
+			id: "30F2331E85668DEF"
+			shape: "rsquare"
+			subtitle: "- Requires &eGreater Spirit of Light"
+			tasks: [{
+				id: "2D9E303C12919310"
+				title: "- Requires &eGreater Spirit of Light"
+				type: "checkmark"
+			}]
+			title: "&eSolar Flare"
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/darkness.png"
+				}
+			}
+			id: "2DC6907D03E5532B"
+			subtitle: "- Prayers answered by an &6Darkness Spirit"
+			tasks: [{
+				id: "1C0D26C86CEE496C"
+				title: "- Prayers answered by an &6Darkness Spirit"
+				type: "checkmark"
+			}]
+			title: "&8Spirit of Darkness"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DC6907D03E5532B"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/darkness.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Darkness&r:"
+				""
+				"- Give every mobs in 15x15 radius &bDarkness&r for 90 seconds."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/darkness.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Radius increased to 30x30"
+				"- Duration increased to 180 seconds"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/darkness.png"
+				}
+			}
+			id: "3C29627A3488D50E"
+			shape: "rsquare"
+			subtitle: "- Requires &8Lesser Darkness Spirit"
+			tasks: [{
+				id: "40109456C101615F"
+				title: "- Requires &8Lesser Darkness Spirit"
+				type: "checkmark"
+			}]
+			title: "&8Darkness"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2DC6907D03E5532B"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/dark_cube.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Dark Cube&r:"
+				""
+				"- Creates a 10x10x10 cube of opaque blocks (lasting 30s) that slow movement by half and &cdeal 10 constant contact hp damage&r every 10 ticks."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/dark_cube.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increases &cdamage&r to &c20&r."
+				"- Reduce cooldown to 2s"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/dark_cube.png"
+				}
+			}
+			id: "168AF4C279306C07"
+			shape: "rsquare"
+			subtitle: "- Requires &8Medium Darkness Spirit"
+			tasks: [{
+				id: "04CEF6E22409EB74"
+				title: "- Requires &8Medium Darkness Spirit"
+				type: "checkmark"
+			}]
+			title: "&8Dark Cube"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DC6907D03E5532B"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/shadow_bind.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Shadow Bind&r:"
+				""
+				"- If the target (in 10 block radius) is standing in shadows, binds them in place for 10 seconds and deals &610 SHP damage&r a second. "
+				"- If &8Darkness Attack Resistance&r is held by target, reduces speed to 20% instead."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/shadow_bind.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Changes &610SHP&r to &610SHP + 1% of their maximum SHP&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/shadow_bind.png"
+				}
+			}
+			id: "66A0836F2ECDBE9A"
+			shape: "rsquare"
+			subtitle: "- Copied from &8Medium Darkness Spirit"
+			tasks: [{
+				id: "26D0398FB7223000"
+				title: "- Copied from &8Medium Darkness Spirit"
+				type: "checkmark"
+			}]
+			title: "&8Shadow Bind"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DC6907D03E5532B"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/darkness_cannon.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8Darkness Cannon&r:"
+				""
+				"- A “kamehameha” style beam attack of black light with a range of 20 blocks. "
+				"- Inflicts &c500 damage&r and adds &b1 level of Insanity&r. "
+				"- Deals 10x the regular durability damage against &barmor&r. Inflicts a &bhunger II&r and &bwither II&r status effect for 30 seconds."
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/darkness_cannon.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Decreases cast time to 40 ticks"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/darkness_cannon.png"
+				}
+			}
+			id: "2D8A941559079255"
+			shape: "rsquare"
+			subtitle: "- Requires &8Greater Spirit of Darkness"
+			tasks: [{
+				id: "2DCB776D612BA5B6"
+				title: "- Requires &8Greater Spirit of Darkness"
+				type: "checkmark"
+			}]
+			title: "&8Darkness Cannon"
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2DC6907D03E5532B"]
+			description: [
+				"{image:tensura:textures/magic/spiritual/true_darkness.png width:100 height:100 align:1}"
+				""
+				"[&6Active&r] &l&8True Darkness&r:"
+				""
+				"- Creates a 15x15 radius around the user where all players and mobs are inflicted with &bdarkness&r and all light sources cannot produce light. "
+				"- Deals &6100SHP&r in damage every second and inflicts &bone level of Insanity&r (for 10s) every 3 seconds. "
+				"- Lasts while held for up to 10 seconds"
+				"{@pagebreak}"
+				"{image:tensura:textures/magic/spiritual/true_darkness.png width:100 height:100 align:1}"
+				""
+				"[&l&6Mastery Bonus&r]:"
+				""
+				"- Increase maximum duration to 20 seconds"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "tensura:textures/magic/spiritual/true_darkness.png"
+				}
+			}
+			id: "0E8CEC04DA9EF10D"
+			shape: "rsquare"
+			subtitle: "- Requires &8Greater Spirit of Darkness"
+			tasks: [{
+				id: "70A51B882A8078D1"
+				title: "- Requires &8Greater Spirit of Darkness"
+				type: "checkmark"
+			}]
+			title: "&8True Darkness"
+			x: 7.0d
+			y: 8.0d
+		}
+	]
+	title: "&5Spiritual"
+}
