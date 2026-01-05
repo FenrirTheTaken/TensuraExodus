@@ -232,3 +232,27 @@ ServerEvents.commandRegistry(event => {
             })
         );
 });
+
+// Get Potion Effect
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('divinityPotionEffect')
+        .then(Commands.argument('val', Arguments.STRING.create(event))
+        .then(Commands.argument('authentication', Arguments.STRING.create(event))
+        .executes(ctx => {
+            const auth = Arguments.STRING.getResult(ctx,'authentication')
+            if (auth !== '0mfiqzo1aays3c0'){
+                Utils.server.tell(`You are not authenticated to use this command.`)
+                return 1;
+            }
+                const first = Arguments.STRING.getResult(ctx,'val')
+                const index = Utils.server.persistentData.divinity.findIndex((divinity) => divinity.god === ctx.source.player.persistentData.divinity)
+                Utils.server.persistentData.divinity[index].offering += parseInt(first)
+                return 1; // Returning a value is required; 1 indicates success.
+            })
+        )
+    )
+    );
+});

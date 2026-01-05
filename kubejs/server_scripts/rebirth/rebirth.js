@@ -46,11 +46,11 @@ const unique = ['tensura:absolute_severance','tensura:berserk','tensura:berserke
     'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:starved','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:villain','tensura:wrath', 'trmysticism:vainglory', 'trmysticism:stagnator','trmysticism:spiritualist',
     'trmysticism:the_world','trmysticism:plunderer', 'trmysticism:melancholy','trmysticism:inverse','trmysticism:hidden_ruler','trmysticism:dreamer','trmysticism:cultivator','trmysticism:crasher','trmysticism:compulsor'
 ]
-const rebirth_list = ['tensura:absolute_severance','tensura:berserk','tensura:berserker','tensura:bewilder','tensura:chef','tensura:chosen_one','tensura:commander','tensura:cook','tensura:creator','tensura:degenerate','tensura:divine_berserker','tensura:engorger','tensura:envy','tensura:falsifier',
-    'tensura:fighter','tensura:gluttony','tensura:godly_craftsman','tensura:gourmet','tensura:great_sage','tensura:greed','tensura:guardian','tensura:healer','tensura:lust','tensura:martial_master','tensura:mathematician',
-    'tensura:murderer','tensura:musician','tensura:observer','tensura:oppressor','tensura:predator','tensura:pride','tensura:reaper','tensura:reflector','tensura:researcher','tensura:reverser','tensura:royal_beast','tensura:seer','tensura:severer','tensura:shadow_striker',
-    'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:starved','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:villain','tensura:wrath', 'trmysticism:vainglory', 'trmysticism:stagnator','trmysticism:spiritualist',
-    'trmysticism:plunderer', 'trmysticism:melancholy','trmysticism:inverse','trmysticism:hidden_ruler','trmysticism:dreamer','trmysticism:cultivator','trmysticism:crasher','trmysticism:compulsor']
+const rebirth_list = ['tensura:absolute_severance','tensura:berserk','tensura:berserker','tensura:bewilder','tensura:chef','tensura:chosen_one','tensura:commander','tensura:cook','tensura:degenerate','tensura:engorger','tensura:envy','tensura:falsifier',
+    'tensura:fighter','tensura:gourmet','tensura:great_sage','tensura:greed','tensura:guardian','tensura:healer','tensura:lust','tensura:martial_master',
+    'tensura:murderer','tensura:musician','tensura:observer','tensura:oppressor','tensura:predator','tensura:reaper','tensura:reflector','tensura:reverser','tensura:royal_beast','tensura:seer','tensura:severer','tensura:shadow_striker',
+    'tensura:sloth','tensura:sniper','tensura:spearhead','tensura:suppressor','tensura:survivor','tensura:thrower','tensura:traveler','tensura:tuner','tensura:unyielding','tensura:usurper','tensura:wrath','trmysticism:stagnator','trmysticism:spiritualist',
+    'trmysticism:plunderer','trmysticism:inverse','trmysticism:hidden_ruler','trmysticism:dreamer','trmysticism:compulsor']
 
 
 function reset(player){
@@ -99,7 +99,7 @@ function reset(player){
                     let tempL = []
                     for (let i = 0; i < 3 - player.persistentData.skilsave.length; i++){
                         let temp = Math.floor(Math.random() * (rebirth_list.length-1))
-                        while(tempL.find(t => t === temp)!= null){
+                        while(tempL.includes(temp) && rebirth_list[temp] != "tensura:shadow_striker"){
                             temp = Math.floor(Math.random() * (rebirth_list.length-1))
                         }
                         tempL.push(temp)
@@ -113,7 +113,7 @@ function reset(player){
                     let tempL = []
                     for (let i = 0; i < player.persistentData.rebirthcount+1; i++){
                         let temp = Math.floor(Math.random() * (rebirth_list.length-1))
-                        while(tempL.find(t => t === temp)!= null){
+                        while(tempL.includes(temp) && rebirth_list[temp] != "tensura:shadow_striker"){
                             temp = Math.floor(Math.random() * (rebirth_list.length-1))
                         }
                         tempL.push(temp)
@@ -138,17 +138,17 @@ PlayerEvents.advancement("tensura:reincarnated", (event) => {
         }
         )
         Utils.server.runCommandSilent(`tensura edit ${event.player.username} ability revoke ${event.player.persistentData.skil[0]}`)
-        if (player.persistentData.skil[0] == "tensura:oppressor"){
-            Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke tensura:gravity_manipulation`)
+        if (event.player.persistentData.skil[0] == "tensura:oppressor"){
+            Utils.server.runCommandSilent(`tensura edit ${event.player.username} ability revoke tensura:gravity_manipulation`)
         }
-        if (player.persistentData.skil[0] == "tensura:martial_master"){
-            Utils.server.runCommandSilent(`tensura edit ${player.username} ability revoke tensura:heavenly_eye`)
+        if (event.player.persistentData.skil[0] == "tensura:martial_master"){
+            Utils.server.runCommandSilent(`tensura edit ${event.player.username} ability revoke tensura:heavenly_eye`)
         }
         if (event.player.persistentData.rebirthcount > 2){
             let tempL = []
             for (let i = 0; i < 3 - event.player.persistentData.skilsave.length; i++){
                 let temp = Math.floor(Math.random() * (rebirth_list.length-1))
-                while(tempL.find(t => t === temp)!= null){
+                while(tempL.includes(temp) && rebirth_list[temp] != "tensura:shadow_striker"){
                     temp = Math.floor(Math.random() * (rebirth_list.length-1))
                 }
                 tempL.push(temp)
@@ -162,7 +162,7 @@ PlayerEvents.advancement("tensura:reincarnated", (event) => {
             let tempL = []
             for (let i = 0; i < event.player.persistentData.rebirthcount+1; i++){
                 let temp = Math.floor(Math.random() * (rebirth_list.length-1))
-                while(tempL.find(t => t === temp)!= null){
+                while(tempL.includes(temp) && rebirth_list[temp] != "tensura:shadow_striker"){
                     temp = Math.floor(Math.random() * (rebirth_list.length-1))
                 }
                 tempL.push(temp)
